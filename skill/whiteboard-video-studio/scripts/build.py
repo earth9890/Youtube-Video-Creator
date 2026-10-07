@@ -90,6 +90,7 @@ html = f'''<!doctype html>
     </div>
     <script>
       const THEME = "{'dark' if dark else 'light'}";
+      const THUMB = {'true' if thumb else 'false'};
       const TIMING = {json.dumps(timing)};
       window.__timelines = window.__timelines || {{}};
 {engine}
@@ -112,6 +113,7 @@ if thumb:
     subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1', '--window-size=1920,1080',
                     '--virtual-time-budget=4000', f'--screenshot={big}', f'file://{html_path}'], check=True, capture_output=True)
     subprocess.run(['magick', str(big), '-resize', '1280x720', str(out_png)], check=True)
+    subprocess.run(['magick', str(big), '-resize', '320x180', str(out_png.with_name(out_png.stem + '_glance.png'))], check=True)  # the glance test
     big.unlink()
     print(f'thumbnail {out_png}  theme={"dark" if dark else "light"}')
 else:

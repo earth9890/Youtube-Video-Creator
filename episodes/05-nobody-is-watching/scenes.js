@@ -34,10 +34,10 @@ const WIN = sceneWindows(CUES);
   const S = scene(a, b, { cam: "pull" });
   const F = S.fig(330, GY, { s: 0.7 }).draw(a, 0.9);
   F.face(a + 1.0, "worried", 4);
-  S.speech(600, 540, 95, 70, 372, 662, W(6, 4) - 0.3, 0.7); // empty bubble = stayed quiet
+  S.speech(540, 540, 90, 70, 385, 650, W(6, 4) - 0.3, 0.7); // empty bubble = stayed quiet
   S.text("this is for you", 700, 840, { size: 76, font: "caveat", c: GRAY, t: W(6, 11) - 0.3, dur: 0.9 });
-  S.text("?", 600, 575, { size: 96, t: W(7, 1) - 0.3, dur: 0.3 });
-  S.cross(600, 540, 1.3, W(7, 4) - 0.2, 0.4, { c: GRAY });
+  S.text("?", 540, 575, { size: 96, t: W(7, 1) - 0.3, dur: 0.3 });
+  S.cross(540, 540, 1.3, W(7, 4) - 0.2, 0.4, { c: GRAY });
   S.bulb(1000, 540, 1.2, W(7, 6) - 0.3, 0.8);
   S.cross(1000, 540, 1.6, W(7, 9) - 0.2, 0.4, { c: GRAY });
   S.door(1380, 420, 180, 360, W(7, 11) - 0.3, 1.0, { sign: "GYM" });
@@ -64,8 +64,13 @@ const WIN = sceneWindows(CUES);
   S.drop(625, 515, 1.6, W(11, 2) - 0.2, 0.3);
   const M = S.magnifier(600, 600, 150, W(11, 3) - 0.3, 0.7, { fill: "none" });
   S.fadeOut(M.g, W(11, 4) + 0.2, 0.5);
-  const CK = S.clock(1500, 330, 110, W(12, 0) - 0.3, 0.8, { h: 10, m: 10 });
-  CK.spin(W(12, 2) - 0.2, 1.5, 3);
+  S.clock(1500, 330, 110, W(12, 0) - 0.3, 0.8);
+  // ponytail: engine clock hands render under the PAPER-filled face, so draw our own hands on top and spin them
+  const mh = S.grp(), hh = S.grp();
+  S.draw(line([1500, 330], [1500, 250], 1), W(12, 0) + 0.3, 0.15, { w: 6, parent: mh });
+  S.draw(line([1500, 330], [1545, 305], 1), W(12, 0) + 0.4, 0.15, { w: 8, parent: hh });
+  S.move(mh, W(12, 2) - 0.2, 1.5, { rotation: 1080, svgOrigin: "1500 330" }, "power1.in");
+  S.move(hh, W(12, 2) - 0.2, 1.5, { rotation: 90, svgOrigin: "1500 330" }, "power1.in");
   CR.forEach((C, i) => C.walk(W(12, 2) + i * 0.1, 1.6, { x: 900 }));
   S.text("they forget", 1320, 780, { size: 84, font: "caveat", c: GRAY, t: W(12, 6) - 0.3, dur: 0.9 });
 }

@@ -371,11 +371,12 @@ const PROPS = {
   },
   // analog clock; o.h (0-12), o.m (0-59), o.bells (alarm clock). returns {hourG, minG} for spinning
   clock(S, cx, cy, r, t, dur, o = {}) {
-    const g = S.grp(o.parent), hourG = S.grp(g), minG = S.grp(g);
+    const g = S.grp(o.parent);
     const ha = (((o.h || 0) % 12) + (o.m || 0) / 60) * 30 - 90, ma = (o.m || 0) * 6 - 90, rad = (a) => (a * Math.PI) / 180;
     const parts = [[circ(cx, cy, r), 3, { w: Math.max(6, r / 22), fill: PAPER }], [rays(cx, cy, r * 0.82, r * 0.94, 12, -Math.PI / 2), 1.5, { w: 5 }]];
     if (o.bells) parts.unshift([circ(cx - r * 0.62, cy - r * 1.05, r * 0.24, r * 0.15) + circ(cx + r * 0.62, cy - r * 1.05, r * 0.24, r * 0.15), 1, { w: 6 }], [line([cx - r * 0.6, cy + r * 0.95], [cx - r * 0.8, cy + r * 1.25], 1) + line([cx + r * 0.6, cy + r * 0.95], [cx + r * 0.8, cy + r * 1.25], 1), 0.6, { w: 6 }]);
     S.seq(parts, t, dur * 0.75, g);
+    const hourG = S.grp(g), minG = S.grp(g); // created AFTER the face so the paper fill does not cover the hands
     S.draw(line([cx, cy], [cx + Math.cos(rad(ma)) * r * 0.75, cy + Math.sin(rad(ma)) * r * 0.75], 1), t + dur * 0.75, dur * 0.1, { w: Math.max(6, r / 26), parent: minG });
     S.draw(line([cx, cy], [cx + Math.cos(rad(ha)) * r * 0.45, cy + Math.sin(rad(ha)) * r * 0.45], 1), t + dur * 0.85, dur * 0.1, { w: Math.max(8, r / 18), parent: hourG });
     S.draw(circ(cx, cy, Math.max(6, r * 0.05)), t + dur * 0.95, dur * 0.05, { w: 5, fill: INK, parent: g });
@@ -810,10 +811,10 @@ const WIN = sceneWindows(CUES);
   const S = scene(a, b, { cam: "pull" });
   const F = S.fig(330, GY, { s: 0.7 }).draw(a, 0.9);
   F.face(a + 1.0, "worried", 4);
-  S.speech(600, 540, 95, 70, 372, 662, W(6, 4) - 0.3, 0.7); // empty bubble = stayed quiet
+  S.speech(540, 540, 90, 70, 385, 650, W(6, 4) - 0.3, 0.7); // empty bubble = stayed quiet
   S.text("this is for you", 700, 840, { size: 76, font: "caveat", c: GRAY, t: W(6, 11) - 0.3, dur: 0.9 });
-  S.text("?", 600, 575, { size: 96, t: W(7, 1) - 0.3, dur: 0.3 });
-  S.cross(600, 540, 1.3, W(7, 4) - 0.2, 0.4, { c: GRAY });
+  S.text("?", 540, 575, { size: 96, t: W(7, 1) - 0.3, dur: 0.3 });
+  S.cross(540, 540, 1.3, W(7, 4) - 0.2, 0.4, { c: GRAY });
   S.bulb(1000, 540, 1.2, W(7, 6) - 0.3, 0.8);
   S.cross(1000, 540, 1.6, W(7, 9) - 0.2, 0.4, { c: GRAY });
   S.door(1380, 420, 180, 360, W(7, 11) - 0.3, 1.0, { sign: "GYM" });
@@ -840,8 +841,13 @@ const WIN = sceneWindows(CUES);
   S.drop(625, 515, 1.6, W(11, 2) - 0.2, 0.3);
   const M = S.magnifier(600, 600, 150, W(11, 3) - 0.3, 0.7, { fill: "none" });
   S.fadeOut(M.g, W(11, 4) + 0.2, 0.5);
-  const CK = S.clock(1500, 330, 110, W(12, 0) - 0.3, 0.8, { h: 10, m: 10 });
-  CK.spin(W(12, 2) - 0.2, 1.5, 3);
+  S.clock(1500, 330, 110, W(12, 0) - 0.3, 0.8);
+  // ponytail: engine clock hands render under the PAPER-filled face, so draw our own hands on top and spin them
+  const mh = S.grp(), hh = S.grp();
+  S.draw(line([1500, 330], [1500, 250], 1), W(12, 0) + 0.3, 0.15, { w: 6, parent: mh });
+  S.draw(line([1500, 330], [1545, 305], 1), W(12, 0) + 0.4, 0.15, { w: 8, parent: hh });
+  S.move(mh, W(12, 2) - 0.2, 1.5, { rotation: 1080, svgOrigin: "1500 330" }, "power1.in");
+  S.move(hh, W(12, 2) - 0.2, 1.5, { rotation: 90, svgOrigin: "1500 330" }, "power1.in");
   CR.forEach((C, i) => C.walk(W(12, 2) + i * 0.1, 1.6, { x: 900 }));
   S.text("they forget", 1320, 780, { size: 84, font: "caveat", c: GRAY, t: W(12, 6) - 0.3, dur: 0.9 });
 }

@@ -1,0 +1,11 @@
+mix.wav written: 89.1s, bed -17 dB, duck -9 dB, dropout=True
+built /Users/harish/videos/black-hole-life/episodes/02-height/index.html  total=89.07s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 2 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   57.0 MB · 1m 29.1s video · rendered in 5m 23.0s
+h264,3840,2160,89.100000
+aac,89.088000

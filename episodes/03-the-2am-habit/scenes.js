@@ -92,7 +92,7 @@ const lieFig = (S, cx, gy, s, opts = {}) => {
   const ts = [W(11, 6) - 0.1, 50.6, 51.1, 51.45, 51.85, 52.45, 53.0];
   pts.forEach((p, i) => F.walk(ts[i], ts[i + 1] - ts[i], { x: p[0] - 260, y: p[1] - 760 }));
   const CK = S.clock(380, 330, 120, W(12, 2) - 0.3, 0.9, { h: 2, m: 0 });
-  CK.spin(W(12, 4) - 0.3, 1.0, 0.5);
+  CK.spin(W(12, 4) + 0.1, 1.0, 0.5); // 2:00 -> 2:30, after the hands finish drawing
   S.text("30 min", 380, 530, { size: 56, c: BLUE, t: W(12, 4) - 0.1, dur: 0.5 });
   F.face(W(12, 7), "smile");
 }
@@ -100,12 +100,13 @@ const lieFig = (S, cx, gy, s, opts = {}) => {
 { // S7 [c13–c14] phone outside the bedroom; stand up, walk out, text a friend. GREEN
   const [a, b] = WIN[6];
   const S = scene(a, b, { cam: "push" });
+  // props are created first so the hero (created last) stays in front while walking through the doorway
   S.bed(1220, GY, 480, a, 0.8, { blanket: false });
-  const F = lieFig(S, 1550, LIE_GY, 0.75);
-  F.draw(a + 0.2, 1.0);
   S.desk(140, GY, 300, W(13, 1) - 0.2, 0.7);
   const P1 = S.phone(290, 579, 0.9, W(13, 3) - 0.2, 0.6, { screen: "blank" });
   S.door(820, 480, 180, 380, W(13, 4) - 0.2, 0.9, { open: true });
+  const F = lieFig(S, 1550, LIE_GY, 0.75);
+  F.draw(a + 0.2, 1.0);
   F.face(W(14, 2), "worried");
   F.rise(W(14, 4) - 0.2, 0.6);
   F.walk(W(14, 5) - 0.1, 0.35, { x: -130, y: GY - LIE_GY });

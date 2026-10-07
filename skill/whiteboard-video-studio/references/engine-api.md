@@ -28,7 +28,7 @@ S.len, S.at(f) /*start+f*len*/, S.d(f) /*f*len*/
 S.draw(pathD, t, dur, { c, w, fill, fo, parent, ease, op })   // stroke-on reveal; fill fades in near the end
 S.fill(pathD, t, dur, color, opacity, parent)                 // no outline, fade in
 S.seq([[d, weight, opts], ...], t, dur, parent)               // strokes one after another inside [t, t+dur]
-S.text(str, x, y, { size: 64, t, dur, anchor: "middle"|"start"|"end", font: "ph"|"caveat", c, parent, weight, spacing })
+S.text(str, x, y, { size: 64, t, dur, anchor: "middle"|"start"|"end", font: "ph"|"caveat", c, parent, weight, spacing, bold })  // bold = heavy stroke (default in thumbnails)
                                                              // handwritten, revealed left→right. "ph" = Patrick Hand (caps read best), "caveat" = script
 S.fadeIn(el, t, dur) S.fadeOut(el, t, dur) S.show(el, t) S.hide(el, t)
 S.move(el, t, dur, { x, y, rotation, scale, svgOrigin: "x y" }, ease)   // GSAP tween on any element/group
@@ -46,7 +46,7 @@ Height ≈ 300·s (head top at `groundY − 300·s`). Poses: `stand sad point po
 ```js
 F.draw(t, dur)            // stroke-on head→body→arms→legs (dur 0.8–1.4 reads right)
 F.instant(t)              // appear fully drawn
-F.face(t, kind, dx)       // smile happy sad flat wow worried sleep determined ; dx shifts gaze (+ right)
+F.face(t, kind, dx)       // smile happy sad flat wow worried sleep determined tired cry angry ; dx shifts gaze (+ right)
 F.setPose(t, name)        // swap arms instantly (a gesture beat)
 F.walk(t, dur, { x, y })  // translate the figure's group with a leg cycle (x,y are deltas)
 F.lie(t, dur, deg=88) F.rise(t, dur) F.slump(t, dur, deg) F.grow(t, dur, k)
@@ -96,6 +96,8 @@ Scale guide (cinematography): **1.3–1.45 = power / close**, **1.0 = neutral**,
 | hat | `hat(cx, cy, s, …, { kind: "grad"|"bicorne" })` | |
 | tag | `tag(cx, cy, "PROFESSOR", t, dur, { size, fill, tc })` | label box |
 | checklist | `checklist(x, y, ["…","…"], t, dur, { gap, size })` → `.boxes[[cx,cy]...]` | tick boxes later with `S.tick(cx, cy, 0.6, t)` |
+
+Thumbnail mode (`build.py --thumb`): `THUMB=true` → every stroke ×1.55 and all text bold; follow `thumbnail-doctrine.md`.
 
 ## Worked scene
 ```js

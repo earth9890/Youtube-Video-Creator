@@ -19,7 +19,9 @@ const PINK = DARK ? "#7b4a55" : "#ffd9df";
 const CREAM = DARK ? "#3a3933" : "#fff6e3";
 const GLOW = DARK ? "#fff2b0" : "#ffe9a8";
 const GY = 860; // ground line (captions live below ~980)
+const SW = (typeof THUMB !== "undefined" && THUMB) ? 1.55 : 1; // thumbnails: thicker marker so lines survive 160 px
 
+const THUMB_BOLD = SW > 1; // thumbnails: all text bold by default
 const tl = gsap.timeline({ paused: true });
 const board = document.getElementById("board");
 const defs = document.querySelector("#stage defs");
@@ -132,7 +134,7 @@ function scene(start, end, o = {}) {
   S.d = (f) => f * S.len; // fraction of the scene -> duration
   S.grp = (parent) => el("g", {}, parent || g);
   S.draw = (d, t, dur, op = {}) => {
-    const p = el("path", { d, pathLength: 1, fill: "none", stroke: op.c || INK, "stroke-width": op.w || 7, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2" }, op.parent || g);
+    const p = el("path", { d, pathLength: 1, fill: "none", stroke: op.c || INK, "stroke-width": (op.w || 7) * SW, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2" }, op.parent || g);
     if (op.op !== undefined) p.setAttribute("opacity", op.op);
     tl.fromTo(p, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: Math.max(0.02, dur), ease: op.ease || "power1.inOut" }, t);
     if (op.fill) {
@@ -170,6 +172,7 @@ function scene(start, end, o = {}) {
     const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK, "clip-path": `url(#${id})` }, op.parent || g);
     if (op.weight) te.setAttribute("font-weight", op.weight);
     if (op.spacing) te.setAttribute("letter-spacing", op.spacing);
+    if (op.bold || THUMB_BOLD) { te.setAttribute("stroke", op.c || INK); te.setAttribute("stroke-width", size * (op.boldW || 0.045)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); }
     te.textContent = str;
     tl.fromTo(r, { attr: { width: 0 } }, { attr: { width: wEst }, duration: dur, ease: "none" }, t);
     return te;
@@ -210,7 +213,7 @@ function fig(S, cx, gy, o = {}) {
   const g = el("g", {}, o.parent || S.g), gi = el("g", {}, g);
   const hip = [cx, gy - (sit ? 10 : 130) * s], sh = [cx, hip[1] - 125 * s], hd = [cx, sh[1] - 45 * s], r = 42 * s;
   const pp = (base, pts) => poly([base, ...pts.map((p) => [base[0] + p[0] * s, base[1] + p[1] * s])], 2);
-  const sw = o.w || 7 * Math.max(s, 0.85);
+  const sw = (o.w || 7 * Math.max(s, 0.85)) * SW;
   const mk = (d, hidden) => {
     const p = el("path", { d, pathLength: 1, fill: "none", stroke: col, "stroke-width": sw, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gi);
     if (hidden) p.style.opacity = 0;
@@ -260,15 +263,17 @@ function fig(S, cx, gy, o = {}) {
     const X = (v) => hd[0] + (v + dx) * s, Y = (v) => hd[1] + v * s;
     const dr = (d, w, fill) => S.draw(d, t, 0.15, { parent: fg, w: w * s, c: col, fill });
     if (kind === "sleep") { dr(arc(X(-15), Y(-6), 7, 20, 160), 4); dr(arc(X(15), Y(-6), 7, 20, 160), 4); }
+    else if (kind === "tired") { dr(circ(X(-15), Y(-4), 4.5), 5, col); dr(circ(X(15), Y(-4), 4.5), 5, col); dr(line([X(-24), Y(-11)], [X(-6), Y(-10)], 1) + line([X(6), Y(-10)], [X(24), Y(-11)], 1), 4); dr(arc(X(-15), Y(2), 7, 20, 160), 2.5); dr(arc(X(15), Y(2), 7, 20, 160), 2.5); }
     else { dr(circ(X(-15), Y(-6), 4.5), 5, col); dr(circ(X(15), Y(-6), 4.5), 5, col); }
+    if (kind === "cry") { const tear = (x) => S.draw(smooth([[x, Y(2)], [x - 5 * s, Y(12)], [x - 4 * s, Y(20)], [x, Y(24)], [x + 4 * s, Y(20)], [x + 5 * s, Y(12)], [x, Y(2)]]), t + 0.05, 0.15, { parent: fg, w: 3 * s, c: BLUE, fill: SKY }); tear(X(-15)); tear(X(15)); }
     const m = {
       smile: [[-14, 13], [0, 23], [14, 13]], happy: [[-17, 10], [0, 27], [17, 10]], sad: [[-14, 24], [0, 14], [14, 24]],
-      flat: [[-12, 19], [12, 19]], worried: [[-14, 21], [-5, 16], [5, 22], [14, 17]], determined: [[-12, 18], [12, 16]], sleep: [[-6, 18], [6, 18]],
+      flat: [[-12, 19], [12, 19]], tired: [[-11, 21], [0, 19], [11, 21]], cry: [[-14, 26], [0, 16], [14, 26]], angry: [[-14, 22], [0, 20], [14, 22]], worried: [[-14, 21], [-5, 16], [5, 22], [14, 17]], determined: [[-12, 18], [12, 16]], sleep: [[-6, 18], [6, 18]],
     }[kind];
     if (kind === "wow") dr(circ(X(0), Y(18), 6, 8), 4);
     else dr(smooth(m.map((p) => [X(p[0]), Y(p[1])])), 5);
-    if (kind === "determined" || kind === "worried") {
-      const k = kind === "determined" ? 1 : -1;
+    if (kind === "determined" || kind === "worried" || kind === "angry" || kind === "cry") {
+      const k = kind === "determined" || kind === "angry" ? 1 : -1;
       dr(line([X(-24), Y(-18 - 4 * k)], [X(-7), Y(-15 + 3 * k)], 1), 4);
       dr(line([X(24), Y(-18 - 4 * k)], [X(7), Y(-15 + 3 * k)], 1), 4);
     }
@@ -335,11 +340,12 @@ const PROPS = {
   },
   // analog clock; o.h (0-12), o.m (0-59), o.bells (alarm clock). returns {hourG, minG} for spinning
   clock(S, cx, cy, r, t, dur, o = {}) {
-    const g = S.grp(o.parent), hourG = S.grp(g), minG = S.grp(g);
+    const g = S.grp(o.parent);
     const ha = (((o.h || 0) % 12) + (o.m || 0) / 60) * 30 - 90, ma = (o.m || 0) * 6 - 90, rad = (a) => (a * Math.PI) / 180;
     const parts = [[circ(cx, cy, r), 3, { w: Math.max(6, r / 22), fill: PAPER }], [rays(cx, cy, r * 0.82, r * 0.94, 12, -Math.PI / 2), 1.5, { w: 5 }]];
     if (o.bells) parts.unshift([circ(cx - r * 0.62, cy - r * 1.05, r * 0.24, r * 0.15) + circ(cx + r * 0.62, cy - r * 1.05, r * 0.24, r * 0.15), 1, { w: 6 }], [line([cx - r * 0.6, cy + r * 0.95], [cx - r * 0.8, cy + r * 1.25], 1) + line([cx + r * 0.6, cy + r * 0.95], [cx + r * 0.8, cy + r * 1.25], 1), 0.6, { w: 6 }]);
     S.seq(parts, t, dur * 0.75, g);
+    const hourG = S.grp(g), minG = S.grp(g); // created AFTER the face so the paper fill does not cover the hands
     S.draw(line([cx, cy], [cx + Math.cos(rad(ma)) * r * 0.75, cy + Math.sin(rad(ma)) * r * 0.75], 1), t + dur * 0.75, dur * 0.1, { w: Math.max(6, r / 26), parent: minG });
     S.draw(line([cx, cy], [cx + Math.cos(rad(ha)) * r * 0.45, cy + Math.sin(rad(ha)) * r * 0.45], 1), t + dur * 0.85, dur * 0.1, { w: Math.max(8, r / 18), parent: hourG });
     S.draw(circ(cx, cy, Math.max(6, r * 0.05)), t + dur * 0.95, dur * 0.05, { w: 5, fill: INK, parent: g });

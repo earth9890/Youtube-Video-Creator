@@ -87,6 +87,7 @@ Camera height / scale = emotion. [H Adobe/StudioBinder/LAFilm]
 
 ---
 ## G. Color & thumbnail
+**Thumbnails: follow `thumbnail-doctrine.md` (pain-moment freeze-frame, 2–3 huge bold words, dark board, one accent, one expressive character, glance test). The notes below are the colour background.**
 - **Contrast and hierarchy beat colour symbolism.** No reliable universal "red=urgent". [H Autonolab] Meaning is cultural/contextual.
 - Dark charcoal/navy backgrounds averaged ~6.6–6.8% CTR vs white ~5.4%; mid-tones and busy scene backgrounds worst; standing out from the top-10 competitors beat any single colour [D CTRpilot — vendor data]. Gold/lime accents did best in personal-development [D].
 - Use 60-30-10: one dominant field, one supporting subject, one accent. [H]
