@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Caveat";
+        src: url("assets/fonts/Caveat.ttf") format("truetype");
+        font-weight: 400 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #fdfcf8; }
+      #root { position: relative; width: 100%; height: 100%; background: #fdfcf8; }
+      #stage { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .cap {
+        position: absolute; left: 0; right: 0; bottom: 18px; height: 80px;
+        display: flex; justify-content: center; align-items: center; gap: 16px;
+        font-family: "Caveat", cursive; font-weight: 700; font-size: 66px; color: #2a2a2a;
+        opacity: 0; white-space: nowrap;
+      }
+      .cap span { opacity: 0; }
+      #big { position: absolute; left: 110px; top: 50px; font-family: "Caveat", cursive; font-weight: 700; font-size: 150px; color: #161616; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="70.88" data-width="1920" data-height="1080">
+      <svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="marker" x="-2%" y="-2%" width="104%" height="104%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="4" result="n" />
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="5" />
+          </filter>
+        </defs>
+        <g id="board" filter="url(#marker)"></g>
+      </svg>
+      <div id="caps"></div>
+      <div id="big">Never give up.</div>
+      <audio id="vo" src="assets/voice.wav" data-start="0" data-duration="70.88" data-track-index="1" data-volume="1"></audio>
+    </div>
+    
+    <script>
+      
+      const NS = "http://www.w3.org/2000/svg";
+      const INK = "#161616", RED = "#e0312b", GREEN = "#3f9e4a", LEAF = "#a8dca8", YEL = "#ffd23f", SKY = "#d9ecff", PINK = "#ffd9df";
+      const GY = 860;
+      const tl = gsap.timeline({ paused: true });
+      const board = document.getElementById("board");
+      const CS = 25.8, CE = 34.42;
+      const OLDA = [0, 4.0, 8.2, 12.6, 17.0, 21.8, 27.2, 32.2, 40.2, 40.25, 46.2, 51.2, 56.4, 57.13, 58.52, 60.09, 63.6, 64.3, 65.89, 68.0, 69.41, 70.8, 71.0, 72.4, 76], NEWA = [0, 3.66, 6.14, 9.4, 12.29, 15.33, 17.67, 20.84, 25.8, 34.42, 37.75, 40.65, 44.06, 44.459, 46.838, 48.954, 50.11, 51.213, 54.062, 55.652, 57.942, 61.625, 62.925, 65.535, 70.88];
+      const m = (t) => {
+        if (t <= OLDA[0]) return NEWA[0] + (t - OLDA[0]);
+        for (let i = 1; i < OLDA.length; i++) if (t <= OLDA[i]) return NEWA[i - 1] + ((t - OLDA[i - 1]) / (OLDA[i] - OLDA[i - 1])) * (NEWA[i] - NEWA[i - 1]);
+        return NEWA[NEWA.length - 1] + (t - OLDA[OLDA.length - 1]);
+      };
+      const makeTL = (mf) => ({
+        to: (t, v, p) => { const a = mf(p), e = mf(p + (v.duration || 0)); return tl.to(t, { ...v, duration: Math.max(0.001, e - a) }, a); },
+        fromTo: (t, f, v, p) => { const a = mf(p), e = mf(p + (v.duration || 0)); return tl.fromTo(t, f, { ...v, duration: Math.max(0.001, e - a) }, a); },
+        set: (t, v, p) => tl.set(t, v, mf(p)),
+      });
+      const TL = makeTL(m), IDTL = makeTL((t) => t);
+
+
+      // ---------- deterministic hand-drawn helpers ----------
+      let seed = 11;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const J = (a) => (rnd() - 0.5) * a;
+      const f1 = (n) => n.toFixed(1);
+      const el = (tag, attrs, parent) => {
+        const e = document.createElementNS(NS, tag);
+        for (const k in attrs) e.setAttribute(k, attrs[k]);
+        parent.appendChild(e);
+        return e;
+      };
+      const poly = (pts, jit = 3) => pts.map((p, i) => `${i ? "L" : "M"}${f1(p[0] + J(jit))} ${f1(p[1] + J(jit))}`).join(" ");
+      const line = (a, b) => {
+        const mx = (a[0] + b[0]) / 2 + J(8), my = (a[1] + b[1]) / 2 + J(8);
+        return `M${f1(a[0] + J(3))} ${f1(a[1] + J(3))} Q${f1(mx)} ${f1(my)} ${f1(b[0] + J(3))} ${f1(b[1] + J(3))}`;
+      };
+      const smooth = (pts) => {
+        let d = `M${f1(pts[0][0])} ${f1(pts[0][1])}`;
+        for (let i = 0; i < pts.length - 1; i++) {
+          const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+          d += ` C${f1(p1[0] + (p2[0] - p0[0]) / 6)} ${f1(p1[1] + (p2[1] - p0[1]) / 6)} ${f1(p2[0] - (p3[0] - p1[0]) / 6)} ${f1(p2[1] - (p3[1] - p1[1]) / 6)} ${f1(p2[0])} ${f1(p2[1])}`;
+        }
+        return d;
+      };
+      const circ = (cx, cy, r, ry = r) => {
+        const n = 16, a0 = rnd() * 6.28, pts = [];
+        for (let i = 0; i <= n + 1; i++) {
+          const a = a0 + (i / n) * Math.PI * 2 * 1.03, k = 1 + (rnd() - 0.5) * 0.05;
+          pts.push([cx + Math.cos(a) * r * k, cy + Math.sin(a) * ry * k]);
+        }
+        return smooth(pts);
+      };
+      const rect = (x, y, w, h) => poly([[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x - 3, y - 2]], 2.5);
+      const rays = (cx, cy, r1, r2, n, a0 = 0, span = Math.PI * 2) => {
+        let d = "";
+        for (let i = 0; i < n; i++) {
+          const a = a0 + (i / Math.max(1, n - (span < 6 ? 1 : 0))) * span;
+          d += `M${f1(cx + Math.cos(a) * r1)} ${f1(cy + Math.sin(a) * r1)} L${f1(cx + Math.cos(a) * r2)} ${f1(cy + Math.sin(a) * r2)} `;
+        }
+        return d;
+      };
+      // heart-shaped leaf whose tip sits at (cx,cy), pointing toward the centre from direction `ang`
+      const heart = (cx, cy, k, ang) => {
+        const pts = [];
+        for (let i = 0; i <= 28; i++) {
+          const t = Math.PI + (i / 28) * Math.PI * 2;
+          let x = 16 * Math.pow(Math.sin(t), 3) * k, y = -(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t) - 17) * k * -1;
+          y = (-(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t)) - 17) * k;
+          const c = Math.cos(ang), s = Math.sin(ang);
+          pts.push([cx + x * c - y * s, cy + x * s + y * c]);
+        }
+        return smooth(pts);
+      };
+
+      // ---------- scene + drawing (all times are absolute seconds) ----------
+      function scene(start, end, opts = {}) {
+        const g = el("g", {}, board);
+        const S = { g, start, end };
+        S.TL = opts.abs ? IDTL : TL;
+        S.TL.fromTo(g, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, start);
+        S.TL.to(g, { opacity: 0, duration: 0.3, ease: "none" }, end - 0.3);
+        // slow camera push-in
+        S.TL.fromTo(g, { scale: 1 }, { scale: 1.045, svgOrigin: "960 540", duration: end - start, ease: "none" }, start);
+        S.draw = (d, t, dur, o = {}) => {
+          const p = el("path", {
+            d, pathLength: 1, fill: "none", stroke: o.c || INK, "stroke-width": o.w || 7,
+            "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2",
+          }, o.parent || g);
+          S.TL.fromTo(p, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: o.ease || "power1.inOut" }, t);
+          if (o.fill) {
+            p.setAttribute("fill", o.fill);
+            p.style.fillOpacity = 0;
+            S.TL.to(p, { fillOpacity: 1, duration: 0.3 }, t + dur * 0.8);
+          }
+          return p;
+        };
+        S.grp = (parent) => el("g", {}, parent || g);
+        return S;
+      }
+
+      // stick figure: outer g translates, inner gi rotates, parts inside gi
+      function fig(S, cx, gy, o = {}) {
+        const s = o.s || 1, sit = !!o.sit;
+        const g = el("g", {}, S.g), gi = el("g", {}, g);
+        const hip = [cx, gy - (sit ? 10 : 130) * s], sh = [cx, hip[1] - 125 * s], hd = [cx, sh[1] - 45 * s], r = 42 * s;
+        const pp = (base, pts) => poly([base, ...pts.map((p) => [base[0] + p[0] * s, base[1] + p[1] * s])], 2);
+        const sw = 7 * Math.max(s, 0.85);
+        const mk = (d) => el("path", { d, pathLength: 1, fill: "none", stroke: INK, "stroke-width": sw, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": 1 }, gi);
+        const legsDef = sit ? [[[70, -5], [75, 128]], [[95, 10], [100, 128]]] : [[[-8, 62], [-35, 130]], [[8, 62], [35, 130]]];
+        const P = {
+          head: mk(circ(hd[0], hd[1], r)),
+          body: mk(line([hd[0], hd[1] + r], hip)),
+          armL: mk(pp(sh, o.armL || [[-28, 52], [-48, 100]])),
+          armR: mk(pp(sh, o.armR || [[28, 52], [48, 100]])),
+          legL: mk(pp(hip, o.legL || legsDef[0])),
+          legR: mk(pp(hip, o.legR || legsDef[1])),
+        };
+        const F = { g, gi, P, s, cx, gy, sh, hip, hd };
+        F.draw = (t, dur) => {
+          const seq = [["head", 0.26], ["body", 0.18], ["armL", 0.14], ["armR", 0.14], ["legL", 0.14], ["legR", 0.14]];
+          let tt = t;
+          seq.forEach(([k, w]) => {
+            S.TL.fromTo(P[k], { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: w * dur, ease: "none" }, tt);
+            tt += w * dur;
+          });
+        };
+        // simple face: eyes + mouth ("smile" | "sad" | "flat"); dx shifts the look direction
+        F.face = (t, kind = "smile", dx = 0) => {
+          const e = (x) => S.draw(circ(hd[0] + (x + dx) * s, hd[1] - 6 * s, 4.5 * s), t, 0.12, { parent: gi, w: 5 * s, fill: INK });
+          e(-15); e(15);
+          const m = kind === "sad" ? [[-14, 24], [0, 14], [14, 24]] : kind === "flat" ? [[-12, 20], [12, 20]] : [[-14, 14], [0, 24], [14, 14]];
+          S.draw(smooth(m.map((p) => [hd[0] + (p[0] + dx) * s, hd[1] + p[1] * s - 2 * s])), t + 0.1, 0.2, { parent: gi, w: 5 * s });
+        };
+        // walking leg sets
+        const pair = (a, b) => [mk(pp(hip, a)), mk(pp(hip, b))];
+        const WS = [pair([[8, 64], [-50, 124]], [[-4, 66], [34, 132]]), pair([[0, 66], [-10, 132]], [[0, 66], [10, 132]]), pair([[-4, 66], [34, 132]], [[8, 64], [-50, 124]])];
+        WS.forEach((pr) => pr.forEach((p) => { p.setAttribute("stroke-dashoffset", 0); p.style.opacity = 0; }));
+        const orig = [P.legL, P.legR];
+        const showSet = (t, k) => {
+          S.TL.set([...orig, ...WS.flat()], { opacity: 0 }, t);
+          S.TL.set(k < 0 ? orig : WS[k], { opacity: 1 }, t);
+        };
+        F.walk = (t0, dur, props, stepLen = 0.2) => {
+          S.TL.to(g, { ...props, duration: dur, ease: "none" }, t0);
+          const n = Math.floor(dur / stepLen), seq = [0, 1, 2, 1];
+          for (let i = 0; i < n; i++) showSet(t0 + i * stepLen, seq[i % 4]);
+          showSet(t0 + dur, -1);
+        };
+        return F;
+      }
+
+      // ===================================================================
+      // S1  0 – 4.0   "You want to succeed"  — draw hero, turn to viewer, point
+      // ===================================================================
+      {
+        const S = scene(0, 4.0);
+        const F = fig(S, 820, GY, { s: 1.45, armR: [[60, 20], [120, 50]] });
+        F.draw(0.2, 2.0);
+        // arm swings up to point at the viewer
+        const pt = el("path", { d: poly([F.sh, [F.sh[0] + 120, F.sh[1] - 25], [F.sh[0] + 215, F.sh[1] - 62]], 2), fill: "none", stroke: INK, "stroke-width": 10, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": 1 }, F.gi);
+        S.TL.set(F.P.armR, { opacity: 0 }, 2.5);
+        S.TL.fromTo(pt, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 2.5);
+        F.face(2.3, "smile");
+        S.draw(poly([[F.sh[0] + 215, F.sh[1] - 62], [F.sh[0] + 250, F.sh[1] - 70]], 1), 2.95, 0.15, { w: 9 });
+        S.draw(rays(F.sh[0] + 262, F.sh[1] - 75, 32, 62, 3, -1.0, 0.9), 3.05, 0.3, { w: 6 });
+      }
+
+      // ===================================================================
+      // S2  4.0 – 8.2   "in life? Here's something"  — ?, scratch head, bulb
+      // ===================================================================
+      {
+        const S = scene(4.0, 8.2), cx = 760;
+        const F = fig(S, cx, GY, { s: 1.45, armR: [[60, -10], [46, -66]] });
+        F.draw(4.2, 1.6);
+        F.face(5.6, "flat");
+        // question mark above the figure (drawn on "in life?")
+        const qx = 640, qy = 70;
+        S.draw(smooth([[qx, qy + 80], [qx + 15, qy + 25], [qx + 75, qy], [qx + 135, qy + 35], [qx + 135, qy + 95], [qx + 80, qy + 140], [qx + 62, qy + 180], [qx + 62, qy + 215]]), 4.9, 0.9, { w: 12 });
+        S.draw(circ(qx + 62, qy + 262, 11), 5.85, 0.2, { w: 8, fill: INK });
+        // light bulb — "Here's something"
+        const bx = 1090, by = 250;
+        S.draw(smooth([[bx - 30, by + 52], [bx - 52, by + 10], [bx - 46, by - 40], [bx, by - 66], [bx + 46, by - 40], [bx + 52, by + 10], [bx + 30, by + 52]]), 6.3, 0.55, { fill: YEL });
+        S.draw(poly([[bx - 30, by + 52], [bx + 30, by + 52]], 1), 6.8, 0.15);
+        S.draw(poly([[bx - 24, by + 72], [bx + 24, by + 72]], 1), 6.9, 0.12);
+        S.draw(poly([[bx - 14, by + 90], [bx + 14, by + 90]], 1), 7.0, 0.1);
+        S.draw(smooth([[bx - 14, by + 52], [bx - 6, by + 20], [bx + 6, by + 20], [bx + 14, by + 52]]), 7.0, 0.3, { w: 5 });
+        S.draw(rays(bx, by - 8, 82, 118, 7, -2.8, 2.5), 7.2, 0.5, { w: 6 });
+      }
+
+      // ===================================================================
+      // S3  8.2 – 12.6   "most people won't tell you"  — 4 figures, 3 leave
+      // ===================================================================
+      {
+        const S = scene(8.2, 12.6);
+        const xs = [640, 1010, 1190, 1370];
+        const fs = xs.map((x, i) => {
+          const F = fig(S, x, GY, { s: 0.78 });
+          F.draw(8.4 + i * 0.35, 0.9);
+          return F;
+        });
+        fs[0].face(9.9, "flat");
+        [1, 2, 3].forEach((i) => fs[i].walk(10.4 + i * 0.12, 1.7, { x: 1000 }));
+        // speech bubble above the one who stays
+        S.draw(smooth([[470, 420], [500, 330], [640, 300], [790, 330], [820, 420], [790, 500], [650, 520], [560, 505], [520, 560], [525, 495], [490, 470], [470, 420]]), 11.0, 1.0, { w: 7 });
+        [590, 650, 710].forEach((x, i) => S.draw(circ(x, 410, 9), 11.9 + i * 0.12, 0.1, { w: 8, fill: INK }));
+      }
+
+      // ===================================================================
+      // S4  12.6 – 17.0   "You don't need to be the smartest"  — brain shoved aside
+      // ===================================================================
+      {
+        const S = scene(12.6, 17.0);
+        const B = S.grp(), bcx = 830, bcy = 470;
+        const pts = [];
+        for (let i = 0; i <= 26; i++) {
+          const a = (i / 26) * Math.PI * 2 + 0.5;
+          const k = 1 + 0.1 * Math.sin(a * 8);
+          pts.push([bcx + Math.cos(a) * 250 * k, bcy + Math.sin(a) * 170 * k * (Math.sin(a) > 0 ? 0.85 : 1)]);
+        }
+        S.draw(smooth(pts), 12.8, 1.5, { parent: B, w: 8, fill: PINK });
+        S.draw(smooth([[bcx - 10, bcy - 165], [bcx + 12, bcy - 80], [bcx - 14, bcy], [bcx + 6, bcy + 100]]), 14.2, 0.5, { parent: B, w: 6 });
+        S.draw(smooth([[bcx - 190, bcy - 30], [bcx - 150, bcy - 100], [bcx - 100, bcy - 40], [bcx - 60, bcy - 110]]), 14.4, 0.4, { parent: B, w: 5 });
+        S.draw(smooth([[bcx + 50, bcy - 90], [bcx + 100, bcy - 30], [bcx + 150, bcy - 100], [bcx + 200, bcy - 40]]), 14.6, 0.4, { parent: B, w: 5 });
+        S.draw(smooth([[bcx - 160, bcy + 60], [bcx - 100, bcy + 20], [bcx - 50, bcy + 90], [bcx + 0, bcy + 50]]), 14.8, 0.4, { parent: B, w: 5 });
+        S.draw(smooth([[bcx + 70, bcy + 70], [bcx + 130, bcy + 110], [bcx + 190, bcy + 60]]), 14.9, 0.35, { parent: B, w: 5 });
+        S.draw(smooth([[bcx + 110, bcy + 168], [bcx + 125, bcy + 215], [bcx + 160, bcy + 235]]), 15.0, 0.3, { parent: B, w: 7 });
+        S.draw(rays(bcx, bcy, 300, 345, 9, -2.5, 2.6), 15.2, 0.5, { parent: B, w: 6 });
+        const F = fig(S, 1500, GY, { s: 1.3, armL: [[-45, 5], [-90, -50]], armR: [[45, 5], [90, -50]] });
+        F.draw(13.4, 1.4);
+        F.face(14.9, "flat");
+        // shrug (arms up) then push the brain away
+        const push = el("path", { d: poly([F.sh, [F.sh[0] - 170, F.sh[1] + 15], [F.sh[0] - 290, F.sh[1] - 4]], 2), fill: "none", stroke: INK, "stroke-width": 9, "stroke-linecap": "round", "stroke-linejoin": "round" }, F.gi);
+        push.style.opacity = 0;
+        S.TL.set(F.P.armL, { opacity: 0 }, 16.0);
+        S.TL.set(push, { opacity: 1 }, 16.0);
+        S.TL.to(B, { x: -760, rotation: -24, svgOrigin: `${bcx} ${bcy}`, duration: 0.8, ease: "power2.in" }, 16.05);
+      }
+
+      // ===================================================================
+      // S5  17.0 – 21.8   "person in the room. You don't need…"  — classroom
+      // ===================================================================
+      {
+        const S = scene(17.0, 21.8);
+        S.draw(rect(540, 110, 1060, 270), 17.1, 0.8, { w: 8 });
+        S.draw(poly([[540, 380], [1600, 380]], 1) , 17.8, 0.3, { w: 12 });
+        S.draw(smooth([[620, 200], [700, 170], [780, 210], [860, 175], [940, 210]]), 17.8, 0.5, { w: 5 });
+        S.draw(smooth([[620, 280], [760, 255], [900, 290], [1040, 262]]), 18.1, 0.5, { w: 5 });
+        S.draw(poly([[1150, 200], [1230, 200]], 1) + poly([[1190, 160], [1190, 240]], 1) + poly([[1280, 185], [1360, 185]], 1) + poly([[1280, 225], [1360, 225]], 1), 18.3, 0.6, { w: 5 });
+        // podium + winner on top (arms up)
+        S.draw(poly([[260, 800], [440, 800], [440, 860], [260, 860], [260, 800]], 2), 17.3, 0.6, { w: 8 });
+        S.draw(smooth([[345, 825], [350, 835], [345, 845]]) + poly([[352, 822], [352, 848]], 1), 17.9, 0.3, { w: 6 });
+        const T = fig(S, 350, 800, { s: 0.6, armL: [[-30, -20], [-45, -75]], armR: [[30, -20], [45, -75]] });
+        T.draw(17.5, 1.1);
+        // desks, chairs, students
+        [900, 1130, 1360].forEach((x, i) => {
+          const t = 18.0 + i * 0.35;
+          S.draw(poly([[x - 70, 600], [x + 70, 600]], 2), t, 0.25, { w: 8 });
+          S.draw(poly([[x - 55, 600], [x - 55, 670]], 2) + poly([[x + 55, 600], [x + 55, 670]], 2), t + 0.15, 0.25);
+          const F = fig(S, x, 550, { s: 0.42, sit: false, armR: i === 1 ? [[20, -40], [20, -95]] : undefined });
+          F.draw(t + 0.1, 0.75);
+        });
+        const M = fig(S, 560, GY, { s: 0.8 });
+        M.draw(19.0, 1.0);
+        M.face(20.0, "flat", 4);
+        M.walk(20.2, 1.6, { x: 1500 });
+      }
+
+      // ===================================================================
+      // S6  21.8 – 27.2   "connections, luck, or even a"  — 3 symbols, all crossed out
+      // ===================================================================
+      {
+        const S = scene(21.8, 27.2);
+        // handshake — "connections"
+        const a = fig(S, 280, 700, { s: 0.7, armR: [[60, 25], [165, 40]] });
+        const b = fig(S, 560, 700, { s: 0.7, armL: [[-60, 25], [-165, 40]] });
+        a.draw(22.1, 1.1); b.draw(22.3, 1.1);
+        S.draw(circ(420, 549, 15), 23.3, 0.2, { w: 7, fill: "#fff" });
+        // four-leaf clover — "luck"
+        const cx = 960, cy = 420;
+        [0, 1, 2, 3].forEach((i) => {
+          const ang = (i * Math.PI) / 2 + Math.PI / 4;
+          S.draw(heart(cx, cy, 3.9, ang), 23.15 + i * 0.22, 0.5, { w: 6, fill: LEAF });
+        });
+        S.draw(smooth([[cx, cy], [cx + 12, cy + 80], [cx - 6, cy + 160], [cx - 52, cy + 215]]), 24.1, 0.5, { c: GREEN, w: 7 });
+        // horseshoe with nail holes — "or even a …"
+        const hx = 1560, hy = 430, arc = (r, a0 = 205, a1 = -25) => {
+          const p = [];
+          for (let i = 0; i <= 16; i++) { const ang = ((a0 + (i / 16) * (a1 - a0)) * Math.PI) / 180; p.push([hx + Math.cos(ang) * r, hy + Math.sin(ang) * r]); }
+          return smooth(p);
+        };
+        S.draw(arc(140), 23.6, 0.8, { w: 8 });
+        S.draw(arc(88), 24.0, 0.7, { w: 8 });
+        S.draw(poly([[hx - 127, hy - 60], [hx - 80, hy - 38]], 1), 24.55, 0.15, { w: 8 });
+        S.draw(poly([[hx + 127, hy - 60], [hx + 80, hy - 38]], 1), 24.6, 0.15, { w: 8 });
+        [150, 120, 90, 60, 30].forEach((deg, i) => {
+          const rr = (deg * Math.PI) / 180;
+          S.draw(circ(hx - Math.cos(rr) * 114 * -1 * -1, hy + Math.sin(rr) * 114, 6), 24.5 + i * 0.05, 0.06, { w: 5 });
+        });
+        // red strikes — one by one
+        [[220, 520, 620, 880, 360], [790, 220, 1130, 660, 370], [1380, 250, 1740, 650, 380]].forEach(([x1, y1, x2, y2], i) => {
+          S.draw(line([x1, y1 - 40], [x2, y2 - 220]), 25.3 + i * 0.5, 0.22, { c: RED, w: 16 });
+          S.draw(line([x2, y1 - 40], [x1, y2 - 220]), 25.45 + i * 0.5, 0.22, { c: RED, w: 16 });
+        });
+      }
+
+      // ===================================================================
+      // S7  27.2 – 32.2   "perfect plan. You just need…"  — roadmap crumpled
+      // ===================================================================
+      {
+        const S = scene(27.2, 32.2);
+        const M = S.grp();
+        S.draw(poly([[360, 220], [530, 250], [700, 215], [870, 250], [1040, 220], [1040, 700], [870, 730], [700, 695], [530, 730], [360, 700], [360, 220]], 2), 27.3, 0.9, { parent: M, w: 8, fill: "#f6f0dc" });
+        S.draw(poly([[530, 250], [530, 730]], 1) + poly([[700, 215], [700, 695]], 1) + poly([[870, 250], [870, 730]], 1), 28.0, 0.5, { parent: M, w: 4 });
+        // route: winding road, forks, arrows, pins, X
+        S.draw(smooth([[420, 650], [500, 560], [600, 600], [680, 480], [790, 520], [880, 390], [980, 310]]), 28.1, 0.9, { parent: M, w: 7 });
+        S.draw(smooth([[600, 600], [650, 670], [760, 650], [840, 700]]), 28.5, 0.5, { parent: M, w: 5 });
+        S.draw(smooth([[680, 480], [590, 410], [480, 380], [430, 300]]), 28.7, 0.5, { parent: M, w: 5 });
+        S.draw(smooth([[790, 520], [900, 560], [980, 520]]), 28.9, 0.4, { parent: M, w: 5 });
+        S.draw(poly([[940, 310], [985, 300], [972, 345]], 1), 29.0, 0.3, { parent: M, w: 6 });
+        S.draw(poly([[460, 330], [425, 300], [470, 285]], 1), 29.1, 0.3, { parent: M, w: 6 });
+        S.draw(circ(840, 700, 20), 29.2, 0.2, { parent: M, w: 5 });
+        S.draw(poly([[960, 540], [1000, 580]], 1) + poly([[1000, 540], [960, 580]], 1), 29.3, 0.3, { parent: M, w: 7, c: RED });
+        const F = fig(S, 1430, GY, { s: 1.3, armL: [[-60, 10], [-125, -15]] });
+        F.draw(28.6, 1.4);
+        F.face(30.0, "flat");
+        // grab → crumple → drop → walk away
+        S.TL.to(M, { scale: 0.18, rotation: 210, x: 560, y: 380, svgOrigin: "700 470", duration: 0.55, ease: "power2.in" }, 30.2);
+        S.draw(smooth([[1250, 690], [1275, 660], [1300, 690], [1285, 720], [1255, 715], [1245, 690]]), 30.8, 0.4, { w: 5 });
+        S.TL.to(M, { y: 760, opacity: 0, duration: 0.4, ease: "power2.in" }, 30.8);
+        F.walk(30.9, 1.1, { x: 400 });
+      }
+
+      // ===================================================================
+      // S8 + S9  32.2 – 40.2   "keep showing up … gives up. While others are"
+      // ===================================================================
+      {
+        const S = scene(32.2, 40.2);
+        const stairs = [[150, 880]];
+        for (let i = 0; i < 6; i++) { stairs.push([150 + 270 * (i + 1), 880 - 100 * i]); stairs.push([150 + 270 * (i + 1), 880 - 100 * (i + 1)]); }
+        S.draw(poly(stairs, 3), 32.4, 1.6, { w: 8 });
+        const M = fig(S, 285, 880, { s: 0.8 });
+        M.draw(33.0, 1.1);
+        M.face(34.1, "smile");
+        // main keeps climbing; the two others sit and give up
+        const cl = (k, t) => M.walk(t, 0.75, { x: 270 * (k + 1), y: -100 * (k + 1) });
+        cl(0, 34.5); cl(1, 35.35);
+        [1, 2].forEach((i) => {
+          const F = fig(S, 150 + 270 * (i + 0.5) + 60 * (i === 1 ? 1 : -0.4), 880 - 100 * i, { s: 0.75, sit: true, legL: [[70, -5], [75, 65]], legR: [[95, 10], [100, 75]] });
+          F.draw(36.0 + (i - 1) * 0.3, 0.8);
+          S.TL.to(F.g, { opacity: 0, y: -25, duration: 0.5 }, 37.9 + (i - 1) * 0.2);
+        });
+        cl(2, 36.4); cl(3, 37.25); cl(4, 38.1);
+        // motion lines at the feet once the others are gone
+        [0, 1, 2].forEach((i) => S.draw(poly([[M.cx - 60 - i * 5, M.gy - 14 - i * 22], [M.cx - 125 - i * 5, M.gy - 14 - i * 22]], 1), 38.2 + i * 0.1, 0.2, { parent: M.gi, w: 5 }));
+      }
+
+
+      // ===================================================================
+      // NEW  "Show up again. Every single day. Even when nobody is watching."  (absolute timing)
+      // ===================================================================
+      {
+        const S = scene(CS, CE, { abs: true });
+        const t = (x) => CS + x;
+        S.draw(rect(1010, 170, 740, 540), t(0.3), 1.0, { w: 8, fill: "#fff" });
+        S.draw(poly([[1010, 250], [1750, 250]], 1), t(1.2), 0.4, { w: 7 });
+        S.draw(circ(1130, 170, 14) + circ(1630, 170, 14), t(1.4), 0.3, { w: 7 });
+        let g = ""; for (let k = 1; k < 5; k++) g += poly([[1010 + 148 * k, 250], [1010 + 148 * k, 710]], 1); for (let r = 1; r < 4; r++) g += poly([[1010, 250 + 115 * r], [1750, 250 + 115 * r]], 1);
+        S.draw(g, t(1.5), 0.8, { w: 4 });
+        const F = fig(S, 520, GY, { s: 1.25 });
+        F.draw(t(0.4), 1.4);
+        F.face(t(1.9), "smile");
+        // one tick per day
+        for (let i = 0; i < 20; i++) {
+          const x0 = 1010 + 148 * (i % 5) + 42, y0 = 250 + 115 * Math.floor(i / 5) + 58;
+          S.draw(smooth([[x0, y0], [x0 + 22, y0 + 30], [x0 + 68, y0 - 34]]), t(2.3 + i * 0.075), 0.13, { c: GREEN, w: 9 });
+        }
+        // rain cloud, umbrella: shows up anyway
+        S.draw(smooth([[330, 230], [310, 175], [370, 140], [420, 160], [470, 110], [550, 115], [590, 160], [650, 150], [700, 190], [680, 235], [330, 230]]), t(4.4), 0.9, { w: 7, fill: "#e8edf3" });
+        for (let i = 0; i < 16; i++) { const x = 360 + i * 22; S.draw(poly([[x, 275 + (i % 3) * 18], [x - 12, 315 + (i % 3) * 18]], 1), t(5.3 + i * 0.05), 0.12, { w: 5, c: "#4a78b8" }); }
+        const hx = F.cx + 94;
+        const hold = el("path", { d: poly([F.sh, [F.sh[0] + 56, F.sh[1] - 20], [hx, F.sh[1] - 88]], 2), fill: "none", stroke: INK, "stroke-width": 9, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": 1 }, F.gi);
+        S.TL.set(F.P.armR, { opacity: 0 }, t(5.9));
+        S.TL.fromTo(hold, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.4, ease: "power1.out" }, t(5.9));
+        S.draw(smooth([[hx - 150, 395], [hx - 110, 335], [hx, 305], [hx + 110, 335], [hx + 150, 395], [hx + 100, 380], [hx + 50, 395], [hx, 380], [hx - 50, 395], [hx - 100, 380], [hx - 150, 395]]), t(6.2), 0.7, { w: 7, fill: "#ffd6d0" });
+        S.draw(poly([[hx, 380], [hx, F.sh[1] - 88]], 1), t(6.3), 0.4, { w: 7 });
+      }
+
+      // ===================================================================
+      // S10  40.2 – 46.2   "busy scrolling, comparing their lives,"
+      // ===================================================================
+      {
+        const S = scene(40.25, 46.2);
+        // couch
+        S.draw(smooth([[130, 780], [125, 600], [160, 560], [560, 560], [600, 600], [595, 780]]), 40.4, 1.0, { w: 8 });
+        S.draw(rect(100, 740, 540, 90), 40.9, 0.6, { w: 8 });
+        S.draw(smooth([[100, 745], [80, 700], [120, 690], [140, 745]]) + smooth([[640, 745], [660, 700], [620, 690], [600, 745]]), 41.2, 0.5, { w: 7 });
+        S.draw(poly([[130, 830], [130, 860]], 1) + poly([[610, 830], [610, 860]], 1), 41.4, 0.2, { w: 8 });
+        const F = fig(S, 380, 745, { s: 0.9, sit: true, armR: [[60, 30], [120, 5]], legL: [[70, -5], [75, 118]], legR: [[95, 10], [100, 118]] });
+        F.draw(40.7, 1.3);
+        F.face(42.0, "flat", 6);
+        S.draw(poly([[500, 600], [520, 535], [572, 540], [555, 608], [500, 600]], 2), 42.1, 0.4, { w: 6, fill: SKY });
+        S.draw(rays(540, 570, 48, 70, 5, -2.4, 2.0), 42.4, 0.3, { w: 5 });
+        // trophy shelf: someone else's trophy vs. an empty stand
+        S.draw(rect(1000, 770, 190, 90), 42.5, 0.5, { w: 8 });
+        S.draw(smooth([[1070, 805], [1075, 840]]) + poly([[1105, 800], [1105, 845]], 1), 43.0, 0.3, { w: 6 });
+        const tx = 1095;
+        S.draw(smooth([[tx - 78, 560], [tx - 70, 650], [tx, 700], [tx + 70, 650], [tx + 78, 560]]), 43.0, 0.6, { w: 8, fill: YEL });
+        S.draw(poly([[tx - 82, 560], [tx + 82, 560]], 2), 43.5, 0.2, { w: 8 });
+        S.draw(smooth([[tx - 80, 585], [tx - 128, 590], [tx - 118, 650], [tx - 62, 650]]), 43.6, 0.3, { w: 6 });
+        S.draw(smooth([[tx + 80, 585], [tx + 128, 590], [tx + 118, 650], [tx + 62, 650]]), 43.7, 0.3, { w: 6 });
+        S.draw(poly([[tx, 700], [tx, 745], [tx - 38, 770], [tx + 38, 770]], 2), 43.8, 0.35, { w: 7 });
+        S.draw(rays(tx, 625, 110, 150, 5, -3.4, 2.3), 44.1, 0.3, { w: 5 });
+        const V = fig(S, 1420, GY, { s: 1.0 });
+        V.draw(43.4, 1.3);
+        V.face(44.7, "sad", -6);
+        S.draw(rect(1600, 770, 190, 90), 44.8, 0.5, { w: 8 });
+        S.draw(smooth([[1640, 740], [1695, 705], [1750, 740]]) + poly([[1695, 705], [1695, 670]], 1), 45.3, 0.4, { w: 5 });
+      }
+
+      // ===================================================================
+      // S11  46.2 – 51.2   "and waiting for the perfect moment,"  — spinning clock
+      // ===================================================================
+      {
+        const S = scene(46.2, 51.2), cx = 1330, cy = 450;
+        S.draw(circ(cx, cy, 240), 46.4, 0.9, { w: 10, fill: "#fff" });
+        S.draw(circ(cx - 150, cy - 255, 55, 35) + circ(cx + 150, cy - 255, 55, 35), 47.0, 0.5, { w: 7 });
+        S.draw(poly([[cx - 140, cy + 230], [cx - 190, cy + 300]], 2) + poly([[cx + 140, cy + 230], [cx + 190, cy + 300]], 2), 47.2, 0.4, { w: 8 });
+        S.draw(rays(cx, cy, 200, 228, 12, -Math.PI / 2), 47.3, 0.7, { w: 7 });
+        const H = S.grp(), Mn = S.grp();
+        S.draw(line([cx, cy], [cx, cy - 180]), 47.9, 0.3, { parent: Mn, w: 9 });
+        S.draw(line([cx, cy], [cx + 90, cy - 55]), 48.0, 0.3, { parent: H, w: 13 });
+        S.draw(circ(cx, cy, 13), 48.2, 0.15, { w: 8, fill: INK });
+        const F = fig(S, 720, GY, { s: 1.3, armL: [[10, 55], [60, 70]], armR: [[-10, 55], [-60, 70]] });
+        F.draw(46.6, 1.5);
+        F.face(48.2, "flat", 8);
+        S.TL.to(Mn, { rotation: 2160, svgOrigin: `${cx} ${cy}`, duration: 2.6, ease: "power1.in" }, 48.3);
+        S.TL.to(H, { rotation: 180, svgOrigin: `${cx} ${cy}`, duration: 2.6, ease: "power1.in" }, 48.3);
+        // impatient foot tap
+        S.draw(rays(F.cx + 70, GY - 6, 30, 55, 3, -0.7, 0.9), 49.2, 0.2, { w: 6 });
+        S.draw(rays(F.cx + 70, GY - 6, 30, 55, 3, -0.7, 0.9), 50.0, 0.2, { w: 6 });
+      }
+
+      // ===================================================================
+      // S12  51.2 – 56.4   "you should be building yours."  — desk, laptop, plant
+      // ===================================================================
+      {
+        const S = scene(51.2, 56.4);
+        // desk
+        S.draw(rect(640, 650, 920, 26), 51.4, 0.8, { w: 8 });
+        S.draw(poly([[690, 676], [690, 860]], 2) + poly([[1510, 676], [1510, 860]], 2), 52.0, 0.5);
+        // chair
+        S.draw(poly([[520, 740], [610, 740], [610, 860]], 2) + poly([[520, 740], [520, 640]], 2), 51.8, 0.6, { w: 7 });
+        const F = fig(S, 590, 740, { s: 0.9, sit: true, armR: [[60, 25], [150, 30]], legL: [[75, 0], [80, 128]], legR: [[95, 8], [100, 128]] });
+        F.draw(52.0, 1.3);
+        F.face(53.3, "smile", 5);
+        // laptop
+        S.draw(poly([[900, 650], [940, 520], [1160, 520], [1130, 650]], 2), 52.9, 0.7, { w: 7, fill: SKY });
+        S.draw(poly([[960, 560], [1120, 560]], 1) + poly([[955, 590], [1100, 590]], 1) + poly([[950, 618], [1060, 618]], 1), 53.5, 0.5, { w: 4 });
+        S.draw(poly([[880, 650], [1180, 650]], 1), 53.2, 0.3, { w: 9 });
+        // books
+        S.draw(rect(1240, 622, 160, 28), 53.2, 0.3, { w: 6, fill: "#ffe6c7" });
+        S.draw(rect(1250, 594, 140, 28), 53.35, 0.3, { w: 6, fill: "#d6e8ff" });
+        S.draw(rect(1236, 566, 150, 28), 53.5, 0.3, { w: 6, fill: "#e5f7e0" });
+        // notebook + pencil
+        S.draw(poly([[1150, 650], [1230, 650], [1235, 632], [1160, 632], [1150, 650]], 1), 54.1, 0.3, { w: 5 });
+        S.draw(poly([[1175, 640], [1215, 628]], 1), 54.3, 0.2, { w: 5, c: RED });
+        // pot + growing plant
+        S.draw(poly([[1430, 650], [1442, 590], [1510, 590], [1522, 650]], 2), 53.5, 0.4, { w: 6, fill: "#e8b98d" });
+        S.draw(smooth([[1476, 590], [1473, 540], [1481, 485], [1476, 440]]), 53.9, 0.8, { c: GREEN, w: 7 });
+        S.draw(smooth([[1474, 530], [1425, 515], [1405, 465], [1450, 485], [1474, 530]]), 54.4, 0.5, { c: GREEN, w: 6, fill: LEAF });
+        S.draw(smooth([[1478, 480], [1525, 460], [1545, 410], [1500, 430], [1478, 480]]), 54.7, 0.5, { c: GREEN, w: 6, fill: LEAF });
+        S.draw(smooth([[1476, 445], [1460, 410], [1476, 385], [1492, 410], [1476, 445]]), 55.0, 0.4, { c: GREEN, w: 6, fill: LEAF });
+      }
+
+      // ===================================================================
+      // S13  56.4 – 63.6   "Learn something daily, make mistakes, fail,"
+      // ===================================================================
+      {
+        const S = scene(56.4, 63.6);
+        const bk = (pts, t, w, o = {}) => S.draw(poly(pts, 2), t, w, { w: 7, ...o });
+        bk([[250, 650], [490, 685], [490, 820], [250, 785], [250, 650]], 56.6, 0.7, { fill: "#fffaf0" });
+        bk([[490, 685], [730, 650], [730, 785], [490, 820]], 57.1, 0.7, { fill: "#fffaf0" });
+        S.draw(poly([[285, 700], [455, 722]], 1) + poly([[285, 735], [455, 757]], 1) + poly([[285, 770], [400, 785]], 1) + poly([[525, 722], [695, 700]], 1) + poly([[525, 757], [695, 735]], 1) + poly([[525, 790], [640, 772]], 1), 57.5, 0.8, { w: 4 });
+        const F = fig(S, 900, GY, { s: 1.0, armL: [[-45, 45], [-105, 85]] });
+        F.draw(56.8, 1.4);
+        F.face(58.2, "smile", -8);
+        // wall of bricks
+        S.draw(rect(1560, 760, 230, 100), 58.2, 0.7, { w: 8 });
+        S.draw(poly([[1560, 810], [1790, 810]], 1) + poly([[1640, 760], [1640, 810]], 1) + poly([[1715, 810], [1715, 860]], 1) + poly([[1605, 810], [1605, 860]], 1), 58.8, 0.5, { w: 5 });
+        // walks to the wall ("make mistakes"), trips on "fail"
+        F.walk(58.5, 1.5, { x: 250 });
+        S.TL.to(F.gi, { rotation: 12, svgOrigin: `${F.cx} ${F.gy}`, duration: 0.3, ease: "power1.inOut" }, 59.7);
+        S.TL.to(F.gi, { rotation: 88, svgOrigin: `${F.cx} ${F.gy}`, duration: 0.35, ease: "power2.in" }, 60.1);
+        S.TL.to(F.gi, { rotation: 80, svgOrigin: `${F.cx} ${F.gy}`, duration: 0.12, ease: "power1.out" }, 60.45);
+        S.TL.to(F.gi, { rotation: 88, svgOrigin: `${F.cx} ${F.gy}`, duration: 0.12, ease: "power1.in" }, 60.57);
+        S.draw(rays(1240, 850, 40, 80, 4, -2.9, 1.9), 60.45, 0.2, { w: 6 });
+        [[1380, 770], [1450, 735], [1520, 770]].forEach(([x, y], i) =>
+          S.draw(poly([[x - 16, y - 16], [x + 16, y + 16]], 1) + poly([[x + 16, y - 16], [x - 16, y + 16]], 1), 60.9 + i * 0.15, 0.15, { w: 6, c: RED })
+        );
+      }
+
+      // ===================================================================
+      // S14 + S15  63.6 – 76   "Start again. Success isn't built in one big moment…"
+      // ===================================================================
+      {
+        const S = scene(63.6, 76);
+        const M = fig(S, 300, 880, { s: 0.7 });
+        M.draw(63.8, 0.4);
+        gsap.set(M.gi, { rotation: 88, svgOrigin: `${M.cx} ${M.gy}` });
+        S.TL.to(M.gi, { rotation: 0, svgOrigin: `${M.cx} ${M.gy}`, duration: 0.9, ease: "power2.out" }, 64.4);
+        M.face(65.3, "smile");
+        // brush off
+        const ar = M.P.armR;
+        [0, 1, 2].forEach((i) => {
+          S.TL.to(ar, { rotation: -28, svgOrigin: `${M.sh[0]} ${M.sh[1]}`, duration: 0.15 }, 65.5 + i * 0.3);
+          S.TL.to(ar, { rotation: 18, svgOrigin: `${M.sh[0]} ${M.sh[1]}`, duration: 0.15 }, 65.65 + i * 0.3);
+        });
+        S.TL.to(ar, { rotation: 0, svgOrigin: `${M.sh[0]} ${M.sh[1]}`, duration: 0.12 }, 66.4);
+        const dust = S.draw(rays(M.cx - 90, M.gy - 130, 10, 38, 3, 2.4, 1.2) + rays(M.cx + 90, M.gy - 90, 10, 38, 3, -0.6, 1.0), 65.5, 0.4, { w: 5 });
+        S.TL.to(dust, { opacity: 0, duration: 0.3 }, 66.6);
+        // mountain, drawn progressively
+        const way = [[300, 880], [480, 760], [560, 790], [760, 600], [840, 640], [1050, 430], [1130, 470], [1260, 340]];
+        const full = [...way, [1420, 560], [1520, 500], [1800, 880]];
+        S.draw(poly(full, 2), 65.4, 4.4, { w: 8, ease: "none" });
+        // climb (follows the pen)
+        const lens = way.slice(1).map((p, i) => Math.hypot(p[0] - way[i][0], p[1] - way[i][1]));
+        const total = lens.reduce((a, b) => a + b, 0), t0 = 66.6, T = 4.2;
+        let t = t0;
+        way.slice(1).forEach((p, i) => {
+          const d = (lens[i] / total) * T;
+          M.walk(t, d, { x: p[0] - 300, y: p[1] - 880 }, 0.22);
+          t += d;
+        });
+        // sun
+        S.draw(circ(1640, 220, 70), 69.0, 0.6, { w: 7, fill: YEL });
+        S.draw(rays(1640, 220, 92, 125, 10, 0), 69.6, 0.5, { w: 6 });
+        // flag planted at the peak
+        const fx = 1335, fy = 345;
+        S.draw(poly([[fx, fy], [fx, fy - 175]], 1), 71.0, 0.4, { w: 8 });
+        S.draw(poly([[fx, fy - 175], [fx + 110, fy - 140], [fx, fy - 105]], 1), 71.35, 0.5, { w: 6, c: RED, fill: RED });
+        // bold underline beneath the final scene
+        S.draw(poly([[250, 940], [700, 930], [1200, 945], [1670, 932]], 3), 72.4, 0.9, { w: 18 });
+      }
+
+      // ---------- captions ----------
+      const CH = [[["You", 2.6, 2.904], ["want", 2.904, 3.269], ["to", 3.269, 3.512], ["succeed", 3.512, 4.059], ["in", 4.059, 4.302], ["life?", 4.302, 4.667], 4.667], [["Here's", 5.467, 5.883], ["something", 5.883, 6.537], ["most", 6.537, 6.894], ["people", 6.894, 7.37], 8.797], [["will", 7.37, 7.727], ["never", 7.727, 8.143], ["tell", 8.143, 8.5], ["you.", 8.5, 8.797], 8.797], [["You", 9.797, 10.099], ["don't", 10.099, 10.46], ["need", 10.46, 10.822], ["to", 10.822, 11.064], ["be", 11.064, 11.305], ["the", 11.305, 11.607], 13.597], [["smartest", 11.607, 12.21], ["person", 12.21, 12.692], ["in", 12.692, 12.934], ["the", 12.934, 13.235], ["room.", 13.235, 13.597], 13.597], [["You", 14.497, 14.861], ["don't", 14.861, 15.298], ["need", 15.298, 15.735], ["connections,", 15.735, 16.682], ["luck,", 16.682, 17.119], 19.159], [["or", 17.119, 17.411], ["even", 17.411, 17.848], ["a", 17.848, 18.066], ["perfect", 18.066, 18.722], ["plan.", 18.722, 19.159], 19.159], [["You", 20.159, 20.477], ["just", 20.477, 20.858], ["need", 20.858, 21.239], ["to", 21.239, 21.493], ["keep", 21.493, 21.874], ["showing", 21.874, 22.445], 24.795], [["up,", 22.445, 22.699], ["when", 22.699, 23.08], ["everyone", 23.08, 23.715], ["else", 23.715, 24.096], ["gives", 24.096, 24.541], ["up.", 24.541, 24.795], 24.795], [["Show", 26.195, 26.653], ["up", 26.653, 26.959], ["again.", 26.959, 27.494], 27.494], [["Every", 27.994, 28.567], ["single", 28.567, 29.222], ["day.", 29.222, 29.631], 29.631], [["Even", 30.131, 30.595], ["when", 30.595, 31.059], ["nobody", 31.059, 31.678], ["is", 31.678, 31.987], ["watching.", 31.987, 32.761], 32.761], [["While", 33.761, 34.257], ["others", 34.257, 34.823], ["are", 34.823, 35.177], ["busy", 35.177, 35.601], ["scrolling,", 35.601, 36.38], 43.459], [["comparing", 36.38, 37.159], ["their", 37.159, 37.654], ["lives,", 37.654, 38.15], ["and", 38.15, 38.504], ["waiting", 38.504, 39.141], 43.459], [["for", 39.141, 39.495], ["the", 39.495, 39.849], ["perfect", 39.849, 40.486], ["moment,", 40.486, 41.052], ["you", 41.052, 41.406], 43.459], [["should", 41.406, 41.972], ["be", 41.972, 42.256], ["building", 42.256, 42.963], ["yours.", 42.963, 43.459], 43.459], [["Learn", 44.459, 44.957], ["something", 44.957, 45.74], ["daily.", 45.74, 46.238], 46.238], [["Make", 46.838, 47.407], ["mistakes.", 47.407, 48.354], 48.354], [["Fail.", 48.954, 49.811], 49.811], [["Then", 50.511, 50.894], ["get", 50.894, 51.213], ["back", 51.213, 51.595], ["up,", 51.595, 51.85], 53.062], [["and", 51.85, 52.169], ["start", 52.169, 52.616], ["again.", 52.616, 53.062], 53.062], [["Success", 54.062, 54.712], ["isn't", 54.712, 55.146], ["built", 55.146, 55.652], ["in", 55.652, 55.941], 57.242], [["one", 55.941, 56.302], ["big", 56.302, 56.664], ["moment.", 56.664, 57.242], 57.242], [["It's", 57.942, 58.277], ["built", 58.277, 58.745], ["in", 58.745, 59.013], ["the", 59.013, 59.348], ["quiet", 59.348, 59.817], 61.825], [["days", 59.817, 60.218], ["you", 60.218, 60.553], ["refused", 60.553, 61.156], ["to", 61.156, 61.423], ["quit.", 61.423, 61.825], 61.825], [["So", 62.925, 63.232], ["never", 63.232, 63.768], ["give", 63.768, 64.228], ["up.", 64.228, 64.535], 64.535], [["Start", 65.235, 65.653], ["doing", 65.653, 66.071], ["something", 66.071, 66.727], ["about", 66.727, 67.145], ["it.", 67.145, 67.384], 67.384]];
+      const capsEl = document.getElementById("caps");
+      CH.forEach((ch, i) => {
+        const ws = ch.slice(0, -1), clipEnd = ch[ch.length - 1];
+        const d = document.createElement("div");
+        d.className = "cap";
+        ws.forEach((w) => {
+          const sp = document.createElement("span");
+          sp.textContent = w[0];
+          d.appendChild(sp);
+          tl.to(sp, { opacity: 1, duration: 0.08 }, w[1]);
+        });
+        capsEl.appendChild(d);
+        const t0 = ws[0][1] - 0.05;
+        const nxt = CH[i + 1], t1 = nxt && nxt[0][1] - ws[ws.length - 1][2] < 1.2 ? nxt[0][1] - 0.05 : clipEnd + 0.4;
+        tl.fromTo(d, { opacity: 0 }, { opacity: 1, duration: 0.01 }, t0);
+        tl.to(d, { opacity: 0, duration: 0.2 }, t1 - 0.2);
+      });
+      // closing line
+      tl.fromTo("#big", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 62.925);
+      tl.to("#big", { opacity: 0, duration: 0.3 }, 70.58);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
