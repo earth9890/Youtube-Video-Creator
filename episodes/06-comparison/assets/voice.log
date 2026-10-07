@@ -1,3 +1,46 @@
 [?25l│
 ◇  Generated 5.7s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c01.wav
-[?25h
+[?25h[?25l│
+◇  Generated 4.7s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c02.wav
+[?25h[?25l│
+◇  Generated 6.2s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c03.wav
+[?25h[?25l│
+◇  Generated 2.0s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c04.wav
+[?25h[?25l│
+◇  Generated 5.7s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c05.wav
+[?25h[?25l│
+◇  Generated 4.5s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c06.wav
+[?25h[?25l│
+◇  Generated 4.1s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c07.wav
+[?25h[?25l│
+◇  Generated 5.1s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c08.wav
+[?25h[?25l│
+◇  Speech synthesis failed: Speech synthesis failed
+libc++abi: terminating due to uncaught exception of type std::__1::system_error: recursive_mutex lock failed: Invalid argument
+[?25hTraceback (most recent call last):
+  File "/Users/harish/.claude/skills/whiteboard-video-studio/scripts/voice.py", line 31, in <module>
+    x = load(i); C.append([round(cur, 3), round(cur + len(x) / sr, 3)]); buf.append(x); cur += len(x) / sr
+  File "/Users/harish/.claude/skills/whiteboard-video-studio/scripts/voice.py", line 23, in load
+    subprocess.run(['npx', 'hyperframes', 'tts', script[i - 1][0], '-v', voice, '-s', speed, '-o', str(raw)], check=True, env=env, stdin=subprocess.DEVNULL)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['npx', 'hyperframes', 'tts', "So here's the fix.", '-v', 'am_michael', '-s', '0.8', '-o', 'assets/clips/c09.wav']' returned non-zero exit status 1.
+[?25l│
+◇  Generated 1.8s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c09.wav
+[?25h[?25l│
+◇  Generated 3.1s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c10.wav
+[?25h[?25l│
+◇  Generated 4.4s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c11.wav
+[?25h[?25l│
+◇  Generated 4.6s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c12.wav
+[?25h[?25l│
+◇  Generated 5.4s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c13.wav
+[?25h[?25l│
+◇  Generated 4.7s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c14.wav
+[?25h[?25l│
+◇  Generated 1.7s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c15.wav
+[?25h[?25l│
+◇  Generated 3.2s of speech → /Users/harish/videos/black-hole-life/episodes/06-comparison/assets/clips/c16.wav
+[?25h[[2.6, 8.205], [8.705, 13.333], [14.233, 20.195], [21.095, 22.821], [23.421, 29.02], [29.92, 34.183], [34.883, 38.764], [39.764, 44.76], [45.66, 47.246], [47.846, 50.823], [51.423, 55.526], [56.126, 60.701], [61.601, 66.771], [67.771, 72.33], [73.23, 74.893], [75.793, 78.629]] 82.13

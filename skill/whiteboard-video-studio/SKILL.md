@@ -33,21 +33,34 @@ Hook question → pattern interrupt → "you don't need X, Y, Z" → the one thi
 Choose camera-height/scale per emotion (small + empty = vulnerable, large + low = power, high + top-third = triumph, 2–4° tilt at the fall, push-in on key lines, stillness before the final line). Face only at emotional beats. For each clause list: **words → visual → action → props**. One idea per scene, ≤ 2 characters, ≤ 5 props. Reuse the visual vocabulary in `references/script-guide.md` (staircase = persistence, calendar ticks = daily habit, umbrella+rain = showing up anyway, clock = waiting, desk+plant = building, wall+fall = failure, mountain+flag = payoff, brain/trophy/clover = smarts/status/luck). Show the board to the user only if they ask; otherwise build.
 
 ## 4. Voice (see `craft-playbook.md` §F)
-Pace/pauses/emphasis rules and the music plan (quiet piano bed 85–100 BPM, ducked 15–20 dB, drops out before the last line; soft SFX) — add music via `/media-use` unless the user declines. ```bash
-python3 -m venv ~/.venvs/tts && ~/.venvs/tts/bin/pip install kokoro-onnx soundfile numpy   # once
-~/.venvs/tts/bin/python scripts/voice.py script.json assets --speed 0.78 --lead 2.6 --tail 3.5
-python3 scripts/words.py script.json assets/clipt.json assets/words.json
+```bash
+python3 -m venv ~/.venvs/tts && ~/.venvs/tts/bin/pip install kokoro-onnx soundfile numpy        # once
+~/.venvs/tts/bin/python scripts/voice.py script.json assets --speed 0.8 --lead 2.6 --tail 3.5   # one clip per sentence, deep male, silence lead-in
 ```
-Outputs `assets/voice.wav` (deep: pitch ×0.95 + bass boost, tempo-corrected) and clip start/end times.
+Writes `assets/voice.wav` + `assets/clipt.json`. **Run episodes sequentially** — parallel Kokoro runs crash (`recursive_mutex lock failed`); the script caches finished clips so a re-run only redoes the missing ones.
 
-## 5. Build
-`npx hyperframes init videos/<slug> --non-interactive --example=blank`; start `index.html` from `templates/index.head.html` (replace `__TOTAL__`, add `<audio id="vo" src="assets/voice.wav" data-start="0" data-duration="TOTAL" data-track-index="1">`), then `<script>` = `scripts/engine.js` + scene blocks + `templates/captions.js` (set `CH` from `words.json` chunks, `#big` closing line optional) + `window.__timelines["main"] = tl; tl.seek(0);`.
-- Author each scene as `const S = scene(start, end); fig(S, x, GY, {s}) ; S.draw(path, t, dur, opts)` (see engine header). `fig.draw/face/walk`, `heart`, `circ`, `rect`, `poly`, `smooth`, `rays` are the vocabulary.
-- **Timing**: design scenes in any convenient timeline, then retime to the voice by setting the piecewise map `OLDA/NEWA` (design-time → final-time anchors: scene boundaries at `firstWord − 0.4 s`, plus inner anchors for key words). Brand-new scenes: `scene(a, b, {abs: true})` uses absolute final times. Details: `references/edit-playbook.md`.
-- Canvas 1920×1080, `GY = 860` ground, captions bottom 80 px, hero scale 1.0–1.45.
-- Check: `npx hyperframes check` (0 errors; overflow warnings from walk-offs are fine).
+## 5. Build (engine v2 — `references/engine-api.md`)
+Project = `script.json` + `assets/clipt.json` + `scenes.js` (first line `// theme: dark` for the chalkboard look).
+```bash
+python3 scripts/build.py EP_DIR                 # words.json (letters-proportional word cues) + index.html
+npx hyperframes check                           # 0 errors; container_overflow warnings from walk-offs are fine
+rm -rf snapshots && npx hyperframes snapshot --at <each scene end − 0.45, mid-points>   # READ contact-sheet-*.jpg
+python3 scripts/build.py EP_DIR --thumb thumb-a.js thumbnails/a.png   # static-frame thumbnail, 1280×720
+```
+`scenes.js` uses `sceneWindows(CUES)` + `W(clip, word)` so every stroke lands on its spoken word; ~50 props (`S.phone`, `S.calendar`, `S.spotlight`, …), the stick-figure rig (`S.fig` with poses/faces/walk/lie/rise/grow), handwritten `S.text`. Verify a new prop in `gallery/scenes.js` before using it in an episode.
+**Scale = emotion** (§E): 0.65–0.8 vulnerable, 1.0 neutral, 1.3–1.45 power. One accent colour per scene. Content y < 940.
 
-## 6. Review loop
+### Parallel production (several videos)
+Orchestrator: research facts → write all `script.json` → run `voice.py` sequentially → launch **one general-purpose agent per episode** with: the read list (engine-api, craft-playbook §C/§E/§G, gallery/scenes.js), the pipeline, the hard rules, and a **scene board** (clip ranges → visual + accent). Agents build/check/snapshot/iterate, make 2 thumbnails and `package.md`, never render. Orchestrator then runs `scripts/finish.sh EP music/bed-*.wav` per episode (mix → build → check → 4K render), sequentially.
+
+### Music
+```bash
+~/.venvs/musicgen/bin/python scripts/music_gen.py "warm hopeful solo piano, slow, gentle, no drums" music/bed-hope.wav --seconds 30   # MusicGen, local
+~/.venvs/musicgen/bin/python scripts/mix.py EP_DIR music/bed-hope.wav      # loop + duck −9 dB under speech, bed −17 dB, dropout before the last line
+```
+`build.py` prefers `assets/mix.wav` when present. Beds: `bed-hope` (warm), `bed-tense` (minor), `bed-rise` (building).
+
+## 6. Review loop (per episode)
 `npx hyperframes snapshot --at <times>` → read `snapshots/contact-sheet-*.jpg`. Take frames at **each scene's end −0.45 s** (completed state) and mid-scene. Fix, re-snapshot. Then render a 4K cut and tell the user what changed. Edit requests → `references/edit-playbook.md` (table of "user says X → do Y").
 
 ## 7. Render

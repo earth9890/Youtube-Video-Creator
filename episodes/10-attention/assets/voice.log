@@ -1,3 +1,27 @@
 [?25l│
 ◇  Generated 6.7s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c01.wav
-[?25h
+[?25h[?25l│
+◇  Generated 2.7s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c02.wav
+[?25h[?25l│
+◇  Generated 3.6s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c03.wav
+[?25h[?25l│
+◇  Generated 5.7s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c04.wav
+[?25h[?25l│
+◇  Generated 3.3s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c05.wav
+[?25h[?25l│
+◇  Generated 5.4s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c06.wav
+[?25h[?25l│
+◇  Generated 3.2s of speech → /Users/harish/videos/black-hole-life/episodes/10-attention/assets/clips/c07.wav
+[?25h[?25l│
+◇  Speech synthesis failed: Speech synthesis failed
+libc++abi: terminating due to uncaught exception of type std::__1::system_error: recursive_mutex lock failed: Invalid argument
+[?25hTraceback (most recent call last):
+  File "/Users/harish/.claude/skills/whiteboard-video-studio/scripts/voice.py", line 31, in <module>
+    x = load(i); C.append([round(cur, 3), round(cur + len(x) / sr, 3)]); buf.append(x); cur += len(x) / sr
+  File "/Users/harish/.claude/skills/whiteboard-video-studio/scripts/voice.py", line 23, in load
+    subprocess.run(['npx', 'hyperframes', 'tts', script[i - 1][0], '-v', voice, '-s', speed, '-o', str(raw)], check=True, env=env, stdin=subprocess.DEVNULL)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['npx', 'hyperframes', 'tts', 'It can take over twenty minutes to fully get your focus back.', '-v', 'am_michael', '-s', '0.8', '-o', 'assets/clips/c08.wav']' returned non-zero exit status 1.
