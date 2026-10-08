@@ -1,7 +1,11 @@
-// Thumbnail A (light): NOBODY IS WATCHING — hero in a spotlight, the eyes around are faded
+// theme: dark
+// Thumbnail A: EVERYONE IS / STARING. — hero in a light cone, six big eyes in the dark
 const S = scene(0, 1, { cam: "none" });
-S.text("NOBODY IS", 960, 250, { size: 200, t: 0, dur: 0.5 });
-S.text("WATCHING", 960, 460, { size: 230, c: ORANGE, t: 0, dur: 0.5 });
-S.spotlight(960, 515, 960, 240, 0, 0.5);
-S.fig(960, 960, { s: 1.1 }).draw(0, 0.5).face(0.5, "worried");
-[[330, 700], [1590, 700], [470, 880], [1450, 880]].forEach(([x, y]) => S.eye(x, y, 1.5, 0, 0.5, { dx: x < 960 ? 12 : -12 }).g.setAttribute("opacity", 0.28));
+S.text("EVERYONE IS", 960, 220, { size: 220, t: 0, dur: 0.5 });
+S.text("STARING.", 960, 490, { size: 300, c: RED, t: 0, dur: 0.5 });
+// ponytail: spotlight prop draws a lamp that would sit inside the text, so just the cone + pool
+S.fill(poly([[900, 515], [1020, 515], [1260, 1000], [660, 1000]], 1), 0, 0.3, GLOW, 0.35);
+S.fill(circ(960, 1000, 300, 40), 0, 0.3, GLOW, 0.45);
+S.fig(960, 1000, { s: 1.3 }).draw(0, 0.5).face(0.5, "worried", 0);
+[[280, 660], [560, 820], [330, 940], [1640, 660], [1360, 820], [1560, 920]].forEach(([x, y]) =>
+  S.eye(x, y, 2.2, 0, 0.5, { dx: x < 960 ? 14 : -14 }));

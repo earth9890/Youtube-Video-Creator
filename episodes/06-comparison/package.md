@@ -7,7 +7,7 @@
 4. remove-excuse — You're Not Lazy. You're Comparing Wrong. Here's the Fix (55)
 5. direct promise — The 3-Step Fix for Feeling Small After Scrolling (48)
 
-**Pick: #3** — it names the exact feeling the viewer already has ("everyone seems ahead") and promises the fix, without reusing any thumbnail word.
+**Pick: #5** — a plain promise with a number, and it shares no word with either thumbnail ("EVERYONE'S AHEAD." / "30 MINUTES."), so thumbnail = problem, title = promise. (#3 would repeat thumb A's "ahead".)
 
 ## Description
 Students who cut social media to half an hour a day felt less lonely and less depressed within three weeks.
@@ -35,5 +35,5 @@ social media comparison, comparison trap, stop comparing yourself, social media 
 Which account did you unfollow first, and how long had it been making you feel small?
 
 ## Thumbnails
-- thumbnails/a.png (light, "NOT BEHIND." — small hero vs glowing highlight-reel phone and trophy) → pairs with title #3 (hook: the feeling; title: the promise).
-- thumbnails/b.png (dark, "30 MINUTES." — locked phone + calendar of ticks) → pairs with title #5 (hook: the number; title: the 3-step promise).
+- thumbnails/a.png (dark, "EVERYONE'S / AHEAD." in red — sad hero s1.3 at the foot of tall stairs, glowing heart-phone in hand, trophy-holder at the top) → pairs with title #5 (pain moment: everyone's ahead; title: the 3-step fix). Also works with #1.
+- thumbnails/b.png (dark, "30 / MINUTES." with 30 in green — happy hero s1.6 putting the phone face-down on a table, padlock on it) → pairs with title #5 or #3 (hook: the number; title: the promise). Do not pair with #3 for thumb A (repeats "ahead").

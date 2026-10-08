@@ -1,8 +1,13 @@
-// thumb A (light): small hero vs glowing highlight-reel phone + trophy
+// theme: dark
+// thumb A: "EVERYONE'S AHEAD." — hero at the foot of tall stairs, phone glowing, looking up at the trophy-holder
 const S = scene(0, 1, { cam: "none" });
-S.text("NOT", 120, 400, { size: 220, anchor: "start", t: 0, dur: 0.4 });
-S.text("BEHIND.", 120, 640, { size: 220, anchor: "start", c: GREEN, t: 0, dur: 0.5 });
-const F = S.fig(1000, 1000, { s: 0.7 }).draw(0, 0.5);
-F.face(0.5, "worried", 8);
-S.phone(1480, 500, 2.8, 0, 0.6, { screen: "heart", glow: true });
-S.trophy(1480, 1000, 0.9, 0, 0.6);
+S.text("EVERYONE'S", 660, 250, { size: 230, t: 0, dur: 0.4 });
+S.text("AHEAD.", 520, 510, { size: 300, c: RED, t: 0, dur: 0.5 });
+const ST = S.stairs(1000, 1010, 5, 170, 110, 0, 0.5);
+const T = S.fig(ST.tops[4][0], ST.tops[4][1], { s: 0.9, pose: "hold" }).draw(0, 0.5);
+const [tx, ty] = T.hand("R");
+S.trophy(tx, ty + 30, 0.42, 0.2, 0.4);
+const F = S.fig(880, 1010, { s: 1.3, pose: "hold" }).draw(0, 0.5);
+F.face(0.5, "sad", 8);
+const [hx, hy] = F.hand("R");
+S.phone(hx + 12, hy - 20, 1.1, 0.2, 0.4, { screen: "heart", glow: true });

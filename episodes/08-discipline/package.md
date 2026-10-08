@@ -7,7 +7,7 @@
 4. You Don't Need Motivation. You Need This. — remove-excuse (41)
 5. How to Stay Disciplined When You Don't Feel Like It — direct promise (50)
 
-**Pick: #2 "Stop Waiting to Feel Like It. Do This Instead."** — it quotes the viewer's own excuse (the script's turn at 0:30) and promises a method, and it shares no words with thumbnail A.
+**Pick: #2 "Stop Waiting to Feel Like It. Do This Instead."** — it quotes the viewer's own excuse (the script's turn at 0:30) and promises a method; pair it with thumbnail B (thumbnail A already says "feel like it").
 
 ## Description
 Motivation shows up late and leaves early. Discipline is what's still there when it's gone.
@@ -38,5 +38,5 @@ discipline, motivation, discipline vs motivation, how to build habits, 66 days h
 What's the one thing you keep waiting to "feel like" doing? Name it below — then do two minutes of it today.
 
 ## Thumbnails
-- thumbnails/a.png (light, "MOTIVATION LIES." + fading flame and clock) → pairs with title #2 (no shared words).
-- thumbnails/b.png (dark, "66 DAYS." + calendar with one empty cell) → pairs with title #1 or #4 (not #3, which repeats "66-Day").
+- thumbnails/a.png (dark, "I DON'T / FEEL LIKE IT." — hero slumped on the couch with a glowing phone, flame dying on the floor) → pairs with title #1 "Motivation Never Lasts. Here's What Does." (problem ↔ promise, no shared words; not #2/#5 which repeat "feel like it", not #4 which repeats "don't").
+- thumbnails/b.png (dark, "66 DAYS." — hero marking the next tick on a 2/3-filled calendar) → pairs with title #2 (the pick) or #5 (not #3, which repeats "66-Day").

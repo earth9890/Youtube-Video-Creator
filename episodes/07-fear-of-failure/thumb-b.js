@@ -1,8 +1,12 @@
 // theme: dark
-// thumb B (dark): aim for ugly — notebook scribble
+// thumb B: stark fact — 5,126 failures; hero determined on the pile of crossed-out boxes
 const S = scene(0, 1, { cam: "none" });
-S.notebook(160, 240, 520, 620, 0, 0.5);
-const scribble = (y0, n) => { const p = []; for (let i = 0; i <= n; i++) p.push([210 + (i / n) * 430, y0 + (i % 2 ? -16 : 12) + (i % 3) * 5]); return smooth(p); };
-[360, 460, 560, 660].forEach((y, i) => S.draw(scribble(y, 10 + i), 0.2, 0.4, { c: ORANGE, w: 7 }));
-S.text("AIM FOR", 1280, 440, { size: 190, t: 0, dur: 0.5 });
-S.text("UGLY.", 1280, 720, { size: 230, c: ORANGE, t: 0, dur: 0.5 });
+S.text("5,126", 560, 380, { size: 320, c: RED, t: 0, dur: 0.5 });
+S.text("FAILURES.", 620, 640, { size: 220, t: 0, dur: 0.5 });
+const boxes = [[1295, 870], [1405, 870], [1515, 870], [1625, 870], [1405, 770], [1515, 770]];
+boxes.forEach(([x, y]) => {
+  S.draw(rrect(x, y, 100, 100, 10), 0, 0.3, { w: 6, fill: CREAM });
+  S.cross(x + 50, y + 50, 0.55, 0.1, 0.2);
+});
+const F = S.fig(1510, 770, { s: 1.4 }).draw(0, 0.5);
+F.face(0.5, "determined", 0);

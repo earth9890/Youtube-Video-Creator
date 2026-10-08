@@ -35,5 +35,5 @@ fear of failure, perfectionism, how to start, stop procrastinating, self compass
 What's the one thing you've been waiting to start "until you can't fail"? One line — I read every one.
 
 ## Thumbnails
-- thumbnails/a.png (light) — "5,126 FAILURES." + crossed boxes + hero arms up → pairs with title #1 (hook = the number; title = the trap it reveals).
-- thumbnails/b.png (dark) — "AIM FOR UGLY." + notebook scribble → pairs with title #3 (hook = the method; title = the why).
+- thumbnails/a.png (dark) — "WHAT IF / I FAIL?" (FAIL red), hero s1.6 worried frozen before a closed START door, hourglass → pairs with title #3 (problem = the frozen moment; promise = why it happens and the 5,127 lesson).
+- thumbnails/b.png (dark) — "5,126 / FAILURES." (number red), hero s1.4 determined standing on a pile of crossed-out boxes → pairs with title #1 (fact = the failures; promise = the "high standards" trap it exposes).

@@ -8,11 +8,11 @@
       @font-face { font-family: "Caveat"; src: url("../assets/fonts/Caveat.ttf") format("truetype"); font-weight: 400 700; }
       @font-face { font-family: "PH"; src: url("../assets/fonts/PatrickHand.ttf") format("truetype"); }
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #fdfcf8; }
-      #root { position: relative; width: 100%; height: 100%; background: #fdfcf8; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #25272a; }
+      #root { position: relative; width: 100%; height: 100%; background: #25272a; }
       #stage { position: absolute; inset: 0; width: 100%; height: 100%; }
       .cap { position: absolute; left: 0; right: 0; bottom: 16px; height: 84px; display: flex; justify-content: center; align-items: center; gap: 16px;
-             font-family: "Caveat", cursive; font-weight: 700; font-size: 66px; color: #2a2a2a; opacity: 0; white-space: nowrap; }
+             font-family: "Caveat", cursive; font-weight: 700; font-size: 66px; color: #f1efe8; opacity: 0; white-space: nowrap; }
       .cap span { opacity: 0; }
     </style>
   </head>
@@ -31,7 +31,8 @@
       
     </div>
     <script>
-      const THEME = "light";
+      const THEME = "dark";
+      const THUMB = true;
       const TIMING = {"total": 1.0, "words": [], "chunks": [], "clips": []};
       window.__timelines = window.__timelines || {};
 // =====================================================================================
@@ -55,7 +56,9 @@ const PINK = DARK ? "#7b4a55" : "#ffd9df";
 const CREAM = DARK ? "#3a3933" : "#fff6e3";
 const GLOW = DARK ? "#fff2b0" : "#ffe9a8";
 const GY = 860; // ground line (captions live below ~980)
+const SW = (typeof THUMB !== "undefined" && THUMB) ? 1.55 : 1; // thumbnails: thicker marker so lines survive 160 px
 
+const THUMB_BOLD = SW > 1; // thumbnails: all text bold by default
 const tl = gsap.timeline({ paused: true });
 const board = document.getElementById("board");
 const defs = document.querySelector("#stage defs");
@@ -168,7 +171,7 @@ function scene(start, end, o = {}) {
   S.d = (f) => f * S.len; // fraction of the scene -> duration
   S.grp = (parent) => el("g", {}, parent || g);
   S.draw = (d, t, dur, op = {}) => {
-    const p = el("path", { d, pathLength: 1, fill: "none", stroke: op.c || INK, "stroke-width": op.w || 7, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2" }, op.parent || g);
+    const p = el("path", { d, pathLength: 1, fill: "none", stroke: op.c || INK, "stroke-width": (op.w || 7) * SW, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2" }, op.parent || g);
     if (op.op !== undefined) p.setAttribute("opacity", op.op);
     tl.fromTo(p, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: Math.max(0.02, dur), ease: op.ease || "power1.inOut" }, t);
     if (op.fill) {
@@ -206,6 +209,7 @@ function scene(start, end, o = {}) {
     const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK, "clip-path": `url(#${id})` }, op.parent || g);
     if (op.weight) te.setAttribute("font-weight", op.weight);
     if (op.spacing) te.setAttribute("letter-spacing", op.spacing);
+    if (op.bold || THUMB_BOLD) { te.setAttribute("stroke", op.c || INK); te.setAttribute("stroke-width", size * (op.boldW || 0.045)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); }
     te.textContent = str;
     tl.fromTo(r, { attr: { width: 0 } }, { attr: { width: wEst }, duration: dur, ease: "none" }, t);
     return te;
@@ -246,7 +250,7 @@ function fig(S, cx, gy, o = {}) {
   const g = el("g", {}, o.parent || S.g), gi = el("g", {}, g);
   const hip = [cx, gy - (sit ? 10 : 130) * s], sh = [cx, hip[1] - 125 * s], hd = [cx, sh[1] - 45 * s], r = 42 * s;
   const pp = (base, pts) => poly([base, ...pts.map((p) => [base[0] + p[0] * s, base[1] + p[1] * s])], 2);
-  const sw = o.w || 7 * Math.max(s, 0.85);
+  const sw = (o.w || 7 * Math.max(s, 0.85)) * SW;
   const mk = (d, hidden) => {
     const p = el("path", { d, pathLength: 1, fill: "none", stroke: col, "stroke-width": sw, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gi);
     if (hidden) p.style.opacity = 0;
@@ -296,15 +300,17 @@ function fig(S, cx, gy, o = {}) {
     const X = (v) => hd[0] + (v + dx) * s, Y = (v) => hd[1] + v * s;
     const dr = (d, w, fill) => S.draw(d, t, 0.15, { parent: fg, w: w * s, c: col, fill });
     if (kind === "sleep") { dr(arc(X(-15), Y(-6), 7, 20, 160), 4); dr(arc(X(15), Y(-6), 7, 20, 160), 4); }
+    else if (kind === "tired") { dr(circ(X(-15), Y(-4), 4.5), 5, col); dr(circ(X(15), Y(-4), 4.5), 5, col); dr(line([X(-24), Y(-11)], [X(-6), Y(-10)], 1) + line([X(6), Y(-10)], [X(24), Y(-11)], 1), 4); dr(arc(X(-15), Y(2), 7, 20, 160), 2.5); dr(arc(X(15), Y(2), 7, 20, 160), 2.5); }
     else { dr(circ(X(-15), Y(-6), 4.5), 5, col); dr(circ(X(15), Y(-6), 4.5), 5, col); }
+    if (kind === "cry") { const tear = (x) => S.draw(smooth([[x, Y(2)], [x - 5 * s, Y(12)], [x - 4 * s, Y(20)], [x, Y(24)], [x + 4 * s, Y(20)], [x + 5 * s, Y(12)], [x, Y(2)]]), t + 0.05, 0.15, { parent: fg, w: 3 * s, c: BLUE, fill: SKY }); tear(X(-15)); tear(X(15)); }
     const m = {
       smile: [[-14, 13], [0, 23], [14, 13]], happy: [[-17, 10], [0, 27], [17, 10]], sad: [[-14, 24], [0, 14], [14, 24]],
-      flat: [[-12, 19], [12, 19]], worried: [[-14, 21], [-5, 16], [5, 22], [14, 17]], determined: [[-12, 18], [12, 16]], sleep: [[-6, 18], [6, 18]],
+      flat: [[-12, 19], [12, 19]], tired: [[-11, 21], [0, 19], [11, 21]], cry: [[-14, 26], [0, 16], [14, 26]], angry: [[-14, 22], [0, 20], [14, 22]], worried: [[-14, 21], [-5, 16], [5, 22], [14, 17]], determined: [[-12, 18], [12, 16]], sleep: [[-6, 18], [6, 18]],
     }[kind];
     if (kind === "wow") dr(circ(X(0), Y(18), 6, 8), 4);
     else dr(smooth(m.map((p) => [X(p[0]), Y(p[1])])), 5);
-    if (kind === "determined" || kind === "worried") {
-      const k = kind === "determined" ? 1 : -1;
+    if (kind === "determined" || kind === "worried" || kind === "angry" || kind === "cry") {
+      const k = kind === "determined" || kind === "angry" ? 1 : -1;
       dr(line([X(-24), Y(-18 - 4 * k)], [X(-7), Y(-15 + 3 * k)], 1), 4);
       dr(line([X(24), Y(-18 - 4 * k)], [X(7), Y(-15 + 3 * k)], 1), 4);
     }
@@ -775,16 +781,16 @@ function captions(CH) {
 }
 
 // ===================== scenes =====================
-// thumb A (light): the hook — 5,126 failures, then arms up
+// theme: dark
+// thumb A: the pain moment — frozen before the START door, "WHAT IF I FAIL?"
 const S = scene(0, 1, { cam: "none" });
-S.text("5,126", 960, 320, { size: 230, c: RED, t: 0, dur: 0.5 });
-S.text("FAILURES.", 960, 540, { size: 190, t: 0, dur: 0.5 });
-[...Array(6)].forEach((_, i) => {
-  const x = 500 + i * 120;
-  S.draw(rrect(x, 680, 90, 90, 10), 0, 0.3, { w: 6, fill: CREAM });
-  S.cross(x + 45, 725, 0.5, 0.1, 0.2);
-});
-S.fig(1560, 790, { s: 0.85, pose: "armsUp" }).draw(0, 0.5).face(0.5, "happy");
+S.text("WHAT IF", 560, 330, { size: 240, t: 0, dur: 0.5 });
+S.text("I", 140, 640, { size: 300, anchor: "start", t: 0, dur: 0.5 });
+S.text("FAIL?", 330, 640, { size: 300, anchor: "start", c: RED, t: 0, dur: 0.5 });
+S.door(1580, 430, 260, 540, 0, 0.4, { sign: "START" });
+const F = S.fig(1360, 970, { s: 1.6 }).draw(0, 0.5);
+F.face(0.5, "worried", 6);
+S.hourglass(1160, 870, 1.0, 0, 0.4);
 
 // ==================================================
       captions(TIMING.chunks);

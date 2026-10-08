@@ -39,5 +39,5 @@ If you put your phone in another room tonight, comment "another room" — that's
 What time does the screen usually win for you? Be honest — no judgment here.
 
 ## Thumbnails
-- `thumbnails/a.png` (dark) — "2:00 AM / AGAIN." + hero in bed lit by the phone. Pairs with title #1 (or #2 if "again" is removed from it).
-- `thumbnails/b.png` (light) — "YOU'RE NOT BROKEN." with BROKEN struck out + small smiling hero. Pairs with title #3, #4 or #5 (none repeat its words).
+- `thumbnails/a.png` (dark) — "2:00 AM. / AGAIN." + hero s1.7 lying in a big bed, phone glowing over his tired face, tiny moon. Pairs with title #1 (no shared words; #3/#4/#5 repeat "2 AM", #2 repeats "again").
+- `thumbnails/b.png` (dark) — "CAN'T / STOP." (STOP red) + hero s1.6 hunched and crying, chained by the wrist to a glowing phone. Pairs with title #1 or #5 (#3 and #4 repeat "stop").

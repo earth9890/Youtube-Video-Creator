@@ -41,5 +41,5 @@ loneliness, how to stop feeling lonely, feeling lonely around people, loneliness
 Who's the one person you've been meaning to message — and what's been stopping you?
 
 ## Thumbnails
-- `thumbnails/a.png` (dark) — "1 IN 2 FEEL ALONE" (hook) → pairs with title #3 "Why You're Lonely Even Around People — And One Fix" (promise)
-- `thumbnails/b.png` (light) — "SEND THE MESSAGE." (hook) → pairs with title #2 "If You Feel Lonely Around People, Do This Today" (promise)
+- `thumbnails/a.png` (dark) — "ALONE IN / A CROWD." (pain moment: crying hero excluded from a chatting gray crowd) → pairs with title #4 "You Don't Need More Friends. You Need This One Thing." (promise; shares no words)
+- `thumbnails/b.png` (dark) — "1 IN 2 / FEEL THIS." (stark fact: every other figure sad, in orange) → pairs with title #3 "Why You're Lonely Even Around People — And One Fix" (promise; shares no words)

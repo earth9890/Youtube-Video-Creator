@@ -1,10 +1,12 @@
-// Thumbnail A (light): "YOU'RE NOT LAZY." — hero on the couch with a glowing phone
+// theme: dark
+// Thumbnail A: "I'LL START / TOMORROW" — hero hunched at the desk at 11:58
 const hands = (K) => { K.g.appendChild(K.hourG); K.g.appendChild(K.minG); return K; };
 const S = scene(0, 1, { cam: "none" });
-const C = S.couch(140, 960, 580, 0, 0.5);
-const F = S.fig(430, C.seatY, { s: 1.3, sit: true, pose: "hold" }).draw(0, 0.5); F.face(0.5, "flat", 6);
-const [hx, hy] = F.hand("R"); S.phone(hx + 14, hy - 26, 1.2, 0.1, 0.5, { screen: "play", glow: true });
-S.text("YOU'RE", 1300, 300, { size: 180, t: 0, dur: 0.4 });
-S.text("NOT", 1300, 520, { size: 180, c: RED, t: 0.1, dur: 0.4 });
-S.text("LAZY.", 1300, 790, { size: 240, t: 0.2, dur: 0.4 });
-S.strike(960, 640, 1640, 820, 0.4, 0.2);
+S.text("I'LL START", 700, 300, { size: 230 });
+S.text("TOMORROW", 700, 560, { size: 270, c: RED });
+const D = S.desk(1080, 960, 760, 0, 0.3);
+const F = S.fig(1260, 960 - 125, { s: 1.6, sit: true, pose: "head" }).draw(0, 0.4);
+F.slump(0, 0.05, 30); // hunched forward over the desk; also clears the text block
+F.face(0.4, "tired", 0);
+S.laptop(1640, D.top, 1.1, 0, 0.3);
+hands(S.clock(1700, 240, 110, 0, 0.3, { h: 11, m: 58 }));

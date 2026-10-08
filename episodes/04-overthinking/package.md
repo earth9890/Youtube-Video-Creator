@@ -36,5 +36,5 @@ overthinking, how to stop overthinking, anxiety relief, worry, stop worrying, me
 What's the one worry you've replayed the most this week — and did it ever actually happen?
 
 ## Thumbnails
-- thumbnails/a.png (light, "91% NEVER HAPPENS" + pie + worried hero) → pair with title #5 "How to Stop Overthinking in 3 Steps (Backed by Research)" — the title must not repeat "91%".
-- thumbnails/b.png (dark, "WHAT IF…" + hamster wheel) → pair with title #1 "91% of Your Worries Never Happen — Here's the Proof".
+- thumbnails/a.png (dark, "CAN'T STOP / THINKING." red, hero on the floor with hands on head under three worry bubbles — the pain moment) → pair with title #1 "91% of Your Worries Never Happen — Here's the Proof" (problem ↔ promise, no shared words).
+- thumbnails/b.png (dark, "91% NEVER / HAPPENS." with 91% green, hero face "wow" looking up at an almost-all-green pie — the stark fact) → pair with title #5 "How to Stop Overthinking in 3 Steps (Backed by Research)" — the title must not repeat "91%".

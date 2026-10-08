@@ -7,7 +7,7 @@
 4. It's Not Your Willpower. Your Phone Rewired Your Brain  *(remove-excuse, 54)*
 5. 3 Steps to Get Your Focus Back (Start With Your Phone)  *(curiosity gap / list, 53)*
 
-**Pick: #1** — it front-loads the one concrete number from the hook and states the promise ("get it back") in the same breath; pairs with thumbnail B so the words don't repeat.
+**Pick: #1** — it front-loads the one concrete number from the hook and states the promise ("get it back") in the same breath; pairs with thumbnail A ("CAN'T FOCUS.") so the words don't repeat.
 
 ## Description
 Your attention span has dropped from 2½ minutes to 47 seconds — and it isn't your fault.
@@ -40,5 +40,5 @@ attention span, how to focus, phone addiction, digital distraction, deep work, d
 Honest answer: how many times did you check your phone while watching this? (Mine used to be "every time it buzzed.")
 
 ## Thumbnails
-- `thumbnails/a.png` (light) — "47 SECONDS." + hero staring at phone, tiny 0:47 timer → pair with title #2, #3 or #4 (no word overlap).
-- `thumbnails/b.png` (dark) — "YOUR BRAIN IS TRAINED" + brain lifting a dumbbell → pair with title #1 (the pick) or #5.
+- `thumbnails/a.png` (dark) — "CAN'T FOCUS." (FOCUS red) + tired hero at a desk over a book, phone buzzing with 4 red dots → pair with title #1 (the pick) or #4 (no word overlap; avoid #2/#5 which say "focus").
+- `thumbnails/b.png` (dark) — "47 SECONDS." (47 red) + shocked hero holding a phone, red 0:47 timer → pair with title #2, #3 or #4 (not #1, which repeats "47 seconds").

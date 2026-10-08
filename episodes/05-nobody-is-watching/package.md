@@ -36,5 +36,5 @@ spotlight effect, fear of judgment, social anxiety, self confidence, overthinkin
 What's the one small thing you've been too shy to do — and will you do it today?
 
 ## Thumbnails
-- `thumbnails/a.png` (light) "NOBODY IS WATCHING" — pairs with title #3 (hook = nobody watching, title = spotlight effect / feel judged). Also works with #5.
-- `thumbnails/b.png` (dark) "ONLY 23% NOTICED" — pairs with title #4 or #5 (not #1, which repeats "23%").
+- `thumbnails/a.png` (dark) "EVERYONE IS STARING." — the felt problem; pairs with title #3 (promise: you feel judged and aren't). Also works with #1 or #5.
+- `thumbnails/b.png` (dark) "ONLY 23% NOTICED." — the stark fact; pairs with title #4 or #5. Not #1 (repeats "23%").
