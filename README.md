@@ -18,3 +18,19 @@ python3 ../../skill/whiteboard-video-studio/scripts/build.py .                  
 npx hyperframes check && npx hyperframes render --quality delivery --resolution 4k --output out-4k.mp4
 ```
 Renders (`*.mp4`) are not committed.
+
+## Episodes (4K renders in `renders/`, not committed)
+| Episode | Title pick | Render |
+|---|---|---|
+| `01-procrastination` | Curiosity gap: | `renders/01-procrastination-4k.mp4` |
+| `02-height` | You Can't Change Your Height. Change This Instead. | `renders/02-height-4k.mp4` |
+| `03-the-2am-habit` | Contrarian + stake: | `renders/03-the-2am-habit-4k.mp4` |
+| `04-overthinking` |  is the promise, and it does not repeat the thumbnail words of B ( | `renders/04-overthinking-4k.mp4` |
+| `05-nobody-is-watching` | spotlight effect | `renders/05-nobody-is-watching-4k.mp4` |
+| `06-comparison` | EVERYONE'S AHEAD. | `renders/06-comparison-4k.mp4` |
+| `07-fear-of-failure` | Your High Standards Are Fear in Disguise | `renders/07-fear-of-failure-4k.mp4` |
+| `08-discipline` | Stop Waiting to Feel Like It. Do This Instead. | `renders/08-discipline-4k.mp4` |
+| `09-loneliness` | Why You're Lonely Even Around People — And One Fix | `renders/09-loneliness-4k.mp4` |
+| `10-attention` | get it back | `renders/10-attention-4k.mp4` |
+
+All 20 thumbnails side by side: `review/all-thumbnails.png`. Each episode has `package.md` (5 titles, description + chapters, tags, pinned comment) and `thumbnails/a.png`, `b.png`.
