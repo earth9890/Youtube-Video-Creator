@@ -28,7 +28,7 @@ thumb = '--thumb' in args
 
 # --- fonts ---
 (A / 'fonts').mkdir(exist_ok=True)
-for f in ('PatrickHand.ttf', 'Caveat.ttf'):
+for f in ('PatrickHand.ttf', 'Caveat.ttf', 'Mali-SemiBold.ttf'):
     if not (A / 'fonts' / f).exists():
         shutil.copy(SKILL / 'brand' / f, A / 'fonts' / f)
 
@@ -51,10 +51,15 @@ else:
 
 total = timing['total']
 dark = scenes.lstrip().startswith('// theme: dark')
+v3 = '// look: v3' in scenes[:300]  # bold outline + colour scenery look (engine2 V3 branch)
 paper = '#25272a' if dark else '#fdfcf8'
 capc = '#f1efe8' if dark else '#2a2a2a'
 engine = (HERE / 'engine2.js').read_text()
 font_base = 'assets/fonts/' if not thumb else os.path.relpath(A / 'fonts', out_png.parent) + '/'
+ph_font = f'src: url("{font_base}Mali-SemiBold.ttf") format("truetype");' if v3 else f'src: url("{font_base}PatrickHand.ttf") format("truetype");'
+# v3 captions: heavy white letters with a dark outline — readable on any scenery colour
+cap_css = ('font-family: "PH", sans-serif; font-size: 56px; color: #ffffff; -webkit-text-stroke: 10px #1d1b1f; paint-order: stroke fill;'
+           if v3 else f'font-family: "Caveat", cursive; font-weight: 700; font-size: 66px; color: {capc};')
 
 html = f'''<!doctype html>
 <html lang="en">
@@ -64,13 +69,13 @@ html = f'''<!doctype html>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
       @font-face {{ font-family: "Caveat"; src: url("{font_base}Caveat.ttf") format("truetype"); font-weight: 400 700; }}
-      @font-face {{ font-family: "PH"; src: url("{font_base}PatrickHand.ttf") format("truetype"); }}
+      @font-face {{ font-family: "PH"; {ph_font} }}
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
       html, body {{ margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: {paper}; }}
       #root {{ position: relative; width: 100%; height: 100%; background: {paper}; }}
       #stage {{ position: absolute; inset: 0; width: 100%; height: 100%; }}
       .cap {{ position: absolute; left: 0; right: 0; bottom: 16px; height: 84px; display: flex; justify-content: center; align-items: center; gap: 16px;
-             font-family: "Caveat", cursive; font-weight: 700; font-size: 66px; color: {capc}; opacity: 0; white-space: nowrap; }}
+             {cap_css} opacity: 0; white-space: nowrap; }}
       .cap span {{ opacity: 0; }}
     </style>
   </head>
@@ -91,6 +96,7 @@ html = f'''<!doctype html>
     <script>
       const THEME = "{'dark' if dark else 'light'}";
       const THUMB = {'true' if thumb else 'false'};
+      const LOOK = "{'v3' if v3 else 'v2'}";
       const TIMING = {json.dumps(timing)};
       window.__timelines = window.__timelines || {{}};
 {engine}

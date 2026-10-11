@@ -5,23 +5,26 @@
 // =====================================================================================
 const NS = "http://www.w3.org/2000/svg";
 const DARK = THEME === "dark";
-const PAPER = DARK ? "#25272a" : "#fdfcf8";
-const INK = DARK ? "#f1efe8" : "#161616";
-const RED = DARK ? "#ff6b5e" : "#e0312b";
-const GREEN = DARK ? "#62d377" : "#2f9e44";
-const ORANGE = "#ff8a2a";
-const YEL = "#ffd23f";
-const BLUE = DARK ? "#86b6ff" : "#3d6fb6";
-const GRAY = DARK ? "#8d9095" : "#a2a2a2";
-const LEAF = DARK ? "#5f9e68" : "#a8dca8";
-const SKY = DARK ? "#36475f" : "#d9ecff";
-const PINK = DARK ? "#7b4a55" : "#ffd9df";
-const CREAM = DARK ? "#3a3933" : "#fff6e3";
-const GLOW = DARK ? "#fff2b0" : "#ffe9a8";
+// look v3 (`// look: v3` in scenes.js): bold 12 px outline, saturated flat fills, filled-head characters, scenery via S.bg()
+const V3 = typeof LOOK !== "undefined" && LOOK === "v3";
+const PAPER = V3 ? "#ffffff" : DARK ? "#25272a" : "#fdfcf8";
+const INK = V3 ? "#1d1b1f" : DARK ? "#f1efe8" : "#161616";
+const RED = V3 ? "#e5383b" : DARK ? "#ff6b5e" : "#e0312b";
+const GREEN = V3 ? "#3aa655" : DARK ? "#62d377" : "#2f9e44";
+const ORANGE = V3 ? "#ff8c1a" : "#ff8a2a";
+const YEL = V3 ? "#ffcf33" : "#ffd23f";
+const BLUE = V3 ? "#2f6fd6" : DARK ? "#86b6ff" : "#3d6fb6";
+const GRAY = V3 ? "#9aa0a6" : DARK ? "#8d9095" : "#a2a2a2";
+const LEAF = V3 ? "#7cc576" : DARK ? "#5f9e68" : "#a8dca8";
+const SKY = V3 ? "#9ad4f5" : DARK ? "#36475f" : "#d9ecff";
+const PINK = V3 ? "#ffb3c1" : DARK ? "#7b4a55" : "#ffd9df";
+const CREAM = V3 ? "#f6d7a7" : DARK ? "#3a3933" : "#fff6e3";
+const GLOW = V3 ? "#ffe066" : DARK ? "#fff2b0" : "#ffe9a8";
 const GY = 860; // ground line (captions live below ~980)
-const SW = (typeof THUMB !== "undefined" && THUMB) ? 1.55 : 1; // thumbnails: thicker marker so lines survive 160 px
+const TK = (typeof THUMB !== "undefined" && THUMB) ? 1.55 : 1; // thumbnails: thicker marker so lines survive 160 px
+const SW = TK * (V3 ? 1.3 : 1); // v3: default 7 → ~9 px
 
-const THUMB_BOLD = SW > 1; // thumbnails: all text bold by default
+const THUMB_BOLD = TK > 1; // thumbnails: all text bold by default
 const tl = gsap.timeline({ paused: true });
 const board = document.getElementById("board");
 const defs = document.querySelector("#stage defs");
@@ -120,16 +123,33 @@ const arrowHead = (x, y, ang, len = 22) => {
   return `M${f1(x + Math.cos(a1) * len)} ${f1(y + Math.sin(a1) * len)} L${f1(x)} ${f1(y)} L${f1(x + Math.cos(a2) * len)} ${f1(y + Math.sin(a2) * len)}`;
 };
 
+// scale-in with overshoot around a fixed point (attr transform: stays put however the timeline is seeked)
+const popAt = (e, t, cx, cy, dur = 0.35) => {
+  const tf = (k) => `translate(${f1(cx)} ${f1(cy)}) scale(${k}) translate(${f1(-cx)} ${f1(-cy)})`;
+  tl.fromTo(e, { opacity: 0, attr: { transform: tf(0.45) } }, { opacity: 1, attr: { transform: tf(1) }, duration: dur, ease: "back.out(2.2)" }, t);
+};
+
 // ---------- scenes ----------
 let CLIPN = 0;
 function scene(start, end, o = {}) {
-  const g = el("g", {}, board);
+  const g0 = el("g", {}, board), g = el("g", {}, g0); // g0: fade + default camera; g: content + S.zoom/S.pan (separate layers never fight)
   const S = { g, start, end, len: end - start };
-  if (start > 0.001) tl.fromTo(g, { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "none" }, start);
-  if (end < TOTAL - 0.05) tl.to(g, { opacity: 0, duration: 0.25, ease: "none" }, end - 0.25);
+  if (V3) { // crossfade over the previous scene (fading both to paper flashes white between coloured backgrounds)
+    if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, start - 0.3);
+    if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
+  } else {
+    if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "none" }, start);
+    if (end < TOTAL - 0.05) tl.to(g0, { opacity: 0, duration: 0.25, ease: "none" }, end - 0.25);
+  }
   const cam = o.cam === undefined ? "push" : o.cam; // push | pull | zoom | none
   const sc = { push: [1, 1.04], pull: [1.07, 1], zoom: [1, 1.12] }[cam];
-  if (sc) tl.fromTo(g, { scale: sc[0] }, { scale: sc[1], svgOrigin: o.focus || "960 540", duration: S.len, ease: "none" }, start);
+  if (sc) tl.fromTo(g0, { scale: sc[0] }, { scale: sc[1], svgOrigin: o.focus || "960 540", duration: S.len, ease: "none" }, start);
+  // camera moves on the content layer; a fixed-point attr transform (GSAP svgOrigin drifts when seeking backwards)
+  const zt = (x, y, k, dx = 0, dy = 0) => `translate(${f1(x + dx)} ${f1(y + dy)}) scale(${k}) translate(${f1(-x)} ${f1(-y)})`;
+  let camNow = [960, 540, 1, 0, 0];
+  const camTo = (c, t, dur, ease) => { tl.fromTo(g, { attr: { transform: zt(...camNow) } }, { attr: { transform: zt(...c) }, duration: dur, ease, immediateRender: false }, t); camNow = c; };
+  S.zoom = (x, y, k, t, dur = 0.8, ease = "power2.inOut") => camTo([x, y, k, camNow[3], camNow[4]], t, dur, ease); // push in on (x,y); k=1 comes back
+  S.pan = (dx, dy, t, dur = 1.2, ease = "power1.inOut") => camTo([camNow[0], camNow[1], camNow[2], dx, dy], t, dur, ease);
   S.at = (f) => start + f * S.len; // fraction of the scene -> absolute time
   S.d = (f) => f * S.len; // fraction of the scene -> duration
   S.grp = (parent) => el("g", {}, parent || g);
@@ -166,15 +186,21 @@ function scene(start, end, o = {}) {
     const size = op.size || 64, t = op.t === undefined ? start : op.t, dur = op.dur === undefined ? Math.min(1.2, 0.05 * str.length + 0.25) : op.dur;
     const anchor = op.anchor || "middle", id = "tclip" + ++CLIPN;
     const cp = el("clipPath", { id }, defs);
-    const wEst = str.length * size * (op.font === "caveat" ? 0.48 : 0.56) + size;
+    const wEst = str.length * size * (op.font === "caveat" ? 0.48 : V3 ? 0.64 : 0.56) + size; // v3 "PH" = Mali SemiBold (wider)
     const x0 = anchor === "middle" ? x - wEst / 2 : anchor === "end" ? x - wEst : x - size * 0.2;
     const r = el("rect", { x: x0, y: y - size * 1.15, width: 0, height: size * 1.6 }, cp);
-    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK, "clip-path": `url(#${id})` }, op.parent || g);
+    const wg = V3 && !op.write ? el("g", {}, op.parent || g) : null;
+    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK, "clip-path": `url(#${id})` }, wg || op.parent || g);
     if (op.weight) te.setAttribute("font-weight", op.weight);
     if (op.spacing) te.setAttribute("letter-spacing", op.spacing);
-    if (op.bold || THUMB_BOLD) { te.setAttribute("stroke", op.c || INK); te.setAttribute("stroke-width", size * (op.boldW || 0.045)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); }
+    if (op.halo) { te.setAttribute("stroke", op.halo); te.setAttribute("stroke-width", size * (op.haloW || 0.16)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); } // outline so text reads on scenery
+    else if (op.bold || THUMB_BOLD) { te.setAttribute("stroke", op.c || INK); te.setAttribute("stroke-width", size * (op.boldW || 0.045)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); }
     te.textContent = str;
-    tl.fromTo(r, { attr: { width: 0 } }, { attr: { width: wEst }, duration: dur, ease: "none" }, t);
+    if (V3 && !op.write) { // pop in with a small overshoot
+      const ox = anchor === "middle" ? x : anchor === "end" ? x - wEst / 2 : x + (wEst - size) / 2;
+      tl.set(r, { attr: { width: wEst } }, t);
+      popAt(wg, t, ox, y - size * 0.35, 0.4);
+    } else tl.fromTo(r, { attr: { width: 0 } }, { attr: { width: wEst }, duration: dur, ease: "none" }, t);
     return te;
   };
   S.fadeIn = (e, t, dur = 0.3) => tl.fromTo(e, { opacity: 0 }, { opacity: 1, duration: dur }, t);
@@ -182,8 +208,8 @@ function scene(start, end, o = {}) {
   S.show = (e, t) => tl.set(e, { opacity: 1 }, t);
   S.hide = (e, t) => tl.set(e, { opacity: 0 }, t);
   S.move = (e, t, dur, props, ease = "power2.inOut") => tl.to(e, Object.assign({ duration: dur, ease }, props), t);
-  S.pop = (e, t, cx, cy, dur = 0.35) => tl.fromTo(e, { scale: 0.001 }, { scale: 1, svgOrigin: `${cx} ${cy}`, duration: dur, ease: "back.out(2)" }, t);
-  S.tilt = (deg, t, dur = 0.3) => tl.to(g, { rotation: deg, svgOrigin: "960 540", duration: dur, ease: "power2.out" }, t);
+  S.pop = (e, t, cx, cy, dur = 0.35) => V3 ? popAt(e, t, cx, cy, dur) : tl.fromTo(e, { scale: 0.001 }, { scale: 1, svgOrigin: `${cx} ${cy}`, duration: dur, ease: "back.out(2)" }, t);
+  S.tilt = (deg, t, dur = 0.3) => tl.to(g0, { rotation: deg, svgOrigin: "960 540", duration: dur, ease: "power2.out" }, t);
   S.fig = (...a) => fig(S, ...a);
   for (const k in PROPS) S[k] = (...a) => PROPS[k](S, ...a);
   return S;
@@ -210,46 +236,62 @@ const POSES = {
 // fig(S, cx, groundY, {s, pose, armL, armR, legL, legR, sit, c, parent, face})
 function fig(S, cx, gy, o = {}) {
   const s = o.s || 1, sit = !!o.sit, col = o.c || INK;
-  const g = el("g", {}, o.parent || S.g), gi = el("g", {}, g);
-  const hip = [cx, gy - (sit ? 10 : 130) * s], sh = [cx, hip[1] - 125 * s], hd = [cx, sh[1] - 45 * s], r = 42 * s;
+  const g = el("g", {}, o.parent || S.g), gi = el("g", {}, g), gb = V3 ? el("g", {}, gi) : gi; // gb: breathing layer (v3)
+  const hip = [cx, gy - (sit ? 10 : 130) * s], sh = [cx, hip[1] - 125 * s], hd = [cx, sh[1] - (V3 ? 54 : 45) * s], r = (V3 ? 50 : 42) * s;
+  const ab = V3 ? [cx, sh[1] + 16 * s] : sh; // arm root (v3: a little below the neck)
+  const abL = V3 && o.outfit ? [cx - 24 * s, sh[1] + 10 * s] : ab, abR = V3 && o.outfit ? [cx + 24 * s, sh[1] + 10 * s] : ab; // clothed: arms leave the shoulders
   const pp = (base, pts) => poly([base, ...pts.map((p) => [base[0] + p[0] * s, base[1] + p[1] * s])], 2);
-  const sw = (o.w || 7 * Math.max(s, 0.85)) * SW;
-  const mk = (d, hidden) => {
-    const p = el("path", { d, pathLength: 1, fill: "none", stroke: col, "stroke-width": sw, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gi);
+  const sw = (o.w || (V3 ? 9 * Math.sqrt(Math.max(s, 0.7)) : 7 * Math.max(s, 0.85))) * (V3 ? TK : SW);
+  const mk = (d, hidden, fill, c, wk = 1) => {
+    const p = el("path", { d, pathLength: 1, fill: fill || "none", stroke: c || col, "stroke-width": sw * wk, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gb);
+    if (fill) p.style.fillOpacity = 0;
     if (hidden) p.style.opacity = 0;
     return p;
   };
   const pose = POSES[o.pose || "stand"];
   const legsDef = sit ? [[[70, -5], [75, 128]], [[95, 10], [100, 128]]] : [[[-8, 62], [-35, 130]], [[8, 62], [35, 130]]];
-  const P = {
-    head: mk(circ(hd[0], hd[1], r)),
-    body: mk(line([hd[0], hd[1] + r], hip)),
-    armL: mk(pp(sh, o.armL || pose[0])),
-    armR: mk(pp(sh, o.armR || pose[1])),
-    legL: mk(pp(hip, o.legL || legsDef[0])),
-    legR: mk(pp(hip, o.legR || legsDef[1])),
-  };
-  const F = { g, gi, P, s, cx, gy, sh, hip, hd, r, arms: [P.armL, P.armR], faceG: null };
+  // DOM order = paint order: head, hair, body, legs, outfit, arms
+  const P = { head: mk(circ(hd[0], hd[1], r), false, V3 ? o.skin || PAPER : null) };
+  if (V3) hair3(o.hair === undefined ? "short" : o.hair, hd[0], hd[1], r, o.hairC).forEach((h, i) => (P["hair" + i] = mk(h[0], false, h[1], h[2], h[3])));
+  P.body = mk(line([hd[0], hd[1] + r], hip));
+  P.legL = mk(pp(hip, o.legL || legsDef[0]));
+  P.legR = mk(pp(hip, o.legR || legsDef[1]));
+  if (V3 && o.outfit) outfit3(o.outfit, sh, hip, s, o.outfitC).forEach((h, i) => (P["out" + i] = mk(h[0], false, h[1], h[2], h[3])));
+  P.armL = mk(pp(abL, o.armL || pose[0]));
+  P.armR = mk(pp(abR, o.armR || pose[1]));
+  const F = { g, gi, P, s, cx, gy, sh, ab, hip, hd, r, arms: [P.armL, P.armR], faceG: null };
   F.hand = (side = "R", poseName) => {
     const ps = poseName ? POSES[poseName] : [o.armL || pose[0], o.armR || pose[1]];
     const last = (side === "L" ? ps[0] : ps[1]).slice(-1)[0];
-    return [sh[0] + last[0] * s, sh[1] + last[1] * s];
+    const root = side === "L" ? abL : abR;
+    return [root[0] + last[0] * s, root[1] + last[1] * s];
   };
   F.top = () => [cx, hd[1] - r];
+  const filled = (p) => p.getAttribute("fill") !== "none";
   F.draw = (t, dur) => {
-    const seq = [["head", 0.26], ["body", 0.18], ["armL", 0.14], ["armR", 0.14], ["legL", 0.14], ["legR", 0.14]];
+    const ks = Object.keys(P), extra = (pre) => ks.filter((k) => k.startsWith(pre));
+    const seq = ["head", ...extra("hair"), "body", ...extra("out"), "armL", "armR", "legL", "legR"];
+    const wt = (k) => (k === "head" ? 0.26 : k === "body" ? 0.18 : /^(hair|out)/.test(k) ? 0.08 : 0.14);
+    const tot = seq.reduce((a, k) => a + wt(k), 0);
     let tt = t;
-    seq.forEach(([k, w]) => {
-      tl.fromTo(P[k], { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: Math.max(0.02, w * dur), ease: "none" }, tt);
-      tt += w * dur;
+    seq.forEach((k) => {
+      const d = (wt(k) / tot) * dur;
+      tl.fromTo(P[k], { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: Math.max(0.02, d), ease: "none" }, tt);
+      if (filled(P[k])) tl.to(P[k], { fillOpacity: 1, duration: 0.12 }, tt + d * 0.6);
+      tt += d;
     });
     return F;
   };
-  F.instant = (t) => { Object.values(P).forEach((p) => tl.set(p, { strokeDashoffset: 0 }, t)); return F; };
+  F.instant = (t) => { Object.values(P).forEach((p) => { tl.set(p, { strokeDashoffset: 0 }, t); if (filled(p)) tl.set(p, { fillOpacity: 1 }, t); }); return F; };
   // switch arms to a named pose (or custom [armL, armR]) at time t — instant swap reads as a gesture
   F.setPose = (t, name, custom) => {
     const ps = custom || POSES[name];
-    const nl = mk(pp(sh, ps[0]), true), nr = mk(pp(sh, ps[1]), true);
+    if (V3) { // arms swing smoothly into the new pose (same point count → GSAP morphs the path)
+      tl.to(F.arms[0], { attr: { d: pp(abL, ps[0]) }, duration: 0.3, ease: "back.out(1.7)" }, t);
+      tl.to(F.arms[1], { attr: { d: pp(abR, ps[1]) }, duration: 0.3, ease: "back.out(1.7)" }, t);
+      return F;
+    }
+    const nl = mk(pp(abL, ps[0]), true), nr = mk(pp(abR, ps[1]), true);
     tl.set(F.arms, { opacity: 0 }, t);
     tl.set([nl, nr], { opacity: 1 }, t);
     F.arms = [nl, nr];
@@ -257,10 +299,11 @@ function fig(S, cx, gy, o = {}) {
   };
   // faces: smile | happy | sad | flat | wow | worried | sleep | determined. dx shifts gaze.
   F.face = (t, kind = "smile", dx = 0) => {
-    const fg = el("g", {}, gi);
+    const fg = el("g", {}, gb);
     if (F.faceG) tl.set(F.faceG, { opacity: 0 }, t);
     F.faceG = fg;
-    const X = (v) => hd[0] + (v + dx) * s, Y = (v) => hd[1] + v * s;
+    if (V3) { face3(S, fg, hd[0] + dx * s * 0.8, hd[1], r, t, kind, Math.max(-1, Math.min(1, dx / 8)), col); return fg; }
+    const X =(v) => hd[0] + (v + dx) * s, Y = (v) => hd[1] + v * s;
     const dr = (d, w, fill) => S.draw(d, t, 0.15, { parent: fg, w: w * s, c: col, fill });
     if (kind === "sleep") { dr(arc(X(-15), Y(-6), 7, 20, 160), 4); dr(arc(X(15), Y(-6), 7, 20, 160), 4); }
     else if (kind === "tired") { dr(circ(X(-15), Y(-4), 4.5), 5, col); dr(circ(X(15), Y(-4), 4.5), 5, col); dr(line([X(-24), Y(-11)], [X(-6), Y(-10)], 1) + line([X(6), Y(-10)], [X(24), Y(-11)], 1), 4); dr(arc(X(-15), Y(2), 7, 20, 160), 2.5); dr(arc(X(15), Y(2), 7, 20, 160), 2.5); }
@@ -296,11 +339,133 @@ function fig(S, cx, gy, o = {}) {
   F.grow = (t, dur, k) => (tl.to(gi, { scale: k, svgOrigin: `${cx} ${gy}`, duration: dur, ease: "power2.inOut" }, t), F);
   F.slump = (t, dur = 0.4, deg = 10) => (tl.to(gi, { rotation: deg, svgOrigin: `${cx} ${hip[1]}`, duration: dur }, t), F);
   if (o.face) F.face(o.faceT === undefined ? S.start : o.faceT, o.face);
+  if (V3 && o.breathe !== false) { const per = 1.4, n = Math.max(1, Math.floor(S.len / per)); const sy = (k) => `translate(${f1(cx)} ${f1(gy)}) scale(1 ${k}) translate(${f1(-cx)} ${f1(-gy)})`; tl.fromTo(gb, { attr: { transform: sy(1) } }, { attr: { transform: sy(1.016) }, duration: per, ease: "sine.inOut", yoyo: true, repeat: n }, S.start); }
   return F;
+}
+
+// ---------- look v3: face, hair, outfits (units = head radius R) ----------
+const MOUTH3 = {
+  smile: [[-0.3, 0.3], [0, 0.48], [0.3, 0.3]], sad: [[-0.28, 0.52], [0, 0.38], [0.28, 0.52]], flat: [[-0.24, 0.47], [0.24, 0.4]],
+  tired: [[-0.2, 0.47], [0, 0.44], [0.2, 0.47]], worried: [[-0.28, 0.48], [-0.1, 0.4], [0.1, 0.48], [0.28, 0.4]], determined: [[-0.22, 0.45], [0.22, 0.43]],
+  angry: [[-0.26, 0.52], [0, 0.42], [0.26, 0.52]], cry: [[-0.3, 0.54], [0, 0.38], [0.3, 0.54]], sleep: [[-0.1, 0.46], [0.1, 0.46]],
+};
+// brow [innerY, outerY]: inner up = worried/sad, inner down = angry/determined
+const BROW3 = { up: [-0.6, -0.42], down: [-0.34, -0.54], high: [-0.68, -0.62], low: [-0.4, -0.4], mid: [-0.5, -0.5] };
+const BROW_OF = { smile: "mid", happy: "mid", flat: "low", sad: "up", worried: "up", cry: "up", angry: "down", determined: "down", wow: "high", tired: "low" };
+function face3(S, fg, fx, fy, R, t, kind, look, col) {
+  const lw = Math.max(2.5, R * 0.07) * TK, X = (v) => fx + v * R, Y = (v) => fy + v * R;
+  const eg = el("g", {}, fg);
+  const D = (d, k, fill, c, par) => S.draw(d, t, 0.15, { parent: par || fg, w: (lw * k) / SW, c: c || col, fill });
+  const er = 0.21 * R * (kind === "wow" ? 1.15 : 1), pr = 0.1 * R * (kind === "wow" ? 0.8 : 1), ey = -0.08;
+  const down = kind === "sad" || kind === "tired" || kind === "cry" ? 0.35 : 0;
+  [-1, 1].forEach((sd) => {
+    const ex = X(sd * 0.34), eyy = Y(ey);
+    if (kind === "sleep") return D(arc(ex, eyy, er * 0.9, 20, 160), 0.9);
+    D(circ(ex, eyy, er), 0.75, PAPER, null, eg);
+    const px = ex + look * (er - pr - lw * 0.4), py = eyy + down * (er - pr);
+    D(circ(px, py, pr), 0.3, col, null, eg);
+    S.fill(circ(px - pr * 0.35, py - pr * 0.35, pr * 0.32), t + 0.1, 0.05, "#ffffff", 1, eg); // catch-light
+    if (kind === "tired") D(smooth([...arcPts(ex, eyy, er, 180, 360, 12), [ex - er, eyy]]), 0.75, PAPER, null, eg); // heavy lid
+    const b = BROW3[BROW_OF[kind]];
+    if (b) D(smooth([[ex - sd * 0.14 * R, Y(b[0])], [ex + sd * 0.02 * R, Y((b[0] + b[1]) / 2 - 0.05)], [ex + sd * 0.2 * R, Y(b[1])]]), 0.8);
+    if (kind === "cry") D(smooth([[ex, Y(0.2)], [ex - 0.08 * R, Y(0.36)], [ex, Y(0.44)], [ex + 0.08 * R, Y(0.36)], [ex, Y(0.2)]]), 0.5, SKY, BLUE);
+    if (kind === "happy") S.fill(circ(X(sd * 0.56), Y(0.24), 0.13 * R, 0.08 * R), t + 0.1, 0.1, PINK, 0.85, fg); // blush
+  });
+  const sy = (k) => `translate(${f1(fx)} ${f1(Y(ey))}) scale(1 ${k}) translate(${f1(-fx)} ${f1(-Y(ey))})`;
+  if (kind !== "sleep") for (let tb = t + 1.2 + rnd(); tb < S.end - 0.3; tb += 2.6 + rnd() * 1.4) // blink
+    tl.fromTo(eg, { attr: { transform: sy(1) } }, { attr: { transform: sy(0.08) }, duration: 0.07, ease: "none", yoyo: true, repeat: 1, immediateRender: false }, tb);
+  if (kind === "happy") D(smooth([[X(-0.32), Y(0.3)], [X(0), Y(0.34)], [X(0.32), Y(0.3)], [X(0.2), Y(0.58)], [X(0), Y(0.64)], [X(-0.2), Y(0.58)], [X(-0.32), Y(0.3)]]), 0.8, "#8c2f39");
+  else if (kind === "wow") D(circ(X(0), Y(0.5), 0.11 * R, 0.15 * R), 0.8, "#8c2f39");
+  else D(smooth((MOUTH3[kind] || MOUTH3.smile).map((p) => [X(p[0]), Y(p[1])])), 0.85);
+}
+// each returns [[d, fill|null, stroke|null, widthK], ...]
+function hair3(kind, hx, hy, R, c) {
+  const P = (a, k) => [hx + Math.cos((a * Math.PI) / 180) * R * k, hy + Math.sin((a * Math.PI) / 180) * R * k];
+  const cap = (a0, a1, k) => arcPts(hx, hy, R * k, a0, a1, 14);
+  const line3 = [[hx + 0.6 * R, hy - 0.6 * R], [hx + 0.15 * R, hy - 0.68 * R], [hx - 0.35 * R, hy - 0.62 * R], [hx - 0.75 * R, hy - 0.45 * R]];
+  if (kind === "short") return [[smooth([...cap(192, 348, 1.07), P(344, 0.97), ...line3, P(196, 0.97), P(192, 1.07)]), c || "#3b2a20", null, 0.7]]; // close crop, soft hairline
+  if (kind === "side") return [[smooth([...cap(190, 350, 1.08), P(346, 0.97), [hx + 0.55 * R, hy - 0.64 * R], [hx + 0.05 * R, hy - 0.52 * R], [hx - 0.42 * R, hy - 0.3 * R], [hx - 0.66 * R, hy - 0.5 * R], P(196, 0.97), P(190, 1.08)]), c || "#2a2220", null, 0.7]]; // side-swept fringe
+  if (kind === "curly") return [[smooth([...Array.from({ length: 13 }, (_, i) => P(186 + i * 14, i % 2 ? 1.07 : 1.2)), P(352, 0.97), ...line3.map(([x, y], i) => [x, y + (i % 2 ? 0.08 : 0) * R]), P(190, 0.97), P(186, 1.2)]), c || "#2a2220", null, 0.7]];
+  if (kind === "tick") return [[smooth([P(248, 0.98), P(262, 1.13), P(286, 1.07)]), null, null, 0.45]]; // the classic cowlick
+  if (kind === "messy") { // mop with a jagged fringe (cave-people, kids)
+    const out = [], inn = [];
+    for (let a = 160, i = 0; a <= 380; a += 11, i++) out.push(P(a, i % 2 ? 1.08 : 1.2 + rnd() * 0.06));
+    for (let a = 380, i = 0; a >= 160; a -= 20, i++) { const p = P(a, 0.96); inn.push([p[0], Math.min(p[1], hy - (i % 2 ? 0.32 : 0.44) * R)]); }
+    return [[poly([...out, ...inn, out[0]], 1), c || "#6b4423", null, 0.7]];
+  }
+  if (kind === "spiky") {
+    const out = [];
+    for (let a = 190, i = 0; a <= 350; a += 16, i++) out.push(P(a, i % 2 ? 1.0 : 1.32));
+    return [[poly([...out, ...arcPts(hx, hy, R * 0.98, 350, 190, 10)], 1), c || "#2b2b2b", null, 0.7]];
+  }
+  if (kind === "bun") return [[circ(hx + 0.12 * R, hy - 1.2 * R, 0.34 * R), c || "#3b2a20", null, 0.7], [smooth([...arcPts(hx, hy, R * 1.04, 200, 340, 10), P(330, 0.7), P(270, 0.62), P(210, 0.7)]) + "Z", c || "#3b2a20", null, 0.7]];
+  return []; // "none"
+}
+function outfit3(kind, sh, hip, s, c) {
+  const x = sh[0], y0 = sh[1], y1 = hip[1];
+  if (kind === "tee") return [[rrect(x - 32 * s, y0 - 2 * s, 64 * s, y1 - y0 + 16 * s, 12 * s), c || BLUE, null, 0.8]];
+  if (kind === "tunic") { // fur, one shoulder, zig-zag hem
+    const hem = [];
+    for (let i = 0; i <= 8; i++) hem.push([x + 42 * s - i * 10.5 * s, y1 + (i % 2 ? 24 : 44) * s]);
+    const fur = [0, 1, 2, 3, 4].map((i) => poly([[x - 20 * s + i * 11 * s, y0 + 40 * s + (i % 2) * 30 * s], [x - 26 * s + i * 11 * s, y0 + 62 * s + (i % 2) * 30 * s]], 1)).join("");
+    return [[poly([[x - 22 * s, y0 + 8 * s], [x + 24 * s, y0 - 2 * s], [x + 38 * s, y0 + 52 * s], ...hem, [x - 36 * s, y0 + 52 * s], [x - 22 * s, y0 + 8 * s]], 1.5), c || "#8b5a2b", null, 0.8], [fur, null, "#5e3a1a", 0.35]];
+  }
+  if (kind === "apron") return [[poly([[x - 22 * s, y0 + 24 * s], [x + 22 * s, y0 + 24 * s], [x + 26 * s, y1 - 30 * s], [x + 40 * s, y1 + 50 * s], [x - 40 * s, y1 + 50 * s], [x - 26 * s, y1 - 30 * s], [x - 22 * s, y0 + 24 * s]], 1), c || GREEN, null, 0.8], [line([x - 20 * s, y0 + 24 * s], [x - 8 * s, y0 - 4 * s], 1) + line([x + 20 * s, y0 + 24 * s], [x + 8 * s, y0 - 4 * s], 1), null, null, 0.6]];
+  if (kind === "hoodie") return [[rrect(x - 36 * s, y0 - 4 * s, 72 * s, y1 - y0 + 18 * s, 16 * s), c || "#e07a3f", null, 0.8], [rrect(x - 20 * s, y1 - 40 * s, 40 * s, 24 * s, 6 * s) + line([x - 8 * s, y0 + 2 * s], [x - 10 * s, y0 + 40 * s], 1) + line([x + 8 * s, y0 + 2 * s], [x + 10 * s, y0 + 40 * s], 1), null, null, 0.45]];
+  return [];
 }
 
 // ---------- props: every prop(S, ..., t, dur, o) draws inside [t, t+dur] and returns {g, ...} ----------
 const PROPS = {
+  // scenery behind everything — static, rides the scene's fade. kind: day | night | dusk | desert | room | roomNight | flat | paper
+  // o: { hy (horizon / floor y), sky, ground (colours), moon, clouds, tufts (count), window: [x, y, w, h] (rooms; false = none) } → { g, hy }
+  bg(S, kind, o = {}) {
+    const g = el("g", {}, S.g);
+    S.g.insertBefore(g, S.g.firstChild);
+    const room = kind.startsWith("room"), night = kind === "night" || kind === "roomNight";
+    const hy = o.hy || (room ? 790 : 640);
+    const K = {
+      day: ["#bfe7fb", "#78c46a", "#4f9a48"], night: ["#2f4a86", "#7d5530", "#5b3c1f"], dusk: ["#f8dcc0", "#d4ab70", "#4a3b2a"],
+      desert: ["#cbe7ef", "#e2c27f", "#a78a4f"], room: ["#f3e2c4", "#c8976a"], roomNight: ["#3d4766", "#262a3f"], flat: ["#bfe7fb", "#78c46a"], paper: ["#fdfcf8", "#fdfcf8"],
+    }[kind];
+    const sh = (d, fill, c, w, op) => el("path", Object.assign({ d, fill, stroke: c || "none", "stroke-width": w || 0, "stroke-linejoin": "round", "stroke-linecap": "round" }, op === undefined ? {} : { opacity: op }), g);
+    const box = (x0, y0, x1, y1) => `M${x0} ${y0} L${x1} ${y0} L${x1} ${y1} L${x0} ${y1} Z`;
+    const ridge = (y, amp, n, ph) => Array.from({ length: n + 1 }, (_, i) => [-150 + (i * 2220) / n, y - amp * (0.5 + 0.5 * Math.sin(i * 1.7 + ph)) + J(amp * 0.3)]);
+    const land = (pts) => smooth(pts) + " L2070 1230 L-150 1230 Z";
+    sh(box(-150, -150, 2070, 1230), o.sky || K[0]);
+    if (kind === "paper") return { g, hy };
+    if (kind === "night") for (let i = 0; i < 26; i++) sh(circ(rnd() * 1920, rnd() * (hy - 80), 2.5 + rnd() * 3.5), "#ffffff", null, 0, 0.9);
+    if (kind === "night" && o.moon !== false) sh(circ(1620, 190, 62), "#fff3c4");
+    if (kind === "dusk") for (let i = 0; i < 4; i++) sh(rrect(-100 + rnd() * 1500, 150 + i * 70 + rnd() * 30, 700 + rnd() * 600, 22 + rnd() * 14, 16), "#f2b5a3", null, 0, 0.6);
+    if (kind === "day") for (let i = 0; i < (o.clouds ?? 2); i++) { const cx = 300 + i * 900 + rnd() * 300, cy = 150 + rnd() * 120; sh(circ(cx, cy, 90, 40) + circ(cx + 60, cy - 30, 60) + circ(cx - 50, cy - 20, 50), "#ffffff", null, 0, 0.95); }
+    if (room) {
+      sh(box(-150, hy, 2070, 1230), o.ground || K[1]);
+      sh(box(-150, hy - 18, 2070, hy), night ? "#30364f" : "#e6cba0", INK, 5);
+      if (o.window !== false) {
+        const [wx, wy, ww, wh] = o.window || [1360, 150, 340, 300];
+        sh(rect(wx, wy, ww, wh), night ? "#1f2f57" : "#bfe7fb", INK, 9);
+        if (night) { sh(circ(wx + ww * 0.7, wy + wh * 0.3, 34), "#fff3c4"); sh(circ(wx + ww * 0.25, wy + wh * 0.6, 4) + circ(wx + ww * 0.4, wy + wh * 0.25, 3), "#ffffff"); }
+        sh(line([wx + ww / 2, wy], [wx + ww / 2, wy + wh], 1) + line([wx, wy + wh / 2], [wx + ww, wy + wh / 2], 1), "none", INK, 8);
+        sh(rect(wx - 20, wy + wh, ww + 40, 22), night ? "#4a5272" : "#ffffff", INK, 6);
+      }
+      return { g, hy };
+    }
+    if (kind === "dusk") {
+      sh(land(ridge(hy - 50, 110, 6, 0.4)), "#ecd49e", K[2], 3);
+      sh(land(ridge(hy + 10, 60, 5, 2.1)), "#e0bf82", K[2], 3);
+      [[220, hy + 10], [1500, hy + 40]].forEach(([bx, by]) => sh(smooth(Array.from({ length: 25 }, (_, i) => { const a = Math.PI + (i / 24) * Math.PI * 1.02, k = 1 + 0.12 * Math.abs(Math.sin(a * 4)); return [bx + Math.cos(a) * 150 * k, by + 40 + Math.sin(a) * 110 * k]; })) + " Z", "#b9b46f", K[2], 3));
+    }
+    sh(land(ridge(hy + 40, 18, 8, 1.3)), o.ground || K[1], kind === "desert" ? INK : null, kind === "desert" ? 4 : 0);
+    if (K[2] && (o.tufts ?? 30) > 0) {
+      let d = "";
+      for (let i = 0; i < (o.tufts ?? 30); i++) {
+        const x = rnd() * 1920, y = hy + 60 + rnd() * (1080 - hy - 60), k = 0.7 + ((y - hy) / (1080 - hy)) * 1.1;
+        [[-7, -16, -26], [-2, -6, -36], [3, 9, -30], [8, 20, -20]].forEach(([bx, tx, ty]) => { const h = 0.8 + rnd() * 0.4; d += `M${f1(x + bx * k)} ${f1(y)} Q${f1(x + (bx + tx * 0.1) * k)} ${f1(y + ty * 0.6 * k * h)} ${f1(x + tx * k)} ${f1(y + ty * k * h)} `; });
+      }
+      sh(d, "none", K[2], 3.5);
+    }
+    return { g, hy };
+  },
   // phone centred at (x,y); o.screen: play|chat|feed|heart|blank ; o.glow adds light rays
   phone(S, x, y, s = 1, t, dur, o = {}) {
     const g = S.grp(o.parent), w = 74 * s, h = 136 * s;
@@ -543,7 +708,7 @@ const PROPS = {
   mountain(S, pts, t, dur, o = {}) { return { g: S.draw(poly(pts, 2), t, dur, { w: 8, ease: "none", parent: o.parent, fill: o.fill }) }; },
   desk(S, x, y, w, t, dur, o = {}) { // x = left, y = floor; top at y-220
     const g = S.grp(o.parent);
-    S.seq([[rect(x, y - 220, w, 24), 2, { w: 7 }], [poly([[x + 30, y - 196], [x + 30, y]], 2) + poly([[x + w - 30, y - 196], [x + w - 30, y]], 2), 1, { w: 6 }]], t, dur, g);
+    S.seq([[rect(x, y - 220, w, 24), 2, { w: 7, fill: V3 ? "#d99a5b" : undefined }], [poly([[x + 30, y - 196], [x + 30, y]], 2) + poly([[x + w - 30, y - 196], [x + w - 30, y]], 2), 1, { w: 6 }]], t, dur, g);
     return { g, top: y - 220 };
   },
   chair(S, x, y, t, dur, o = {}) { // seat front-left x, floor y; seat height 125, faces right
@@ -662,7 +827,7 @@ const PROPS = {
     const figs = [];
     for (let i = 0; i < n; i++) {
       const hi = (o.hi || []).includes(i);
-      const F = fig(S, x0 + i * gap, gy, { s, c: hi ? o.hiC || RED : o.c || INK, parent: o.parent, pose: o.pose });
+      const F = fig(S, x0 + i * gap, gy, Object.assign({ s, c: hi ? o.hiC || RED : o.c || INK, parent: o.parent, pose: o.pose }, (o.dress || [])[i % Math.max(1, (o.dress || []).length)])); // o.dress: per-member fig options (v3 hair/outfit)
       F.draw(t + (i * dur * 0.5) / n, dur * 0.5);
       if (o.face) F.face(t + dur * 0.9, hi && o.hiFace ? o.hiFace : o.face);
       figs.push(F);
@@ -702,7 +867,7 @@ const PROPS = {
   },
   // name tag / label box with text
   tag(S, cx, cy, txt, t, dur, o = {}) {
-    const g = S.grp(o.parent), size = o.size || 40, w = txt.length * size * 0.55 + 40, h = size * 1.4;
+    const g = S.grp(o.parent), size = o.size || 40, w = txt.length * size * (V3 ? 0.66 : 0.55) + 40, h = size * 1.4;
     S.draw(rrect(cx - w / 2, cy - h / 2, w, h, 10), t, dur * 0.4, { w: 5, fill: o.fill || PAPER, parent: g, c: o.c || INK });
     S.text(txt, cx, cy + size * 0.35, { size, t: t + dur * 0.4, dur: dur * 0.6, parent: g, c: o.tc || INK });
     return { g };
