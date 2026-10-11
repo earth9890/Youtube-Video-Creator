@@ -1,6 +1,6 @@
 ---
 name: whiteboard-video-studio
-description: End-to-end workflow for hand-drawn whiteboard / stick-figure motivational and explainer YouTube videos (the "Black Hole Life" style) — script writing, scene breakdown, deep male voiceover, HyperFrames build, edit-revision loop, 4K render, then title, description, tags, chapters, thumbnails and channel art (logo, banner). Use whenever the user wants a stick-figure / doodle / whiteboard video, a faceless motivational video, or the YouTube package (title, thumbnail, description, banner, logo) for one.
+description: End-to-end workflow for hand-drawn whiteboard / stick-figure motivational and explainer YouTube videos (the "Black Hole Life" style) — script writing, scene breakdown, deep male voiceover, HyperFrames build, edit-revision loop, 4K render, then title, description, tags, chapters, thumbnails and channel art (logo, banner), and uploading to YouTube Studio via Claude in Chrome (unlisted / public / premiere). Use whenever the user wants a stick-figure / doodle / whiteboard video, a faceless motivational video, or the YouTube package (title, thumbnail, description, banner, logo) for one.
 ---
 
 # Whiteboard Video Studio
@@ -73,6 +73,9 @@ Authored 1920×1080 + `--resolution 4k` supersamples to 3840×2160. Keep old ver
 ## 8. YouTube package (see `references/youtube-package.md` + `craft-playbook.md` §G colour/thumbnail, §H title/description)
 Thumbnails follow `references/thumbnail-doctrine.md` — the character INSIDE the pain moment, 2–3 words at 260–340 px bold, dark board, one accent, one stakes prop, glance test (`*_glance.png`); two variants per video for YouTube Test & Compare; title ≤ 60 chars that differs from the thumbnail text; first two description lines = hook + promise.
 Title (5 options, ≤ 60 chars, one pick), description (hook, summary, chapters from clip times, CTA, hashtags), tags, pinned comment, **thumbnails** (3 variants: dark staircase/"quit", white calendar/"show up", brand black-hole) via `brand/thumbs.py`, **channel art** via `brand/gen.py` (5 logos 800², 4 banners 2560×1440 — keep all text inside the 507–2053 × 508–931 safe box; decor only outside it). No stick figure on logos. Output under `~/videos/<channel>/` and show a contact sheet.
+
+## 9. Upload to YouTube (only when asked — see `references/youtube-upload.md`)
+Claude in Chrome on YouTube Studio: manifest from each `package.md` → upload with title, description, tags, paired thumbnail, not-for-kids, the visibility the user named (default Unlisted; Public/Premiere only on explicit request). Check channel verification first (unverified = ~5 custom thumbnails/day). Files > 10 MB need the local-server method, which requires the user's explicit OK. Verify every row in the Content list and report links + gaps.
 
 ## Deliverable summary (end of every build)
 File path + resolution + duration; what changed vs last version; what was checked vs not (be honest: "frames checked, audio not listened to"); one pointed question about the weakest scene.
