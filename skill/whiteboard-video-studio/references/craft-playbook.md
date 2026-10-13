@@ -77,6 +77,7 @@ Camera height / scale = emotion. [H Adobe/StudioBinder/LAFilm]
 
 ---
 ## F. Voice, music, sound
+**Story explainers (measured, `story-explainer.md` §1): voice only — no music, no SFX — ~180 wpm, gaps 0.15–0.3 s, −15 LUFS (`finish.sh EP none`).** Voice = Pocket TTS `jean`. The notes below are for short motivational videos.
 - Pace: 100–120 wpm = gravity/emotion; 130–160 conversational; 170+ urgency. [H DataField] Our default (Kokoro 0.78 ≈ 100 wpm) fits emotional/reflective; for a punchy Short use 0.9–1.0 and 0.2–0.4 s gaps. [H] Hook can run faster than the middle; slow down on the key line (+20% emphasis, then pause 0.6–1.0 s).
 - Pauses: ~0.2–0.4 s between sentences (conversational), 0.5–1.0 s before a reveal/key promise, 1+ s before the final line. **Never mid-sentence.**
 - Deep male voice: low, deliberate = discipline/hard-truth tone; warmer for reflective. Preview 2–3 voices on the real script. [H]

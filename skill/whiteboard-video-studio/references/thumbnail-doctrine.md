@@ -1,5 +1,48 @@
 # Thumbnail doctrine — "that's literally me" in 0.3 seconds
 
+> **Story / history explainers (long-form): use §0 first.** The rest of this file is for short motivational videos.
+
+## 0. Story-explainer thumbnails (measured on Zenn + Past Tense, Oct 2026)
+
+Seen: every thumbnail of both channels' top 20 and bottom 5 (`~/videos/research/channels/contact_*.jpg`).
+They are **colourful, flat, saturated scenes** — not dark boards. Five archetypes cover every hit:
+
+| # | Archetype | Hits (views) | Recipe |
+|---|---|---|---|
+| A | **Figure + one strange object + yellow question** | "2 SLEEPS?" 8.05M, "ROTTEN MEAT?" 893K, "RAISE IT?" 726K, "DEAD IN SECONDS" 43K, "NO CRYING?" 38K | full-colour scene (cave brown, ocean blue, savanna sand); uneasy stick figure 40–60 % of frame height on the left; the strange object (rotten meat with worms, rusted Titanic, sabre-tooth) fills the right; 1–3 word question across the top |
+| B | **One symbol on pure black, no text** | yellow eye 5.02M, "0:00" 584K, red-scribble hand 338K, bell curve + red dot 66K | black #000; one shape in yellow #FEFE06, white, or red; centred; nothing else. For mystery titles ("The ___ Effect", death, the unknown) |
+| C | **Big face with one oddity + arrow** (Past Tense) | albino girl with two eye colours 1.18M, tumour + yellow arrow "Dead man walking" 318K, white hair 260K | face fills 40–60 % centre; one visible body oddity; a yellow or red arrow to it |
+| D | **Split contrast** | "90% RIGHT / 10% LEFT" 35K, caveman vs modern "WHAT WENT WRONG?" | black divider; same figure, two states; huge numbers or labels |
+| E | **Odd one out in a line-up** | "ARE WE ALIENS?" 829K: lion, elephant, gorilla, giraffe … stick human, red arrow on the human | row of 4–5 subjects, the odd one at the end, red arrow down on it |
+
+**Text** — 0–3 words, ALL CAPS, **yellow #FEFE06 with a thick black outline** (stroke ≈ 12–16 % of the letter size), chunky rounded hand-marker letters (our Mali with `halo`), a band across the top spanning 80–100 % of the width, or top-right when the figure fills the left. **Never the title** — a second hook: a question about the strange thing ("2 SLEEPS?", "ROTTEN MEAT?", "RAISE IT?"), or a shocking fragment ("DEAD IN SECONDS", "NO JOB", "IT'S ALL FAKE").
+**Character** — big white round head, thick outline, big round eyes glancing sideways or up, one flat brow line: **uneasy, sceptical, deadpan or sweating — never grinning**. Caveman hair / leopard tunic for ancient topics.
+**Colour** — two or three flat fields + the yellow text + at most one red arrow. Saturated: sky #4A9FE0, grass #8BC34A, savanna #F2B24C, cave #6B5844, ocean #1F5FA8, cream #F6EED8, black #000.
+**Flops (both channels)** — photos, text-only cards, a cute animal with no human, busy multi-figure panoramas with no focal point, phrases that ask nothing ("Worse than Death"), grim gore.
+
+**Recipe (archetype A, engine v3)**
+```js
+// look: v3
+const S = scene(0, 1, { cam: "none" });
+S.bg("dusk", { sky: "#3b4f8f", ground: "#6b5844", hy: 760 });           // cave / night palette
+const F = S.fig(430, 600, { s: 2.0, hair: "messy", outfit: "tunic", outfitC: "#d9a441" }).draw(0, 0.4);
+F.face(0.4, "worried", 1);                                             // looking right, at the object
+/* the strange object, big, right half: e.g. S.fire(...) or a custom path */
+S.text("2 SLEEPS?", 960, 190, { size: 220, c: "#FEFE06", halo: "#111111", haloW: 0.14 });
+S.arrow(...);                                                          // optional, red, onto the object
+```
+Build: `build.py . --thumb thumb-a.js thumbnails/a.png` → READ `a.png` and `a_glance.png` (320×180).
+Make **two** variants per video for Test & Compare: usually **A** (figure + object) and **B** (black + one symbol) or **E/D**.
+
+**Scoring (fix anything < 2)**
+| | 0 | 1 | 2 |
+|---|---|---|---|
+| Strange object | none / generic | present, small | big, instantly "wait, what?" |
+| Words | title repeated or > 3 words | 3 words, statement | 1–3 words that raise a new question |
+| Colour | dark/grey or busy | colourful but busy | 2–3 flat saturated fields + yellow text, one red accent |
+| Character | missing | present, smiling | uneasy/sceptical, eyes on the object |
+| Glance | unclear at 320 px | readable | the question is obvious in one look |
+
 A thumbnail is judged at **120–210 px wide, in a grid of 8–12 rivals, for ~0.3 s**. It wins when the viewer feels *seen in their problem* before they can read anything. Evidence tags: [D] industry data/vendor study · [H] expert practice (Paddy Galloway, MrBeast team, YouTube) · [R] research.
 
 ## The one rule

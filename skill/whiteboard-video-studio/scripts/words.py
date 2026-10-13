@@ -7,7 +7,7 @@ Inline `chunks` into captions.js as CH. Scene cue = words[clip][idx].start - 0.4
 import json, re, sys
 script = json.load(open(sys.argv[1])); ct = json.load(open(sys.argv[2])); C = ct['clips']
 W, chunks = [], []
-for ci, ((txt, _), (a, b)) in enumerate(zip(script, C), 1):
+for ci, ((txt, *_), (a, b)) in enumerate(zip(script, C), 1):
     toks = txt.split(); wt = [len(re.sub(r'\W', '', t)) + 2 for t in toks]; s = sum(wt); t = a; row = []
     for i, (tk, w) in enumerate(zip(toks, wt)):
         d = (b - a) * w / s; row.append([tk, round(t, 3), round(t + d, 3)]); W.append([ci, i, tk, round(t, 3), round(t + d, 3)]); t += d

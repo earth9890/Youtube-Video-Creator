@@ -6,7 +6,8 @@
 const NS = "http://www.w3.org/2000/svg";
 const DARK = THEME === "dark";
 // look v3 (`// look: v3` in scenes.js): bold 12 px outline, saturated flat fills, filled-head characters, scenery via S.bg()
-const V3 = typeof LOOK !== "undefined" && LOOK === "v3";
+const STORY = typeof LOOK !== "undefined" && LOOK === "story"; // long-form explainer: v3 drawing + hard cuts, no captions
+const V3 = typeof LOOK !== "undefined" && (LOOK === "v3" || STORY);
 const PAPER = V3 ? "#ffffff" : DARK ? "#25272a" : "#fdfcf8";
 const INK = V3 ? "#1d1b1f" : DARK ? "#f1efe8" : "#161616";
 const RED = V3 ? "#e5383b" : DARK ? "#ff6b5e" : "#e0312b";
@@ -134,14 +135,17 @@ let CLIPN = 0;
 function scene(start, end, o = {}) {
   const g0 = el("g", {}, board), g = el("g", {}, g0); // g0: fade + default camera; g: content + S.zoom/S.pan (separate layers never fight)
   const S = { g, start, end, len: end - start };
-  if (V3) { // crossfade over the previous scene (fading both to paper flashes white between coloured backgrounds)
+  if (STORY) { // hard cut on the breath (references: 100 % hard cuts)
+    if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.001, ease: "none" }, start);
+    if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
+  } else if (V3) { // crossfade over the previous scene (fading both to paper flashes white between coloured backgrounds)
     if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, start - 0.3);
     if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
   } else {
     if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "none" }, start);
     if (end < TOTAL - 0.05) tl.to(g0, { opacity: 0, duration: 0.25, ease: "none" }, end - 0.25);
   }
-  const cam = o.cam === undefined ? "push" : o.cam; // push | pull | zoom | none
+  const cam = o.cam === undefined ? (STORY ? "none" : "push") : o.cam; // push | pull | zoom | none
   const sc = { push: [1, 1.04], pull: [1.07, 1], zoom: [1, 1.12] }[cam];
   if (sc) tl.fromTo(g0, { scale: sc[0] }, { scale: sc[1], svgOrigin: o.focus || "960 540", duration: S.len, ease: "none" }, start);
   // camera moves on the content layer; a fixed-point attr transform (GSAP svgOrigin drifts when seeking backwards)
@@ -190,7 +194,8 @@ function scene(start, end, o = {}) {
     const x0 = anchor === "middle" ? x - wEst / 2 : anchor === "end" ? x - wEst : x - size * 0.2;
     const r = el("rect", { x: x0, y: y - size * 1.15, width: 0, height: size * 1.6 }, cp);
     const wg = V3 && !op.write ? el("g", {}, op.parent || g) : null;
-    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK, "clip-path": `url(#${id})` }, wg || op.parent || g);
+    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK }, wg || op.parent || g);
+    if (!wg) te.setAttribute("clip-path", `url(#${id})`); // pop-in text needs no clip (width estimates cut wide caps)
     if (op.weight) te.setAttribute("font-weight", op.weight);
     if (op.spacing) te.setAttribute("letter-spacing", op.spacing);
     if (op.halo) { te.setAttribute("stroke", op.halo); te.setAttribute("stroke-width", size * (op.haloW || 0.16)); te.setAttribute("stroke-linejoin", "round"); te.setAttribute("paint-order", "stroke"); } // outline so text reads on scenery
@@ -199,7 +204,7 @@ function scene(start, end, o = {}) {
     if (V3 && !op.write) { // pop in with a small overshoot
       const ox = anchor === "middle" ? x : anchor === "end" ? x - wEst / 2 : x + (wEst - size) / 2;
       tl.set(r, { attr: { width: wEst } }, t);
-      popAt(wg, t, ox, y - size * 0.35, 0.4);
+      popAt(wg, t, ox, y - size * 0.35, op.pop || (STORY ? 0.22 : 0.4));
     } else tl.fromTo(r, { attr: { width: 0 } }, { attr: { width: wEst }, duration: dur, ease: "none" }, t);
     return te;
   };
@@ -211,6 +216,13 @@ function scene(start, end, o = {}) {
   S.pop = (e, t, cx, cy, dur = 0.35) => V3 ? popAt(e, t, cx, cy, dur) : tl.fromTo(e, { scale: 0.001 }, { scale: 1, svgOrigin: `${cx} ${cy}`, duration: dur, ease: "back.out(2)" }, t);
   S.tilt = (deg, t, dur = 0.3) => tl.to(g0, { rotation: deg, svgOrigin: "960 540", duration: dur, ease: "power2.out" }, t);
   S.fig = (...a) => fig(S, ...a);
+  // story label: 1–3 caps words, pops in; o.to = [x, y] adds a curved arrow (same colour) from the label to the thing it names
+  S.label = (str, x, y, o = {}) => {
+    const t = o.t === undefined ? start : o.t, size = o.size || 84, c = o.c || INK;
+    const te = S.text(str.toUpperCase(), x, y, Object.assign({ size, t, c }, o.halo ? { halo: o.halo, haloW: o.haloW || 0.12 } : {}));
+    if (o.to) { const [tx, ty] = o.to, sy = ty > y ? y + size * 0.35 : y - size; S.arrow(x + (tx - x) * 0.15, sy, tx, ty, t + 0.12, 0.25, { c, w: 7, bend: o.bend ?? 0.25 }); }
+    return te;
+  };
   for (const k in PROPS) S[k] = (...a) => PROPS[k](S, ...a);
   return S;
 }
@@ -423,10 +435,14 @@ const PROPS = {
     const g = el("g", {}, S.g);
     S.g.insertBefore(g, S.g.firstChild);
     const room = kind.startsWith("room"), night = kind === "night" || kind === "roomNight";
-    const hy = o.hy || (room ? 790 : 640);
+    const band = ["white", "kraft", "chalk", "blueprint", "black", "space", "danger"].includes(kind);
+    const hy = o.hy || (room ? 790 : band ? 830 : 640);
     const K = {
       day: ["#bfe7fb", "#78c46a", "#4f9a48"], night: ["#2f4a86", "#7d5530", "#5b3c1f"], dusk: ["#f8dcc0", "#d4ab70", "#4a3b2a"],
       desert: ["#cbe7ef", "#e2c27f", "#a78a4f"], room: ["#f3e2c4", "#c8976a"], roomNight: ["#3d4766", "#262a3f"], flat: ["#bfe7fb", "#78c46a"], paper: ["#fdfcf8", "#fdfcf8"],
+      // story palette (measured on Zenn / Past Tense): flat field + straight floor band
+      white: ["#FEFEFE", "#9A9A9A"], kraft: ["#ECDCBB", "#C4A472"], chalk: ["#225034", "#183b26"], blueprint: ["#0B4585", "#08356a"],
+      black: ["#091118", "#091118"], navy: ["#2E4C73", "#996D40", "#6E4120"], space: ["#31487A", "#31487A"], danger: ["#F08B2C", "#B5401F"],
     }[kind];
     const sh = (d, fill, c, w, op) => el("path", Object.assign({ d, fill, stroke: c || "none", "stroke-width": w || 0, "stroke-linejoin": "round", "stroke-linecap": "round" }, op === undefined ? {} : { opacity: op }), g);
     const box = (x0, y0, x1, y1) => `M${x0} ${y0} L${x1} ${y0} L${x1} ${y1} L${x0} ${y1} Z`;
@@ -434,8 +450,9 @@ const PROPS = {
     const land = (pts) => smooth(pts) + " L2070 1230 L-150 1230 Z";
     sh(box(-150, -150, 2070, 1230), o.sky || K[0]);
     if (kind === "paper") return { g, hy };
-    if (kind === "night") for (let i = 0; i < 26; i++) sh(circ(rnd() * 1920, rnd() * (hy - 80), 2.5 + rnd() * 3.5), "#ffffff", null, 0, 0.9);
-    if (kind === "night" && o.moon !== false) sh(circ(1620, 190, 62), "#fff3c4");
+    if (band) { if (o.floor !== false && kind !== "black" && kind !== "space") sh(box(-150, hy, 2070, 1230), o.ground || K[1]); if (kind === "space") for (let i = 0; i < 40; i++) sh(circ(rnd() * 1920, rnd() * 1080, 2 + rnd() * 3), "#ffffff", null, 0, 0.85); return { g, hy }; }
+    if (kind === "night" || kind === "navy") for (let i = 0; i < 26; i++) sh(circ(rnd() * 1920, rnd() * (hy - 80), 2.5 + rnd() * 3.5), "#ffffff", null, 0, 0.9);
+    if ((kind === "night" || kind === "navy") && o.moon !== false) sh(circ(1620, 190, 62), "#fff3c4");
     if (kind === "dusk") for (let i = 0; i < 4; i++) sh(rrect(-100 + rnd() * 1500, 150 + i * 70 + rnd() * 30, 700 + rnd() * 600, 22 + rnd() * 14, 16), "#f2b5a3", null, 0, 0.6);
     if (kind === "day") for (let i = 0; i < (o.clouds ?? 2); i++) { const cx = 300 + i * 900 + rnd() * 300, cy = 150 + rnd() * 120; sh(circ(cx, cy, 90, 40) + circ(cx + 60, cy - 30, 60) + circ(cx - 50, cy - 20, 50), "#ffffff", null, 0, 0.95); }
     if (room) {
@@ -883,6 +900,8 @@ const PROPS = {
     });
     return { g, boxes };
   },
+  // split-screen divider (black, full height) at x
+  divider(S, x = 960, t, dur = 0.01, o = {}) { return { g: S.draw(`M${x} -20 L${x} 1100`, t, dur, { w: o.w || 10, c: o.c || "#111111", parent: o.parent }) }; },
   // glowing rays burst
   burst(S, cx, cy, r1, r2, n, t, dur, o = {}) { return { g: S.draw(rays(cx, cy, r1, r2, n, o.a0 || 0, o.span || Math.PI * 2), t, dur, { w: o.w || 6, c: o.c || INK, parent: o.parent }) }; },
 };

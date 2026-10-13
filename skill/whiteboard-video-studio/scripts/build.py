@@ -51,7 +51,8 @@ else:
 
 total = timing['total']
 dark = scenes.lstrip().startswith('// theme: dark')
-v3 = '// look: v3' in scenes[:300]  # bold outline + colour scenery look (engine2 V3 branch)
+story = '// look: story' in scenes[:300]  # long-form explainer: v3 drawing + hard cuts, no captions
+v3 = story or '// look: v3' in scenes[:300]  # bold outline + colour scenery look (engine2 V3 branch)
 paper = '#25272a' if dark else '#fdfcf8'
 capc = '#f1efe8' if dark else '#2a2a2a'
 engine = (HERE / 'engine2.js').read_text()
@@ -96,14 +97,14 @@ html = f'''<!doctype html>
     <script>
       const THEME = "{'dark' if dark else 'light'}";
       const THUMB = {'true' if thumb else 'false'};
-      const LOOK = "{'v3' if v3 else 'v2'}";
+      const LOOK = "{'story' if story else 'v3' if v3 else 'v2'}";
       const TIMING = {json.dumps(timing)};
       window.__timelines = window.__timelines || {{}};
 {engine}
 // ===================== scenes =====================
 {scenes}
 // ==================================================
-      captions(TIMING.chunks);
+      {'' if story else 'captions(TIMING.chunks);'}
       window.__timelines["main"] = tl;
       {end_js}
     </script>

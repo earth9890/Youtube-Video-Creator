@@ -2,6 +2,29 @@
 
 Canvas **1920×1080**. Ground line **`GY = 860`**. Captions occupy **y > 980** → keep all content **y < 940**. Every time argument is **absolute seconds**. `build.py` injects `THEME` and `TIMING`, then the engine, then your `scenes.js`, then captions. First line of `scenes.js` may be `// theme: dark` (chalkboard: dark grey board, chalk-white ink) — otherwise white paper.
 
+## Looks (first lines of `scenes.js`)
+| Marker | Look |
+|---|---|
+| *(none)* | v2 white paper, Patrick Hand, Caveat captions, crossfade + push camera |
+| `// theme: dark` | v2 chalkboard |
+| `// look: v3` | colour scenery, white-filled heads, ~9 px lines, Mali SemiBold, outlined white captions, blink/breathe, pop-in text, 0.3 s crossfade |
+| `// look: story` | v3 drawing for long-form explainers: **hard cuts** (no fade), camera `none` by default, **no captions**, text pops in 0.22 s. Cut on the breath: `sceneWindows(CUES, 0.08)`, one window per phrase (median ~2.5 s, max 6 s). Draw durations ≤ 0.3 s so the picture reads at once |
+
+v3 / story extras:
+```js
+S.bg(kind, o)          // scenery, inserted behind everything. kinds: day night dusk desert room roomNight flat paper
+                       //   story palette (flat field + floor band at hy≈830): white kraft chalk blueprint black navy space danger
+                       //   o: { hy, sky, ground, floor:false, moon:false, clouds, tufts, window }
+S.label(str, x, y, o)  // 1–3 CAPS words, pops in; o: { t, size=84, c=INK (RED for numbers), to:[x,y] arrow, bend, halo }
+S.divider(x=960, t)    // split-screen black bar
+S.zoom(x, y, k, t, dur) / S.pan(dx, dy, t, dur)   // camera on the content layer (seek-safe)
+S.fig(cx, gy, { hair: short|side|curly|messy|spiky|bun|tick|none, hairC, outfit: tee|tunic|apron|hoodie, outfitC, breathe:false })
+F.setPose(name, t)     // v3: arms swing smoothly (0.3 s)
+S.text(str, x, y, { halo: "#111", haloW: 0.14, write: true })   // halo = outline (thumbnail yellow text); write = old left→right wipe
+S.crowd(..., { dress: [figOptions, ...] })
+```
+Figures stand with their feet on `gy` — on a band background pass the floor y (`S.bg(...).hy`).
+
 ## Colours
 `INK PAPER RED GREEN ORANGE YEL BLUE GRAY LEAF SKY PINK CREAM GLOW` (theme-aware). Use at most **one accent colour per scene** plus ink.
 

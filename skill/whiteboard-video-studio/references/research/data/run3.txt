@@ -1,0 +1,3 @@
+temp=0.3: in-line F0 range p20-p80 median 2.16 st (IQR 1.66-2.40); whisper WER mean 0.000, clips with any error 0/18; longest internal silence max 0.56s
+temp=0.5: in-line F0 range p20-p80 median 2.04 st (IQR 1.79-2.47); whisper WER mean 0.024, clips with any error 3/18; longest internal silence max 0.52s
+temp=0.7: in-line F0 range p20-p80 median 2.14 st (IQR 1.83-2.55); whisper WER mean 0.031, clips with any error 4/18; longest internal silence max 0.43s

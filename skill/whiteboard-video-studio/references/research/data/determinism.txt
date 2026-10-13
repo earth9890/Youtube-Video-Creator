@@ -1,0 +1,2 @@
+cached vs regenerated (seed 1): len 63360 vs 63360, identical=True
+regenerated twice in-process (seed 1): identical=True  max abs diff=0.0

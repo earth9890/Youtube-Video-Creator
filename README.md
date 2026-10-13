@@ -19,6 +19,16 @@ npx hyperframes check && npx hyperframes render --quality delivery --resolution 
 ```
 Renders (`*.mp4`) are not committed.
 
+## Writing a new video (since 2026-10-13)
+Funny explainers (space, science and history "what if" topics) follow **`skill/whiteboard-video-studio/references/script-writer.md`**. It was built from a 54-transcript study of Zenn, Past Tense, Sam O'Nella, Casually Explained, Half as Interesting, OverSimplified, Kurzgesagt and Sciencephile; the evidence is in `references/research/`.
+```bash
+cd episodes/NN-topic
+python3 ../../skill/whiteboard-video-studio/scripts/script_lint.py script.md            # must PASS (Joke Law, density, callback, numbers as words)
+~/.venvs/pocket/bin/python ../../skill/whiteboard-video-studio/scripts/voice.py script.md assets --lead 0.4 --tail 1.5 --speed 1.0   # Pocket TTS "jean"; voice.wav is regenerated, not committed
+python3 ../../skill/whiteboard-video-studio/scripts/build.py . && ../../skill/whiteboard-video-studio/scripts/finish.sh . none   # 4K render
+```
+Order: script text, then voice-only mp3, then visuals. Start with a 1-minute trial before any long video.
+
 ## Episodes (4K renders in `renders/`, not committed)
 | Episode | Title pick | Render |
 |---|---|---|
@@ -32,5 +42,7 @@ Renders (`*.mp4`) are not committed.
 | `08-discipline` | Stop Waiting to Feel Like It. Do This Instead. | `renders/08-discipline-4k.mp4` |
 | `09-loneliness` | Why You're Lonely Even Around People — And One Fix | `renders/09-loneliness-4k.mp4` |
 | `10-attention` | Your Attention Span Is 47 Seconds. Here's How to Get It Back | `renders/10-attention-4k.mp4` |
+| `11-toothache` | What Did Ancient Humans Do About Toothache? (8-min story mode; rejected: hard cuts felt like flicker) | `renders/11-toothache-4k.mp4` |
+| `12-blackhole-home` | What If We Live Inside a Black Hole? (1-min trial). v1 documentary and v2 relatable-gag scripts rejected (kept in `v1/`, `v2/`); **v3 `script.md` approved**, voice-only `renders/12-blackhole-v3-voice.mp3`; v3 visuals still to build | `renders/12-blackhole-home-4k.mp4` (v2) |
 
 All 20 thumbnails side by side: `review/all-thumbnails.png`. Each episode has `package.md` (5 titles, description + chapters, tags, pinned comment) and `thumbnails/a.png`, `b.png`.

@@ -7,3 +7,7 @@ assets/clips/
 assets/*.log
 *.html.bak
 .DS_Store
+# voice clip caches and mixes are regenerated deterministically from script + seed
+**/assets/clips/
+**/assets/mix.wav
+**/assets/voice.wav

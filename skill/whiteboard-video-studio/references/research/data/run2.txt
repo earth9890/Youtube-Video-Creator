@@ -1,0 +1,36 @@
+## fragments (clip split for a mid-line beat); tail = F0 of last 0.5 s vs clip median, st
+'The whole universe might be' 1 dur 1.2 f0 0.4 tail -1.22 sil []
+'The whole universe might be' 2 dur 1.2 f0 0.84 tail -0.78 sil []
+'The whole universe might be' 3 dur 1.16 f0 0.14 tail -0.82 sil []
+'The whole universe might be...' 1 dur 1.27 f0 0.45 tail -1.0 sil []
+'The whole universe might be...' 2 dur 1.24 f0 0.81 tail -0.53 sil []
+'The whole universe might be...' 3 dur 1.19 f0 0.32 tail -0.13 sil []
+'The whole universe might be —' 1 dur 1.2 f0 0.4 tail -1.22 sil []
+'The whole universe might be —' 2 dur 1.2 f0 0.84 tail -0.78 sil []
+'The whole universe might be —' 3 dur 1.16 f0 0.14 tail -0.82 sil []
+'Inside a black hole.' 1 dur 1.0 f0 -0.52 tail -0.01 sil []
+'Inside a black hole.' 2 dur 0.96 f0 -1.25 tail -0.08 sil []
+'Inside a black hole.' 3 dur 0.92 f0 -0.72 tail -0.0 sil []
+'inside a black hole.' 1 dur 1.0 f0 -0.52 tail -0.01 sil []
+'inside a black hole.' 2 dur 0.96 f0 -1.25 tail -0.08 sil []
+'inside a black hole.' 3 dur 0.92 f0 -0.72 tail -0.0 sil []
+
+## best-of-N: pause at the break across seeds 1-8
+'The whole universe might be. Inside a black hole.' longest internal gap per seed [0.16, 0.36, 0.96, 0.31, 0.48, 0.46, 0.46, 0.37]
+'Scientists checked the data. It was a toaster.' longest internal gap per seed [0.46, 0.56, 0.37, 0.36, 0.42, 0.33, 0.59, 0.49]
+
+## LTAS spectral centroid (80-5000 Hz) ratio vs raw clip; formants move with asetrate pitch shift
+post_atempo_0.85 1.007
+post_atempo_0.9 1.012
+post_atempo_0.95 1.013
+post_atempo_1.05 0.998
+post_atempo_1.1 0.999
+post_atempo_1.15 1.006
+post_pitch_+1_st_asetrate 1.064
+post_pitch_+2_st_asetrate 1.129
+post_pitch_+3_st_asetrate 1.191
+post_pitch_-1_st_asetrate 0.963
+post_pitch_-2_st_+_atempo_0.9 0.928
+post_pitch_-2_st_asetrate 0.93
+post_pitch_-3_st_asetrate 0.906
+natural jean spread across lines/seeds: min 0.794 max 1.557
