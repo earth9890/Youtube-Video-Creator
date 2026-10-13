@@ -29,7 +29,15 @@ These scene helpers are copy-paste ready for space and comedy topics:
   - Objects sucked into the black hole (`tl.to(g, {x, y, rotation, opacity: 0})`).
   - A hero falling into the hole while spinning and shrinking.
 - **`rejected-v1-documentary/scenes.js`:** the first version of these helpers, plus a JWST hexagon mirror, an "=" size comparison, and a "NO SPAGHETTI" scene.
-- **`thumbnails/thumb-a.js`:** archetype A (worried figure, black hole with a house inside, yellow "WE LIVE HERE?" with a black halo).
+- **Thumbnails.** One v1 thumbnail (rejected by our own grid test) and two v2 thumbnails built from `references/thumbnail-designer.md`:
+
+  | File | Archetype | Verdict in the feed grid (`thumb_check.py`) |
+  |---|---|---|
+  | `thumb-a.js` → `a.png` "WE LIVE HERE?" | A, full-body figure + tilted ring | **Fails.** Lint passes (3 words, text 0.16, edges 0.13, 71 % black), but at feed size the tilted orange ring reads as **Saturn**, the figure's head is about 10 % of the height, and the house is a second focal point. |
+  | `thumb-c.js` → `c.png` "NO WAY OUT" | Space icon (G/F): front-on ring black hole, Earth inside the disc, white "US" scale arrow, no character | Reads at once as a black hole with us inside. Stakes text, 81 % black, edges 0.12. |
+  | `thumb-d.js` → `d.png` "WE'RE INSIDE?" | A with a big-head crop: Dave at s 4.3 (head ≈ 40 % of height), worried, with tea; a huge black hole on the right with Earth inside | The face and the wrongness both read in the grid. The floor-raiser variant; pair it with C in Test & Compare. |
+
+  `BH()`, `STARS()` and `EARTH()` at the top of thumb-c.js are the reusable black-hole icon kit.
 
 ## Visual lessons from this episode
 - Comedy visuals land when each one *is* the line: a sock flying into the hole, Dave holding his tea. A visual that decorates a gag the narrator is telling separately doesn't land.

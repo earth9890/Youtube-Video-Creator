@@ -1,0 +1,1730 @@
+[
+ {
+  "ch": "kurzgesagt",
+  "n": 1,
+  "id": "BtN-goy9VOY",
+  "group": "top",
+  "perf": "x7.4",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#101060",
+   "#303AA7",
+   "#6473AB"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 100,
+   "emotion": "alarmed stare",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "CORONA VIRUS",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "two huge staring eyes over a mask, virus particles below",
+  "question": "what is coming for me?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 2,
+  "id": "zQGOcOUBi6s",
+  "group": "top",
+  "perf": "x6.5",
+  "archetype": "other:monsters attack body part",
+  "bg": "flat",
+  "palette": [
+   "#E9E2DE",
+   "#F4C8AE",
+   "#DBAFA1"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 35,
+   "emotion": "menacing grin",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE IMMUNE SYSTEM",
+   "color": "#D54342",
+   "outline": false,
+   "position": "right",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "cut fingertip with grinning red bacteria swarming in",
+  "question": "what are those things doing to my cut?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 3,
+  "id": "4_aOIA-vyBo",
+  "group": "top",
+  "perf": "x4.2",
+  "archetype": "B",
+  "bg": "scene",
+  "palette": [
+   "#F93684",
+   "#B51D74",
+   "#411B57"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "white skull centred on pink streaked space",
+  "question": "how does the universe die?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 4,
+  "id": "sNhhvQGsMEc",
+  "group": "top",
+  "perf": "x3.5",
+  "archetype": "other:creature portrait",
+  "bg": "scene",
+  "palette": [
+   "#060306",
+   "#CA554E",
+   "#2B1629"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 70,
+   "emotion": "blank one-eyed stare",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "FERMI PARADOX",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "one-eyed pink alien flanked by two smaller ones",
+  "question": "who are they?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 5,
+  "id": "3mnSDifDSxQ",
+  "group": "top",
+  "perf": "x3.2",
+  "archetype": "F",
+  "bg": "scene",
+  "palette": [
+   "#1F0207",
+   "#5C171E",
+   "#C62D16"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "LARGEST STAR / OUR SUN",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "molten star surface filling the top half, tiny dot labelled OUR SUN with a white arrow",
+  "question": "that speck is our Sun?!",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 6,
+  "id": "0NY2gAftzJE",
+  "group": "top",
+  "perf": "x3.0",
+  "archetype": "other:forbidden injection",
+  "bg": "scene",
+  "palette": [
+   "#2A289C",
+   "#47274B",
+   "#C4404D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "100% VIRUS",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 21,
+   "kind": "number"
+  },
+  "arrow": true,
+  "focal": "syringe of glowing green virus going into a tumour",
+  "question": "they injected a virus on purpose?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 7,
+  "id": "yWO-cvGETRQ",
+  "group": "top",
+  "perf": "x2.9",
+  "archetype": "other:black hole with a face",
+  "bg": "scene",
+  "palette": [
+   "#0D012C",
+   "#AE4892",
+   "#3A2EBD"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "greedy, mouth open",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "BLACK HOLES II",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "black hole with eyes and a pink mouth slurping a stream of planets",
+  "question": "is it eating everything?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 8,
+  "id": "UjtOGPJ0URM",
+  "group": "top",
+  "perf": "x2.6",
+  "archetype": "E",
+  "bg": "scene",
+  "palette": [
+   "#3F1B65",
+   "#0E0936",
+   "#836BC8"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "GREAT FILTER",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "one living blue Earth in a bubble among dead purple worlds",
+  "question": "why is Earth the only one alive?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 9,
+  "id": "e-P5IFTqB98",
+  "group": "top",
+  "perf": "x2.5",
+  "archetype": "B",
+  "bg": "black",
+  "palette": [
+   "#040129",
+   "#02011C",
+   "#44134E"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "BLACK HOLES",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "black disc in a thin red-yellow ring with a horizontal flare, dead centre",
+  "question": "what does a black hole really look like?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 10,
+  "id": "Da-2h2B4faU",
+  "group": "top",
+  "perf": "x2.5",
+  "archetype": "other:text as image",
+  "bg": "scene",
+  "palette": [
+   "#25045B",
+   "#3E1C9F",
+   "#87746D"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "STRING THEORY",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "center",
+   "height_pct": 22,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "giant two-line text over neon string loops",
+  "question": "what are those loops?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 11,
+  "id": "YI3tsmFsrOg",
+  "group": "top",
+  "perf": "x2.4",
+  "archetype": "other:alien machine hero",
+  "bg": "scene",
+  "palette": [
+   "#0D0859",
+   "#09012B",
+   "#BC83BA"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 1,
+   "content": "BACTERIOPHAGE",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "crystal-headed phage standing on a cell surface",
+  "question": "what is that machine?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 12,
+  "id": "9tbxDgcv74c",
+  "group": "top",
+  "perf": "x2.4",
+  "archetype": "other:danger in wrong place",
+  "bg": "scene",
+  "palette": [
+   "#22035D",
+   "#A15A94",
+   "#30B0E9"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "DEEP SEA NUKE",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "mushroom cloud rising out of the ocean on a curved Earth",
+  "question": "what happens to the ocean?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 13,
+  "id": "UnrtLi7YIY4",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:product shot + mascot",
+  "bg": "gradient",
+  "palette": [
+   "#4BB311",
+   "#A8DD27",
+   "#DDF52B"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 30,
+   "emotion": "eager",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 6,
+   "content": "HEALTHIER IN 90 DAYS / Take this!",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 13,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "green journal on a lime burst, bird mascot with carrot",
+  "question": "is this an ad?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 14,
+  "id": "OvKr6loCciE",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:mascot gag",
+  "bg": "gradient",
+  "palette": [
+   "#580B53",
+   "#250A37",
+   "#B21E3D"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "tasting",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "THE SAUCE",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 26,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "mascot creature licking a glowing drop",
+  "question": "what sauce?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 15,
+  "id": "0FRVx_c9T0c",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:product shot + mascot",
+  "bg": "gradient",
+  "palette": [
+   "#02A5F4",
+   "#9F8B64",
+   "#08DCFC"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 35,
+   "emotion": "curious",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 17,
+   "content": "OUR FIRST BOOK!",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "real book cover on a cyan burst, bird mascot",
+  "question": "a book ad?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 16,
+  "id": "itBBsQRv0EU",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:tiny you vs glowing beast",
+  "bg": "scene",
+  "palette": [
+   "#06032F",
+   "#25195C",
+   "#FAA51C"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 55,
+   "emotion": "blank glow",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE CHOSEN ONE / YOU",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "glowing orange creature, red arrow to a tiny figure labelled YOU",
+  "question": "chosen for what?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 17,
+  "id": "yDMZJ7LgrGY",
+  "group": "bottom",
+  "perf": "x0.2",
+  "archetype": "other:mascot before monolith",
+  "bg": "scene",
+  "palette": [
+   "#081230",
+   "#0E1F58",
+   "#F3FAFE"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 25,
+   "emotion": "awed",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "bird mascot facing a glowing white monolith",
+  "question": "what is the door?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 18,
+  "id": "h4Uu5eyN6VU",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:cartoon face",
+  "bg": "gradient",
+  "palette": [
+   "#160E4A",
+   "#0A0EEA",
+   "#1508A8"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "gleeful, tongue out",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "IS THE EU BAD?",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "blue goofy face ringed by EU stars",
+  "question": "is it?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 19,
+  "id": "_y9JuojAIg0",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:painted worried statues",
+  "bg": "scene",
+  "palette": [
+   "#070507",
+   "#241926",
+   "#4B3749"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 70,
+   "emotion": "worried",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "LOST FOREVER",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "three painted stone figurines with frightened faces",
+  "question": "what was lost?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 20,
+  "id": "ujkD4SxPKOI",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#F9F8F4",
+   "#463739",
+   "#A58672"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "menacing",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "WE LOST CONTROL",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "giant red slit-pupil eye exploding out of white rays",
+  "question": "who lost control of what?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 21,
+  "id": "QW_jlUn4gA8",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "F",
+  "bg": "black",
+  "palette": [
+   "#0E0324",
+   "#2F215C",
+   "#CED5D9"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "OMEGA ALIENS / EARTH",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "tiny Earth with red arrow vs huge alien megastructure",
+  "question": "how big are they?!",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 22,
+  "id": "0NY2gAftzJE",
+  "group": "latest",
+  "perf": "x3.0",
+  "archetype": "other:forbidden injection",
+  "bg": "scene",
+  "palette": [
+   "#2A289C",
+   "#47274B",
+   "#C4404D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "100% VIRUS",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 21,
+   "kind": "number"
+  },
+  "arrow": true,
+  "focal": "syringe of glowing green virus going into a tumour",
+  "question": "they injected a virus on purpose?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 23,
+  "id": "Cyl3X88KEgg",
+  "group": "latest",
+  "perf": "x1.4",
+  "archetype": "other:ship hits invisible wall",
+  "bg": "scene",
+  "palette": [
+   "#0C0520",
+   "#1E135E",
+   "#2645AD"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "IT'S IMPOSSIBLE*",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "small rocket stopped against a glowing hex grid",
+  "question": "what is stopping it?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "kurzgesagt",
+  "n": 24,
+  "id": "PqtggjVAi8M",
+  "group": "latest",
+  "perf": "x0.4",
+  "archetype": "other:texture + arrow",
+  "bg": "scene",
+  "palette": [
+   "#0C0726",
+   "#201859",
+   "#583156"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "THIS IS A MEMORY",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "dense neuron field, red arrow to a glowing cluster",
+  "question": "that tangle is a memory?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 1,
+  "id": "xAHpQHW5o58",
+  "group": "top",
+  "perf": "x12.4",
+  "archetype": "other:triptych swap (thing in wrong place)",
+  "bg": "photo",
+  "palette": [
+   "#E5EBE5",
+   "#2E3641",
+   "#CABDB8"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "What if we replace the Sun?",
+   "color": "#F5C518",
+   "outline": false,
+   "position": "center",
+   "height_pct": 13,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "Interstellar-style black hole hanging over a city skyline, next to white dwarf and neutron star panels",
+  "question": "what would that do to us?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 2,
+  "id": "vvUX6uHqbm0",
+  "group": "top",
+  "perf": "x9.5",
+  "archetype": "B",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#BAA0AB",
+   "#9C6691"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "11 DIMENSIONS",
+   "color": "#111111",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "one twisted Calabi-Yau shape on pure white",
+  "question": "what is that shape?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 3,
+  "id": "t215Q1oBoXQ",
+  "group": "top",
+  "perf": "x6.1",
+  "archetype": "other:text as image",
+  "bg": "photo",
+  "palette": [
+   "#2B2325",
+   "#523D47",
+   "#776B97"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 5,
+   "content": "ALL PHYSICS IN 6 MINUTES",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "center",
+   "height_pct": 19,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "big italic white promise over a nebula and spacetime grid",
+  "question": "all of it, in 6 minutes?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 4,
+  "id": "0YsjrA87Cno",
+  "group": "top",
+  "perf": "x4.4",
+  "archetype": "other:meme face + weird number",
+  "bg": "black",
+  "palette": [
+   "#030103",
+   "#5D2245",
+   "#2B0B2E"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 95,
+   "emotion": "awkward grin",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 1,
+   "content": "0.00000000000009%",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "bottom",
+   "height_pct": 10,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "Bad Luck Brian photo with a tiny-probability number",
+  "question": "the odds of what?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 5,
+  "id": "sgk4_KNq-Tc",
+  "group": "top",
+  "perf": "x4.3",
+  "archetype": "other:iceberg",
+  "bg": "photo",
+  "palette": [
+   "#1E6B9A",
+   "#25405A",
+   "#37A8D6"
+  ],
+  "elements": 6,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 7,
+   "content": "\"IMPOSSIBLE\" MATERIALS",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "right",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "iceberg with labelled strange materials",
+  "question": "what is at the bottom?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 6,
+  "id": "oq2-RJH_3NE",
+  "group": "top",
+  "perf": "x4.2",
+  "archetype": "other:triptych swap (thing in wrong place)",
+  "bg": "photo",
+  "palette": [
+   "#140F0D",
+   "#0740B0",
+   "#2D4743"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "What if we replace the Moon?",
+   "color": "#111111",
+   "outline": false,
+   "position": "center",
+   "height_pct": 11,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "Saturn, blue giant and red dwarf over night cities",
+  "question": "what would that do to us?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 7,
+  "id": "ie76KXKm9Y4",
+  "group": "top",
+  "perf": "x3.7",
+  "archetype": "other:inside view (horizon wall)",
+  "bg": "black",
+  "palette": [
+   "#000000",
+   "#5B5A9A",
+   "#353066"
+  ],
+  "elements": 1,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "curved wall of streaked starlight bending round a pure black void filling 55 %",
+  "question": "where am I?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 8,
+  "id": "DhM_K0JLqoE",
+  "group": "top",
+  "perf": "x3.6",
+  "archetype": "other:iceberg",
+  "bg": "photo",
+  "palette": [
+   "#20639E",
+   "#A5D1ED",
+   "#4BA5C8"
+  ],
+  "elements": 7,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "Existential Horror Theories",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "right",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "iceberg with brains, graphs and Earths",
+  "question": "what is at the bottom?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 9,
+  "id": "ye5C-zlCAyM",
+  "group": "top",
+  "perf": "x3.4",
+  "archetype": "B",
+  "bg": "black",
+  "palette": [
+   "#010101",
+   "#4E4241",
+   "#2D2420"
+  ],
+  "elements": 1,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 95,
+   "emotion": "blank three-eyed stare",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "circuit brain with three 0 eyes and a flat mouth on black",
+  "question": "why does it have three eyes?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 10,
+  "id": "7vTlOJWKNx0",
+  "group": "top",
+  "perf": "x3.3",
+  "archetype": "other:tier list",
+  "bg": "black",
+  "palette": [
+   "#0D0D0D",
+   "#C2BFBC",
+   "#515752"
+  ],
+  "elements": 10,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "blank",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "ALIEN EVIDENCE TIER LIST",
+   "color": "#39E639",
+   "outline": true,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "S-F tier rows, ? in S, grey alien bottom right",
+  "question": "what is in S tier?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 11,
+  "id": "n2LOGYEAI3Y",
+  "group": "top",
+  "perf": "x3.2",
+  "archetype": "other:iceberg",
+  "bg": "photo",
+  "palette": [
+   "#106E9C",
+   "#061927",
+   "#29A4CD"
+  ],
+  "elements": 8,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "FERMI PARADOX",
+   "color": "#39E639",
+   "outline": false,
+   "position": "right",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "iceberg with UFO, planets, evolution line, black hole at the bottom",
+  "question": "what is at the bottom?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 12,
+  "id": "48U2eLtt2wI",
+  "group": "top",
+  "perf": "x3.0",
+  "archetype": "other:tier list",
+  "bg": "black",
+  "palette": [
+   "#080808",
+   "#2A2A2B",
+   "#BA9765"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 50,
+   "emotion": "menacing / masked",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "EXISTENTIAL THREATS",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 13,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "tier rows, terminator and hazmat suit bottom right",
+  "question": "what is in S tier?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 13,
+  "id": "qvSO6ZKSrvA",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:mascot",
+  "bg": "black",
+  "palette": [
+   "#000102",
+   "#185DAF",
+   "#56A5DA"
+  ],
+  "elements": 1,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "blue circuit-brain mascot with smiley face",
+  "question": "who is this?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 14,
+  "id": "GYfaIxoaYhM",
+  "group": "bottom",
+  "perf": "x0.2",
+  "archetype": "other:mascot collage",
+  "bg": "scene",
+  "palette": [
+   "#042F53",
+   "#19699E",
+   "#3BACBA"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 40,
+   "emotion": "smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "EDITING THE CODE OF LIFE",
+   "color": "#3DF26B",
+   "outline": true,
+   "position": "left",
+   "height_pct": 25,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "mascot, low-poly hand and DNA helix",
+  "question": "?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 15,
+  "id": "giOBggeJIx4",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:object with sunglasses",
+  "bg": "scene",
+  "palette": [
+   "#0A1528",
+   "#1A385C",
+   "#0B56A7"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "cool (deal-with-it glasses)",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 7,
+   "content": "THE TINY GIANTS OF THE ELECTRONIC UNIVERSE",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "right",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "transistor chip wearing pixel sunglasses",
+  "question": "?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 16,
+  "id": "4pBct6C7PFE",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:mascot",
+  "bg": "black",
+  "palette": [
+   "#010101",
+   "#D5E5E5",
+   "#636287"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "santa hat smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "A 2016 STORY",
+   "color": "#D5F5F0",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "mascot brain with Santa hat and beard",
+  "question": "?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 17,
+  "id": "6dGPvonpGNw",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:mascot collage",
+  "bg": "photo",
+  "palette": [
+   "#353D53",
+   "#4B699C",
+   "#5D93C8"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 80,
+   "emotion": "menacing",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "none",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "mascot, terminator photo, Patreon logo",
+  "question": "?",
+  "title_relation": "none",
+  "glance": 0
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 18,
+  "id": "BzYvf6Fkaho",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:milestone",
+  "bg": "scene",
+  "palette": [
+   "#0C0E1E",
+   "#373D55",
+   "#44559E"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 80,
+   "emotion": "menacing",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "1,000,000 SUBSCRIBERS",
+   "color": "#FFD27A",
+   "outline": false,
+   "position": "top",
+   "height_pct": 7,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "three AI-art terminators holding a gold play button",
+  "question": "?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 19,
+  "id": "lw1MrXnDie4",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:level ladder",
+  "bg": "scene",
+  "palette": [
+   "#3A3D26",
+   "#3242A9",
+   "#65A39B"
+  ],
+  "elements": 10,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 9,
+   "content": "1 Level 2 Level 3 Level 4 Level 5 Level ?",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 10,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "five coloured columns getting more psychedelic left to right",
+  "question": "what is level 5?",
+  "title_relation": "complement",
+  "glance": 0
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 20,
+  "id": "MJVkaTSlgE8",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:tier list",
+  "bg": "scene",
+  "palette": [
+   "#1B1C1A",
+   "#727B73",
+   "#414453"
+  ],
+  "elements": 8,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 40,
+   "emotion": "none (astronaut)",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "Physics Myths / HUH / Normal / Easy",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "right",
+   "height_pct": 14,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Easy/Normal/HUH rows, microwave, astronaut, black hole on wire grid",
+  "question": "which myth is HUH?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 21,
+  "id": "3PPI1CztEZU",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:unreachable target + arrow",
+  "bg": "photo",
+  "palette": [
+   "#080B13",
+   "#161B29",
+   "#474A56"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "YOU CAN'T GET THERE",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "Earth limb left, purple exoplanet with red arrow",
+  "question": "why not?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 22,
+  "id": "UJ57CmQVSZg",
+  "group": "latest",
+  "perf": "x2.1",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#1D2332",
+   "#DC4115",
+   "#D4C7C4"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 90,
+   "emotion": "agony",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 4,
+   "content": "SPEED HAS A PRICE",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "center",
+   "height_pct": 12,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "burning skeleton, warp ring and blue tunnel panels",
+  "question": "what price?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 23,
+  "id": "lalon__4RL8",
+  "group": "latest",
+  "perf": "x1.0",
+  "archetype": "other:white fade + arrow",
+  "bg": "photo",
+  "palette": [
+   "#FBF9F8",
+   "#484357",
+   "#6F628E"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "6 SCENARIOS",
+   "color": "#111111",
+   "outline": false,
+   "position": "left",
+   "height_pct": 10,
+   "kind": "number"
+  },
+  "arrow": true,
+  "focal": "white left half fading into Pillars of Creation",
+  "question": "what are the six?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SciencephiletheAI",
+  "n": 24,
+  "id": "9t2W1tsTi8c",
+  "group": "latest",
+  "perf": "x0.7",
+  "archetype": "other:framed tiny planet + arrow",
+  "bg": "black",
+  "palette": [
+   "#040201",
+   "#CD8137",
+   "#F8E8CB"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "LIFE HERE?",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "right",
+   "height_pct": 15,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "glowing horizon ring framing black, tiny planet, red curved arrow",
+  "question": "could anything live there?",
+  "title_relation": "complement",
+  "glance": 1
+ }
+]

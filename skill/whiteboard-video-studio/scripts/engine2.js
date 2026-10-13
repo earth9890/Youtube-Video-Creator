@@ -314,7 +314,7 @@ function fig(S, cx, gy, o = {}) {
     const fg = el("g", {}, gb);
     if (F.faceG) tl.set(F.faceG, { opacity: 0 }, t);
     F.faceG = fg;
-    if (V3) { face3(S, fg, hd[0] + dx * s * 0.8, hd[1], r, t, kind, Math.max(-1, Math.min(1, dx / 8)), col); return fg; }
+    if (V3) { face3(S, fg, hd[0] + dx * s * 0.8, hd[1], r, t, kind, Math.max(-1, Math.min(1, dx / 8)), o.faceC || (/^#f{3}(f{3})?$/i.test(col) ? "#111111" : col)); return fg; } // white-limbed figure (c:"#fff" on black) keeps an ink face on its white head
     const X =(v) => hd[0] + (v + dx) * s, Y = (v) => hd[1] + v * s;
     const dr = (d, w, fill) => S.draw(d, t, 0.15, { parent: fg, w: w * s, c: col, fill });
     if (kind === "sleep") { dr(arc(X(-15), Y(-6), 7, 20, 160), 4); dr(arc(X(15), Y(-6), 7, 20, 160), 4); }

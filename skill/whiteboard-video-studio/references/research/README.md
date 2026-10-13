@@ -2,6 +2,14 @@
 
 Why this exists: the owner rejected our scripts as "really bad… storytelling is really so weak… sarcasm, jokes… completely bad". We studied the top videos of 8 channels to learn how funny explainers are written and delivered. The rules distilled from this live in `../script-writer.md`. This folder is the evidence behind them: read it when a rule is unclear, or when you need more examples than the playbook gives.
 
+## Thumbnails (separate study, 2026-10-13): `thumbnails/`
+Every current thumbnail of the same 8 channels (1,260) was scored by perf (views ÷ median of the 7 uploads on each side), OCR'd and measured. 192 of them were hand-labelled. The four group reports hold the evidence and the recipes: `zenn-pasttense.md`, `comedy.md`, `hai-oversimplified.md` and `space.md`.
+- `data/label-stats.txt` is the cross-channel lift table.
+- `data/metrics.tsv` and `data/metrics-summary.txt` hold the per-thumbnail pixel and text metrics.
+- `data/lists/` holds the upload lists with views.
+- The rules are distilled into `../thumbnail-designer.md`.
+- Images are not stored. Rebuild them with `scripts/research/fetch_thumbs.sh ~/videos/research/thumbs <channels…>`.
+
 ## Corpus: 54 transcripts, about 8 h of narration
 
 | Channel | Videos | What we learned from it | Report |

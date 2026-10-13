@@ -11,3 +11,4 @@ assets/*.log
 **/assets/clips/
 **/assets/mix.wav
 **/assets/voice.wav
+**/thumbnails/*_grid.jpg

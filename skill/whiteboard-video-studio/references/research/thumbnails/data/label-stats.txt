@@ -1,0 +1,81 @@
+192 labelled tiles: 96 top, 48 bottom  (lift = top share / bottom share)
+
+archetype
+  other                        top  56 ( 58%)  bottom  43 ( 90%)  lift   0.7x  median perf 1.20
+  D                            top  11 ( 11%)  bottom   3 (  6%)  lift   1.8x  median perf 1.50
+  E                            top   8 (  8%)  bottom   0 (  0%)  lift   only top  median perf 1.65
+  A                            top   7 (  7%)  bottom   1 (  2%)  lift   3.5x  median perf 2.75
+  B                            top   7 (  7%)  bottom   0 (  0%)  lift   only top  median perf 6.85
+  C                            top   5 (  5%)  bottom   1 (  2%)  lift   2.5x  median perf 21.30
+
+bg
+  scene                        top  37 ( 39%)  bottom  17 ( 35%)  lift   1.1x  median perf 1.40
+  white                        top  22 ( 23%)  bottom  12 ( 25%)  lift   0.9x  median perf 1.40
+  photo                        top  16 ( 17%)  bottom   6 ( 12%)  lift   1.3x  median perf 1.60
+  flat                         top  13 ( 14%)  bottom   5 ( 10%)  lift   1.3x  median perf 2.50
+  black                        top   8 (  8%)  bottom   3 (  6%)  lift   1.3x  median perf 2.75
+  gradient                     top   0 (  0%)  bottom   5 ( 10%)  lift   0.0x  median perf 0.10
+
+elements
+  4+                           top  55 ( 57%)  bottom  25 ( 52%)  lift   1.1x  median perf 1.40
+  3                            top  27 ( 28%)  bottom  16 ( 33%)  lift   0.8x  median perf 1.60
+  1-2                          top  14 ( 15%)  bottom   7 ( 15%)  lift   1.0x  median perf 2.50
+
+character
+  big (>=40%)                  top  61 ( 64%)  bottom  38 ( 79%)  lift   0.8x  median perf 1.40
+  none                         top  32 ( 33%)  bottom   3 (  6%)  lift   5.3x  median perf 3.40
+  small                        top   3 (  3%)  bottom   7 ( 15%)  lift   0.2x  median perf 0.35
+
+gaze
+  viewer                       top  39 ( 41%)  bottom  18 ( 38%)  lift   1.1x  median perf 1.40
+  -                            top  32 ( 33%)  bottom   3 (  6%)  lift   5.3x  median perf 3.40
+  object                       top  13 ( 14%)  bottom  15 ( 31%)  lift   0.4x  median perf 0.80
+  away                         top   9 (  9%)  bottom   8 ( 17%)  lift   0.6x  median perf 1.10
+  none                         top   3 (  3%)  bottom   4 (  8%)  lift   0.4x  median perf 0.65
+
+emotion
+  -                            top  32 ( 33%)  bottom   3 (  6%)  lift   5.3x  median perf 3.40
+  blank smile                  top   8 (  8%)  bottom   3 (  6%)  lift   1.3x  median perf 1.40
+  blank                        top   1 (  1%)  bottom   3 (  6%)  lift   0.2x  median perf 0.70
+  surprised                    top   1 (  1%)  bottom   2 (  4%)  lift   0.2x  median perf 0.30
+  all angry                    top   1 (  1%)  bottom   2 (  4%)  lift   0.2x  median perf 0.60
+
+words
+  1-3                          top  65 ( 68%)  bottom  19 ( 40%)  lift   1.7x  median perf 1.65
+  4-5                          top  12 ( 12%)  bottom  14 ( 29%)  lift   0.4x  median perf 1.00
+  0                            top  10 ( 10%)  bottom   9 ( 19%)  lift   0.6x  median perf 1.90
+  6+                           top   9 (  9%)  bottom   6 ( 12%)  lift   0.8x  median perf 1.85
+
+text_kind
+  label                        top  48 ( 50%)  bottom  21 ( 44%)  lift   1.1x  median perf 1.45
+  fragment                     top  15 ( 16%)  bottom  10 ( 21%)  lift   0.8x  median perf 1.40
+  question                     top  15 ( 16%)  bottom   5 ( 10%)  lift   1.5x  median perf 1.65
+  none                         top  10 ( 10%)  bottom   9 ( 19%)  lift   0.6x  median perf 1.90
+  number                       top   8 (  8%)  bottom   3 (  6%)  lift   1.3x  median perf 3.55
+
+text_pos
+  top                          top  50 ( 52%)  bottom  28 ( 58%)  lift   0.9x  median perf 1.40
+  right                        top  13 ( 14%)  bottom   4 (  8%)  lift   1.6x  median perf 1.60
+  none                         top  10 ( 10%)  bottom   8 ( 17%)  lift   0.6x  median perf 1.95
+  left                         top   9 (  9%)  bottom   4 (  8%)  lift   1.1x  median perf 1.30
+  center                       top   7 (  7%)  bottom   3 (  6%)  lift   1.2x  median perf 2.10
+  bottom                       top   7 (  7%)  bottom   1 (  2%)  lift   3.5x  median perf 2.60
+
+outline
+  False                        top  53 ( 55%)  bottom  25 ( 52%)  lift   1.1x  median perf 1.50
+  True                         top  33 ( 34%)  bottom  14 ( 29%)  lift   1.2x  median perf 1.40
+  -                            top  10 ( 10%)  bottom   9 ( 19%)  lift   0.6x  median perf 1.90
+
+arrow
+  False                        top  89 ( 93%)  bottom  43 ( 90%)  lift   1.0x  median perf 1.50
+  True                         top   7 (  7%)  bottom   5 ( 10%)  lift   0.7x  median perf 1.25
+
+title_relation
+  repeat                       top  55 ( 57%)  bottom  24 ( 50%)  lift   1.1x  median perf 1.50
+  complement                   top  36 ( 38%)  bottom  17 ( 35%)  lift   1.1x  median perf 1.50
+  none                         top   5 (  5%)  bottom   7 ( 15%)  lift   0.4x  median perf 0.60
+
+glance
+  2                            top  69 ( 72%)  bottom   6 ( 12%)  lift   5.8x  median perf 2.40
+  1                            top  27 ( 28%)  bottom  36 ( 75%)  lift   0.4x  median perf 0.70
+  0                            top   0 (  0%)  bottom   6 ( 12%)  lift   0.0x  median perf 0.35

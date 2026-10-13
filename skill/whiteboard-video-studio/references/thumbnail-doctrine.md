@@ -1,6 +1,6 @@
 # Thumbnail doctrine — "that's literally me" in 0.3 seconds
 
-> **Story / history explainers (long-form): use §0 first.** The rest of this file is for short motivational videos.
+> **Explainers (space, science, history, funny): use `thumbnail-designer.md`.** It supersedes §0 below with the 1,260-thumbnail study (2026-10-13), which also **corrected §0**: D split-contrast is average at best (x0.58–1.4); the '0:00', '90%/10%' and 'RAISE IT?' tiles were par or below on perf; the outline is ≈ 6.5 % of cap height per side (`haloW` 0.09–0.10, not 0.14–0.16); 'never the title' holds for Zenn but not for Past Tense. The rest of this file is for short motivational videos.
 
 ## 0. Story-explainer thumbnails (measured on Zenn + Past Tense, Oct 2026)
 

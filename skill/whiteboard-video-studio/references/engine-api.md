@@ -20,7 +20,7 @@ S.divider(x=960, t)    // split-screen black bar
 S.zoom(x, y, k, t, dur) / S.pan(dx, dy, t, dur)   // camera on the content layer (seek-safe)
 S.fig(cx, gy, { hair: short|side|curly|messy|spiky|bun|tick|none, hairC, outfit: tee|tunic|apron|hoodie, outfitC, breathe:false })
 F.setPose(name, t)     // v3: arms swing smoothly (0.3 s)
-S.text(str, x, y, { halo: "#111", haloW: 0.14, write: true })   // halo = outline (thumbnail yellow text); write = old left→right wipe
+S.text(str, x, y, { halo: "#111", haloW: 0.10, write: true })   // halo = outline (thumbnail yellow text; haloW = total stroke / size, 0.09–0.10 matches Zenn/Past Tense); write = old left→right wipe
 S.crowd(..., { dress: [figOptions, ...] })
 ```
 Figures stand with their feet on `gy` — on a band background pass the floor y (`S.bg(...).hy`).
@@ -120,7 +120,8 @@ Scale guide (cinematography): **1.3–1.45 = power / close**, **1.0 = neutral**,
 | tag | `tag(cx, cy, "PROFESSOR", t, dur, { size, fill, tc })` | label box |
 | checklist | `checklist(x, y, ["…","…"], t, dur, { gap, size })` → `.boxes[[cx,cy]...]` | tick boxes later with `S.tick(cx, cy, 0.6, t)` |
 
-Thumbnail mode (`build.py --thumb`): `THUMB=true` → every stroke ×1.55 and all text bold; follow `thumbnail-doctrine.md`.
+Thumbnail mode (`build.py --thumb`): `THUMB=true` → every stroke ×1.55 and all text bold; follow `thumbnail-designer.md` (explainers) or `thumbnail-doctrine.md` (motivational).
+Thumbnail figures: v3 head radius = 50·s, head centre = gy − 309·s. **Big-head crop:** `S.fig(430, 1890, { s: 4.3, c: "#ffffff" })` → head Ø ≈ 430 (40 % of height), body off the bottom. A white-limbed figure (`c: "#fff"` on black) keeps an ink face automatically; override with `faceC`.
 
 ## Worked scene
 ```js

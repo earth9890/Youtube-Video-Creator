@@ -1,0 +1,1730 @@
+[
+ {
+  "ch": "SamONellaAcademy",
+  "n": 1,
+  "id": "BQTwvbWAx8A",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#36302C",
+   "#AC7F52"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "DEFORMED DOG BREEDS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "pug + scribble-furred dog in bottom line-up",
+  "question": "what is deformed about these normal-looking dogs?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 2,
+  "id": "0zMSMJZc9EA",
+  "group": "top",
+  "perf": "x1.8",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#33332F",
+   "#C3B996"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 60,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "HISTORICAL MISCONCEPTIONS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "naked blob creature + iron maiden among pilgrims",
+  "question": "why is that blob monster standing with pilgrims?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 3,
+  "id": "ORmUUhh6O-8",
+  "group": "top",
+  "perf": "x1.7",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#302A28",
+   "#A86456"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 55,
+   "emotion": "blank smile / grumpy pirates",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "Why It SUCKED to be a PIRATE",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 19,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "three scurvy-faced pirate heads, bottom right",
+  "question": "what was so bad about pirate life?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 4,
+  "id": "jjM9E6d42-M",
+  "group": "top",
+  "perf": "x1.6",
+  "archetype": "other:anthropomorphic object",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#34312F",
+   "#22AFCF"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Why Thorium Rocks",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "cyan smiling thorium rod standing next to Sam",
+  "question": "why is a glowing rod my buddy?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 5,
+  "id": "N80rYgqb6wo",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#352F2E",
+   "#2E9BD6"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "History Of Sushi",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "big 'Sushi' word + blue fish and rolls",
+  "question": "what is the history of sushi?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 6,
+  "id": "nYHDj2sB-rc",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#342F2D",
+   "#986E52"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 60,
+   "emotion": "blank / glum",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 1,
+   "content": "TARARRE",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "huge bulbous-faced man in centre of line-up, crate on Sam's head, cow",
+  "question": "who is the giant-faced guy and why is there a cow?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 7,
+  "id": "MGVraepNj04",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#332D29",
+   "#91573E"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 5,
+   "height_pct": 60,
+   "emotion": "blank / stern",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "HE KILLED GARFIELD",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "line-up of bearded 1880s men + pun headline",
+  "question": "someone killed Garfield? (the cat?)",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 8,
+  "id": "K_NRBkJtNAI",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#393130",
+   "#9A5D59"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "OBSCURE INVENTIONS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "curved-barrel gun over Sam's head + creepy doll face + flesh mountain",
+  "question": "what are these horrifying gadgets?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 9,
+  "id": "pKmM1N0MoC4",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#282521",
+   "#538B36"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "SOUTH SUDAN",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 28,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Sam in red beret with rifle + green country blob",
+  "question": "why is Sam armed for a country explainer?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 10,
+  "id": "XKRW1zgkCVc",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#372F2B",
+   "#A57046"
+  ],
+  "elements": 8,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 60,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "ANIMAL NAMES",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 23,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "dictator-moustache man standing among beetle, zebra, tiger, rhino; eagle on Sam's head",
+  "question": "why is THAT guy in an animal line-up?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 11,
+  "id": "n1hR9rpvS74",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#403530",
+   "#A16A56"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "MEDIEVAL WEAPONS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "oared galley + trebuchet under the title",
+  "question": "what weapons are these?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 12,
+  "id": "ChSUvdU_Sbk",
+  "group": "top",
+  "perf": "x1.3",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#332F2D",
+   "#8A6B64"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 6,
+   "height_pct": 60,
+   "emotion": "blank / smug",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "TIMOTHY DEXTER",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 27,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "giant bicorne-hat man centre; blade over Sam strikes through TIMOTHY",
+  "question": "who is this pompous hat guy?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 13,
+  "id": "tOryRCeIAos",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:empty frame",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#57423D",
+   "#A09E9D"
+  ],
+  "elements": 1,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "tiny Sam alone in empty white",
+  "question": "nothing",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 14,
+  "id": "yhRQsBICnPY",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#322B29",
+   "#93593B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "deadpan (sunglasses)",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "HOW TO UNICYCLE",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 13,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Sam in shades + flat unicycle",
+  "question": "is this a real tutorial?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 15,
+  "id": "VCX9Ia-CYPo",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:story scene no text",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#5D5D38",
+   "#F2E21A"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 45,
+   "emotion": "sad / crying kid",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "crying kid pointing, held by blonde woman; small figure left",
+  "question": "what happened to the kid?",
+  "title_relation": "none",
+  "glance": 0
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 16,
+  "id": "FJwMDVrg8WU",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#37302E",
+   "#A47251"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 60,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "PRESIDENTIAL PETS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "crowded line-up: tiger, raccoon, goat, opossum, presidents; parrot on Sam",
+  "question": "which president owned a raccoon?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 17,
+  "id": "DX0Dg9MxsOg",
+  "group": "bottom",
+  "perf": "x0.7",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#332B27",
+   "#90573E"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 6,
+   "height_pct": 55,
+   "emotion": "blank",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "NEANDER-THALS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "five near-identical cavemen heads",
+  "question": "what is Sam's theory?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 18,
+  "id": "k0S37AI2ssA",
+  "group": "bottom",
+  "perf": "x0.7",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#2C2424",
+   "#D63A3A"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "THESE THINGS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "three NFPA fire diamonds",
+  "question": "what do the numbers mean?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 19,
+  "id": "_kgTL-Z9sBU",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FCFCFC",
+   "#373432",
+   "#967D71"
+  ],
+  "elements": 13,
+  "character": {
+   "present": true,
+   "count": 12,
+   "height_pct": 60,
+   "emotion": "glum / mixed",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "PLINY PART 2: \"MAN\"",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 19,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "crowd of grotesque caricature heads around Pliny, skull in hood",
+  "question": "who are all these freaks?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 20,
+  "id": "vDTC0WBBfvQ",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:self-promo",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#312D2C",
+   "#F7F2A0"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "excited",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 5,
+   "content": "I GOT PUBLISHED! NEW VERSION SOON!",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "book cover in yellow starburst + red curved arrow",
+  "question": "Sam wrote a book?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 21,
+  "id": "owMQZX862Ms",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:self-promo photo",
+  "bg": "photo",
+  "palette": [
+   "#C4C2B4",
+   "#0A0A09",
+   "#976D55"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "blank smile (drawn head on photo)",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "CLICK HERE TO RUIN THE MAGIC",
+   "color": "#000000",
+   "outline": false,
+   "position": "left",
+   "height_pct": 13,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "real person holding book with drawn Sam head pasted on",
+  "question": "what does Sam really look like?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 22,
+  "id": "5L5tjscy85U",
+  "group": "latest",
+  "perf": "x1.1",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#2B2D25",
+   "#9C9271"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "weary",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "PLINY EXPLAINS IT ALL (BOOKS 1-2)",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 15,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "laurel-crowned bearded Pliny with Saturn behind head, plants",
+  "question": "what did Pliny get wrong?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 23,
+  "id": "4vvk7i-M6V0",
+  "group": "latest",
+  "perf": "x1.1",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#2D2624",
+   "#A7755C"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "BANNED FOODS",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 24,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "toxic fruit pod on Sam's head; songbird, shark, bowl line-up",
+  "question": "why are these foods banned?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "SamONellaAcademy",
+  "n": 24,
+  "id": "FJwMDVrg8WU",
+  "group": "latest",
+  "perf": "x0.6",
+  "archetype": "other:host+title+lineup",
+  "bg": "white",
+  "palette": [
+   "#FDFDFD",
+   "#37302E",
+   "#A47251"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 60,
+   "emotion": "blank smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "PRESIDENTIAL PETS",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "crowded line-up: tiger, raccoon, goat, opossum, presidents; parrot on Sam",
+  "question": "which president owned a raccoon?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 1,
+  "id": "xa-4IAR_9Yw",
+  "group": "top",
+  "perf": "x5.1",
+  "archetype": "A",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#F05AF0",
+   "#F5DDB4"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 75,
+   "emotion": "hopeful smile",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "Is She Into You?",
+   "color": "#F05AF0",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "pink heart with '?' between boy and girl",
+  "question": "is she, though?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 2,
+  "id": "JANApS0P4z8",
+  "group": "top",
+  "perf": "x2.5",
+  "archetype": "other:status collage",
+  "bg": "white",
+  "palette": [
+   "#FBFBFB",
+   "#3B3128",
+   "#6E8C7E"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 90,
+   "emotion": "smug",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "suited stick man flinging cash, surrounded by jet/villa/chalet/money-pallet photos",
+  "question": "how rich are the levels?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 3,
+  "id": "Xp2PCMAZhvs",
+  "group": "top",
+  "perf": "x2.3",
+  "archetype": "D",
+  "bg": "flat",
+  "palette": [
+   "#EFFBFE",
+   "#EEE8CE",
+   "#9E8163"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 90,
+   "emotion": "deadpan vs glam",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "plain girl vs her glam mirror reflection with snus tin",
+  "question": "why is the reflection a different person?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 4,
+  "id": "_dCtNLMQ07E",
+  "group": "top",
+  "perf": "x2.2",
+  "archetype": "other:character-in-setting",
+  "bg": "flat",
+  "palette": [
+   "#FEFEFE",
+   "#F7B37A",
+   "#503E36"
+  ],
+  "elements": 8,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "proud flex",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "Casually Explained: Lifting",
+   "color": "#000000",
+   "outline": false,
+   "position": "left",
+   "height_pct": 19,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "stick head on a photo bodybuilder torso, 'u lift bro?' tank",
+  "question": "why does the stick man have that body?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 5,
+  "id": "oHyctwgE6m4",
+  "group": "top",
+  "perf": "x2.1",
+  "archetype": "other:equation gag",
+  "bg": "white",
+  "palette": [
+   "#FFFFFF",
+   "#987E67",
+   "#58473B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "neutral (photo face)",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "1 ND = 1 Dorm",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 10,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "real photo head on stick body + unit equation",
+  "question": "what is an ND and why is it worth a dorm?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 6,
+  "id": "a69toGGjoO0",
+  "group": "top",
+  "perf": "x2.0",
+  "archetype": "other:stereotype costume",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#2D52E8",
+   "#E8202A"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 90,
+   "emotion": "content",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Casually Explained: French",
+   "color": "#2D52E8",
+   "outline": false,
+   "position": "right",
+   "height_pct": 24,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "beret + baguette + coffee stick man; tricolour word",
+  "question": "what's the French stereotype joke?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 7,
+  "id": "-xPjsTyS4lY",
+  "group": "top",
+  "perf": "x2.0",
+  "archetype": "other:literal idiom",
+  "bg": "flat",
+  "palette": [
+   "#FAEFFF",
+   "#D7E3FA",
+   "#35302C"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 95,
+   "emotion": "worried (wavy mouth)",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "pink bubble wall separating worried boy from smiling girl",
+  "question": "why can't he reach her?",
+  "title_relation": "none",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 8,
+  "id": "F2JJ4N2uXuc",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "other:literal idiom",
+  "bg": "scene",
+  "palette": [
+   "#C9F9FE",
+   "#B2CCFD",
+   "#FF0030"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 95,
+   "emotion": "suspicious squint",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "girl on iceberg waving two red flags, guy squinting foreground",
+  "question": "why is she waving red flags?",
+  "title_relation": "none",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 9,
+  "id": "uan3Aj0bHKc",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "other:stereotype costume",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#544A40",
+   "#AE8351"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 90,
+   "emotion": "smug",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 7,
+   "content": "Yeah I Bike (big legs) / Crossfit Gamers",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 7,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "helmeted stick man next to food pyramid topped by burgers + illuminati eye",
+  "question": "why are burgers at the top of the pyramid?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 10,
+  "id": "vP3rYUNmrgU",
+  "group": "top",
+  "perf": "x1.8",
+  "archetype": "D",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#4C3F38",
+   "#8E6F39"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "Amateur / Professional / Actual Garbage / Literal Art",
+   "color": "#000000",
+   "outline": false,
+   "position": "center",
+   "height_pct": 6,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "two near-identical steak plates with opposite verdicts",
+  "question": "what's the difference?! (there is none)",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 11,
+  "id": "KyQyz2upSgY",
+  "group": "top",
+  "perf": "x1.8",
+  "archetype": "other:treasure reveal",
+  "bg": "photo",
+  "palette": [
+   "#040303",
+   "#E7DDCA",
+   "#C3AB38"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "awed",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 1,
+   "content": "Supreme",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "bottom",
+   "height_pct": 5,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "treasure chest with grail + sneakers, gold glow",
+  "question": "why is a sneaker treasure?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 12,
+  "id": "9_RxaeN0FGw",
+  "group": "top",
+  "perf": "x1.8",
+  "archetype": "D",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#2E2E33",
+   "#E8202A"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 70,
+   "emotion": "confused",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "Suh dude (What's up crossed out)",
+   "color": "#E8202A",
+   "outline": false,
+   "position": "center",
+   "height_pct": 10,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "red 'Suh' over struck-out 'What's up'; US vs UK figures",
+  "question": "who says 'suh dude'?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 13,
+  "id": "68FF-XTGqAc",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:object + diagram",
+  "bg": "white",
+  "palette": [
+   "#FFFFFF",
+   "#2B2927",
+   "#CFA16B"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "neutral sipping",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "(caffeine molecule labels)",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 6,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "stick man drinking + caffeine molecule",
+  "question": "is this a chemistry lesson?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 14,
+  "id": "3SJ0Rd7XU4Y",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:painting parody",
+  "bg": "photo",
+  "palette": [
+   "#C6CEC1",
+   "#6C92C1",
+   "#293034"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 80,
+   "emotion": "content",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "stick man on Starry-Night background with crude easel painting",
+  "question": "nothing clear",
+  "title_relation": "none",
+  "glance": 0
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 15,
+  "id": "tmGMd2bqh6o",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:UI screenshot",
+  "bg": "black",
+  "palette": [
+   "#1A1A19",
+   "#4E514B",
+   "#26B2DD"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 10,
+   "emotion": "neutral",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "Generate Simulation",
+   "color": "#FFE81A",
+   "outline": false,
+   "position": "center",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "cartoon Earth on star-field inside fake app window",
+  "question": "what is this app?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 16,
+  "id": "t2aXUICxd_A",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "other:pleasant scene",
+  "bg": "scene",
+  "palette": [
+   "#72E819",
+   "#3B8A00",
+   "#E11F35"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 45,
+   "emotion": "happy",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 6,
+   "content": "To Make a Long Story Short...",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 4,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "two girls on red gingham picnic blanket",
+  "question": "nothing (no tension)",
+  "title_relation": "repeat",
+  "glance": 0
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 17,
+  "id": "f52XQ0YgoaI",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "other:pleasant scene",
+  "bg": "flat",
+  "palette": [
+   "#F9DAAF",
+   "#E1A958",
+   "#834B4A"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 40,
+   "emotion": "mild surprise",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "three heads at a brunch table, empty plates",
+  "question": "nothing (no tension)",
+  "title_relation": "none",
+  "glance": 0
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 18,
+  "id": "CtNgZZ1WucI",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "other:dark stock photo",
+  "bg": "photo",
+  "palette": [
+   "#0C0C09",
+   "#292A1E",
+   "#E0E0BA"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 30,
+   "emotion": "none (silhouette)",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 6,
+   "content": "What do artists do every day?",
+   "color": "#F2EFA0",
+   "outline": false,
+   "position": "left",
+   "height_pct": 15,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "silhouette at laptop in dark abandoned room",
+  "question": "what do artists do?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 19,
+  "id": "7-1Uowqu4Bk",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "D",
+  "bg": "flat",
+  "palette": [
+   "#BBD6E7",
+   "#FDE691",
+   "#342D2F"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 90,
+   "emotion": "cheerful",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "STR / INT / $$$ / Account Suspension",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 17,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "three-panel class card: photo bodybuilder body, nurse, doctor",
+  "question": "which class am I?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 20,
+  "id": "58yKTMNntDA",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:hidden layer",
+  "bg": "gradient",
+  "palette": [
+   "#FBF1EB",
+   "#381E19",
+   "#EDADA5"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "smug",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 12,
+   "content": "Intelligence Fame Looks Money / 6 foot",
+   "color": "#000000",
+   "outline": false,
+   "position": "left",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "status pyramid sitting on a glowing red '6 foot' base",
+  "question": "why does the real pyramid start at 6 foot?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 21,
+  "id": "kM9G8kLEBX0",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:chart + characters",
+  "bg": "white",
+  "palette": [
+   "#FEFEFE",
+   "#75BEE4",
+   "#D2B5C2"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 50,
+   "emotion": "smug / serene",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 7,
+   "content": "It appears I have met my equal",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 8,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "bell curve with smug meme head left and robed figure right, thought bubble",
+  "question": "who is the smartest here?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 22,
+  "id": "G2IWYXxO324",
+  "group": "latest",
+  "perf": "x0.9",
+  "archetype": "other:photo collage",
+  "bg": "photo",
+  "palette": [
+   "#0F0C0E",
+   "#DBC8BE",
+   "#4B4342"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": "",
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "photo collage of tech CEOs with a long lizard tongue and wizard orb",
+  "question": "are tech bosses lizards?",
+  "title_relation": "none",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 23,
+  "id": "JFUxmWPHIeM",
+  "group": "latest",
+  "perf": "x0.8",
+  "archetype": "D",
+  "bg": "white",
+  "palette": [
+   "#FBFDFD",
+   "#E0DFD0",
+   "#322720"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 85,
+   "emotion": "blank stare",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 5,
+   "content": "I'm looking for a man who / Picks the bear",
+   "color": "#000000",
+   "outline": false,
+   "position": "right",
+   "height_pct": 5,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "huge blank stick-face vs phone screen of tiny woman in a jar",
+  "question": "what does the bear have to do with it?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "casuallyexplained",
+  "n": 24,
+  "id": "sWVKiBsdvRA",
+  "group": "latest",
+  "perf": "x1.2",
+  "archetype": "other:photo collage",
+  "bg": "photo",
+  "palette": [
+   "#F4F3F5",
+   "#312E32",
+   "#1A5AB6"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "smug (shades)",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "Just delete the app",
+   "color": "#000000",
+   "outline": false,
+   "position": "top",
+   "height_pct": 31,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "suited mascot with shades on oil-barrel photo, photo faces around",
+  "question": "what is this guy selling?",
+  "title_relation": "complement",
+  "glance": 1
+ }
+]

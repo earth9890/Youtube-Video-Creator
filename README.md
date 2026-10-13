@@ -29,6 +29,12 @@ python3 ../../skill/whiteboard-video-studio/scripts/build.py . && ../../skill/wh
 ```
 Order: script text, then voice-only mp3, then visuals. Start with a 1-minute trial before any long video.
 
+Thumbnails follow **`skill/whiteboard-video-studio/references/thumbnail-designer.md`**. It is built from 1,260 thumbnails of the same 8 channels, each scored by views against its neighbours, and its evidence is in `references/research/thumbnails/`.
+```bash
+python3 ../../skill/whiteboard-video-studio/scripts/build.py . --thumb thumbnails/thumb-c.js thumbnails/c.png
+~/.venvs/pocket/bin/python ../../skill/whiteboard-video-studio/scripts/thumb_check.py thumbnails/c.png thumbnails/d.png --space   # lint + c_grid.jpg (yours among real hits; not committed)
+```
+
 ## Episodes (4K renders in `renders/`, not committed)
 | Episode | Title pick | Render |
 |---|---|---|

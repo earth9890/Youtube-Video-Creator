@@ -1,0 +1,1730 @@
+[
+ {
+  "ch": "halfasinteresting",
+  "n": 1,
+  "id": "gwVmE8gcqrg",
+  "group": "top",
+  "perf": "x11.5",
+  "archetype": "other:object+caption box",
+  "bg": "scene",
+  "palette": [
+   "#C95516",
+   "#E9A72A",
+   "#401C1E"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "WHAT YOUR CREDIT CARD NUMBER MEANS",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "tilted orange credit card with readable 16 digits, fills frame",
+  "question": "what do my card digits secretly encode?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 2,
+  "id": "WQYsmZ6AJdY",
+  "group": "top",
+  "perf": "x7.6",
+  "archetype": "other:pattern+caption box",
+  "bg": "flat",
+  "palette": [
+   "#504A45",
+   "#B6A893",
+   "#A08D67"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "WHY THIS DIDN'T WORK",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 13,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "full-frame grey pixel camouflage pattern",
+  "question": "why did this pattern fail?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 3,
+  "id": "M16CGK1T9MM",
+  "group": "top",
+  "perf": "x7.1",
+  "archetype": "other:object+caption box",
+  "bg": "scene",
+  "palette": [
+   "#2E3243",
+   "#ECA023",
+   "#333235"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "ILLEGAL PHOTOS",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "bottom",
+   "height_pct": 11,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "glowing Eiffel Tower at night, centre, orange frame",
+  "question": "how can a photo of that be illegal?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 4,
+  "id": "o1bIKvHDNWI",
+  "group": "top",
+  "perf": "x5.5",
+  "archetype": "other:map route line",
+  "bg": "photo",
+  "palette": [
+   "#284547",
+   "#D9D3B1",
+   "#508E86"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "HAI #1",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "right",
+   "height_pct": 11,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "cyan route line crossing Eurasia on satellite map",
+  "question": "where does this line run and why is it #1?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 5,
+  "id": "N2OUzBrLEFk",
+  "group": "top",
+  "perf": "x5.4",
+  "archetype": "other:object+caption box+arrow",
+  "bg": "scene",
+  "palette": [
+   "#4C4C4C",
+   "#F6B01D",
+   "#190123"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 5,
+   "content": "THERE'S A NUKE IN HERE",
+   "color": "#F6B01D",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "yellow truck with a missile in its open trailer among ordinary cars, top-down",
+  "question": "a nuke on a normal highway?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 6,
+  "id": "8-u5nd2GqNE",
+  "group": "top",
+  "perf": "x5.2",
+  "archetype": "other:symbol inside outline on dark",
+  "bg": "flat",
+  "palette": [
+   "#0D0A1C",
+   "#C2AA72",
+   "#201326"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "none (line profile)",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 3,
+   "content": "QUEEN DEATH PROTOCOL",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "bottom",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "white line profile of a head with a crown under a glass dome inside",
+  "question": "what is the secret plan for when she dies?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 7,
+  "id": "f5Y3cf3MFIw",
+  "group": "top",
+  "perf": "x5.1",
+  "archetype": "other:crossed-out object",
+  "bg": "flat",
+  "palette": [
+   "#044176",
+   "#E5BC37",
+   "#BD5B5E"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "ILLEGAL NAMES",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "huge red X over an unpronounceable name on the Swedish flag",
+  "question": "why is that name banned?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 8,
+  "id": "7Tu8ZIbfLis",
+  "group": "top",
+  "perf": "x4.7",
+  "archetype": "E",
+  "bg": "scene",
+  "palette": [
+   "#A2C9DE",
+   "#EAEDF1",
+   "#5696CE"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 1,
+   "content": "FRAUD?",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "one orange $116 seat among 30 blue $324 seats, red arrow on it",
+  "question": "why is that one seat cheap - is it fraud?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 9,
+  "id": "vh6zanS_epw",
+  "group": "top",
+  "perf": "x4.6",
+  "archetype": "other:everything points at one spot",
+  "bg": "scene",
+  "palette": [
+   "#0F172C",
+   "#314644",
+   "#AE5E2D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 7,
+   "content": "THE PROBLEM WITH LIVING AT 38°N, -97°W",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "lone farmhouse hit by ~20 orange laser lines from every side",
+  "question": "why is everything aimed at this house?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 10,
+  "id": "1Y0fp38ON14",
+  "group": "top",
+  "perf": "x4.5",
+  "archetype": "other:object+caption box",
+  "bg": "scene",
+  "palette": [
+   "#A6A5A3",
+   "#DDD9CF",
+   "#BA9646"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 7,
+   "content": "BROUGHT TO COURT IN A MAIL TRUCK",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 13,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "yellow courier van parked at a white courthouse",
+  "question": "why would a witness arrive in a mail truck?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 11,
+  "id": "lWpCFhcMstc",
+  "group": "top",
+  "perf": "x4.2",
+  "archetype": "other:object+caption box",
+  "bg": "flat",
+  "palette": [
+   "#E7AE19",
+   "#2C1E1D",
+   "#EDDDC4"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "AMERICAN AIRLINES' TERRIBLE MISTAKE",
+   "color": "#1A0023",
+   "outline": false,
+   "position": "bottom",
+   "height_pct": 14,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "sandwich with an airline flag pick, airport signs reading Sandwich/Lunch",
+  "question": "how is a sandwich an airline mistake?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 12,
+  "id": "rM4ZpJOAY4k",
+  "group": "top",
+  "perf": "x4.1",
+  "archetype": "other:diegetic text board",
+  "bg": "scene",
+  "palette": [
+   "#242026",
+   "#EBAE1A",
+   "#585048"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 7,
+   "content": "18 YEARS LIVING IN A PARIS AIRPORT",
+   "color": "#1A0023",
+   "outline": false,
+   "position": "center",
+   "height_pct": 12,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "split-flap departure board listing SHOWER / BREAKFAST / LUNCH / SLEEP",
+  "question": "someone lived 18 years in an airport?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 13,
+  "id": "whdlsgKpvBY",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:promo logo",
+  "bg": "flat",
+  "palette": [
+   "#1C3F53",
+   "#EEEBE7",
+   "#847F83"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 5,
+   "content": "INTRODUCING A BRAND NEW PODCAST",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "right",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "podcast cover art with passport and earbuds",
+  "question": "none - it is an announcement",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 14,
+  "id": "Xy02XvNUGUo",
+  "group": "bottom",
+  "perf": "x0.2",
+  "archetype": "other:silhouette scene",
+  "bg": "scene",
+  "palette": [
+   "#F2A81D",
+   "#0D060C",
+   "#5D3B27"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "none (silhouette)",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "POLAR BEARS RUIN HALLOWEEN",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "center",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "black bear silhouette with pumpkin pail against a full moon",
+  "question": "do polar bears trick-or-treat? (bear drawn black, contradicts text)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 15,
+  "id": "Dzu7ZAhsHJM",
+  "group": "bottom",
+  "perf": "x0.2",
+  "archetype": "other:anatomy diagram",
+  "bg": "flat",
+  "palette": [
+   "#0B1824",
+   "#E0D0C9",
+   "#A0A663"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 100,
+   "emotion": "none (face profile)",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 4,
+   "content": "THE SCIENCE OF PARASYMPATHETIC GENERALIZATION",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "top",
+   "height_pct": 13,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "cutaway eye and nose with two labelled nerves",
+  "question": "what is that jargon? (no hook)",
+  "title_relation": "complement",
+  "glance": 0
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 16,
+  "id": "oQgtSM3kiiQ",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:busy sci-fi scene",
+  "bg": "gradient",
+  "palette": [
+   "#499FD7",
+   "#15114C",
+   "#3852A9"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 60,
+   "emotion": "surprised",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 6,
+   "content": "THE MESSAGE EARTH BROADCAST FOR ALIENS",
+   "color": "#FFFFFF",
+   "outline": false,
+   "position": "top",
+   "height_pct": 11,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "green alien plus human silhouette, planet, molecule, binary string",
+  "question": "what did we send? (diluted by 6 props)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 17,
+  "id": "u8rI3oKnmCw",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:promo logo",
+  "bg": "flat",
+  "palette": [
+   "#F2A51A",
+   "#F2C313",
+   "#35282D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 5,
+   "content": "DO NOT CLICK ON THIS",
+   "color": "#1A0023",
+   "outline": false,
+   "position": "center",
+   "height_pct": 12,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "JET LAG logo on hazard-striped orange card",
+  "question": "none - a channel promo",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 18,
+  "id": "--xMgSJDTtE",
+  "group": "bottom",
+  "perf": "x0.3",
+  "archetype": "other:two figures+arrow",
+  "bg": "photo",
+  "palette": [
+   "#BBB3C7",
+   "#5E585C",
+   "#160D1B"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 90,
+   "emotion": "happy",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 5,
+   "content": "THE FIRST EVER HIGH FIVE",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "two halftone baseball players about to slap hands",
+  "question": "who did the first high five? (low stakes)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 19,
+  "id": "HjeesNAbWqM",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:map route+arrow",
+  "bg": "flat",
+  "palette": [
+   "#A5C364",
+   "#5B7046",
+   "#50A8D2"
+  ],
+  "elements": 5,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 6,
+   "content": "THEY SEND IT TO SOUTH CAROLINA?",
+   "color": "#1A1A1A",
+   "outline": false,
+   "position": "left",
+   "height_pct": 13,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "trash train line from NYC inset to South Carolina dump inset",
+  "question": "NYC trash goes that far?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 20,
+  "id": "x_SgL10cYgQ",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:map outline",
+  "bg": "photo",
+  "palette": [
+   "#48493C",
+   "#BFB196",
+   "#A89265"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "119 YEARS OF DIGGING",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 13,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "terraced open pit outlined in red on satellite view",
+  "question": "how big does a 119-year hole get?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 21,
+  "id": "ENkbkzeCYYM",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:object+caption box+arrow",
+  "bg": "scene",
+  "palette": [
+   "#966C4C",
+   "#A59B8F",
+   "#493832"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "ALL THE WORST ROLEXES",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "red arrow into a Rolex shop window with three watches",
+  "question": "Rolex hides its worst watches?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 22,
+  "id": "3VlnvsZ6kJE",
+  "group": "latest",
+  "perf": "x1.3",
+  "archetype": "other:map route+stats",
+  "bg": "photo",
+  "palette": [
+   "#536B54",
+   "#354231",
+   "#8D8264"
+  ],
+  "elements": 5,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "WHY DOES THIS EXIST?",
+   "color": "#1A0023",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "short red rail line on satellite view with 2.7 MILES / 4.3 KM / 5 MINUTES chips",
+  "question": "why build a 2.7-mile railway?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 23,
+  "id": "LX52DmpRO2M",
+  "group": "latest",
+  "perf": "x1.0",
+  "archetype": "other:host mascot award",
+  "bg": "scene",
+  "palette": [
+   "#D1BE4D",
+   "#B2261E",
+   "#513425"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "grimacing",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 6,
+   "content": "THE AWARD FOR \"WORST MAP\" GOES TO...",
+   "color": "#1A0023",
+   "outline": false,
+   "position": "left",
+   "height_pct": 11,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "gold-suited emoji-head host beside a world map on a red-curtain stage",
+  "question": "which map was worst?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "halfasinteresting",
+  "n": 24,
+  "id": "89thRe3elQM",
+  "group": "latest",
+  "perf": "x1.2",
+  "archetype": "other:danger zone map+arrow",
+  "bg": "flat",
+  "palette": [
+   "#C9B0A6",
+   "#AC9264",
+   "#9E6C53"
+  ],
+  "elements": 7,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 5,
+   "content": "HOW DO YOU LAND HERE?",
+   "color": "#F7B516",
+   "outline": false,
+   "position": "left",
+   "height_pct": 12,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "pink restricted circle over DC with fighter-jet and skull warning triangles, airliner entering",
+  "question": "how does a plane land inside a no-fly zone?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 1,
+  "id": "_uk_6vfqwTA",
+  "group": "top",
+  "perf": "x2.6",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#0F0E3A",
+   "#F8F0E6",
+   "#A74D51"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 75,
+   "emotion": "smug squint vs blank stare",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "OVERSIMPLIFIED / WW2 / 1",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "bottom",
+   "height_pct": 30,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "giant white WW2 between Churchill (left) and Hitler (right) over a red-vs-blue Europe",
+  "question": "how did these two end up at war?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 2,
+  "id": "I79TpDe3t2g",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#0C0A39",
+   "#E4DCD2",
+   "#524E40"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 60,
+   "emotion": "weary grimace vs angry brows",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE COLD WAR",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "bow-tied Western leader vs Stalin, missiles aimed across a world map dotted with mushroom clouds",
+  "question": "who launches first?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 3,
+  "id": "zqllxbPWKNI",
+  "group": "top",
+  "perf": "x1.8",
+  "archetype": "other:hero portrait",
+  "bg": "scene",
+  "palette": [
+   "#9890AC",
+   "#C6C1D4",
+   "#433753"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 65,
+   "emotion": "heroic, silly-faced horse",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE NAPOLEONIC WARS",
+   "color": "#E8343A",
+   "outline": true,
+   "position": "top",
+   "height_pct": 10,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Napoleon on a rearing white horse in snowy Alps, tiny soldiers behind",
+  "question": "(recognition of a famous painting gone silly)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 4,
+  "id": "fo2Rb9h788s",
+  "group": "top",
+  "perf": "x1.7",
+  "archetype": "other:map only",
+  "bg": "photo",
+  "palette": [
+   "#0A0932",
+   "#CF2545",
+   "#A69FC0"
+  ],
+  "elements": 4,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 2,
+   "content": "OVERSIMPLIFIED / WW2 / 2",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "left",
+   "height_pct": 28,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "red Japanese empire spreading on navy ocean, US flag and planes bottom-right",
+  "question": "how far did Japan spread?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 5,
+  "id": "tsxmyL7TUJg",
+  "group": "top",
+  "perf": "x1.6",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#2D2D38",
+   "#4E5DA6",
+   "#E0D8D3"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 55,
+   "emotion": "stern vs stern, generals angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "THE AMERICAN CIVIL WAR",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Davis (left) vs Lincoln (right) with cannons pointing across a blue/red USA map",
+  "question": "north vs south - who breaks?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 6,
+  "id": "gzALIXcY4pg",
+  "group": "top",
+  "perf": "x1.6",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#23243C",
+   "#DFD6D4",
+   "#6269B8"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 70,
+   "emotion": "calm vs angry brows",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE AMERICAN REVOLUTION",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 10,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Washington (left, calm) vs redcoat (right, glaring) with stars-and-stripes flag between",
+  "question": "who wins this staring match?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 7,
+  "id": "AAGIi62-sAU",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "other:ring around object",
+  "bg": "scene",
+  "palette": [
+   "#423F36",
+   "#F1EAE3",
+   "#868F62"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 40,
+   "emotion": "all angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 1,
+   "content": "PROHIBITION",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 10,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "four men at the corners glaring at one glass of beer in an art-deco bar",
+  "question": "why is everyone fighting over a beer?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 8,
+  "id": "dHSQAEam2yc",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "other:photo face with cartoon panic",
+  "bg": "photo",
+  "palette": [
+   "#D1CFCF",
+   "#575542",
+   "#11122D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "nervous: googly eyes, sweat drop, blush",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "OVERSIMPLIFIED / WW1 / 1",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 25,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "b/w photo of a top-hatted Briton with googly cartoon eyes and a blue sweat drop",
+  "question": "why is this man panicking?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 9,
+  "id": "8qRZcXIODNU",
+  "group": "top",
+  "perf": "x1.3",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#E8E3DF",
+   "#B8BAAF",
+   "#A89566"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 65,
+   "emotion": "blank vs smug",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE FRENCH REVOLUTION",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "guillotine centre between blank-faced king (left) and smug Robespierre (right)",
+  "question": "whose head goes in there?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 10,
+  "id": "ewLpXw6uN28",
+  "group": "top",
+  "perf": "x1.2",
+  "archetype": "other:ring around central figure",
+  "bg": "scene",
+  "palette": [
+   "#E1E4E3",
+   "#B2B8B7",
+   "#48342C"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 7,
+   "height_pct": 45,
+   "emotion": "smug king vs six angry wives",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "HENRY VIII",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Henry VIII centre, three angry wives on each edge, flying pig-pope",
+  "question": "what did he do to all of them?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 11,
+  "id": "Cqbleas1mmo",
+  "group": "top",
+  "perf": "x1.2",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#E7E6E7",
+   "#A8AEB5",
+   "#70897E"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 60,
+   "emotion": "smirk vs aloof",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE RUSSIAN REVOLUTION",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Lenin + angry protest crowd (left) vs Tsar + rifle line (right) before Winter Palace",
+  "question": "crowd or rifles - who wins?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 12,
+  "id": "ATlila3e9dM",
+  "group": "top",
+  "perf": "x1.2",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#373D41",
+   "#83656D",
+   "#F0EFEC"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 55,
+   "emotion": "blank cartoon vs innocent baby photo",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "HITLER / OVERSIMPLIFIED / 1",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 35,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "cartoon Hitler in a propeller cap beside a real baby photo",
+  "question": "how did that baby become him?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 13,
+  "id": "805SIqgDZIE",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:battle chaos",
+  "bg": "scene",
+  "palette": [
+   "#434452",
+   "#54648F",
+   "#AE8D51"
+  ],
+  "elements": 10,
+  "character": {
+   "present": true,
+   "count": 12,
+   "height_pct": 20,
+   "emotion": "panicked",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 5,
+   "content": "THE FIRST PUNIC WAR / RECAP",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "bottom",
+   "height_pct": 29,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "crowded sea battle with RECAP stamped over it (same art as #24)",
+  "question": "none - I saw this already",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 14,
+  "id": "W12vb_Crf00",
+  "group": "bottom",
+  "perf": "x0.5",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#E4D9C8",
+   "#555661",
+   "#39A23D"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 3,
+   "height_pct": 55,
+   "emotion": "angry vs angry, grinning banana",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "Football War",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 13,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "two generic blank heads with V brows flanking a banana on a football",
+  "question": "football started a war?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 15,
+  "id": "Cln0J87vulU",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:ring around object",
+  "bg": "scene",
+  "palette": [
+   "#A6A39D",
+   "#473B34",
+   "#827978"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 40,
+   "emotion": "all angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "WAR OF THE BUCKET",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "four angry men around a wooden bucket on a well",
+  "question": "a war over a bucket?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 16,
+  "id": "hRSGxw2AQnk",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:ring around city",
+  "bg": "scene",
+  "palette": [
+   "#E7E3DB",
+   "#B6B0A3",
+   "#6A5D58"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 45,
+   "emotion": "all angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "THE FIRST PUNIC WAR",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 8,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "four helmeted soldiers at the corners framing a white city",
+  "question": "(none - unknown faces, no object)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 17,
+  "id": "BXpu6tbFCsI",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#524337",
+   "#C5CEDC",
+   "#AE5233"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 45,
+   "emotion": "angry soldiers vs deadpan emus",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE EMU WAR",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "three angry soldiers with machine gun (right) vs two emus and an emo kid (left), Australia icon centre",
+  "question": "soldiers lost to birds?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 18,
+  "id": "Dd1JUTA7Ijc",
+  "group": "bottom",
+  "perf": "x0.7",
+  "archetype": "other:single leader on map",
+  "bg": "photo",
+  "palette": [
+   "#C23328",
+   "#95986A",
+   "#1D1D32"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "blank",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "OVERSIMPLIFIED / HITLER / 2",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 33,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "cartoon Hitler right edge, iron-cross flag on red Germany",
+  "question": "(nothing new vs part 1)",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 19,
+  "id": "1BVJzaXv3rk",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#534D50",
+   "#6D748D",
+   "#B6B3B7"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 75,
+   "emotion": "fierce grin vs gritted-teeth rage",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 1,
+   "content": "HANNIBAL / PART 3",
+   "color": "#0EFCC8",
+   "outline": true,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "eyepatched Hannibal (left) and bald Roman (right) crossing swords under lightning",
+  "question": "who wins the final duel?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 20,
+  "id": "Q-nWA0WeF98",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "D",
+  "bg": "photo",
+  "palette": [
+   "#31333B",
+   "#63A493",
+   "#D7CCC1"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 50,
+   "emotion": "angry vs stern",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "HANNIBAL / WAR",
+   "color": "#0EFCC8",
+   "outline": true,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "red double arrow labelled WAR between Carthage (blue) and Rome (red), elephant left",
+  "question": "Carthage vs Rome - round 2?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 21,
+  "id": "lsbcN9-jU1Y",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:hero portrait",
+  "bg": "scene",
+  "palette": [
+   "#D8C2BF",
+   "#A15F66",
+   "#5D4D58"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 6,
+   "height_pct": 45,
+   "emotion": "determined; giant angry face in sky",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 1,
+   "content": "HANNIBAL",
+   "color": "#0EFCC8",
+   "outline": true,
+   "position": "top",
+   "height_pct": 13,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "Hannibal on an elephant crossing snowy Alps, giant Roman face in the sky",
+  "question": "elephants over the Alps?",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 22,
+  "id": "805SIqgDZIE",
+  "group": "latest",
+  "perf": "x0.1",
+  "archetype": "other:battle chaos",
+  "bg": "scene",
+  "palette": [
+   "#434452",
+   "#54648F",
+   "#AE8D51"
+  ],
+  "elements": 10,
+  "character": {
+   "present": true,
+   "count": 12,
+   "height_pct": 20,
+   "emotion": "panicked",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 5,
+   "content": "THE FIRST PUNIC WAR / RECAP",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "bottom",
+   "height_pct": 29,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "same as #13",
+  "question": "none - I saw this already",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 23,
+  "id": "hRSGxw2AQnk",
+  "group": "latest",
+  "perf": "x0.6",
+  "archetype": "other:ring around city",
+  "bg": "scene",
+  "palette": [
+   "#E7E3DB",
+   "#B6B0A3",
+   "#6A5D58"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 4,
+   "height_pct": 45,
+   "emotion": "all angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "THE FIRST PUNIC WAR",
+   "color": "#FFFFFF",
+   "outline": true,
+   "position": "top",
+   "height_pct": 8,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "same as #16",
+  "question": "(none)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "OverSimplified",
+  "n": 24,
+  "id": "yRmOWcWdQAo",
+  "group": "latest",
+  "perf": "x1.0",
+  "archetype": "other:battle chaos",
+  "bg": "scene",
+  "palette": [
+   "#3A5993",
+   "#4A4950",
+   "#A89253"
+  ],
+  "elements": 10,
+  "character": {
+   "present": true,
+   "count": 12,
+   "height_pct": 20,
+   "emotion": "panicked, ships with angry eyes",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 4,
+   "content": "THE FIRST PUNIC WAR",
+   "color": "#F5D90A",
+   "outline": true,
+   "position": "top",
+   "height_pct": 9,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "sea battle, ships with angry eyes ramming, soldiers falling into water",
+  "question": "who wins at sea?",
+  "title_relation": "repeat",
+  "glance": 1
+ }
+]

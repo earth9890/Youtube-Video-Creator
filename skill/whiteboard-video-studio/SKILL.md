@@ -19,7 +19,9 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 | Hooks, psychology, staging, sound, colour (motivational shorts) | `references/craft-playbook.md` |
 | Engine API (v2 paper, v3 colour look, story look, props, camera) | `references/engine-api.md` |
 | "User says X → do Y" edits | `references/edit-playbook.md` |
-| Thumbnails, title, description, upload | `references/thumbnail-doctrine.md`, `youtube-package.md`, `youtube-upload.md` |
+| **Making any explainer thumbnail** (6 laws, background by topic, archetypes with real perf, engine build specs, `thumb_check.py` + feed-grid test, score card) | `references/thumbnail-designer.md` |
+| Evidence behind it: 1,260-thumbnail study of the same 8 channels, 192 hand labels, recipes, tools to redo it | `references/research/thumbnails/` |
+| Motivational-short thumbnails, title, description, upload | `references/thumbnail-doctrine.md`, `youtube-package.md`, `youtube-upload.md` |
 | Worked examples: approved 1-min funny explainer + 2 rejected drafts (`blackhole-home/`); 8-min story mode with a 60-prop library (`toothache-story/`); motivational short (`never-give-up/`) | `examples/` |
 Engines: `scripts/engine2.js` (current; `// look: v3` default), `scripts/engine.js` (v1).
 **Craft rules (hooks, story, viewer psychology, copy, staging, sound, colour, titles) live in `references/craft-playbook.md` — apply the matching section at every step below; evidence tags [R]/[D]/[H] show how strong each rule is.**
@@ -102,7 +104,8 @@ ffprobe -v error -show_entries stream=codec_name,width,height,duration -of csv=p
 Authored 1920×1080 + `--resolution 4k` supersamples to 3840×2160. Keep old versions (`-v2`, `-v3`) — the user compares them. If socket's `npx` wrapper eats a flag ("Unknown flag"), check the real flag name in `hyperframes-cli/references/preview-render.md`.
 
 ## 8. YouTube package (see `references/youtube-package.md` + `craft-playbook.md` §G colour/thumbnail, §H title/description)
-Thumbnails follow `references/thumbnail-doctrine.md` — the character INSIDE the pain moment, 2–3 words at 260–340 px bold, dark board, one accent, one stakes prop, glance test (`*_glance.png`); two variants per video for YouTube Test & Compare; title ≤ 60 chars that differs from the thumbnail text; first two description lines = hook + promise.
+**Explainer thumbnails follow `references/thumbnail-designer.md`:** the script's hook made visible as ONE wrongness, background by topic (space = ≥ 40 % near-black), 1–3 words of stakes, big character or none, ≤ 3 elements; two variants (floor-raiser + lottery ticket); then `~/.venvs/pocket/bin/python scripts/thumb_check.py thumbnails/a.png thumbnails/b.png --space` and READ each `*_grid.jpg` (yours among 11 real hits at feed size) — lint passing is not enough.
+Motivational-short thumbnails follow `references/thumbnail-doctrine.md` — the character INSIDE the pain moment, 2–3 words at 260–340 px bold, dark board, one accent, one stakes prop, glance test (`*_glance.png`); two variants per video for YouTube Test & Compare; title ≤ 60 chars that differs from the thumbnail text; first two description lines = hook + promise.
 Title (5 options, ≤ 60 chars, one pick), description (hook, summary, chapters from clip times, CTA, hashtags), tags, pinned comment, **thumbnails** (3 variants: dark staircase/"quit", white calendar/"show up", brand black-hole) via `brand/thumbs.py`, **channel art** via `brand/gen.py` (5 logos 800², 4 banners 2560×1440 — keep all text inside the 507–2053 × 508–931 safe box; decor only outside it). No stick figure on logos. Output under `~/videos/<channel>/` and show a contact sheet.
 
 ## 9. Upload to YouTube (only when asked — see `references/youtube-upload.md`)

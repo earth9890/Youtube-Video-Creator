@@ -1,0 +1,1730 @@
+[
+ {
+  "ch": "Zenn0009",
+  "n": 1,
+  "id": "LuCans9euxY",
+  "group": "top",
+  "perf": "x42.2",
+  "archetype": "B",
+  "bg": "black",
+  "palette": [
+   "#000000",
+   "#FBFB02",
+   "#2E2D0C"
+  ],
+  "elements": 1,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": null,
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "yellow almond eye with black pupil, dead centre, ~45% of width",
+  "question": "whose eye is watching me in the dark?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 2,
+  "id": "_xGwOhFLdno",
+  "group": "top",
+  "perf": "x17.5",
+  "archetype": "B",
+  "bg": "flat",
+  "palette": [
+   "#464646",
+   "#F8F8F8",
+   "#C70707"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": null,
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "giant white hand reaching down to a red tangled scribble, centre",
+  "question": "what is that red tangle and why is the hand reaching for it?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 3,
+  "id": "st_Ah6Ykbh4",
+  "group": "top",
+  "perf": "x12.2",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#6C5D4C",
+   "#2C2720",
+   "#FAFA0D"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "wide-eyed, uneasy",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "2 SLEEPS?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "caveman lying awake by a fire, moonlit cave mouth at right",
+  "question": "people used to sleep twice a night?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 4,
+  "id": "EHPBtQYWlfU",
+  "group": "top",
+  "perf": "x7.4",
+  "archetype": "A",
+  "bg": "white",
+  "palette": [
+   "#FBFAF8",
+   "#BE9550",
+   "#3C3A3C"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "haggard, worried",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "28 ... 32 (tape marks)",
+   "color": "#3C3A3C",
+   "outline": false,
+   "position": "right",
+   "height_pct": 4,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "bowl wrapped in a tape measure, right half; gaunt face left",
+  "question": "why is a food bowl being measured like a waist?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 5,
+  "id": "QZNB21kQCgQ",
+  "group": "top",
+  "perf": "x5.8",
+  "archetype": "other:figure+state fragment",
+  "bg": "scene",
+  "palette": [
+   "#74C8ED",
+   "#6ABB5C",
+   "#FEFE05"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "smug, relaxed",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "NO JOB",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "right",
+   "height_pct": 24,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "big afro head lying back on a green hill",
+  "question": "they really had no job?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 6,
+  "id": "d8lMW1uDN4s",
+  "group": "top",
+  "perf": "x3.0",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#64625C",
+   "#DDB94D",
+   "#EAE1B6"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "deadpan, wide-eyed",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "ROTTEN MEAT?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "worm-ridden meat slab held at the mouth, centre",
+  "question": "they ate rotten meat on purpose?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 7,
+  "id": "royoy7-PyTw",
+  "group": "top",
+  "perf": "x2.5",
+  "archetype": "A",
+  "bg": "flat",
+  "palette": [
+   "#FBF7CC",
+   "#CAEA5D",
+   "#2F3121"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "sad, puzzled",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "WHO ARE YOU?",
+   "color": "#2F3121",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "stick figure looking down at a pacifier on the grass",
+  "question": "who is he talking to, his baby self?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 8,
+  "id": "FqLPYQRs6Sk",
+  "group": "top",
+  "perf": "x2.0",
+  "archetype": "B",
+  "bg": "black",
+  "palette": [
+   "#000000",
+   "#EDEDED",
+   "#F00404"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": null,
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": true,
+  "focal": "red dot on top of a white bell curve, red arrow down onto it",
+  "question": "what sits at that peak?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 9,
+  "id": "GqXXtxAyx0Q",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#202C36",
+   "#BBC7D2",
+   "#FEFE05"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 40,
+   "emotion": "sad",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "NO CRYING?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "lone figure hugging knees among rows of empty cribs, spotlight",
+  "question": "babies that stop crying, why?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 10,
+  "id": "_XYNsTvnU7E",
+  "group": "top",
+  "perf": "x1.9",
+  "archetype": "E",
+  "bg": "white",
+  "palette": [
+   "#FEFEFD",
+   "#A29648",
+   "#891C1C"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "deadpan",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "ARE WE ALIENS?",
+   "color": "#111111",
+   "outline": false,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "question"
+  },
+  "arrow": true,
+  "focal": "plain stick human at the end of an animal line-up under a red arrow",
+  "question": "is the human the odd one out?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 11,
+  "id": "gEnnt7fDn5Y",
+  "group": "top",
+  "perf": "x1.5",
+  "archetype": "other:photoreal object + statement",
+  "bg": "photo",
+  "palette": [
+   "#160707",
+   "#C09C4E",
+   "#F0F0F0"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "IT'S ALL FAKE",
+   "color": "#F5F5F5",
+   "outline": false,
+   "position": "right",
+   "height_pct": 27,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "melting gold Roman coin dripping into banknotes, left",
+  "question": "money is fake?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 12,
+  "id": "Dw2Pifv1JrM",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#271F1A",
+   "#4F5538",
+   "#FEFE05"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 35,
+   "emotion": "terrified",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "THE SCREAMS...",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "bottom",
+   "height_pct": 16,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "saw about to cut a strapped-down patient",
+  "question": "what did that feel like with no anaesthetic?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 13,
+  "id": "ZJai7C3tb1M",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:title card + literal gag",
+  "bg": "white",
+  "palette": [
+   "#FFFEFE",
+   "#A6A3A3",
+   "#D0302A"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 45,
+   "emotion": "surprised",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE PRATFALL EFFECT",
+   "color": "#111111",
+   "outline": false,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": true,
+  "focal": "figure slipping on a banana peel",
+  "question": "none (what is the pratfall effect?)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 14,
+  "id": "ZYG4Dg9JEMw",
+  "group": "bottom",
+  "perf": "x0.1",
+  "archetype": "other:creature close-up + text",
+  "bg": "white",
+  "palette": [
+   "#F5F5EE",
+   "#F68816",
+   "#563F24"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "blank",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "IS THIS YOU?",
+   "color": "#3A3A3A",
+   "outline": false,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "orange blob head with two big eyes peeking up",
+  "question": "is what me? (unclear)",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 15,
+  "id": "W9hRteFVYCc",
+  "group": "bottom",
+  "perf": "x0.2",
+  "archetype": "other:title card + literal illustration",
+  "bg": "white",
+  "palette": [
+   "#FEFEFD",
+   "#A9A9A9",
+   "#F4E503"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "uneasy",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE SPOTLIGHT EFFECT",
+   "color": "#111111",
+   "outline": false,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "figure standing in a yellow spotlight cone",
+  "question": "none (literal picture of the title)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 16,
+  "id": "rtbqlnD_VXg",
+  "group": "bottom",
+  "perf": "x0.5",
+  "archetype": "other:cute animal, no human",
+  "bg": "white",
+  "palette": [
+   "#F4F4EC",
+   "#403F3A",
+   "#E1C311"
+  ],
+  "elements": 2,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "sweet, sad",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "WHY SO TAME?",
+   "color": "#E1C311",
+   "outline": true,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "cartoon dog face, centre",
+  "question": "why are dogs tame? (already known)",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 17,
+  "id": "HooBxU_HRbM",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "D",
+  "bg": "white",
+  "palette": [
+   "#FCFCFC",
+   "#181818",
+   "#2E6FD0"
+  ],
+  "elements": 6,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 45,
+   "emotion": "calm vs strained",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 4,
+   "content": "90% 10% RIGHT LEFT",
+   "color": "#111111",
+   "outline": false,
+   "position": "top",
+   "height_pct": 37,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "two huge percentages over two figures writing",
+  "question": "why only 10%? (title already says it)",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 18,
+  "id": "jBM7m-LcT2I",
+  "group": "bottom",
+  "perf": "x0.7",
+  "archetype": "other:photo eye strips",
+  "bg": "photo",
+  "palette": [
+   "#181A1C",
+   "#986E40",
+   "#C7985B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": null,
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "three stacked photo strips of animal eyes",
+  "question": "whose eyes?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 19,
+  "id": "4MkAjGeYyHY",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:busy panorama",
+  "bg": "scene",
+  "palette": [
+   "#C1B948",
+   "#E0EEF0",
+   "#877E4D"
+  ],
+  "elements": 9,
+  "character": {
+   "present": true,
+   "count": 12,
+   "height_pct": 50,
+   "emotion": "smug",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "ALL YEAR?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "meditating caveman centred in a four-season panorama of tiny figures",
+  "question": "what did they do all year? (no single strange thing)",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 20,
+  "id": "e80H4rkWvM0",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#040A1B",
+   "#014892",
+   "#FEFE05"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "frightened",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 2,
+   "content": "GO CRAZY?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 29,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "worried figure inside a blue foam-spike tunnel converging to a black void",
+  "question": "does silence drive you mad?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 21,
+  "id": "rgYkjRcyppY",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:text-only card",
+  "bg": "flat",
+  "palette": [
+   "#6A0D20",
+   "#F3F0F0",
+   "#DDD910"
+  ],
+  "elements": 1,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE EVIL PLACEBO",
+   "color": "#DDD910",
+   "outline": true,
+   "position": "center",
+   "height_pct": 37,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "two lines of text on maroon felt",
+  "question": "what's an evil placebo? (answered by the title)",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 22,
+  "id": "EHPBtQYWlfU",
+  "group": "latest",
+  "perf": "x7.4",
+  "archetype": "A",
+  "bg": "white",
+  "palette": [
+   "#FBFAF8",
+   "#BE9550",
+   "#3C3A3C"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "haggard, worried",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "28 ... 32 (tape marks)",
+   "color": "#3C3A3C",
+   "outline": false,
+   "position": "right",
+   "height_pct": 4,
+   "kind": "number"
+  },
+  "arrow": false,
+  "focal": "bowl wrapped in a tape measure, right half; gaunt face left",
+  "question": "why is a food bowl being measured like a waist?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 23,
+  "id": "t8Gl7tf8Sfo",
+  "group": "latest",
+  "perf": "x1.4",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#BBCFEB",
+   "#977C5B",
+   "#FEFE04"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "cringing, sweating",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "THAT'S ME?",
+   "color": "#FEFE05",
+   "outline": true,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "figure recoiling from a phone playing his own voice",
+  "question": "is that really what I sound like?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "Zenn0009",
+  "n": 24,
+  "id": "_xGwOhFLdno",
+  "group": "latest",
+  "perf": "x17.5",
+  "archetype": "B",
+  "bg": "flat",
+  "palette": [
+   "#464646",
+   "#F8F8F8",
+   "#C70707"
+  ],
+  "elements": 2,
+  "character": {
+   "present": false,
+   "count": 0,
+   "height_pct": 0,
+   "emotion": "none",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 0,
+   "content": "",
+   "color": null,
+   "outline": false,
+   "position": "none",
+   "height_pct": 0,
+   "kind": "none"
+  },
+  "arrow": false,
+  "focal": "giant white hand reaching down to a red tangled scribble, centre",
+  "question": "what is that red tangle and why is the hand reaching for it?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 1,
+  "id": "N2Y4-_dkKe0",
+  "group": "top",
+  "perf": "x218.2",
+  "archetype": "other:big face in the act",
+  "bg": "scene",
+  "palette": [
+   "#6A5849",
+   "#F3DEB1",
+   "#050403"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 50,
+   "emotion": "greedy, chewing",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 5,
+   "content": "Why 3 meals a day?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 12,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "caveman face centred, biting a meat leg, cave mouth framing savanna (4:3 letterboxed)",
+  "question": "why three meals and not one?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 2,
+  "id": "KTw7tXzxoNM",
+  "group": "top",
+  "perf": "x183.3",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#B2D3BE",
+   "#CFA34F",
+   "#735F3C"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "calm, faint smile",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "Rarest Human",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 20,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "girl with one amber and one blue eye and white hair, centred",
+  "question": "why are her eyes two colours?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 3,
+  "id": "KXv-LNRpWNk",
+  "group": "top",
+  "perf": "x73.1",
+  "archetype": "other:animal + strange food",
+  "bg": "flat",
+  "palette": [
+   "#566785",
+   "#323234",
+   "#E5AF2A"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "curious",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "Taste good?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "crow head looming over a heap of fries and onion rings",
+  "question": "would a crow even like junk food?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 4,
+  "id": "svxL5pysqX0",
+  "group": "top",
+  "perf": "x53.0",
+  "archetype": "C",
+  "bg": "flat",
+  "palette": [
+   "#FCA55D",
+   "#7F5930",
+   "#F3D411"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "exhausted, ill",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Dead man walking",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "fragment"
+  },
+  "arrow": true,
+  "focal": "pink tumour on a caveman's head, yellow arrow pointing at it",
+  "question": "what is that growth, is he dying?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 5,
+  "id": "7f_VhPY-2dE",
+  "group": "top",
+  "perf": "x46.9",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#D9E6F4",
+   "#AEC998",
+   "#F6F6F6"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 80,
+   "emotion": "blank, deadpan",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "RAREST HUMAN TRAITS",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "albino child with pink eyes and mottled white hands raised",
+  "question": "what's different about his skin and eyes?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 6,
+  "id": "TZ-FAqCf02A",
+  "group": "top",
+  "perf": "x21.3",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#F6EEE1",
+   "#CE2F39",
+   "#DFD6AE"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "sad, tired",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "THE RAREST DISEASES",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "man with cracked, scaly skin in a red shirt, hospital behind",
+  "question": "what disease does that to skin?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 7,
+  "id": "tPyERsCN7RU",
+  "group": "top",
+  "perf": "x5.6",
+  "archetype": "other:big face in the act",
+  "bg": "scene",
+  "palette": [
+   "#625E56",
+   "#C5AB4C",
+   "#C7CBCB"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 80,
+   "emotion": "eager, sweating, drooling",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Why hot meals?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 25,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "caveman biting steaming meat, face fills centre",
+  "question": "why does hot food win?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 8,
+  "id": "OEWQ5wYgbos",
+  "group": "top",
+  "perf": "x3.8",
+  "archetype": "F",
+  "bg": "scene",
+  "palette": [
+   "#1C150C",
+   "#5A4327",
+   "#F0EBE5"
+  ],
+  "elements": 4,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 40,
+   "emotion": "terrified",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 1,
+   "content": "Arachnophobia",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "giant spider filling the left 60%, small caveman with torch at right",
+  "question": "how big was that spider?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 9,
+  "id": "aGXQhZP_FHI",
+  "group": "top",
+  "perf": "x1.4",
+  "archetype": "D",
+  "bg": "scene",
+  "palette": [
+   "#BABDB5",
+   "#5A5E5A",
+   "#F7F7F4"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "stern vs blank",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "WHAT WENT WRONG?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 16,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "one body split: muscular caveman left, obese modern man right",
+  "question": "how did we go from that to that?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 10,
+  "id": "_13c3RArZ04",
+  "group": "top",
+  "perf": "x1.2",
+  "archetype": "other:x-ray body",
+  "bg": "flat",
+  "palette": [
+   "#F3BE67",
+   "#DC8338",
+   "#1A1A1A"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "surprised",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "Second \"Stomach\"?",
+   "color": "#1A1A1A",
+   "outline": false,
+   "position": "left",
+   "height_pct": 25,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "boy's see-through torso showing two stomachs",
+  "question": "we had two stomachs?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 11,
+  "id": "jX_F0DVYDCM",
+  "group": "top",
+  "perf": "x1.2",
+  "archetype": "other:busy panorama",
+  "bg": "scene",
+  "palette": [
+   "#5C6865",
+   "#CEA02F",
+   "#635430"
+  ],
+  "elements": 8,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 60,
+   "emotion": "dead",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 3,
+   "content": "Mutants of Chernobyl",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 19,
+   "kind": "label"
+  },
+  "arrow": false,
+  "focal": "skeleton in a hazmat suit among wolves, boar, dog, vines",
+  "question": "none sharp; many things to look at",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 12,
+  "id": "8q0xXlEk4wE",
+  "group": "top",
+  "perf": "x1.0",
+  "archetype": "other:big face in the act",
+  "bg": "scene",
+  "palette": [
+   "#847262",
+   "#F7BC90",
+   "#5A4A3B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "sleepy",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "Why sleepy after meal?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "caveman dozing on his hand over a pile of bones",
+  "question": "why do we crash after eating?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 13,
+  "id": "i9754w3udlA",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "other:back view, no face",
+  "bg": "scene",
+  "palette": [
+   "#A5A599",
+   "#9B715D",
+   "#E2D9CE"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "none (back turned)",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 4,
+   "content": "80 kg / Mt. Everest",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 19,
+   "kind": "number"
+  },
+  "arrow": true,
+  "focal": "porter with a huge load facing Everest, back to viewer",
+  "question": "80 kg up Everest?",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 14,
+  "id": "8yGHt4kZZAo",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "other:group line-up, no odd one",
+  "bg": "scene",
+  "palette": [
+   "#5B4F46",
+   "#000000",
+   "#C4B8CD"
+  ],
+  "elements": 7,
+  "character": {
+   "present": true,
+   "count": 5,
+   "height_pct": 35,
+   "emotion": "angry",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "BUILT DIFFERENT",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 14,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "five Vikings in a row before a burning village (letterboxed)",
+  "question": "none sharp",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 15,
+  "id": "zqlAHDLQe2U",
+  "group": "bottom",
+  "perf": "x0.4",
+  "archetype": "A",
+  "bg": "scene",
+  "palette": [
+   "#282626",
+   "#E1B34C",
+   "#8D6B44"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 55,
+   "emotion": "blank, mouth open",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "SPOILED FOOD?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "glowing wedge of cheese in a cave, caveman staring",
+  "question": "is cheese just spoiled food?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 16,
+  "id": "aL4thmDBM6s",
+  "group": "bottom",
+  "perf": "x0.5",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#8E908A",
+   "#575A54",
+   "#D3AB89"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "pained grimace",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Worse than Death",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "man covered in bruises, rash and a red hand in a grey hospital corridor",
+  "question": "none sharp; gore reads as mud at 160 px",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 17,
+  "id": "YrFwkAIQ9ZU",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:skeleton mascot",
+  "bg": "scene",
+  "palette": [
+   "#E1CB9C",
+   "#C1A553",
+   "#955A42"
+  ],
+  "elements": 5,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "triumphant",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 4,
+   "content": "Speedrun Extinction / Death / Death",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "skeleton in a hazmat jacket breaking 'Death' tape, mushroom cloud behind",
+  "question": "none sharp",
+  "title_relation": "repeat",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 18,
+  "id": "Mom-7JehnaQ",
+  "group": "bottom",
+  "perf": "x0.6",
+  "archetype": "other:text card + skeleton",
+  "bg": "flat",
+  "palette": [
+   "#FCEBCB",
+   "#4B463C",
+   "#B78554"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "none (skull)",
+   "gaze": "away"
+  },
+  "text": {
+   "words": 4,
+   "content": "Death in Every Bite",
+   "color": "#1A1A1A",
+   "outline": false,
+   "position": "left",
+   "height_pct": 21,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "skull-headed caveman eating green-dripping meat, right",
+  "question": "none sharp",
+  "title_relation": "complement",
+  "glance": 1
+ },
+ {
+  "ch": "PastTense01",
+  "n": 19,
+  "id": "1pNd0MzfP5I",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "D",
+  "bg": "flat",
+  "palette": [
+   "#EA8EF3",
+   "#2E7FE0",
+   "#868686"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 80,
+   "emotion": "angry",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 3,
+   "content": "Smaller is better?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 19,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "angry ant vs angry elephant split by a lightning divider",
+  "question": "can an ant beat an elephant?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 20,
+  "id": "-mEtI4sezTc",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "other:animal confrontation",
+  "bg": "scene",
+  "palette": [
+   "#D8A83F",
+   "#94D2F5",
+   "#463C2F"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 2,
+   "height_pct": 70,
+   "emotion": "roaring vs pensive",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "Understand anger?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 22,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "lioness roaring at a chimp who strokes his chin",
+  "question": "does the chimp get that she's angry?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 21,
+  "id": "rXIaWhhuD-U",
+  "group": "latest",
+  "perf": "new",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#21201E",
+   "#C9C1B5",
+   "#64605B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 85,
+   "emotion": "despair, red eye",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 2,
+   "content": "Caged Forever",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "wounded polar bear face pressed to cage bars, one red eye",
+  "question": "what happened to him?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 22,
+  "id": "KXv-LNRpWNk",
+  "group": "latest",
+  "perf": "x73.1",
+  "archetype": "other:animal + strange food",
+  "bg": "flat",
+  "palette": [
+   "#566785",
+   "#323234",
+   "#E5AF2A"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "curious",
+   "gaze": "object"
+  },
+  "text": {
+   "words": 2,
+   "content": "Taste good?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 24,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "crow head looming over a heap of fries and onion rings",
+  "question": "would a crow even like junk food?",
+  "title_relation": "complement",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 23,
+  "id": "8q0xXlEk4wE",
+  "group": "latest",
+  "perf": "x1.0",
+  "archetype": "other:big face in the act",
+  "bg": "scene",
+  "palette": [
+   "#847262",
+   "#F7BC90",
+   "#5A4A3B"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 70,
+   "emotion": "sleepy",
+   "gaze": "none"
+  },
+  "text": {
+   "words": 4,
+   "content": "Why sleepy after meal?",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "question"
+  },
+  "arrow": false,
+  "focal": "caveman dozing on his hand over a pile of bones",
+  "question": "why do we crash after eating?",
+  "title_relation": "repeat",
+  "glance": 2
+ },
+ {
+  "ch": "PastTense01",
+  "n": 24,
+  "id": "aL4thmDBM6s",
+  "group": "latest",
+  "perf": "x0.5",
+  "archetype": "C",
+  "bg": "scene",
+  "palette": [
+   "#8E908A",
+   "#575A54",
+   "#D3AB89"
+  ],
+  "elements": 3,
+  "character": {
+   "present": true,
+   "count": 1,
+   "height_pct": 75,
+   "emotion": "pained grimace",
+   "gaze": "viewer"
+  },
+  "text": {
+   "words": 3,
+   "content": "Worse than Death",
+   "color": "#F5D50F",
+   "outline": true,
+   "position": "top",
+   "height_pct": 18,
+   "kind": "fragment"
+  },
+  "arrow": false,
+  "focal": "man covered in bruises, rash and a red hand in a grey hospital corridor",
+  "question": "none sharp; gore reads as mud at 160 px",
+  "title_relation": "complement",
+  "glance": 1
+ }
+]
