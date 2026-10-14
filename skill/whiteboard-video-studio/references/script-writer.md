@@ -2,6 +2,7 @@
 
 > Built 2026-10-13 from 54 transcripts (top videos of Zenn, Past Tense, Sam O'Nella, Casually Explained, Half as Interesting, OverSimplified, Kurzgesagt, Sciencephile), ~8 h of narration. Evidence, per-channel reports, measurements and tools: `references/research/README.md`.
 > **This file is the law for every script.** It overrides script-guide.md §0.35 (old sarcasm rules). Run `scripts/script_lint.py` before generating any voice.
+> **Story comes first: `references/story-engine.md`.** Fill the story card and beat chain (engine, want, obstacle, stakes, question, change, BUT/THEREFORE beats) BEFORE this file's joke and delivery rules. Episode 13 v1 had good jokes on a fact list and was rejected as "no story, goal or motive… a 5-year-old's essay". The lint FAILs a script with no story card.
 
 ## 0. The one diagnosis
 Our rejected black-hole script had ~12 gags in 60 s and **every one was about the viewer's life, not the topic**: Mondays, traffic, Wi-Fi, the family WhatsApp group, "cosmic Kinder Joy". Across ~8 hours of the best channels that kind of joke appears **zero times**. Their jokes are the fact itself, said in a funnier shape.
@@ -27,6 +28,7 @@ Every comedy channel's narrator is a **character**: Sam O'Nella = menacing older
 ## 2. Shapes
 
 ### 2.1 One-minute short (150–190 words, ~60–70 s)
+**Use `story-engine.md` §2 (the 7-beat story shape) for the spine.** The table below is the *explainer* overlay: where the hook, evidence and callback sit on that spine. If the two disagree, the story shape wins (ep 12 used this table and worked because "Dave tests the theory" was already a mission; ep 13 v1 used it as an essay and failed).
 | Beat | Time | Job |
 |---|---|---|
 | Hook | 0–8 s | "You" in a concrete present moment, or the test dummy doing something, then a flip of scale. The title claim/question is spoken by 0:08. |
@@ -141,6 +143,7 @@ Write `script.md` (one beat-group per line, `#` comments) and run `voice.py scri
 Rules of thumb: lists inside ONE chunk with commas (read fast, no beats), `/` only before the broken last item; `//` after the punch, not before (except one-word punches); dialogue lines get `/` between speakers; the ending gets `(slow)` and `/` between short phrases.
 
 ## 8. Writing process (do every step; it's what separates a script from a list of facts)
+0. **Story card first** (`story-engine.md` §1, §4): engine, want, obstacle, stakes, question, change, and the BUT/THEREFORE beat chain (≥ 75 % causal, ≥ 1/3 BUT, answer held to ~85 %, a fake defeat or last hope, a twisted payoff). Facts are mined *as answers to the beats' questions*.
 1. **Premise in one sentence** + the one rule of the topic + the twist. If there is no paradox or twist, find a different angle.
 2. **Fact mine (10–15 facts)** with sources. For each fact ask: What's absurd about it? What's the household-scale version? What would happen to Dave? What's the literal reading of its name? Who was wrong about it and how? What's the petty version? — write 2–3 joke candidates *from the fact itself*.
 3. **Pick the narrator move + test dummy + runner phrase.**
@@ -152,9 +155,11 @@ Rules of thumb: lists inside ONE chunk with commas (read fast, no beats), `/` on
 9. **Self-score** (§9). Below 32/40 → rewrite the weakest beat, not the whole thing.
 10. **Owner reads the text first** (1-min trials). Voice only after approval; visuals only after the voice is approved.
 
-## 9. Score card (0–4 each, need ≥ 32/40)
+## 9. Score card (0–4 each, need ≥ 36/48)
 | # | Test | 4 = |
 |---|---|---|
+| 0a | Story spine | a protagonist with a want in 15 s; the central question spoken by 0:08 and held to ~85 %; ≥ 75 % BUT/THEREFORE beats |
+| 0b | Turns | ≥ 3 turns, incl. a fake defeat or a last hope crushed; the ending pays off the want (twisted) |
 | 1 | Hook | concrete image/question + claim spoken by 0:08; I'd keep watching |
 | 2 | One clear idea | a viewer could explain the mechanism to a friend afterwards |
 | 3 | Joke Law | every joke passes delete + move tests |

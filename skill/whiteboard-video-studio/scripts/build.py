@@ -15,7 +15,7 @@ Audio: uses assets/mix.wav (voice + music) when present, else assets/voice.wav.
 Thumb mode: the .js file is scene code for ONE frame — use `const S = scene(0, 1, {cam:"none"})` and draw
 everything at t=0 with dur <= 0.6. Rendered with headless Chrome at 1920x1080, resized to 1280x720.
 """
-import json, os, shutil, subprocess, sys, pathlib
+import json, os, re, shutil, subprocess, sys, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 SKILL = HERE.parent
@@ -36,6 +36,7 @@ if thumb:
     js_path = proj / args[args.index('--thumb') + 1]
     out_png = proj / args[args.index('--thumb') + 2]
     scenes = js_path.read_text()
+    src_dir = js_path.parent
     timing = {"total": 1.0, "words": [], "chunks": [], "clips": []}
     audio_tag = ''
     end_js = 'tl.progress(1);'
@@ -45,17 +46,21 @@ else:
         subprocess.run([sys.executable, str(HERE / 'words.py'), str(proj / 'script.json'), str(clipt), str(words)], check=True)
     timing = json.load(open(words))
     scenes = (proj / 'scenes.js').read_text()
+    src_dir = proj
     audio = 'assets/mix.wav' if (A / 'mix.wav').exists() else ('assets/voice.wav' if (A / 'voice.wav').exists() else None)
     audio_tag = f'<audio id="vo" src="{audio}" data-start="0" data-duration="{timing["total"]}" data-track-index="1" data-volume="1"></audio>' if audio else ''
     end_js = 'tl.seek(0);'
 
+# `// @include path/to/cast.js` (relative to the scenes file) pastes a shared file in, e.g. a channel's recurring characters
+scenes = re.sub(r'^// @include (\S+)\s*$', lambda m: (src_dir / m[1]).read_text(), scenes, flags=re.M)
 total = timing['total']
 dark = scenes.lstrip().startswith('// theme: dark')
 story = '// look: story' in scenes[:300]  # long-form explainer: v3 drawing + hard cuts, no captions
-v3 = story or '// look: v3' in scenes[:300]  # bold outline + colour scenery look (engine2 V3 branch)
+still = '// look: still' in scenes[:300]  # illustrated stills: crisp vector, progressive build, slow camera (references/style-guide.md)
+v3 = story or still or '// look: v3' in scenes[:300]  # bold outline + colour scenery look (engine2 V3 branch)
 paper = '#25272a' if dark else '#fdfcf8'
 capc = '#f1efe8' if dark else '#2a2a2a'
-engine = (HERE / 'engine2.js').read_text()
+engine = (HERE / 'engine2.js').read_text() + ('\n' + (HERE / 'kit.js').read_text() if still else '')  # kit.js = design-system tokens + depth/light helpers
 font_base = 'assets/fonts/' if not thumb else os.path.relpath(A / 'fonts', out_png.parent) + '/'
 ph_font = f'src: url("{font_base}Mali-SemiBold.ttf") format("truetype");' if v3 else f'src: url("{font_base}PatrickHand.ttf") format("truetype");'
 # v3 captions: heavy white letters with a dark outline — readable on any scenery colour
@@ -97,7 +102,7 @@ html = f'''<!doctype html>
     <script>
       const THEME = "{'dark' if dark else 'light'}";
       const THUMB = {'true' if thumb else 'false'};
-      const LOOK = "{'story' if story else 'v3' if v3 else 'v2'}";
+      const LOOK = "{'still' if still else 'story' if story else 'v3' if v3 else 'v2'}";
       const TIMING = {json.dumps(timing)};
       window.__timelines = window.__timelines || {{}};
 {engine}

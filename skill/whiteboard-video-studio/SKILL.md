@@ -9,15 +9,20 @@ Pipeline: **Brief → Script (owner OK) → Voice-only mp3 (owner OK) → Scene 
 Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTML). Work in `~/videos/<slug>/`.
 **Approval gates (owner rule):** new formats and topics start as a **~1-min trial**. Get the owner's OK on the script **text**, then on a **voice-only mp3**, then build the visuals. Long videos come only after a short one is approved.
 
+**Kids' songs and nursery rhymes (Tiny Tune Town) use the `tiny-tune-town` skill**, which reuses this skill's still-look engine.
+
 ### Reference map (read what the step needs)
 | Need | File |
 |---|---|
+| **Story first, every script** (story card, BUT/THEREFORE beat chain, 1-min story shape, 10-engine skeleton library from 53 top videos) | `references/story-engine.md` |
 | **Writing any script** (the law: Joke Law, narrator + test dummy, shapes, hook and joke recipes, fact sandwich, delivery markup, score card) | `references/script-writer.md` |
+| Evidence behind the story engine: per-video skeletons with timestamps, transplant templates | `references/research/story-skeletons/` |
 | Evidence behind it: 54-transcript study of 8 channels, delivery and TTS measurements, tools to redo it | `references/research/README.md` |
 | Topic ideas: idea engine, 6 generators, scoring | `references/script-guide.md` §0.1 |
 | Long-form beat sheet, story format measurements (Zenn / Past Tense) | `references/story-explainer.md`, `script-guide.md` §0.2 |
 | Hooks, psychology, staging, sound, colour (motivational shorts) | `references/craft-playbook.md` |
 | Engine API (v2 paper, v3 colour look, story look, props, camera) | `references/engine-api.md` |
+| **Illustrated stills (default look from 2026-10-13):** design system (palette with light/dark tones, stroke/radius/type/spacing tokens, depth planes, light, composition), progressive scenes, QA checklist; `scripts/kit.js` + `scripts/scene_lint.py` | `references/style-guide.md` |
 | "User says X → do Y" edits | `references/edit-playbook.md` |
 | **Making any explainer thumbnail** (6 laws, background by topic, archetypes with real perf, engine build specs, `thumb_check.py` + feed-grid test, score card) | `references/thumbnail-designer.md` |
 | Evidence behind it: 1,260-thumbnail study of the same 8 channels, 192 hand labels, recipes, tools to redo it | `references/research/thumbnails/` |
@@ -43,8 +48,9 @@ Engines: `scripts/engine2.js` (current; `// look: v3` default), `scripts/engine.
 Topic/message, audience, length (default 45–75 s Shorts-length explainer; up to 3 min), voice (default deep male Kokoro `am_michael`), channel brand (see `brand/`). Style defaults: white paper `#fdfcf8`, black marker `#161616`, accents red `#e0312b` / green `#3f9e4a` / orange `#ff7a18` / yellow `#ffd23f`, handwritten captions (Caveat), marker wobble filter.
 
 ## 2. Script
-**Every script follows `references/script-writer.md`.** Steps:
-1. Premise and fact mine (10–15 sourced facts, 2–3 joke candidates *from each fact*).
+**Every script starts with `references/story-engine.md`, then follows `references/script-writer.md`.** Steps:
+0. **Story card + beat chain** (engine, want, obstacle, stakes, question, change, `# beat: BUT/THEREFORE …` lines at the top of `script.md`). No story card = lint FAIL. Owner rejected a fact list as "a 5-year-old's essay" (ep 13 v1).
+1. Premise and fact mine (10–15 sourced facts, 2–3 joke candidates *from each fact*) — facts are answers to the beats' questions.
 2. Narrator move + test dummy + runner phrase.
 3. Beat sheet (1-min: hook → reframe → mechanism → evidence → doubt → callback).
 4. Draft `script.md` with marks (`/` `//` `(fast)` `(slow)` `"quotes"` `(low)` `[J]`).

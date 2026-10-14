@@ -7,7 +7,8 @@ const NS = "http://www.w3.org/2000/svg";
 const DARK = THEME === "dark";
 // look v3 (`// look: v3` in scenes.js): bold 12 px outline, saturated flat fills, filled-head characters, scenery via S.bg()
 const STORY = typeof LOOK !== "undefined" && LOOK === "story"; // long-form explainer: v3 drawing + hard cuts, no captions
-const V3 = typeof LOOK !== "undefined" && (LOOK === "v3" || STORY);
+const STILL = typeof LOOK !== "undefined" && LOOK === "still"; // illustrated stills: crisp vector, no draw-on, progressive build + slow camera (references/style-guide.md)
+const V3 = typeof LOOK !== "undefined" && (LOOK === "v3" || STORY || STILL);
 const PAPER = V3 ? "#ffffff" : DARK ? "#25272a" : "#fdfcf8";
 const INK = V3 ? "#1d1b1f" : DARK ? "#f1efe8" : "#161616";
 const RED = V3 ? "#e5383b" : DARK ? "#ff6b5e" : "#e0312b";
@@ -23,7 +24,7 @@ const CREAM = V3 ? "#f6d7a7" : DARK ? "#3a3933" : "#fff6e3";
 const GLOW = V3 ? "#ffe066" : DARK ? "#fff2b0" : "#ffe9a8";
 const GY = 860; // ground line (captions live below ~980)
 const TK = (typeof THUMB !== "undefined" && THUMB) ? 1.55 : 1; // thumbnails: thicker marker so lines survive 160 px
-const SW = TK * (V3 ? 1.3 : 1); // v3: default 7 → ~9 px
+const SW = TK * (STILL ? 1 : V3 ? 1.3 : 1); // v3: default 7 → ~9 px; stills: widths are exact px (DS.w tokens)
 
 const THUMB_BOLD = TK > 1; // thumbnails: all text bold by default
 const tl = gsap.timeline({ paused: true });
@@ -49,7 +50,7 @@ function sceneWindows(cues, lead = 0.4) {
 // ---------- deterministic hand-drawn path helpers ----------
 let seed = 11;
 const rnd = () => ((seed = (seed * 16807) % 2147483647), (seed - 1) / 2147483646);
-const J = (a) => (rnd() - 0.5) * a;
+const J = (a) => (STILL ? (rnd(), 0) : (rnd() - 0.5) * a); // hand wobble (off for crisp stills; rnd() still consumed so seeds stay stable)
 const f1 = (n) => n.toFixed(1);
 const el = (tag, attrs, parent) => {
   const e = document.createElementNS(NS, tag);
@@ -71,6 +72,7 @@ const smooth = (pts) => {
   return d;
 };
 const circ = (cx, cy, r, ry = r) => {
+  if (STILL) { rnd(); return `M${f1(cx - r)} ${f1(cy)} A${f1(r)} ${f1(ry)} 0 1 0 ${f1(cx + r)} ${f1(cy)} A${f1(r)} ${f1(ry)} 0 1 0 ${f1(cx - r)} ${f1(cy)} Z`; } // exact ellipse
   const n = 16, a0 = rnd() * 6.28, pts = [];
   for (let i = 0; i <= n + 1; i++) {
     const a = a0 + (i / n) * Math.PI * 2 * 1.03, k = 1 + (rnd() - 0.5) * 0.05;
@@ -78,8 +80,9 @@ const circ = (cx, cy, r, ry = r) => {
   }
   return smooth(pts);
 };
-const rect = (x, y, w, h) => poly([[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x - 3, y - 2]], 2.5);
+const rect = (x, y, w, h) => STILL ? `M${f1(x)} ${f1(y)} H${f1(x + w)} V${f1(y + h)} H${f1(x)} Z` : poly([[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x - 3, y - 2]], 2.5);
 const rrect = (x, y, w, h, r) => {
+  if (STILL) { r = Math.min(r, w / 2, h / 2); return `M${f1(x + r)} ${f1(y)} H${f1(x + w - r)} A${f1(r)} ${f1(r)} 0 0 1 ${f1(x + w)} ${f1(y + r)} V${f1(y + h - r)} A${f1(r)} ${f1(r)} 0 0 1 ${f1(x + w - r)} ${f1(y + h)} H${f1(x + r)} A${f1(r)} ${f1(r)} 0 0 1 ${f1(x)} ${f1(y + h - r)} V${f1(y + r)} A${f1(r)} ${f1(r)} 0 0 1 ${f1(x + r)} ${f1(y)} Z`; }
   const j = () => J(1.5);
   return `M${f1(x + r)} ${f1(y + j())} L${f1(x + w - r)} ${f1(y + j())} Q${f1(x + w)} ${f1(y)} ${f1(x + w + j())} ${f1(y + r)} L${f1(x + w + j())} ${f1(y + h - r)} Q${f1(x + w)} ${f1(y + h)} ${f1(x + w - r)} ${f1(y + h + j())} L${f1(x + r)} ${f1(y + h + j())} Q${f1(x)} ${f1(y + h)} ${f1(x + j())} ${f1(y + h - r)} L${f1(x + j())} ${f1(y + r)} Q${f1(x)} ${f1(y)} ${f1(x + r + 4)} ${f1(y - 1)}`;
 };
@@ -127,6 +130,7 @@ const arrowHead = (x, y, ang, len = 22) => {
 // scale-in with overshoot around a fixed point (attr transform: stays put however the timeline is seeked)
 const popAt = (e, t, cx, cy, dur = 0.35) => {
   const tf = (k) => `translate(${f1(cx)} ${f1(cy)}) scale(${k}) translate(${f1(-cx)} ${f1(-cy)})`;
+  if (STILL) return tl.fromTo(e, { opacity: 0, attr: { transform: tf(0.92) } }, { opacity: 1, attr: { transform: tf(1) }, duration: 0.35, ease: "power2.out" }, t); // calm build, no bounce
   tl.fromTo(e, { opacity: 0, attr: { transform: tf(0.45) } }, { opacity: 1, attr: { transform: tf(1) }, duration: dur, ease: "back.out(2.2)" }, t);
 };
 
@@ -138,6 +142,9 @@ function scene(start, end, o = {}) {
   if (STORY) { // hard cut on the breath (references: 100 % hard cuts)
     if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.001, ease: "none" }, start);
     if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
+  } else if (STILL) { // slow 0.6 s crossfade between finished pictures
+    if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "none" }, start - 0.6);
+    if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
   } else if (V3) { // crossfade over the previous scene (fading both to paper flashes white between coloured backgrounds)
     if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, start - 0.3);
     if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);
@@ -146,7 +153,7 @@ function scene(start, end, o = {}) {
     if (end < TOTAL - 0.05) tl.to(g0, { opacity: 0, duration: 0.25, ease: "none" }, end - 0.25);
   }
   const cam = o.cam === undefined ? (STORY ? "none" : "push") : o.cam; // push | pull | zoom | none
-  const sc = { push: [1, 1.04], pull: [1.07, 1], zoom: [1, 1.12] }[cam];
+  const sc = (STILL ? { push: [1, 1.03], pull: [1.05, 1], zoom: [1, 1.08] } : { push: [1, 1.04], pull: [1.07, 1], zoom: [1, 1.12] })[cam]; // stills: slower drift
   if (sc) tl.fromTo(g0, { scale: sc[0] }, { scale: sc[1], svgOrigin: o.focus || "960 540", duration: S.len, ease: "none" }, start);
   // camera moves on the content layer; a fixed-point attr transform (GSAP svgOrigin drifts when seeking backwards)
   const zt = (x, y, k, dx = 0, dy = 0) => `translate(${f1(x + dx)} ${f1(y + dy)}) scale(${k}) translate(${f1(-x)} ${f1(-y)})`;
@@ -160,6 +167,11 @@ function scene(start, end, o = {}) {
   S.draw = (d, t, dur, op = {}) => {
     const p = el("path", { d, pathLength: 1, fill: "none", stroke: op.c || INK, "stroke-width": (op.w || 7) * SW, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2" }, op.parent || g);
     if (op.op !== undefined) p.setAttribute("opacity", op.op);
+    if (STILL) { // no draw-on: present from the scene start, or fades in on its cue (progressive build)
+      p.setAttribute("stroke-dasharray", "none"); if (op.fill) p.setAttribute("fill", op.fill);
+      if (t > start + 0.05) tl.fromTo(p, { opacity: 0 }, { opacity: op.op === undefined ? 1 : op.op, duration: 0.35, ease: "power1.out" }, t);
+      return p;
+    }
     tl.fromTo(p, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: Math.max(0.02, dur), ease: op.ease || "power1.inOut" }, t);
     if (op.fill) {
       p.setAttribute("fill", op.fill);
@@ -171,7 +183,8 @@ function scene(start, end, o = {}) {
   // filled shape without outline, fades in
   S.fill = (d, t, dur, color, opacity = 1, parent) => {
     const p = el("path", { d, fill: color, stroke: "none" }, parent || g);
-    tl.fromTo(p, { opacity: 0 }, { opacity, duration: Math.max(0.05, dur) }, t);
+    if (STILL && t <= start + 0.05) { p.setAttribute("opacity", opacity); return p; }
+    tl.fromTo(p, { opacity: 0 }, { opacity, duration: STILL ? 0.35 : Math.max(0.05, dur) }, t);
     return p;
   };
   // parts: [[d, weight, opts], ...] drawn one after another inside [t, t+dur]
@@ -253,9 +266,10 @@ function fig(S, cx, gy, o = {}) {
   const ab = V3 ? [cx, sh[1] + 16 * s] : sh; // arm root (v3: a little below the neck)
   const abL = V3 && o.outfit ? [cx - 24 * s, sh[1] + 10 * s] : ab, abR = V3 && o.outfit ? [cx + 24 * s, sh[1] + 10 * s] : ab; // clothed: arms leave the shoulders
   const pp = (base, pts) => poly([base, ...pts.map((p) => [base[0] + p[0] * s, base[1] + p[1] * s])], 2);
-  const sw = (o.w || (V3 ? 9 * Math.sqrt(Math.max(s, 0.7)) : 7 * Math.max(s, 0.85))) * (V3 ? TK : SW);
+  const sw = (o.w || (STILL ? 7 * Math.sqrt(Math.max(s, 0.7)) : V3 ? 9 * Math.sqrt(Math.max(s, 0.7)) : 7 * Math.max(s, 0.85))) * (V3 ? TK : SW); // stills: DS.w.near scaled
+  const vf = (f) => (STILL && typeof DS !== "undefined" && /^#[0-9a-f]{6}$/i.test(f) ? DS.volHex(f) : f); // stills: shaded (lit top-left) fills on heads, hair, clothes
   const mk = (d, hidden, fill, c, wk = 1) => {
-    const p = el("path", { d, pathLength: 1, fill: fill || "none", stroke: c || col, "stroke-width": sw * wk, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gb);
+    const p = el("path", { d, pathLength: 1, fill: vf(fill) || "none", stroke: c || col, "stroke-width": sw * wk, "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-dasharray": "1 2", "stroke-dashoffset": hidden ? 0 : 1 }, gb);
     if (fill) p.style.fillOpacity = 0;
     if (hidden) p.style.opacity = 0;
     return p;
@@ -281,6 +295,7 @@ function fig(S, cx, gy, o = {}) {
   F.top = () => [cx, hd[1] - r];
   const filled = (p) => p.getAttribute("fill") !== "none";
   F.draw = (t, dur) => {
+    if (STILL) { F.instant(Math.max(0, S.start - 0.65)); if (t > S.start + 0.05) tl.fromTo(g, { opacity: 0 }, { opacity: 1, duration: 0.35 }, t); return F; } // body shown before the 0.6 s crossfade-in, or the face floats alone over the previous scene
     const ks = Object.keys(P), extra = (pre) => ks.filter((k) => k.startsWith(pre));
     const seq = ["head", ...extra("hair"), "body", ...extra("out"), "armL", "armR", "legL", "legR"];
     const wt = (k) => (k === "head" ? 0.26 : k === "body" ? 0.18 : /^(hair|out)/.test(k) ? 0.08 : 0.14);

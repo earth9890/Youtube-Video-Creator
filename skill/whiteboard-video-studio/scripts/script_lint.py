@@ -4,6 +4,10 @@
 usage: script_lint.py script.md [--long] [--wpm 182]
 Markup (one beat per line):  `/` short beat, `//` long beat, `(fast)` / `(slow)` delivery,
 `[J]` at the end of a line = this line lands a joke beat (needed for density checks).
+Story card (comment lines, required; script-writer.md §0.5):
+  # engine: mystery | mission | what-if | discovery | survival | versus | rise-and-fall
+  # want: ...   # obstacle: ...   # stakes: ...   # question: ...   # change: ...
+  # beat: BUT|THEREFORE|SO|AND ...   (one per story beat, in order; AND = just adds)
 Exit code 1 if any FAIL.
 """
 import re, sys
@@ -15,7 +19,12 @@ VAGUE = r"\b(some|many|other) (scientists|physicists|astronomers|researchers|exp
 
 args = sys.argv[1:]
 LONG, WPM = "--long" in args, float(args[args.index("--wpm") + 1]) if "--wpm" in args else 182.0
-raw = [l.rstrip() for l in open(args[0]) if l.strip() and not l.lstrip().startswith("#")]
+lines = open(args[0]).read().splitlines()
+raw = [l.rstrip() for l in lines if l.strip() and not l.lstrip().startswith("#")]
+card = {}
+for l in lines:
+    m = re.match(r"\s*#\s*(engine|want|obstacle|stakes|question|change|beat)\s*:\s*(.+)", l, re.I)
+    if m: card.setdefault(m.group(1).lower(), []).append(m.group(2).strip())
 
 def spoken(l):
     return re.sub(r"\[J[^\]]*\]|\((fast|slow)\)|//|/", " ", l)
@@ -58,6 +67,17 @@ for i, l in enumerate(raw, 1):
     if re.search(r"\d", s): out("FAIL", f"line {i}: digits — write numbers as words (TTS misreads them)")
     if re.search(VAGUE, s, re.I) and not re.search(r"\b(19|20)\d\d\b|nineteen|twenty|telescope|[A-Z][a-z]+ski\b", s):
         out("WARN", f"line {i}: vague '{re.search(VAGUE, s, re.I).group(0)}' — name who/what, or make them a character with a concrete reason")
+
+# --- story spine (the owner: "no story, goal or motive... a 5-year-old's essay") ---
+miss = [k for k in ("engine", "want", "obstacle", "stakes", "question", "change") if k not in card]
+if miss: out("FAIL", f"story card missing: {', '.join(miss)} (# engine/want/obstacle/stakes/question/change, script-writer.md §0.5)")
+beats = card.get("beat", [])
+links = [b.split()[0].upper().rstrip(":,") for b in beats]
+if len(beats) < (8 if LONG else 5): out("FAIL", f"{len(beats)} '# beat:' lines; need >= {8 if LONG else 5} (BUT / THEREFORE chain)")
+elif sum(x == "AND" for x in links) > len(links) / 3: out("FAIL", f"{sum(x == 'AND' for x in links)}/{len(links)} beats are AND: a list, not a story — turn them into BUT / THEREFORE")
+if beats and not any(x == "BUT" for x in links): out("WARN", "no BUT beat: nothing goes wrong, so nothing is at stake")
+early = " ".join(spoken(l) for l in raw[: max(2, len(raw) // 6)])
+if "?" not in early: out("WARN", "central question not spoken in the first ~10 s: say it (or its clear setup) out loud")
 
 # --- hook ---
 hook = " ".join(spoken(l) for l in raw[:3]).lower()

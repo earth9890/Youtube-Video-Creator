@@ -84,3 +84,10 @@ Content list `studio.youtube.com/channel/<UC…>/videos/upload` → per row: `yt
 
 ## 7. Report to the user
 Links (`https://youtu.be/<ID>`), what's live vs unlisted, which thumbnails are missing and why (verification), anything skipped (pinned comments, A/B "Test & compare" with the second thumbnail — available on the Details page under Thumbnail → A/B Testing once verified).
+
+## Oct 14 2026 changes (Studio UI)
+- No `aria-label="Upload videos"` button any more: click **Create** (top right), wait ~1.5 s, then click the "Upload videos" menu item. A JS `.click()` on the menu item often didn't open the dialog; real `computer.left_click` clicks did.
+- The Audience radios (`VIDEO_MADE_FOR_KIDS_*`) lazy-render: `getClientRects()` is empty until the dialog is really scrolled. Do a `computer.scroll` down over the dialog first, then click them.
+- After "Show more", the tag input's `getBoundingClientRect` was stale; take a screenshot to find where it really is.
+- The details page has an **"AI use"** question (`VIDEO_HAS_ALTERED_CONTENT_YES/NO`). Answer Yes when AI made realistic voices or the music that is the main focus of the video (the kids' songs).
+- If saving as Public says **"We're still checking your content"**, click Go back and wait for `Checks complete` (1–10 min) instead of "Publish anyway". Poll `.progress-label`, then click `#done-button`.

@@ -1,0 +1,1758 @@
+[
+ {
+  "channel": "halfasinteresting",
+  "id": "7Tu8ZIbfLis",
+  "title": "Why Almost Every Airline Has Sued This One Website",
+  "views": 2203610,
+  "minutes": 9.6,
+  "story_span": [
+   "0:00",
+   "8:08"
+  ],
+  "breaks": [],
+  "engine": "mystery",
+  "protagonist": "the host as a cheapskate traveller (with Skiplagged as the underdog); airlines are the antagonist",
+  "want": "fly Denver to New York cheaply; airlines want the website dead",
+  "central_question": "Airlines keep suing this website and losing. Why can't they kill it, and how did they create it?",
+  "central_opened": "0:36",
+  "central_answered": "7:56",
+  "answered_at_pct": 98,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "A traveller flies two legit Lufthansa tickets."
+   },
+   {
+    "t": "0:12",
+    "link": "BUT",
+    "text": "Years later Lufthansa sues him for about $2,400."
+   },
+   {
+    "t": "0:36",
+    "link": "BUT",
+    "text": "The culprit is hidden-city ticketing and a site airlines try and fail to sue to death, because it is not illegal."
+   },
+   {
+    "t": "1:01",
+    "link": "SO",
+    "text": "Host demo: the nonstop he wants costs $324."
+   },
+   {
+    "t": "1:13",
+    "link": "BUT",
+    "text": "A cheaper one-stop to another city starts with that exact flight; just skip the second leg."
+   },
+   {
+    "t": "2:13",
+    "link": "THEREFORE",
+    "text": "Scale: millions of users, tens of millions a year kept from airlines, so they hate it."
+   },
+   {
+    "t": "2:38",
+    "link": "BUT",
+    "text": "Blame flips: the airlines built the incentive, not the website."
+   },
+   {
+    "t": "3:03",
+    "link": "THEREFORE",
+    "text": "Deregulation leads to hub-and-spoke networks."
+   },
+   {
+    "t": "3:27",
+    "link": "BUT",
+    "text": "Nonstops are cheaper to fly yet priced higher; hub monopoly vs non-hub competition explains the cheap fare."
+   },
+   {
+    "t": "5:04",
+    "link": "SO",
+    "text": "Airlines knowingly discount connecting seats to fill planes; skiplagging breaks that balance."
+   },
+   {
+    "t": "5:53",
+    "link": "BUT",
+    "text": "It is legal, like card counting; airlines can only use terms of service, and almost never do."
+   },
+   {
+    "t": "6:42",
+    "link": "THEREFORE",
+    "text": "So they sue the website instead (two big suits)."
+   },
+   {
+    "t": "7:19",
+    "link": "BUT",
+    "text": "One wins only on logo copyright; the other is dismissed: still not illegal."
+   },
+   {
+    "t": "7:43",
+    "link": "THEREFORE",
+    "text": "They will keep suing and failing unless they price against their own model; literary-parody sting."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:12",
+    "closed": "6:42",
+    "q": "Why would an airline sue a man for skipping a flight? (case dismissed)"
+   },
+   {
+    "opened": "0:36",
+    "closed": "7:56",
+    "q": "Why can't airlines sue the website out of existence?"
+   },
+   {
+    "opened": "0:48",
+    "closed": "4:52",
+    "q": "How did airlines create hidden-city ticketing?"
+   },
+   {
+    "opened": "0:52",
+    "closed": "1:37",
+    "q": "What is hidden-city ticketing?"
+   },
+   {
+    "opened": "1:21",
+    "closed": "1:25",
+    "q": "What's the first leg of my cheap Boston flight?"
+   },
+   {
+    "opened": "3:27",
+    "closed": "4:52",
+    "q": "Why is the nonstop pricier when it's cheaper to run?"
+   },
+   {
+    "opened": "6:42",
+    "closed": "7:31",
+    "q": "How are airlines supposed to crack down on this?"
+   }
+  ],
+  "turns": [
+   "2:38 blame reversal: the website didn't create the problem, airlines did",
+   "3:27 counter-intuitive: the product people want most costs the airline least",
+   "6:42 the opening lawsuit gets dismissed",
+   "7:19 the big win is only about a logo"
+  ],
+  "ending": "Answer: airlines can't win without breaking their own pricing. Last line is a Great Gatsby parody about losing $180 at a time, then 'there are worse things'. Callback to the cold-open lawsuit.",
+  "story_seconds": 488,
+  "opened_at_pct": 7
+ },
+ {
+  "channel": "halfasinteresting",
+  "id": "ENkbkzeCYYM",
+  "title": "Why Rolex Won't Sell You Their Most Expensive Watches",
+  "views": 1569577,
+  "minutes": 7.85,
+  "story_span": [
+   "0:00",
+   "6:39"
+  ],
+  "breaks": [],
+  "engine": "mission/quest",
+  "protagonist": "Amy, the host's 'outside correspondent', on a doomed shopping mission",
+  "want": "buy a platinum Daytona off the shelf",
+  "central_question": "Why is walking into Rolex and buying its top watch impossible?",
+  "central_opened": "0:06",
+  "central_answered": "6:17",
+  "answered_at_pct": 94,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Amy is sent to a boutique to buy the priciest Daytona."
+   },
+   {
+    "t": "0:06",
+    "link": "BUT",
+    "text": "Her mission is doomed: not money, not her stained sneakers, but the ownership structure."
+   },
+   {
+    "t": "0:36",
+    "link": "SO",
+    "text": "Origin: founder builds the brand."
+   },
+   {
+    "t": "1:00",
+    "link": "THEREFORE",
+    "text": "Wanting it to outlive him, he hands 100% to a nonprofit foundation."
+   },
+   {
+    "t": "1:37",
+    "link": "BUT",
+    "text": "Myth-bust: Rolex is both for-profit and not, at once."
+   },
+   {
+    "t": "2:14",
+    "link": "THEREFORE",
+    "text": "No shareholders, no quarterly pressure, so no reason to meet demand."
+   },
+   {
+    "t": "2:38",
+    "link": "BUT",
+    "text": "Surely someone buys it from Rolex? No online store, display-only shelves."
+   },
+   {
+    "t": "3:02",
+    "link": "SO",
+    "text": "Amy asks; no advisor slots; best case an 'expression of interest' waitlist of years."
+   },
+   {
+    "t": "3:51",
+    "link": "BUT",
+    "text": "The waitlist isn't a queue; you must prove loyalty by buying lesser watches."
+   },
+   {
+    "t": "4:28",
+    "link": "THEREFORE",
+    "text": "A huge secondary market; a watch flips for far over retail the same day."
+   },
+   {
+    "t": "5:28",
+    "link": "SO",
+    "text": "Twist: the fastest way to buy Rolex's top watch is to not buy from Rolex and pay more."
+   },
+   {
+    "t": "5:40",
+    "link": "BUT",
+    "text": "Why is Rolex fine leaving that money? Profits go to the foundation anyway."
+   },
+   {
+    "t": "5:53",
+    "link": "AND",
+    "text": "Luxury is about access too (other brands do it)."
+   },
+   {
+    "t": "6:05",
+    "link": "THEREFORE",
+    "text": "Rolex is unique: secret, low-tax, profit-distant, so no incentive to change. Wry sting."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:06",
+    "closed": "6:17",
+    "q": "Why is Amy's mission doomed?"
+   },
+   {
+    "opened": "0:24",
+    "closed": "0:36",
+    "q": "Why is that employee counting all the watches?"
+   },
+   {
+    "opened": "1:13",
+    "closed": "1:25",
+    "q": "What's a perpetual trust? (joke answer, then real one)"
+   },
+   {
+    "opened": "2:38",
+    "closed": "3:39",
+    "q": "Surely someone buys it from Rolex?"
+   },
+   {
+    "opened": "3:39",
+    "closed": "3:51",
+    "q": "How long is the waitlist?"
+   },
+   {
+    "opened": "4:28",
+    "closed": "5:16",
+    "q": "What if you're an investor, not a collector?"
+   },
+   {
+    "opened": "5:40",
+    "closed": "5:53",
+    "q": "Why does Rolex tolerate the resale market?"
+   }
+  ],
+  "turns": [
+   "0:06 'mission doomed' fake reasons before the real one",
+   "1:37 both common beliefs about Rolex are wrong",
+   "4:52 the retail price reveal derails the narrator",
+   "5:28 the way to buy from Rolex is not to buy from Rolex"
+  ],
+  "ending": "Central answer delivered as a moral ('no incentive to do it any other way'), closing on a wry 'may we all be so lucky'. Amy's quest is never formally closed; it is resolved by the twist.",
+  "story_seconds": 399,
+  "opened_at_pct": 2
+ },
+ {
+  "channel": "halfasinteresting",
+  "id": "mL_OurMlkq0",
+  "title": "How Iran Smuggles 777 Airplanes",
+  "views": 1167023,
+  "minutes": 6.45,
+  "story_span": [
+   "0:00",
+   "5:28"
+  ],
+  "breaks": [],
+  "engine": "mission/quest",
+  "protagonist": "Iran / Mahan Air, running a heist",
+  "want": "get modern wide-body jets despite a total ban",
+  "central_question": "Nobody may sell Iran a Boeing, yet it got five. How do you smuggle five tracked jumbo jets?",
+  "central_opened": "0:25",
+  "central_answered": "5:03",
+  "answered_at_pct": 92,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Iran's airline launches routes with shiny new 777s."
+   },
+   {
+    "t": "0:12",
+    "link": "BUT",
+    "text": "This is illegal; US sanctions office panics."
+   },
+   {
+    "t": "0:25",
+    "link": "BUT",
+    "text": "Nobody can sell Iran a Boeing, yet it got five, after years. How?"
+   },
+   {
+    "t": "0:45",
+    "link": "SO",
+    "text": "Why they must smuggle: US export rules reach any plane with 10% US parts, so every wide-body."
+   },
+   {
+    "t": "1:37",
+    "link": "THEREFORE",
+    "text": "No new planes or parts; aging, dangerous fleet; smuggling is the only option."
+   },
+   {
+    "t": "2:01",
+    "link": "SO",
+    "text": "Target: five retired jets in a desert boneyard."
+   },
+   {
+    "t": "2:26",
+    "link": "THEREFORE",
+    "text": "Step 1: a near-invisible US company buys and registers them."
+   },
+   {
+    "t": "2:50",
+    "link": "THEREFORE",
+    "text": "Step 2: parked in China, sold to a shell in Madagascar; oversight weakens."
+   },
+   {
+    "t": "3:26",
+    "link": "THEREFORE",
+    "text": "Step 3: moved to Cambodia; now nobody is watching."
+   },
+   {
+    "t": "3:50",
+    "link": "BUT",
+    "text": "Final step is hardest: still US-made, and Iran may only host them 72 hours."
+   },
+   {
+    "t": "4:27",
+    "link": "THEREFORE",
+    "text": "Crime: an expired ferry permit to Kenya gets its month scribbled over."
+   },
+   {
+    "t": "4:39",
+    "link": "SO",
+    "text": "Convoy flies; over loosely watched airspace the transponders switch off; jets vanish."
+   },
+   {
+    "t": "5:03",
+    "link": "AND",
+    "text": "They land in Iran; nobody can be sanctioned because the shell isn't real. Happily ever after."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:12",
+    "closed": "1:37",
+    "q": "Why is this illegal?"
+   },
+   {
+    "opened": "0:37",
+    "closed": "5:03",
+    "q": "How do you smuggle five wide-body jets?"
+   },
+   {
+    "opened": "0:45",
+    "closed": "1:49",
+    "q": "Why does Iran need to smuggle planes at all?"
+   },
+   {
+    "opened": "2:38",
+    "closed": "2:47",
+    "q": "Is this buyer even a real company?"
+   },
+   {
+    "opened": "3:50",
+    "closed": "4:39",
+    "q": "How do they get past the last border?"
+   },
+   {
+    "opened": "4:15",
+    "closed": "4:27",
+    "q": "How do you fly without a valid route?"
+   }
+  ],
+  "turns": [
+   "0:12 good-news launch flips to 'this is illegal'",
+   "3:50 laundering done, but the hardest step remains",
+   "4:51 transponders off, planes vanish",
+   "5:15 nobody to punish because the company isn't real"
+  ],
+  "ending": "Heist completes; ironic fairy-tale close ('lived happily ever after').",
+  "story_seconds": 328,
+  "opened_at_pct": 8
+ },
+ {
+  "channel": "halfasinteresting",
+  "id": "lX_SnVQXC-A",
+  "title": "Why It's Illegal to Call a Drug \"Stroebenazoline\"",
+  "views": 876562,
+  "minutes": 8.65,
+  "story_span": [
+   "0:00",
+   "7:33"
+  ],
+  "breaks": [],
+  "engine": "mission/quest",
+  "protagonist": "the host as boss of a fake pharma company",
+  "want": "name his left-nostril decongestant and sell it",
+  "central_question": "Who decides drug names, and why are so many names banned? Let's try to name ours.",
+  "central_opened": "0:12",
+  "central_answered": "7:21",
+  "answered_at_pct": 97,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Pharmacy roll-call of real names; some invented names are banned."
+   },
+   {
+    "t": "0:12",
+    "link": "BUT",
+    "text": "Naming is a rule-heavy process run by several bodies."
+   },
+   {
+    "t": "0:24",
+    "link": "SO",
+    "text": "Mission: name our own absurd one-nostril drug."
+   },
+   {
+    "t": "1:13",
+    "link": "BUT",
+    "text": "Stakes: look-alike names cause deaths and injuries every day."
+   },
+   {
+    "t": "1:25",
+    "link": "THEREFORE",
+    "text": "Generic name = stem (what it does) + prefix; attempt 1 uses the channel name."
+   },
+   {
+    "t": "2:26",
+    "link": "BUT",
+    "text": "Rejected: too long, banned first letter, promotes a channel."
+   },
+   {
+    "t": "3:15",
+    "link": "SO",
+    "text": "More attempts, each with two violations; back-and-forth with regulators and a similarity tool."
+   },
+   {
+    "t": "3:41",
+    "link": "THEREFORE",
+    "text": "A generic name finally passes after a public objection window."
+   },
+   {
+    "t": "4:06",
+    "link": "SO",
+    "text": "Now the brand name, for profit, under a different regulator."
+   },
+   {
+    "t": "4:30",
+    "link": "BUT",
+    "text": "Attempt fails: copies the generic and uses a stem."
+   },
+   {
+    "t": "4:54",
+    "link": "BUT",
+    "text": "Attempt fails: sounds like an existing antidepressant."
+   },
+   {
+    "t": "5:43",
+    "link": "BUT",
+    "text": "Attempt fails: trademarked, and a real case where one name meant two drugs abroad."
+   },
+   {
+    "t": "6:07",
+    "link": "BUT",
+    "text": "Attempt fails: promises results and contains numbers."
+   },
+   {
+    "t": "6:45",
+    "link": "THEREFORE",
+    "text": "A plain name passes the basics, then the similarity checklist is a coin-flip; ends unresolved."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:37",
+    "closed": "3:41",
+    "q": "How do we name our drug? (generic)"
+   },
+   {
+    "opened": "0:45",
+    "closed": "1:13",
+    "q": "Why does a drug have three names?"
+   },
+   {
+    "opened": "1:50",
+    "closed": "2:02",
+    "q": "How will the name start?"
+   },
+   {
+    "opened": "2:26",
+    "closed": "3:15",
+    "q": "What will the regulators say?"
+   },
+   {
+    "opened": "4:06",
+    "closed": "7:33",
+    "q": "Can we get a brand name approved?"
+   },
+   {
+    "opened": "4:30",
+    "closed": "4:42",
+    "q": "Will this one work?"
+   },
+   {
+    "opened": "6:45",
+    "closed": "7:33",
+    "q": "Might we finally be in business?"
+   }
+  ],
+  "turns": [
+   "1:13 a silly naming game becomes life-and-death",
+   "2:02 the meaningful-looking syllables mean nothing",
+   "5:43 same brand name, different drug in another country, real hospitalisation",
+   "7:21 the 'safe' name may still fail"
+  ],
+  "ending": "Generic solved, brand name left in limbo; host jokes he may have to pay the consultant after all. New question left open, used as sponsor bridge.",
+  "story_seconds": 453,
+  "opened_at_pct": 3
+ },
+ {
+  "channel": "halfasinteresting",
+  "id": "3VlnvsZ6kJE",
+  "title": "This Is The Shortest Train in the United States",
+  "views": 765579,
+  "minutes": 8.2,
+  "story_span": [
+   "0:00",
+   "7:06"
+  ],
+  "breaks": [],
+  "engine": "mystery",
+  "protagonist": "the Dinky (an object) and the town it serves",
+  "want": "survive; Princeton wants a link to the main line",
+  "central_question": "Why does Princeton get its own 3-mile train, and why keep it?",
+  "central_opened": "1:01",
+  "central_answered": "6:43",
+  "answered_at_pct": 95,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Longest US passenger route: days across the country."
+   },
+   {
+    "t": "0:12",
+    "link": "BUT",
+    "text": "Contrast: the shortest is an 8-minute hop nicknamed the Dinky."
+   },
+   {
+    "t": "0:49",
+    "link": "BUT",
+    "text": "Anywhere else this would be a shuttle bus or a few Ubers. Why a train?"
+   },
+   {
+    "t": "1:13",
+    "link": "BUT",
+    "text": "Correction: an even shorter line existed until 1957."
+   },
+   {
+    "t": "1:38",
+    "link": "SO",
+    "text": "The Dinky exists because of the big Northeast Corridor."
+   },
+   {
+    "t": "2:02",
+    "link": "AND",
+    "text": "Corridor built in pieces along a canal; Princeton had a nearby stop, no Dinky needed."
+   },
+   {
+    "t": "2:51",
+    "link": "BUT",
+    "text": "The twisty canal route was too slow once the Civil War raised demand."
+   },
+   {
+    "t": "3:03",
+    "link": "THEREFORE",
+    "text": "Line straightened; Princeton left 3 miles off the map (huge in the 1860s)."
+   },
+   {
+    "t": "3:27",
+    "link": "THEREFORE",
+    "text": "1865: the Dinky opens (comically bad early trains)."
+   },
+   {
+    "t": "4:04",
+    "link": "BUT",
+    "text": "Cars arrive, yet the Dinky expands (football crowds)."
+   },
+   {
+    "t": "4:29",
+    "link": "BUT",
+    "text": "The university it serves keeps shortening it, building over the terminal three times."
+   },
+   {
+    "t": "5:30",
+    "link": "BUT",
+    "text": "Replacement debate: the terminal is on campus, not downtown."
+   },
+   {
+    "t": "6:18",
+    "link": "BUT",
+    "text": "Counter-case: it only needs to meet trains, and replacing it costs ~7x maintaining it."
+   },
+   {
+    "t": "6:43",
+    "link": "THEREFORE",
+    "text": "It survives as a Civil War-era compromise; sting about reopening the shorter rival."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "1:01",
+    "closed": "3:27",
+    "q": "How did Princeton end up with its own branch?"
+   },
+   {
+    "opened": "1:01",
+    "closed": "6:43",
+    "q": "Why have they kept it?"
+   },
+   {
+    "opened": "1:13",
+    "closed": "1:38",
+    "q": "Was it always the shortest?"
+   },
+   {
+    "opened": "2:51",
+    "closed": "3:15",
+    "q": "Why move the main line?"
+   },
+   {
+    "opened": "4:04",
+    "closed": "4:17",
+    "q": "How did it survive the car?"
+   },
+   {
+    "opened": "5:30",
+    "closed": "6:43",
+    "q": "Do we still need it?"
+   }
+  ],
+  "turns": [
+   "1:13 'shortest' title claim gets a caveat",
+   "3:03 a faraway war reroutes the line and strands the town",
+   "4:17 the car era makes it grow, not shrink",
+   "4:29 its own beneficiary keeps cutting it shorter"
+  ],
+  "ending": "Both halves answered; 'for now the Dinky survives'. Callback to the shorter rival line as the last joke, then sponsor bridge.",
+  "story_seconds": 426,
+  "opened_at_pct": 14
+ },
+ {
+  "channel": "halfasinteresting",
+  "id": "89thRe3elQM",
+  "title": "The Weird, Scary Airspace Over Washington DC",
+  "views": 683999,
+  "minutes": 8.27,
+  "story_span": [
+   "0:00",
+   "6:55"
+  ],
+  "breaks": [],
+  "engine": "other:obstacle-course",
+  "protagonist": "the host as a stray pilot, then 'you' the airline pilot",
+  "want": "land at DC's airport without being intercepted or losing a licence",
+  "central_question": "Hundreds of flights land here daily without getting shot at. What does it take, and what if you mess up?",
+  "central_opened": "0:24",
+  "central_answered": "6:31",
+  "answered_at_pct": 94,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Host tours DC by air; a light flashes."
+   },
+   {
+    "t": "0:06",
+    "link": "BUT",
+    "text": "He's in restricted airspace; an F-16 pulls up."
+   },
+   {
+    "t": "0:24",
+    "link": "BUT",
+    "text": "Yet 800+ airliners a day land here unharmed. How?"
+   },
+   {
+    "t": "0:49",
+    "link": "SO",
+    "text": "Layer 1 rules: clearance, ID code, transponder."
+   },
+   {
+    "t": "1:01",
+    "link": "AND",
+    "text": "Layer 2: an inner zone that needs a waiver."
+   },
+   {
+    "t": "1:26",
+    "link": "THEREFORE",
+    "text": "Stray in and an escalation ladder starts: cameras, lasers, radio, helicopter sign, fighters."
+   },
+   {
+    "t": "2:03",
+    "link": "SO",
+    "text": "So strict that emergencies must divert elsewhere."
+   },
+   {
+    "t": "2:27",
+    "link": "BUT",
+    "text": "Even that isn't the strictest: prohibited zones over the White House and VP home (licence, jail)."
+   },
+   {
+    "t": "3:28",
+    "link": "THEREFORE",
+    "text": "So planes must snake along rivers, direction set by wind."
+   },
+   {
+    "t": "4:05",
+    "link": "SO",
+    "text": "North flow: easy arrivals, hard-turn departures."
+   },
+   {
+    "t": "4:41",
+    "link": "BUT",
+    "text": "South flow: a straight approach crosses the forbidden zone, so pilots follow river bends and turn at 200 ft."
+   },
+   {
+    "t": "5:43",
+    "link": "BUT",
+    "text": "And that runway is the nation's busiest; simultaneous land-and-takeoff; trainee controllers quit."
+   },
+   {
+    "t": "6:31",
+    "link": "THEREFORE",
+    "text": "Get it all right: coolest job. Get it wrong: worst day, and you see an F-16 up close."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:06",
+    "closed": "0:12",
+    "q": "What's that flashing light?"
+   },
+   {
+    "opened": "0:24",
+    "closed": "6:31",
+    "q": "How do airliners land here safely?"
+   },
+   {
+    "opened": "0:36",
+    "closed": "2:03",
+    "q": "What happens if you screw up?"
+   },
+   {
+    "opened": "2:15",
+    "closed": "2:27",
+    "q": "Just how serious is it?"
+   },
+   {
+    "opened": "3:28",
+    "closed": "5:30",
+    "q": "Why is the approach so tricky?"
+   },
+   {
+    "opened": "5:43",
+    "closed": "6:19",
+    "q": "What else are pilots dealing with?"
+   }
+  ],
+  "turns": [
+   "0:24 danger zone is also a daily commute",
+   "2:27 the scary zone isn't even the strictest",
+   "4:41 the normal straight approach would end your career",
+   "5:43 'and that's not even all'"
+  ],
+  "ending": "Resolved as a two-sided verdict; final image calls back to the cold-open F-16.",
+  "story_seconds": 415,
+  "opened_at_pct": 6
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "_uk_6vfqwTA",
+  "title": "WW2 - OverSimplified (Part 1)",
+  "views": 105315678,
+  "minutes": 13.75,
+  "story_span": [
+   "1:18",
+   "13:28"
+  ],
+  "breaks": [],
+  "engine": "versus/conflict",
+  "protagonist": "Hitler (with Mussolini and Japan as fellow wanters) vs the Allies",
+  "want": "the dictators want to undo humiliation and grab territory; the Allies want to avoid another WW1",
+  "central_question": "Implicit, carried by dramatic irony: how do these grudges become a world war, and can anyone stop Hitler? (no explicit question in the first 30 s)",
+  "central_opened": "6:07",
+  "central_answered": "13:16",
+  "answered_at_pct": 98,
+  "beats": [
+   {
+    "t": "1:18",
+    "link": "AND",
+    "text": "Mussolini: draft-dodging socialist, arrested again and again."
+   },
+   {
+    "t": "1:54",
+    "link": "BUT",
+    "text": "He flips to pro-war, gets expelled, invents fascism."
+   },
+   {
+    "t": "2:48",
+    "link": "THEREFORE",
+    "text": "Italy feels cheated after WW1, so he grabs power."
+   },
+   {
+    "t": "3:13",
+    "link": "SO",
+    "text": "Germany humiliated by Versailles; Hitler rises on that anger; same enemies make them friends; Japan joins (its own grudge with the West)."
+   },
+   {
+    "t": "5:29",
+    "link": "THEREFORE",
+    "text": "Hitler breaks the treaty step by step; Allies do nothing, twice."
+   },
+   {
+    "t": "6:07",
+    "link": "BUT",
+    "text": "Allies appease: Austria, then Sudetenland, signed promise."
+   },
+   {
+    "t": "7:10",
+    "link": "BUT",
+    "text": "He takes the rest of Czechoslovakia anyway."
+   },
+   {
+    "t": "8:00",
+    "link": "THEREFORE",
+    "text": "Allies draw a line at Poland; Hitler secures his back with Stalin; invasion; war."
+   },
+   {
+    "t": "8:39",
+    "link": "BUT",
+    "text": "Phony War: France is still fighting WW1, Britain drops leaflets."
+   },
+   {
+    "t": "10:22",
+    "link": "THEREFORE",
+    "text": "Norway fiasco; Chamberlain out, Churchill in."
+   },
+   {
+    "t": "10:47",
+    "link": "BUT",
+    "text": "Everyone expects a WW1 replay; Blitzkrieg through the 'impenetrable' forest; France falls; Dunkirk."
+   },
+   {
+    "t": "11:36",
+    "link": "BUT",
+    "text": "Britain refuses to quit; Hitler tries isolation mind-games; air war nearly breaks the RAF."
+   },
+   {
+    "t": "12:37",
+    "link": "BUT",
+    "text": "A tiny raid on Berlin enrages Hitler; he switches to bombing London."
+   },
+   {
+    "t": "13:04",
+    "link": "THEREFORE",
+    "text": "RAF regroups and wins; invasion postponed; 'shot himself in the foot, just the foot for now'."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "1:54",
+    "closed": "2:19",
+    "q": "What will the newly pro-war Mussolini do?"
+   },
+   {
+    "opened": "4:27",
+    "closed": "5:29",
+    "q": "Who is this new friend (Japan) and what does it want?"
+   },
+   {
+    "opened": "6:07",
+    "closed": "7:10",
+    "q": "Will appeasement hold?"
+   },
+   {
+    "opened": "8:00",
+    "closed": "8:27",
+    "q": "Will the Allies really fight for Poland?"
+   },
+   {
+    "opened": "8:39",
+    "closed": "10:22",
+    "q": "Will anyone actually fight?"
+   },
+   {
+    "opened": "10:47",
+    "closed": "11:00",
+    "q": "What's Hitler's trick up his sleeve?"
+   },
+   {
+    "opened": "11:36",
+    "closed": "13:16",
+    "q": "Will Britain give up?"
+   },
+   {
+    "opened": "12:37",
+    "closed": "12:51",
+    "q": "Is the invasion coming? (but then...)"
+   },
+   {
+    "opened": "13:16",
+    "closed": "open",
+    "q": "'Just the foot for now': how does Hitler fully self-destruct? (Part 2)"
+   }
+  ],
+  "turns": [
+   "1:54 anti-war socialist becomes pro-war nationalist",
+   "7:10 the signed promise is broken",
+   "8:13 Hitler-Stalin pact stuns the West",
+   "10:47 expected WW1 replay becomes Blitzkrieg",
+   "12:51 the villain's anger at a small raid saves Britain"
+  ],
+  "ending": "Britain survives, invasion postponed. Last line foreshadows Hitler's later blunders: a deliberate open loop into Part 2.",
+  "story_seconds": 730,
+  "opened_at_pct": 40
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "I79TpDe3t2g",
+  "title": "The Cold War - OverSimplified (Part 1)",
+  "views": 75105470,
+  "minutes": 16.05,
+  "story_span": [
+   "0:12",
+   "15:36"
+  ],
+  "breaks": [
+   [
+    "2:59",
+    "3:49"
+   ]
+  ],
+  "engine": "versus/conflict",
+  "protagonist": "the US and Stalin's USSR (later Khrushchev, Kennedy)",
+  "want": "USSR wants a buffer of loyal states and to spread communism; the US wants to contain it",
+  "central_question": "Wartime friends are now suspicious: will they end up in a nuclear war? (planted 2:21 'something's up with Stalin')",
+  "central_opened": "2:21",
+  "central_answered": "15:23",
+  "answered_at_pct": 99,
+  "beats": [
+   {
+    "t": "0:12",
+    "link": "AND",
+    "text": "1917: Germany sends Lenin home to wreck Russia (Lennon mix-up gag)."
+   },
+   {
+    "t": "1:06",
+    "link": "THEREFORE",
+    "text": "Revolution, chaos; dying Lenin warns against Stalin, who controls appointments; stalin takes over through purges."
+   },
+   {
+    "t": "2:09",
+    "link": "BUT",
+    "text": "WW2 allies win, but Stalin seems ominous; the bomb reveal falls flat: his spies already knew."
+   },
+   {
+    "t": "4:02",
+    "link": "BUT",
+    "text": "Promised free elections become puppet states; Iron Curtain."
+   },
+   {
+    "t": "4:38",
+    "link": "THEREFORE",
+    "text": "Tug-of-war over Greece, Turkey, Iran; NATO; Truman Doctrine = Cold War declared."
+   },
+   {
+    "t": "5:27",
+    "link": "BUT",
+    "text": "Stalin bets misery breeds communism; THEREFORE the US floods Europe with aid; Stalin builds rivals."
+   },
+   {
+    "t": "6:55",
+    "link": "THEREFORE",
+    "text": "Berlin blockade, answered by the airlift; Stalin backs down."
+   },
+   {
+    "t": "7:21",
+    "link": "BUT",
+    "text": "The Soviets get the bomb; war now 'inevitable'; China goes communist."
+   },
+   {
+    "t": "8:13",
+    "link": "THEREFORE",
+    "text": "Korea: invasion, comeback, MacArthur swears China won't come; it does; stalemate."
+   },
+   {
+    "t": "9:40",
+    "link": "BUT",
+    "text": "Stalin dies of his own terror; successor promises freedom, then crushes uprisings and bans jazz."
+   },
+   {
+    "t": "11:12",
+    "link": "AND",
+    "text": "Spies everywhere, Red Scare, U-2 shot down."
+   },
+   {
+    "t": "12:34",
+    "link": "BUT",
+    "text": "USSR seems ahead in space and missiles; H-bombs; Warsaw Pact."
+   },
+   {
+    "t": "13:27",
+    "link": "THEREFORE",
+    "text": "Easterners flee via Berlin; Kennedy's slip ('East Berlin is yours') lets Khrushchev build the wall."
+   },
+   {
+    "t": "15:10",
+    "link": "THEREFORE",
+    "text": "Tank standoff at the checkpoint; both inch back from apocalypse; 'biggest crisis?' It wasn't."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:25",
+    "closed": "0:40",
+    "q": "Who is the soldier meant to fetch?"
+   },
+   {
+    "opened": "1:18",
+    "closed": "1:31",
+    "q": "Who did Lenin put in charge of jobs?"
+   },
+   {
+    "opened": "2:21",
+    "closed": "15:36",
+    "q": "What's up with Stalin / will the allies fall out into war?"
+   },
+   {
+    "opened": "2:33",
+    "closed": "2:46",
+    "q": "Will the bomb scare Stalin?"
+   },
+   {
+    "opened": "2:46",
+    "closed": "2:59",
+    "q": "How did he already know?"
+   },
+   {
+    "opened": "4:02",
+    "closed": "4:14",
+    "q": "Will the elections be free and fair?"
+   },
+   {
+    "opened": "6:55",
+    "closed": "7:09",
+    "q": "What will the West do about the blockade?"
+   },
+   {
+    "opened": "7:47",
+    "closed": "7:59",
+    "q": "What happened to China?"
+   },
+   {
+    "opened": "9:03",
+    "closed": "9:15",
+    "q": "Will China get involved?"
+   },
+   {
+    "opened": "10:19",
+    "closed": "10:19",
+    "q": "So how did de-Stalinization work out?"
+   },
+   {
+    "opened": "13:53",
+    "closed": "14:32",
+    "q": "How will Khrushchev stop the defections?"
+   },
+   {
+    "opened": "15:10",
+    "closed": "15:23",
+    "q": "Will the tank standoff go nuclear?"
+   },
+   {
+    "opened": "15:36",
+    "closed": "open",
+    "q": "What is the bigger crisis coming? (Part 2)"
+   }
+  ],
+  "turns": [
+   "2:46 the big reveal is old news to Stalin",
+   "4:14 'free and fair' elections are rigged",
+   "9:15 the general's promise is broken instantly",
+   "9:52 the tyrant's terror kills him",
+   "10:19 liberalisation turns into crackdowns",
+   "14:06 replay exposes Kennedy's slip that enables the wall"
+  ],
+  "ending": "Standoff defused comically ('one more inch'), then a sting line that opens the next crisis. Cliffhanger, not resolution.",
+  "story_seconds": 874,
+  "opened_at_pct": 15
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "fo2Rb9h788s",
+  "title": "WW2 - OverSimplified (Part 2)",
+  "views": 67949212,
+  "minutes": 15.55,
+  "story_span": [
+   "0:12",
+   "14:02"
+  ],
+  "breaks": [],
+  "engine": "rise-and-fall",
+  "protagonist": "Hitler (and Japan) at the peak, vs the Allies",
+  "want": "Hitler wants the USSR's land and oil; Japan wants resources; the Allies want to survive then win",
+  "central_question": "Britain isn't alone, the Axis looks unstoppable: what turns it around? (Part 1's 'just the foot for now' carries over)",
+  "central_opened": "0:12",
+  "central_answered": "12:24",
+  "answered_at_pct": 88,
+  "beats": [
+   {
+    "t": "0:12",
+    "link": "AND",
+    "text": "Correction: Britain wasn't alone; alliances shift."
+   },
+   {
+    "t": "1:01",
+    "link": "BUT",
+    "text": "Mussolini tries three conquests, each worse than the last."
+   },
+   {
+    "t": "1:38",
+    "link": "THEREFORE",
+    "text": "Hitler shores up the south; the US stays out but sends weapons."
+   },
+   {
+    "t": "2:03",
+    "link": "BUT",
+    "text": "U-boats could starve Britain; THEREFORE better tech and code-breaking."
+   },
+   {
+    "t": "3:28",
+    "link": "THEREFORE",
+    "text": "Hitler launches the largest invasion ever; staggering gains to Moscow."
+   },
+   {
+    "t": "4:05",
+    "link": "BUT",
+    "text": "Winter; he refuses to dig in; cold-trained troops push him back."
+   },
+   {
+    "t": "4:42",
+    "link": "SO",
+    "text": "Japan needs resources, so it must first destroy rival navies: Pearl Harbor."
+   },
+   {
+    "t": "5:31",
+    "link": "BUT",
+    "text": "It missed the fuel and subs; Hitler needlessly declares war on the US; victories 'built on speed, not power'."
+   },
+   {
+    "t": "6:32",
+    "link": "THEREFORE",
+    "text": "Cocky Hitler splits his forces for oil; one army must take Stalingrad."
+   },
+   {
+    "t": "7:09",
+    "link": "BUT",
+    "text": "Soviets had moved factories east; they encircle the army; Hitler forbids retreat; surrender."
+   },
+   {
+    "t": "7:45",
+    "link": "THEREFORE",
+    "text": "Reversals everywhere: Africa, Midway, Burma, Italy topples Mussolini."
+   },
+   {
+    "t": "9:23",
+    "link": "THEREFORE",
+    "text": "D-Day: deception and a weather window; France liberated."
+   },
+   {
+    "t": "11:36",
+    "link": "BUT",
+    "text": "Desperate Hitler repeats his old forest trick; 'Nuts'; it fails."
+   },
+   {
+    "t": "12:24",
+    "link": "THEREFORE",
+    "text": "Berlin falls; Okinawa; the bomb; Japan surrenders; two superpowers set up a 'very cold' war."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:12",
+    "closed": "0:25",
+    "q": "Was Britain really alone?"
+   },
+   {
+    "opened": "1:01",
+    "closed": "1:14",
+    "q": "Will Italy finally shine?"
+   },
+   {
+    "opened": "2:03",
+    "closed": "2:39",
+    "q": "Can U-boats starve Britain?"
+   },
+   {
+    "opened": "3:28",
+    "closed": "4:42",
+    "q": "Will Hitler take Moscow?"
+   },
+   {
+    "opened": "4:54",
+    "closed": "5:19",
+    "q": "How can Japan beat the US and UK navies?"
+   },
+   {
+    "opened": "5:31",
+    "closed": "5:31",
+    "q": "Was Pearl Harbor really a big win?"
+   },
+   {
+    "opened": "6:07",
+    "closed": "8:10",
+    "q": "When will power catch up with Japan?"
+   },
+   {
+    "opened": "9:23",
+    "closed": "9:35",
+    "q": "Where will the invasion land?"
+   },
+   {
+    "opened": "11:36",
+    "closed": "12:12",
+    "q": "Will Hitler's old trick work twice?"
+   },
+   {
+    "opened": "12:49",
+    "closed": "13:01",
+    "q": "Invade Japan or force surrender?"
+   },
+   {
+    "opened": "14:02",
+    "closed": "open",
+    "q": "What will the two superpowers' 'cold' war be? (next series)"
+   }
+  ],
+  "turns": [
+   "4:05 the unstoppable army meets winter",
+   "5:31 the 'huge victory' missed the key targets",
+   "7:09 hidden Soviet factories flip Stalingrad",
+   "9:35 deception: the enemy guards the wrong beach",
+   "11:36 the villain repeats his greatest hit and it fails"
+  ],
+  "ending": "Axis destroyed; aftermath image (emperor shown as human). Last line plants the next conflict: a 'very, very cold' war.",
+  "story_seconds": 830,
+  "opened_at_pct": 0
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "gzALIXcY4pg",
+  "title": "The American Revolution - OverSimplified (Part 1)",
+  "views": 63970193,
+  "minutes": 15.1,
+  "story_span": [
+   "0:00",
+   "14:47"
+  ],
+  "breaks": [
+   [
+    "1:04",
+    "1:44"
+   ]
+  ],
+  "engine": "versus/conflict",
+  "protagonist": "the colonists (later Washington) vs King George and Britain",
+  "want": "colonists want to keep self-rule and not be taxed without a say; Britain wants its war debt paid and control",
+  "central_question": "Britain is broke and wants the colonies to pay: how does a tax fight become a revolution, and can amateurs beat the world's best army?",
+  "central_opened": "2:40",
+  "central_answered": "14:47",
+  "answered_at_pct": 100,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Columbus finds gold; the race for the New World begins."
+   },
+   {
+    "t": "1:56",
+    "link": "BUT",
+    "text": "France builds forts on land Britain claims; Washington's skirmish sparks a world war."
+   },
+   {
+    "t": "2:25",
+    "link": "BUT",
+    "text": "Britain wins but is broke."
+   },
+   {
+    "t": "2:40",
+    "link": "THEREFORE",
+    "text": "Asks the colonies to chip in; they say no; so taxes."
+   },
+   {
+    "t": "3:47",
+    "link": "BUT",
+    "text": "No say in Parliament: boycotts, Britain repeals."
+   },
+   {
+    "t": "4:16",
+    "link": "BUT",
+    "text": "Vain king repeats it; repeals again except tea; sends troops."
+   },
+   {
+    "t": "5:10",
+    "link": "THEREFORE",
+    "text": "Heckling escalates (snowballs to rocks); soldiers fire; massacre; tea dumped in the harbor."
+   },
+   {
+    "t": "6:17",
+    "link": "THEREFORE",
+    "text": "Britain takes direct rule; colonies meet, ask Britain to stop, get no, arm militias."
+   },
+   {
+    "t": "7:23",
+    "link": "THEREFORE",
+    "text": "Raid on rebel arms; first shot; best army flees farmers; Boston besieged; a fort seized."
+   },
+   {
+    "t": "9:23",
+    "link": "THEREFORE",
+    "text": "Washington made commander; costly British 'win' at Bunker Hill."
+   },
+   {
+    "t": "10:29",
+    "link": "BUT",
+    "text": "What are they fighting for? Peace letter; king answers with insults."
+   },
+   {
+    "t": "11:37",
+    "link": "SO",
+    "text": "Callback: the seized guns are hauled 300 miles; Britain must leave Boston."
+   },
+   {
+    "t": "12:28",
+    "link": "THEREFORE",
+    "text": "A pamphlet makes independence mainstream; Declaration; no turning back."
+   },
+   {
+    "t": "13:31",
+    "link": "BUT",
+    "text": "Huge British fleet; flank trap; defeat after defeat; fog escape; the army barely survives."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:00",
+    "closed": "0:26",
+    "q": "Why is Columbus yelling at the monarchs?"
+   },
+   {
+    "opened": "1:56",
+    "closed": "2:10",
+    "q": "Will France stop building forts?"
+   },
+   {
+    "opened": "2:40",
+    "closed": "3:05",
+    "q": "Will the colonies pay Britain back?"
+   },
+   {
+    "opened": "4:16",
+    "closed": "4:58",
+    "q": "What will the broke king try now?"
+   },
+   {
+    "opened": "5:10",
+    "closed": "5:34",
+    "q": "Boston tension about to come to a head: how?"
+   },
+   {
+    "opened": "6:59",
+    "closed": "7:11",
+    "q": "What to do about the British?"
+   },
+   {
+    "opened": "8:29",
+    "closed": "11:37",
+    "q": "What happens to the fort's captured guns?"
+   },
+   {
+    "opened": "9:09",
+    "closed": "11:25",
+    "q": "What happens to the snubbed Benedict Arnold?"
+   },
+   {
+    "opened": "10:29",
+    "closed": "12:54",
+    "q": "Why are they even fighting?"
+   },
+   {
+    "opened": "13:43",
+    "closed": "13:55",
+    "q": "When will the British attack?"
+   },
+   {
+    "opened": "14:22",
+    "closed": "14:34",
+    "q": "Is the war already lost?"
+   },
+   {
+    "opened": "14:47",
+    "closed": "open",
+    "q": "Can the beaten army fight another day? (Part 2)"
+   }
+  ],
+  "turns": [
+   "2:25 victory leaves the winner broke",
+   "4:16 the king repeats a policy that just failed",
+   "8:02 the world's best army flees farmers",
+   "12:15 guns appear on the heights overnight: checkmate",
+   "14:08 the battle was a decoy; the real force flanks"
+  ],
+  "ending": "Army crushed yet alive; final line 'rarely beaten so badly yet survived'. Unresolved cliffhanger into Part 2.",
+  "story_seconds": 847,
+  "opened_at_pct": 14
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "dHSQAEam2yc",
+  "title": "WW1 - Oversimplified (Part 1)",
+  "views": 57341129,
+  "minutes": 6.4,
+  "story_span": [
+   "0:02",
+   "6:02"
+  ],
+  "breaks": [],
+  "engine": "versus/conflict",
+  "protagonist": "the great powers, mainly Germany and its plan",
+  "want": "each nation wants 'stuff' (land back, more land, navy prestige); Germany wants a fast win in the west then the east",
+  "central_question": "Everyone wants a war: how does it start, and will Germany's lightning plan work?",
+  "central_opened": "0:02",
+  "central_answered": "4:57",
+  "answered_at_pct": 82,
+  "beats": [
+   {
+    "t": "0:02",
+    "link": "AND",
+    "text": "Civilised 1914, 'let's have a war'; each nation's want in a line."
+   },
+   {
+    "t": "0:41",
+    "link": "SO",
+    "text": "Archduke rides an open car on a published route through hostile land."
+   },
+   {
+    "t": "0:53",
+    "link": "BUT",
+    "text": "The bombers miss; fake-out 'and the war never happens'."
+   },
+   {
+    "t": "1:07",
+    "link": "BUT",
+    "text": "He goes back out, wrong turn, stalls by an assassin; shot."
+   },
+   {
+    "t": "1:19",
+    "link": "THEREFORE",
+    "text": "Ultimatum, war on Serbia; alliances drag everyone in."
+   },
+   {
+    "t": "1:58",
+    "link": "BUT",
+    "text": "Britain says 'maybe' and stays out, good for Germany's plan."
+   },
+   {
+    "t": "2:13",
+    "link": "BUT",
+    "text": "French forts; so Germany goes through neutral Belgium."
+   },
+   {
+    "t": "2:42",
+    "link": "BUT",
+    "text": "Belgium fights back and Britain joins after all."
+   },
+   {
+    "t": "2:54",
+    "link": "AND",
+    "text": "Atrocities and propaganda sway America."
+   },
+   {
+    "t": "3:21",
+    "link": "BUT",
+    "text": "Old-style tactics and bright uniforms meet modern guns."
+   },
+   {
+    "t": "3:50",
+    "link": "BUT",
+    "text": "Russia is ready early; Austria-Hungary flops, even against Serbia."
+   },
+   {
+    "t": "4:30",
+    "link": "BUT",
+    "text": "Germans in sight of Paris, then a gap opens; they retreat."
+   },
+   {
+    "t": "4:57",
+    "link": "THEREFORE",
+    "text": "Race to the sea, stalemate, trench lines coast to Switzerland."
+   },
+   {
+    "t": "5:10",
+    "link": "SO",
+    "text": "How trench warfare works and its horror; sincere close."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:41",
+    "closed": "0:53",
+    "q": "How will the publicised drive go?"
+   },
+   {
+    "opened": "0:53",
+    "closed": "1:07",
+    "q": "Fake resolution: war averted? (except no)"
+   },
+   {
+    "opened": "1:46",
+    "closed": "1:58",
+    "q": "Will Britain back France?"
+   },
+   {
+    "opened": "2:13",
+    "closed": "2:28",
+    "q": "'Just one problem': how to get past French forts?"
+   },
+   {
+    "opened": "2:28",
+    "closed": "2:42",
+    "q": "Will Belgium just let them through?"
+   },
+   {
+    "opened": "3:21",
+    "closed": "3:35",
+    "q": "Spot the French soldier: who else spotted him?"
+   },
+   {
+    "opened": "4:03",
+    "closed": "4:16",
+    "q": "Can Austria-Hungary handle Russia?"
+   },
+   {
+    "opened": "4:30",
+    "closed": "4:44",
+    "q": "Will Germany get its quick win after all?"
+   },
+   {
+    "opened": "6:02",
+    "closed": "open",
+    "q": "How long will the trenches last? (Part 2)"
+   }
+  ],
+  "turns": [
+   "0:53 fake-out 'the war never happens'",
+   "1:07 coincidence chain kills the Archduke",
+   "2:42 the 'sit down and shut up' neutral fights",
+   "4:44 near-victory collapses into retreat"
+  ],
+  "ending": "No resolution; switches to a sincere description of trench horror. Open into Part 2.",
+  "story_seconds": 360,
+  "opened_at_pct": 0
+ },
+ {
+  "channel": "OverSimplified",
+  "id": "8qRZcXIODNU",
+  "title": "The French Revolution - OverSimplified (Part 1)",
+  "views": 51382474,
+  "minutes": 17.9,
+  "story_span": [
+   "0:14",
+   "16:31"
+  ],
+  "breaks": [],
+  "engine": "rise-and-fall",
+  "protagonist": "weak King Louis XVI vs the starving Third Estate",
+  "want": "Louis wants to be left alone and keep the party going; the people want bread and a fair say",
+  "central_question": "France is broke and the poor carry everything: 'what are they gonna do, revolt?' (sarcastic plant at 2:02)",
+  "central_opened": "2:02",
+  "central_answered": "11:28",
+  "answered_at_pct": 69,
+  "beats": [
+   {
+    "t": "0:14",
+    "link": "AND",
+    "text": "Royal wedding: awkward prince, France broke, 'fat ill-bred boy' chorus."
+   },
+   {
+    "t": "1:36",
+    "link": "BUT",
+    "text": "France's glamour rests on a starving 80%; 'revolt? nah'."
+   },
+   {
+    "t": "2:02",
+    "link": "BUT",
+    "text": "Lost war with Britain, debt; the nobles party harder; peasants pay."
+   },
+   {
+    "t": "2:28",
+    "link": "THEREFORE",
+    "text": "A soaked drunk asks 'why?': the Enlightenment; weak Louis inherits the mess."
+   },
+   {
+    "t": "3:29",
+    "link": "BUT",
+    "text": "Funds the American Revolution for revenge; never repaid; deeper debt; queen's spending and royal ridicule; monarchy respect at a low."
+   },
+   {
+    "t": "4:45",
+    "link": "THEREFORE",
+    "text": "The fix: tax the poor (salt-tax sketch)."
+   },
+   {
+    "t": "6:53",
+    "link": "BUT",
+    "text": "Bad harvests; bread soars; riots."
+   },
+   {
+    "t": "7:30",
+    "link": "THEREFORE",
+    "text": "Louis dodges: summons a long-dormant assembly."
+   },
+   {
+    "t": "8:34",
+    "link": "BUT",
+    "text": "Voting: 98% of people get one vote of three."
+   },
+   {
+    "t": "9:28",
+    "link": "THEREFORE",
+    "text": "Third Estate forms its own assembly; locked out, swears an oath in a tennis court."
+   },
+   {
+    "t": "10:34",
+    "link": "BUT",
+    "text": "Radicals want no king; the king moves troops; fear everywhere."
+   },
+   {
+    "t": "11:28",
+    "link": "THEREFORE",
+    "text": "Now or never: arms seized, the Bastille stormed, governor's head on a pike; assembly embraces the violence; a bathtub agitator stokes it."
+   },
+   {
+    "t": "14:24",
+    "link": "BUT",
+    "text": "A great rights declaration, but people are still starving."
+   },
+   {
+    "t": "15:15",
+    "link": "THEREFORE",
+    "text": "Women march on the palace; 'let them eat cake'; the king submits and moves to Paris."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:52",
+    "closed": "3:17",
+    "q": "Can this weird boy handle being king of a broke France?"
+   },
+   {
+    "opened": "2:02",
+    "closed": "11:28",
+    "q": "What are the poor gonna do, revolt?"
+   },
+   {
+    "opened": "3:41",
+    "closed": "3:54",
+    "q": "When will America pay France back?"
+   },
+   {
+    "opened": "6:53",
+    "closed": "7:05",
+    "q": "What could push them over the edge?"
+   },
+   {
+    "opened": "7:30",
+    "closed": "7:42",
+    "q": "What decisive action will the king take?"
+   },
+   {
+    "opened": "8:22",
+    "closed": "9:14",
+    "q": "Any ideas to fix the money? / how will voting work?"
+   },
+   {
+    "opened": "9:41",
+    "closed": "9:55",
+    "q": "Locked out: what will they do?"
+   },
+   {
+    "opened": "11:54",
+    "closed": "12:08",
+    "q": "Where to get gunpowder?"
+   },
+   {
+    "opened": "12:36",
+    "closed": "12:48",
+    "q": "Has the governor won?"
+   },
+   {
+    "opened": "13:01",
+    "closed": "13:14",
+    "q": "Denounce the violence or embrace it?"
+   },
+   {
+    "opened": "14:48",
+    "closed": "15:15",
+    "q": "What will starving people do next?"
+   },
+   {
+    "opened": "16:31",
+    "closed": "open",
+    "q": "What happens to the king now? (Part 2)"
+   }
+  ],
+  "turns": [
+   "2:02 sarcastic 'revolt? they're only 80%' sets dramatic irony",
+   "3:41 the ally never repays",
+   "8:41 98% of the people get a third of the votes",
+   "9:55 the lock-out simply moves them to another building",
+   "12:48 the 'winning' governor's head is on a pike",
+   "13:14 reformers choose violence"
+  ],
+  "ending": "The king gives in and returns to Paris: the separation that caused the problem is removed. Open into Part 2.",
+  "story_seconds": 977,
+  "opened_at_pct": 11
+ }
+]

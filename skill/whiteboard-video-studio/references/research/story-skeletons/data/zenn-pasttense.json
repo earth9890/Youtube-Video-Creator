@@ -1,0 +1,2375 @@
+[
+ {
+  "channel": "Zenn0009",
+  "id": "st_Ah6Ykbh4",
+  "title": "What Did Ancient Humans Do at Night?",
+  "views": 8000000,
+  "minutes": 8.52,
+  "engine": "mystery",
+  "protagonist": "you + your ancestors",
+  "want": "to understand what the dark hours were for (and, unknowingly, to sleep the way your body was built to)",
+  "central_question": "So what did they actually do for all those dark hours? (0:30)",
+  "answered_at": "7:50",
+  "answered_at_pct": 0.92,
+  "stakes": "A whole state of consciousness, lost without anyone noticing; your 2 a.m. waking gets misdiagnosed as a disorder.",
+  "obstacle": "A wrong belief (modern sleep is 'normal'), reinforced by translators and by artificial light.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Tonight you'll flip a light switch without thinking."
+   },
+   {
+    "t": "0:05",
+    "link": "BUT",
+    "text": "For 99.9% of history there was no switch; half of every life was spent in darkness."
+   },
+   {
+    "t": "0:30",
+    "link": "SO",
+    "text": "Central question: what filled all those hours?"
+   },
+   {
+    "t": "0:36",
+    "link": "THEREFORE",
+    "text": "Start with fire: before it, moving at night meant being eaten."
+   },
+   {
+    "t": "1:11",
+    "link": "BUT",
+    "text": "Fire drew a 30-ft circle of safety, and it also added 2-4 usable hours a day."
+   },
+   {
+    "t": "1:51",
+    "link": "THEREFORE",
+    "text": "A researcher's campfire study: day talk is work, night talk is mostly stories, so culture is born at the fire."
+   },
+   {
+    "t": "2:53",
+    "link": "BUT",
+    "text": "The night held something else: you were not designed to sleep the way you do."
+   },
+   {
+    "t": "3:03",
+    "link": "THEREFORE",
+    "text": "A historian finds 500+ records of 'first sleep' and 'second sleep' with a waking gap."
+   },
+   {
+    "t": "4:24",
+    "link": "BUT",
+    "text": "Historians mistranslated it for centuries because they couldn't imagine it."
+   },
+   {
+    "t": "4:35",
+    "link": "THEREFORE",
+    "text": "A 1992 darkness experiment makes volunteers fall into the same split pattern, with a meditative hormone state."
+   },
+   {
+    "t": "5:42",
+    "link": "SO",
+    "text": "What killed it? Light: street lamps, gas, Edison."
+   },
+   {
+    "t": "6:08",
+    "link": "AND",
+    "text": "Aside: 'curfew' means cover-fire; being out at night was suspicious or illegal."
+   },
+   {
+    "t": "6:45",
+    "link": "BUT",
+    "text": "We 'conquered' night and called it progress, and blue light now wrecks melatonin."
+   },
+   {
+    "t": "7:29",
+    "link": "THEREFORE",
+    "text": "We erased a whole phase of consciousness; what if your insomnia is your body remembering?"
+   },
+   {
+    "t": "8:00",
+    "link": "SO",
+    "text": "Recap of the ancestral night, then back to the light switch."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:30",
+    "closed": "7:50",
+    "q": "What did they do in the dark?"
+   },
+   {
+    "opened": "0:36",
+    "closed": "1:41",
+    "q": "Why is fire the key?"
+   },
+   {
+    "opened": "1:31",
+    "closed": "1:51",
+    "q": "What did fire give beyond safety?"
+   },
+   {
+    "opened": "2:53",
+    "closed": "3:23",
+    "q": "What else was happening at night?"
+   },
+   {
+    "opened": "3:54",
+    "closed": "3:56",
+    "q": "What did people do while awake mid-night?"
+   },
+   {
+    "opened": "4:24",
+    "closed": "4:35",
+    "q": "Why did nobody notice?"
+   },
+   {
+    "opened": "4:35",
+    "closed": "5:05",
+    "q": "Is it real biology or just history?"
+   },
+   {
+    "opened": "5:42",
+    "closed": "5:47",
+    "q": "What killed the second sleep?"
+   },
+   {
+    "opened": "6:08",
+    "closed": "6:18",
+    "q": "The part nobody talks about?"
+   },
+   {
+    "opened": "6:49",
+    "closed": "7:29",
+    "q": "What exactly did we lose?"
+   },
+   {
+    "opened": "7:50",
+    "closed": "8:00",
+    "q": "Is insomnia really a disorder?"
+   }
+  ],
+  "turns": [
+   "0:05 the switch didn't exist for 99.9% of history",
+   "2:53 you were not designed to sleep like this",
+   "4:24 experts misread the evidence for centuries",
+   "6:45 progress reframed as loss",
+   "7:50 insomnia reframed as memory"
+  ],
+  "ending": "Closes on a calm recap of the ancestral night, then calls back to the opening switch: we traded all of it for that switch and never noticed.",
+  "facts": [
+   "Q: what happened at night? A: a researcher's numbers that day talk was work and night talk was mostly stories.",
+   "Q: is split sleep real or folklore? A: a modern lab removes artificial light and volunteers fall into the split pattern within weeks."
+  ],
+  "jokes": "Very few (~0.7/min). Each sits at the end of a story beat ('overnight, literally' on the fire beat; 'Daytime talk was work.'). No digressions.",
+  "template": "Tonight you [ordinary modern act]. BUT for 99.9% of history [it didn't exist]. SO what did [ancestors] do instead? First, [enabling thing]; it gave them [hidden gift] -> [named researcher's finding]. BUT there was more: you weren't built to [modern habit]. [Old records] showed it; experts missed it because [wrong belief]. THEREFORE [modern experiment] proves it's still in you. SO what killed it? [modern invention]. BUT here's what we lost: [X]. What if your [modern 'problem'] is your body remembering? Close: we traded it for [the opening object]."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "LuCans9euxY",
+  "title": "The Calhoun Effect",
+  "views": 5000000,
+  "minutes": 8.54,
+  "engine": "real-person discovery (experiment chronicle with a myth-correction twist)",
+  "protagonist": "John Calhoun and his eight founder mice",
+  "want": "Calhoun wants a final answer to 'what happens to a society when nothing is hard?'",
+  "central_question": "Everything was perfect, yet five years later all were dead with no diagnosable cause; what killed them? (0:10)",
+  "answered_at": "6:58",
+  "answered_at_pct": 0.82,
+  "stakes": "The colony dies out, and by extension the warning applies to us.",
+  "obstacle": "An invisible cause (no scarcity, no disease) plus a popular misreading of the result.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Eight mice in a perfect world: unlimited food and water, no threats."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "Five years later every one is dead, and no vet could name a cause."
+   },
+   {
+    "t": "0:22",
+    "link": "SO",
+    "text": "Meet Calhoun: he built a 'paradise' to test life when nothing is hard."
+   },
+   {
+    "t": "0:48",
+    "link": "AND",
+    "text": "He had already seen the same collapse 24 times; #25 was meant to be the definitive run."
+   },
+   {
+    "t": "1:21",
+    "link": "THEREFORE",
+    "text": "The setup: built for about 3,800 mice, which it 'would never come close to'."
+   },
+   {
+    "t": "1:41",
+    "link": "SO",
+    "text": "Day by day: 104 calm days, then doubling, 600+ by day 315."
+   },
+   {
+    "t": "2:12",
+    "link": "BUT",
+    "text": "Normally surplus mice emigrate, and here there was nowhere to go."
+   },
+   {
+    "t": "2:23",
+    "link": "THEREFORE",
+    "text": "Young males with no role sink into listless piles."
+   },
+   {
+    "t": "2:53",
+    "link": "BUT",
+    "text": "A second group turns frantic and hypersexual; females retreat to the top."
+   },
+   {
+    "t": "3:54",
+    "link": "THEREFORE",
+    "text": "Mothers can't defend nests, abandon or eat their young; the social fabric is dead."
+   },
+   {
+    "t": "4:35",
+    "link": "SO",
+    "text": "The survivors' kids become 'the beautiful ones': perfect fur, no social life."
+   },
+   {
+    "t": "5:25",
+    "link": "THEREFORE",
+    "text": "Peak 2,200 on day 560, last conception day 920, last mouse dies 1973."
+   },
+   {
+    "t": "6:07",
+    "link": "BUT",
+    "text": "The world read it as 'comfort kills'."
+   },
+   {
+    "t": "6:37",
+    "link": "BUT",
+    "text": "Calhoun's own words say the killer was the loss of meaningful roles."
+   },
+   {
+    "t": "7:33",
+    "link": "BUT",
+    "text": "And Calhoun wasn't a doomer: he spent his career looking for the fix."
+   },
+   {
+    "t": "8:09",
+    "link": "SO",
+    "text": "Callback to the opening; the mice had no choice, we still do."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:10",
+    "closed": "6:58",
+    "q": "What killed them?"
+   },
+   {
+    "opened": "0:40",
+    "closed": "6:58",
+    "q": "What happens to a society when nothing is hard?"
+   },
+   {
+    "opened": "1:41",
+    "closed": "5:25",
+    "q": "How many will it reach (never near 3,800)?"
+   },
+   {
+    "opened": "2:12",
+    "closed": "2:23",
+    "q": "Where do the surplus mice go?"
+   },
+   {
+    "opened": "3:24",
+    "closed": "4:24",
+    "q": "What behaviours no mouse society had seen?"
+   },
+   {
+    "opened": "4:45",
+    "closed": "4:55",
+    "q": "How will the next generation behave?"
+   },
+   {
+    "opened": "6:07",
+    "closed": "6:37",
+    "q": "Is 'comfort kills' what he really said?"
+   },
+   {
+    "opened": "7:33",
+    "closed": "7:38",
+    "q": "The part nobody quotes?"
+   }
+  ],
+  "turns": [
+   "0:10 a paradise ends in total extinction",
+   "2:12 there's no exit valve",
+   "5:05 the healthiest-looking mice are 'functionally dead'",
+   "6:37 the famous lesson is a misreading",
+   "7:33 the scientist was an optimist"
+  ],
+  "ending": "Repeats the cold-open facts (eight mice, five years, an unnameable cause) and hands the stakes to the viewer: they had no choice, we do.",
+  "facts": [
+   "Q: why does crowding break this colony? A: normal colonies shed surplus mice by emigration, and this one had no exit.",
+   "Q: what killed them? A: Calhoun's own sentence about roles outnumbered by individuals."
+  ],
+  "jokes": "Almost none (~0.35/min). Irony only from names ('walk-up apartments', 'beautiful ones'). The story carries it.",
+  "template": "[N subjects] were placed in a perfect [world]. [Time] later, all [failed], with no obvious cause. [Named person] built it to answer [big question]; he'd seen it [N] times, and this was the final test. Timeline: [calm phase] -> [growth] -> BUT [missing escape valve] -> THEREFORE [symptom 1] -> BUT [symptom 2] -> [darkest symptom] -> [a generation that looks perfect but is dead] -> [end date]. Everyone concluded [popular myth]. BUT his paper actually said [real cause]. AND he spent his life trying to [fix]. Callback to the opening; [they] had no choice, you do."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "royoy7-PyTw",
+  "title": "Why You Can't Remember Being a Baby",
+  "views": 1800000,
+  "minutes": 6.88,
+  "engine": "mystery",
+  "protagonist": "you (baby you)",
+  "want": "to recover/understand the first three years of your own life",
+  "central_question": "You lived a whole life before age 3 and remember none of it; why, if 'brain not ready' is wrong? (0:10-0:20)",
+  "answered_at": "6:08",
+  "answered_at_pct": 0.89,
+  "stakes": "Your identity: is the baby in your photos even you?",
+  "obstacle": "A wrong belief (babies can't record) and the brain's own growth.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "You lived a full life before age three: first word, first steps."
+   },
+   {
+    "t": "0:08",
+    "link": "BUT",
+    "text": "You remember none of it."
+   },
+   {
+    "t": "0:12",
+    "link": "BUT",
+    "text": "The usual answer, 'brain not ready', is wrong: something destroyed the memories."
+   },
+   {
+    "t": "0:20",
+    "link": "THEREFORE",
+    "text": "Freud named it; a ribbon-and-mobile experiment proves babies do remember for days and weeks."
+   },
+   {
+    "t": "1:01",
+    "link": "BUT",
+    "text": "Those memories never reach adulthood, and for decades nobody knew why."
+   },
+   {
+    "t": "1:11",
+    "link": "SO",
+    "text": "Layer 1: the hippocampus isn't wired yet."
+   },
+   {
+    "t": "1:52",
+    "link": "BUT",
+    "text": "That's only half; in 2014 two neuroscientists propose building the brain erases memory."
+   },
+   {
+    "t": "2:43",
+    "link": "THEREFORE",
+    "text": "Mouse experiments confirm it: not too weak, too busy growing."
+   },
+   {
+    "t": "3:14",
+    "link": "BUT",
+    "text": "Another layer: no sense of self yet (mirror-and-rouge test)."
+   },
+   {
+    "t": "4:25",
+    "link": "SO",
+    "text": "An uncomfortable question: is the baby in your photos actually you?"
+   },
+   {
+    "t": "4:46",
+    "link": "AND",
+    "text": "One more piece: language gives memory a skeleton."
+   },
+   {
+    "t": "5:27",
+    "link": "AND",
+    "text": "Culture shifts the age of first memory (2.5 to 4+)."
+   },
+   {
+    "t": "6:08",
+    "link": "SO",
+    "text": "Recap: everything at once."
+   },
+   {
+    "t": "6:29",
+    "link": "THEREFORE",
+    "text": "Reframe: your brain was busy becoming you, which meant destroying who came before."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:10",
+    "closed": "6:08",
+    "q": "Why can't you remember?"
+   },
+   {
+    "opened": "0:12",
+    "closed": "3:03",
+    "q": "What destroyed the memories?"
+   },
+   {
+    "opened": "1:01",
+    "closed": "1:11",
+    "q": "Why don't infant memories last?"
+   },
+   {
+    "opened": "1:52",
+    "closed": "2:13",
+    "q": "What's 'even stranger'?"
+   },
+   {
+    "opened": "2:13",
+    "closed": "2:53",
+    "q": "Can building a brain really erase it?"
+   },
+   {
+    "opened": "3:14",
+    "closed": "3:24",
+    "q": "What's the strangest layer?"
+   },
+   {
+    "opened": "4:25",
+    "closed": "6:39",
+    "q": "Is baby-you actually you?"
+   },
+   {
+    "opened": "4:46",
+    "closed": "4:56",
+    "q": "What's the last piece?"
+   }
+  ],
+  "turns": [
+   "0:12 the common answer is wrong",
+   "3:03 not too weak, too busy growing",
+   "4:25 baby-you may be a different person",
+   "6:29 forgetting was the price of becoming you"
+  ],
+  "ending": "Explicit recap of all layers, then a philosophical sting: becoming you required destroying the person before.",
+  "facts": [
+   "Q: can babies form memories at all? A: the ribbon-kick experiment (yes, for days or weeks).",
+   "Q: what destroys them? A: the neurogenesis study, where speeding new neurons makes adult mice forget."
+  ],
+  "jokes": "Near zero. Tension comes from repeated 'even stranger' escalations.",
+  "template": "You [did/experienced X] and remember none of it. Most people think [simple answer]. BUT that's not quite right: [stronger claim]. Proof the capacity exists: [experiment]. BUT [it vanishes]. Layer 1 [structural cause]. BUT that's only half: Layer 2 [counterintuitive cause, the thing that builds you destroys it]. Layer 3 [identity] -> uncomfortable question. Layer 4 [culture shifts it]. SO it was all at once. Close: [the loss] was the price of [becoming you]."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "d8lMW1uDN4s",
+  "title": "What Did Ancient Humans Actually Eat?",
+  "views": 894000,
+  "minutes": 8.05,
+  "engine": "other: escalating-horror chronology ('it gets worse')",
+  "protagonist": "you + your ancestors",
+  "want": "calories, to survive",
+  "central_question": "Your fridge isn't food to them; so what did they actually eat? 'The answer would horrify you.' (0:08)",
+  "answered_at": "6:49",
+  "answered_at_pct": 0.85,
+  "stakes": "Survival then; now, a 3-million-year program misfiring in a world of donuts.",
+  "obstacle": "Nature (scarcity, predators) and, today, our own outdated cravings.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Open your fridge: soda, yogurt, pizza."
+   },
+   {
+    "t": "0:05",
+    "link": "BUT",
+    "text": "To your ancestors none of this is food; what did they eat? (proof is in caves)"
+   },
+   {
+    "t": "0:18",
+    "link": "SO",
+    "text": "3 million years ago we were scavengers: marrow from bones hyenas couldn't break, brains."
+   },
+   {
+    "t": "1:22",
+    "link": "THEREFORE",
+    "text": "That's why your body still treats fat like treasure."
+   },
+   {
+    "t": "1:43",
+    "link": "BUT",
+    "text": "'What came later is worse': fire turns cooking into pre-digestion, guts shrink, brains grow."
+   },
+   {
+    "t": "2:33",
+    "link": "THEREFORE",
+    "text": "The menu explodes; honey is about 15% of Hadza calories."
+   },
+   {
+    "t": "3:14",
+    "link": "SO",
+    "text": "Same craving in you: modern sugar is honey in a costume."
+   },
+   {
+    "t": "4:05",
+    "link": "AND",
+    "text": "Meat: one mammoth buys time for culture, and protein cravings follow."
+   },
+   {
+    "t": "4:25",
+    "link": "BUT",
+    "text": "One craving we can't admit: each other (cut-marked skull cups in an English cave)."
+   },
+   {
+    "t": "5:06",
+    "link": "BUT",
+    "text": "It wasn't starvation: calorie math shows a human is poor food, so it was ritual."
+   },
+   {
+    "t": "5:47",
+    "link": "AND",
+    "text": "Stranger still: they ate rotten meat on purpose, and cheese/beer are 'controlled rot'."
+   },
+   {
+    "t": "6:49",
+    "link": "THEREFORE",
+    "text": "Every craving still runs; at 11 p.m. at the fridge you're running ancient code."
+   },
+   {
+    "t": "7:09",
+    "link": "BUT",
+    "text": "Role swap: you'd die in their world, and they'd think your kitchen is a god's pantry."
+   },
+   {
+    "t": "7:50",
+    "link": "SO",
+    "text": "You may be the first human who isn't hungry."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:08",
+    "closed": "6:49",
+    "q": "What did they actually eat?"
+   },
+   {
+    "opened": "0:12",
+    "closed": "4:35",
+    "q": "What's the proof in caves?"
+   },
+   {
+    "opened": "1:43",
+    "closed": "4:25",
+    "q": "What came later that's worse?"
+   },
+   {
+    "opened": "4:05",
+    "closed": "4:10",
+    "q": "What else did they crave?"
+   },
+   {
+    "opened": "4:25",
+    "closed": "4:28",
+    "q": "The craving we can't admit?"
+   },
+   {
+    "opened": "5:06",
+    "closed": "5:16",
+    "q": "Was it starvation?"
+   },
+   {
+    "opened": "5:47",
+    "closed": "5:56",
+    "q": "What's stranger?"
+   }
+  ],
+  "turns": [
+   "0:05 your food isn't food",
+   "4:28 cannibalism",
+   "5:06 not hunger but ritual",
+   "6:28 cheese is rot",
+   "7:09 the time-travel swap"
+  ],
+  "ending": "Callback to the opening fridge (now at 11 p.m.), a two-way time-travel swap, and a gratitude sting.",
+  "facts": [
+   "Q: why do you crave fat? A: marrow and brains were the jackpot no other scavenger could reach.",
+   "Q: was cannibalism about hunger? A: calorie comparison of a human body vs a bison vs a mammoth."
+  ],
+  "jokes": "~1/min, placed at the end of each era beat as a modern translation ('sugar wearing a costume', 'controlled rot'). Each one bridges the beat back to 'you'.",
+  "template": "Open your [modern thing]. To [ancestors], none of it is [category]. SO what did they [do]? (warn: horrifying). Era 1: [grim fact] -> 'your body still remembers' [modern craving]. BUT it gets worse. Era 2: [enabling tech] -> [body change]. Each era ends with a craving you still have ([modern product] = [ancient thing] in disguise). BUT one [thing] we can't admit: [taboo]. Not because [obvious reason]: [number that kills it]. AND stranger: [gross fact] -> [beloved thing is just that]. Close: [you at 11 p.m.] running ancient code; swap test both ways; you're the first who [doesn't suffer X]."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "_XYNsTvnU7E",
+  "title": "What If WE Are The Aliens?",
+  "views": 829000,
+  "minutes": 10.52,
+  "engine": "versus/conflict (trial of a what-if hypothesis: case for, case against, residual mystery)",
+  "protagonist": "humanity ('us')",
+  "want": "to know where we come from and why we don't fit",
+  "central_question": "What if we don't fit on Earth because we're not from here? (0:22)",
+  "answered_at": "9:32",
+  "answered_at_pct": 0.91,
+  "stakes": "Our origin story; whether we're 'home'.",
+  "obstacle": "Rival explanation (evolutionary mismatch) plus the honest limits of science.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Every species is adapted to Earth: gills, hollow bones, fur."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "We burn in our own sun, our spines fail, birth kills us."
+   },
+   {
+    "t": "0:22",
+    "link": "SO",
+    "text": "Central question: what if we're not from here?"
+   },
+   {
+    "t": "0:28",
+    "link": "AND",
+    "text": "Exhibit 1: sunburn (we invented sunscreen against our own star)."
+   },
+   {
+    "t": "0:50",
+    "link": "AND",
+    "text": "Exhibit 2: 80% get back pain; we were 'retrofitted, badly'."
+   },
+   {
+    "t": "1:21",
+    "link": "AND",
+    "text": "Exhibit 3: deadliest childbirth, most helpless babies."
+   },
+   {
+    "t": "2:01",
+    "link": "AND",
+    "text": "Exhibit 4: allergies, our defences attack the air."
+   },
+   {
+    "t": "2:21",
+    "link": "BUT",
+    "text": "The strangest exhibit isn't physical: we alone know we'll die."
+   },
+   {
+    "t": "3:12",
+    "link": "AND",
+    "text": "The hardest one: we dismantle our ecosystem like an invasive species."
+   },
+   {
+    "t": "3:53",
+    "link": "SO",
+    "text": "Where from, then? The DNA co-discoverer proposed directed panspermia."
+   },
+   {
+    "t": "4:34",
+    "link": "AND",
+    "text": "Supporting evidence: life appeared fast, meteorite amino acids, tardigrades survive space, a book arguing it."
+   },
+   {
+    "t": "6:16",
+    "link": "BUT",
+    "text": "Mainstream biology answers almost all of it: evolutionary mismatch, item by item."
+   },
+   {
+    "t": "7:38",
+    "link": "BUT",
+    "text": "'Settles it, right? Not quite': nothing explains our speed."
+   },
+   {
+    "t": "8:40",
+    "link": "AND",
+    "text": "Candidate causes (language, cooking, FOXP2, teaching): none complete."
+   },
+   {
+    "t": "9:21",
+    "link": "SO",
+    "text": "Honest verdict: probably not aliens, but we don't fully know."
+   },
+   {
+    "t": "9:52",
+    "link": "THEREFORE",
+    "text": "Maybe the restlessness is a clue; either/or close."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:22",
+    "closed": "9:32",
+    "q": "Are we from somewhere else?"
+   },
+   {
+    "opened": "2:21",
+    "closed": "2:28",
+    "q": "What's the strangest part?"
+   },
+   {
+    "opened": "3:12",
+    "closed": "3:22",
+    "q": "Which one is hardest to explain?"
+   },
+   {
+    "opened": "3:53",
+    "closed": "4:03",
+    "q": "So where did we come from?"
+   },
+   {
+    "opened": "6:16",
+    "closed": "6:26",
+    "q": "Can normal biology explain it?"
+   },
+   {
+    "opened": "7:38",
+    "closed": "7:49",
+    "q": "What can't biology explain?"
+   },
+   {
+    "opened": "8:40",
+    "closed": "9:21",
+    "q": "Why so fast?"
+   }
+  ],
+  "turns": [
+   "6:16 the case flips to mismatch",
+   "7:38 fake ending: 'not quite'",
+   "9:32 concession: probably not true"
+  ],
+  "ending": "Two-branch close: if we're from here we're the strangest thing Earth made; if not, we've been trying to get home without knowing. It ends on a question.",
+  "facts": [
+   "Q: why do we burn? (later) A: hair loss for sweat-cooling on the savanna, the price of out-running everything.",
+   "Q: is the alien idea crank talk? A: a Nobel laureate co-wrote the 1973 paper."
+  ],
+  "jokes": "Highest in the set (~1.9/min), but stacked on the 'case for' exhibits (0:28-3:53) as roasts of the species. The final 2 minutes are joke-free.",
+  "template": "Every [peer] fits [environment]. Then there's [subject]: [3 misfits]. What if [wild hypothesis]? Case FOR: exhibit 1..5, escalating to 'the strangest one' and 'the hardest one'. SO a credible [authority] proposed [hypothesis] + supporting evidence. BUT mainstream [field] explains each exhibit (re-walk the list in the same order). 'Settles it, right? Not quite': [one residual anomaly]. Candidate explanations, none complete. Honest verdict: probably not, but not certain. Close on an either/or that makes the viewer feel strange and special."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "IlCq6a0sDCk",
+  "title": "Why Hasn't Anyone Raised the Titanic?",
+  "views": 728000,
+  "minutes": 10.37,
+  "engine": "mission/quest (obstacle ladder: 'why hasn't anyone done X?')",
+  "protagonist": "would-be salvagers ('you', engineers, a salvage company)",
+  "want": "to bring the Titanic back up",
+  "central_question": "We know exactly where it is; why hasn't anyone just brought it up? (0:07)",
+  "answered_at": "9:18",
+  "answered_at_pct": 0.9,
+  "stakes": "A fortune and history, versus disturbing 1,500 graves; and the wreck will soon be gone either way.",
+  "obstacle": "Physics (pressure, weight, fragility), nature (iron-eating bacteria, a hurricane), and morality.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "It's right there: we've sent cameras, subs, even tourists."
+   },
+   {
+    "t": "0:07",
+    "link": "SO",
+    "text": "So why not raise it and charge admission?"
+   },
+   {
+    "t": "0:16",
+    "link": "BUT",
+    "text": "Dozens of plans, all failed."
+   },
+   {
+    "t": "0:28",
+    "link": "BUT",
+    "text": "Obstacle 1: 2.5 miles down, 6,000 psi, and the 2023 sub implosion as proof."
+   },
+   {
+    "t": "1:32",
+    "link": "BUT",
+    "text": "Say you solve pressure: obstacle 2, 52,000 tons, no cable could lift it."
+   },
+   {
+    "t": "2:02",
+    "link": "BUT",
+    "text": "Obstacle 3: it's in two pieces and rotting; pull and it disintegrates."
+   },
+   {
+    "t": "2:42",
+    "link": "SO",
+    "text": "So people got creative: ping-pong balls, petroleum jelly, ice, a novel's compressed air, each killed in a line."
+   },
+   {
+    "t": "4:05",
+    "link": "BUT",
+    "text": "Someone did raise part of it: 'the big piece'."
+   },
+   {
+    "t": "5:07",
+    "link": "BUT",
+    "text": "1996: crowds cheer as it surfaces, then a hurricane snaps the lines."
+   },
+   {
+    "t": "5:17",
+    "link": "THEREFORE",
+    "text": "1998 retry succeeds, now on display in Las Vegas."
+   },
+   {
+    "t": "5:37",
+    "link": "BUT",
+    "text": "That took 4 years for 15 tons, against 52,000."
+   },
+   {
+    "t": "6:07",
+    "link": "BUT",
+    "text": "Meanwhile a unique bacterium is eating the ship; gone in 20-30 years."
+   },
+   {
+    "t": "7:39",
+    "link": "AND",
+    "text": "The other reason: it's a grave (moment of silence, pairs of shoes on the seabed)."
+   },
+   {
+    "t": "8:45",
+    "link": "THEREFORE",
+    "text": "The UN and a treaty protect it like a cemetery."
+   },
+   {
+    "t": "9:18",
+    "link": "SO",
+    "text": "Layered answer: we can't, and we shouldn't."
+   },
+   {
+    "t": "9:41",
+    "link": "AND",
+    "text": "One face: a passenger's postcard to his mother."
+   },
+   {
+    "t": "9:55",
+    "link": "SO",
+    "text": "The ocean is taking it back: a fitting end."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:07",
+    "closed": "9:18",
+    "q": "Why hasn't anyone raised it?"
+   },
+   {
+    "opened": "0:20",
+    "closed": "0:28",
+    "q": "Why did every attempt fail?"
+   },
+   {
+    "opened": "2:42",
+    "closed": "2:53",
+    "q": "What wild ideas did people try?"
+   },
+   {
+    "opened": "4:05",
+    "closed": "4:15",
+    "q": "How did someone bring part of it up?"
+   },
+   {
+    "opened": "4:56",
+    "closed": "5:07",
+    "q": "Will the big piece make it?"
+   },
+   {
+    "opened": "6:07",
+    "closed": "6:17",
+    "q": "What's eating it?"
+   },
+   {
+    "opened": "7:39",
+    "closed": "7:49",
+    "q": "What's the non-technical reason?"
+   },
+   {
+    "opened": "8:19",
+    "closed": "8:30",
+    "q": "What did Ballard see?"
+   }
+  ],
+  "turns": [
+   "4:05 someone did succeed",
+   "5:07 hurricane snatches victory",
+   "5:37 scale makes the win tiny",
+   "6:07 a clock starts: it's disappearing",
+   "7:39 can't becomes shouldn't"
+  ],
+  "ending": "A quiet moral reframe: maybe vanishing is the right end. Last image: a faint mark on the seafloor; time doing what time does.",
+  "facts": [
+   "Q: why can't you just go down there? A: 6,000 psi, then the 2023 implosion shows what that does.",
+   "Q: why not lift it? A: 52,000 tons = 36,000 cars, and the one piece raised weighed 15."
+  ],
+  "jokes": "~1/min, mostly deadpan undercuts at the end of failed attempts ('and then a hurricane arrived', 'to put it mildly, not practical'). All on story beats.",
+  "template": "[Famous thing] is right there; we've even [done lesser thing]. SO why hasn't anyone [obvious action]? It seems easy: [profit]. People tried and all failed. Obstacle 1 [physics] + a recent tragedy as proof. 'Say you solve that': obstacle 2 [scale + vivid comparison]. Obstacle 3 [it's not what you picture]. Wild-attempt montage, each killed in one line. BUT someone DID do a small piece: [mini-heist with crowd, setback, retry]. BUT scale: [tiny vs total]. Meanwhile [nature's clock erasing it]. AND the deeper reason: [moral]. Layered answer: can't AND shouldn't. One human face. Quiet final image."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "5tjzei0JOL8",
+  "title": "What Happens After We Die?",
+  "views": 583000,
+  "minutes": 8.24,
+  "engine": "survival/countdown (second-by-second clock, 0 to 60 s)",
+  "protagonist": "you, in your last minute",
+  "want": "(implicitly) to live, and to know what you experience",
+  "central_question": "Your heart just stopped; what happens in the next 60 seconds, and is your brain at its most alive? (0:10)",
+  "answered_at": "7:31",
+  "answered_at_pct": 0.93,
+  "stakes": "Your life (the 4-6-minute reversible window) and what your final experience is.",
+  "obstacle": "Time and biology (oxygen running out), plus science's limits.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Your heart just stopped: second zero."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "Claim: dying may be the most alive your brain ever is."
+   },
+   {
+    "t": "0:17",
+    "link": "SO",
+    "text": "0 s: nothing you can feel; blood stops."
+   },
+   {
+    "t": "0:30",
+    "link": "BUT",
+    "text": "Your brain doesn't know yet: about 10 s of oxygen left, you're still you."
+   },
+   {
+    "t": "0:50",
+    "link": "THEREFORE",
+    "text": "About 10 s: cortex shuts down, consciousness goes; from outside you look gone."
+   },
+   {
+    "t": "1:11",
+    "link": "BUT",
+    "text": "Inside, a 2023 study shows a gamma surge as the brain dies ('crazy high')."
+   },
+   {
+    "t": "2:14",
+    "link": "SO",
+    "text": "Pause: near-death reports match; life review is small moments, not highlights."
+   },
+   {
+    "t": "2:54",
+    "link": "AND",
+    "text": "White-cat anecdote: a memory from 14 months old, confirmed by his mother."
+   },
+   {
+    "t": "3:35",
+    "link": "SO",
+    "text": "Are all memories still in there? We don't know."
+   },
+   {
+    "t": "3:46",
+    "link": "BUT",
+    "text": "Meanwhile the body goes dark: 30 s, lactic acid, jaw drops, pupils fixed."
+   },
+   {
+    "t": "4:37",
+    "link": "BUT",
+    "text": "'Or are they?' Hospital studies: about 40% report some awareness, 3% full sight and sound."
+   },
+   {
+    "t": "5:27",
+    "link": "AND",
+    "text": "Many report not being alone; the experience is mostly peaceful."
+   },
+   {
+    "t": "5:59",
+    "link": "SO",
+    "text": "60 s: still reversible; self-digestion just beginning; limbo."
+   },
+   {
+    "t": "7:00",
+    "link": "SO",
+    "text": "Waiting for what? Two answers: oxygen, or this was your last minute."
+   },
+   {
+    "t": "7:31",
+    "link": "THEREFORE",
+    "text": "Your brain used that minute to turn on, not off."
+   },
+   {
+    "t": "7:41",
+    "link": "SO",
+    "text": "Moral: survivors want time; the ordinary Tuesdays are what replays."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:10",
+    "closed": "7:31",
+    "q": "What happens in the 60 s / most alive?"
+   },
+   {
+    "opened": "0:30",
+    "closed": "0:50",
+    "q": "When does the brain notice?"
+   },
+   {
+    "opened": "1:11",
+    "closed": "1:31",
+    "q": "What's happening inside?"
+   },
+   {
+    "opened": "2:44",
+    "closed": "2:54",
+    "q": "What does the life review really show?"
+   },
+   {
+    "opened": "2:54",
+    "closed": "3:25",
+    "q": "Whose memory is the white cat?"
+   },
+   {
+    "opened": "3:35",
+    "closed": null,
+    "q": "Are all our memories still in there?"
+   },
+   {
+    "opened": "4:37",
+    "closed": "4:47",
+    "q": "Is anyone behind the eyes?"
+   },
+   {
+    "opened": "7:00",
+    "closed": "7:11",
+    "q": "Waiting for what?"
+   }
+  ],
+  "turns": [
+   "1:31 a surge, not a fade",
+   "2:44 life review is trivia, not highlights",
+   "4:37 'or are they?' awareness reported while clinically dead"
+  ],
+  "ending": "A moral flip with a callback to the 'random Tuesday' (2:54): your brain recorded it all and may play it back. One loop (are all memories stored?) is deliberately left open.",
+  "facts": [
+   "Q: what does the dying brain do? A: the 2023 gamma-surge study.",
+   "Q: is anyone 'in there' after the heart stops? A: hospital-study percentages for awareness."
+  ],
+  "jokes": "Essentially none. Tension comes from the clock and from 'here's where it gets strange again' re-hooks.",
+  "template": "[Clock event] just happened to you. Second zero. Claim: [counterintuitive]. Walk the clock: [t1 body fact] -> BUT [inside, the opposite] -> named study. Pause for [human reports] + one jaw-drop anecdote -> open question. Back to the body at [t2]. 'Or are they?' -> bigger study with percentages. [t3]: the reversible window. 'Waiting for what?' Two answers. Close: a moral + callback to the anecdote."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "QZNB21kQCgQ",
+  "title": "What Did Ancient Humans Do All Day?",
+  "views": 446000,
+  "minutes": 8.8,
+  "engine": "other: day-in-the-life clock walk",
+  "protagonist": "you, placed in a Hadza/Kung camp",
+  "want": "(implicitly) the happiness and free time they seem to have",
+  "central_question": "They work ~2.5 hours a day and look happier; so what do they actually do all day? (0:32)",
+  "answered_at": "8:05",
+  "answered_at_pct": 0.92,
+  "stakes": "What we traded away: time, closeness, equality.",
+  "obstacle": "Our assumptions (hunters feed the camp, primitive = miserable) and modern life's bosses and bills.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Right now a Hadza man is napping; his work day is done."
+   },
+   {
+    "t": "0:10",
+    "link": "AND",
+    "text": "2.5 hours of work, fewer chronic diseases, more laughter; they look happier."
+   },
+   {
+    "t": "0:32",
+    "link": "SO",
+    "text": "So what do they do all day? A 1968 time study: about 15 hours of work a week."
+   },
+   {
+    "t": "0:50",
+    "link": "THEREFORE",
+    "text": "Walk the day with 'you' in it: sunrise, 25-30 people you've known forever."
+   },
+   {
+    "t": "1:21",
+    "link": "AND",
+    "text": "First hour is talk, which is the camp's operating system and legal system."
+   },
+   {
+    "t": "2:01",
+    "link": "BUT",
+    "text": "An anthropologist's Christmas ox gets mocked for weeks, and the reason is equality."
+   },
+   {
+    "t": "3:02",
+    "link": "BUT",
+    "text": "Hunting is dramatic and usually fails."
+   },
+   {
+    "t": "3:43",
+    "link": "BUT",
+    "text": "The women feed the camp; grandmothers out-gather mothers."
+   },
+   {
+    "t": "4:24",
+    "link": "AND",
+    "text": "Kids learn in mixed-age play groups: 'the school we evolved for'."
+   },
+   {
+    "t": "5:15",
+    "link": "SO",
+    "text": "Midday: sharing is a rule, possibly what built our brains."
+   },
+   {
+    "t": "5:46",
+    "link": "AND",
+    "text": "Afternoon: naps, lice, toilets, sex, all without shame."
+   },
+   {
+    "t": "6:26",
+    "link": "BUT",
+    "text": "Conflicts happen, and they end by walking away to another camp."
+   },
+   {
+    "t": "6:56",
+    "link": "AND",
+    "text": "Late afternoon visits; hunters usually return empty."
+   },
+   {
+    "t": "7:38",
+    "link": "BUT",
+    "text": "This is not paradise: sickness, dead children."
+   },
+   {
+    "t": "8:05",
+    "link": "SO",
+    "text": "Answer: the 'original affluent society' had time, not wealth."
+   },
+   {
+    "t": "8:15",
+    "link": "BUT",
+    "text": "We made real trades (vaccines) and hidden ones (bosses and bills)."
+   },
+   {
+    "t": "8:35",
+    "link": "THEREFORE",
+    "text": "We're still hunter-gatherers; we just stopped doing [their things]. (transcript cut)"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:32",
+    "closed": "8:05",
+    "q": "What do they do all day?"
+   },
+   {
+    "opened": "0:30",
+    "closed": "8:05",
+    "q": "Why are they happier?"
+   },
+   {
+    "opened": "2:01",
+    "closed": "2:32",
+    "q": "Why mock a great gift?"
+   },
+   {
+    "opened": "3:02",
+    "closed": "3:43",
+    "q": "Who actually feeds the camp?"
+   },
+   {
+    "opened": "6:26",
+    "closed": "6:36",
+    "q": "How do fights end without police?"
+   }
+  ],
+  "turns": [
+   "2:22 the generous gift is mocked",
+   "3:43 the women, not the hunters, feed the camp",
+   "7:38 'this is not paradise'"
+  ],
+  "ending": "Balanced ledger (real gains and hidden losses), with a callback to the opening's 'no boss, no rent' as 'bosses and bills', ending on the line that we are still them.",
+  "facts": [
+   "Q: how much did they work? A: an anthropologist's minute-by-minute tally, about 15 h/week.",
+   "Q: who feeds the camp? A: women provide more than half the calories; grandmothers gather the most."
+  ],
+  "jokes": "~2/min (the funniest Zenn), mostly as tag lines at the end of each clock segment ('Most of us hit that before lunch', 'Generosity is the savings account'). They sit on story beats, and the ending stretch is joke-free.",
+  "template": "Right now, somewhere, [person] is [enviable state]. [Stat vs you]. SO what do they actually do all day? Walk the clock with 'you' inside: Sunrise [scene] -> [surprising function] + one story with a twist -> Morning [the expected hero fails; the unexpected hero] -> Midday [a rule] -> Afternoon [taboo said flat] -> [how conflict ends] -> Evening. BUT this is not paradise. The answer: [abstract resource]. We made real trades AND hidden trades. Close: you still have their [body]; you just stopped [X]."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "_xGwOhFLdno",
+  "title": "The Slotow Effect",
+  "views": 341000,
+  "minutes": 11.48,
+  "engine": "mystery (whodunit) -> real-person discovery",
+  "protagonist": "rangers and ecologists at a South African reserve; the orphan elephants",
+  "want": "stop the rhino killings without shooting their way out",
+  "central_question": "Rhinos found dead with horns still on; who is killing them, and why? Framed as 'why the young need the old'. (0:00-0:45)",
+  "answered_at": "9:50",
+  "answered_at_pct": 0.86,
+  "stakes": "A rhino population nursed back from a few dozen animals; the orphans' lives.",
+  "obstacle": "A wrong theory (trauma, bad elephants) and a missing piece nobody could supply (adult bulls couldn't be moved).",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "1994: dead rhinos, and poachers are the obvious suspect."
+   },
+   {
+    "t": "0:05",
+    "link": "BUT",
+    "text": "The horn is still attached."
+   },
+   {
+    "t": "0:20",
+    "link": "AND",
+    "text": "Wounds from above, elephant-sized prints."
+   },
+   {
+    "t": "0:45",
+    "link": "BUT",
+    "text": "Elephants don't kill rhinos; this one was hunting."
+   },
+   {
+    "t": "1:08",
+    "link": "SO",
+    "text": "Rewind to 1979: a new park is stocked with 18 orphan calves and no adults."
+   },
+   {
+    "t": "1:31",
+    "link": "BUT",
+    "text": "Why orphans? Culls shot the matriarch first, then the herd; only calves could be trucked."
+   },
+   {
+    "t": "2:53",
+    "link": "THEREFORE",
+    "text": "Nobody was a villain; the orphans were left to raise themselves."
+   },
+   {
+    "t": "3:13",
+    "link": "BUT",
+    "text": "They turn nervous and aggressive, and two adult females can't fix it."
+   },
+   {
+    "t": "3:44",
+    "link": "THEREFORE",
+    "text": "Charges, a tourist killed, the hunter sent to stop it killed too."
+   },
+   {
+    "t": "4:04",
+    "link": "THEREFORE",
+    "text": "1994: 20 rhinos dead in a year."
+   },
+   {
+    "t": "4:35",
+    "link": "SO",
+    "text": "Rangers work it like a serial case and shoot three suspects; the killings stop."
+   },
+   {
+    "t": "4:55",
+    "link": "BUT",
+    "text": "1996: 20 more die. Wrong elephants."
+   },
+   {
+    "t": "5:05",
+    "link": "THEREFORE",
+    "text": "Two-year surveillance, rap sheets, a suspect named 'Tom Thumb', a 1997 catch in the act."
+   },
+   {
+    "t": "5:36",
+    "link": "BUT",
+    "text": "Trauma explains anger but not timing; the clusters have a rhythm."
+   },
+   {
+    "t": "5:56",
+    "link": "THEREFORE",
+    "text": "Every killer was a young male in musth, which normally starts late and short."
+   },
+   {
+    "t": "6:47",
+    "link": "BUT",
+    "text": "Older bulls switch musth off just by existing, and this park had none."
+   },
+   {
+    "t": "8:08",
+    "link": "BUT",
+    "text": "Diagnosis flips: the park didn't have bad elephants, it was missing elephants."
+   },
+   {
+    "t": "8:28",
+    "link": "SO",
+    "text": "Import adult bulls (newly possible with new trucks)."
+   },
+   {
+    "t": "9:09",
+    "link": "THEREFORE",
+    "text": "Outranked, the young bulls' musth collapses; the killings stop completely."
+   },
+   {
+    "t": "10:00",
+    "link": "AND",
+    "text": "Callback: even Tom Thumb left the rhinos alone; paper in Nature."
+   },
+   {
+    "t": "10:10",
+    "link": "SO",
+    "text": "Lesson: a society has an architecture; humans will never get this experiment."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:00",
+    "closed": "0:40",
+    "q": "Who killed the rhinos?"
+   },
+   {
+    "opened": "0:45",
+    "closed": "6:57",
+    "q": "Why would elephants kill rhinos?"
+   },
+   {
+    "opened": "1:31",
+    "closed": "1:41",
+    "q": "Why were there no adults?"
+   },
+   {
+    "opened": "4:55",
+    "closed": "5:05",
+    "q": "Why did killings resume?"
+   },
+   {
+    "opened": "5:36",
+    "closed": "5:56",
+    "q": "Trauma or something else?"
+   },
+   {
+    "opened": "5:25",
+    "closed": "10:00",
+    "q": "What happens to Tom Thumb?"
+   },
+   {
+    "opened": "8:08",
+    "closed": "9:50",
+    "q": "What's the fix?"
+   }
+  ],
+  "turns": [
+   "0:05 the horn is still there",
+   "0:45 elephants don't do this",
+   "4:55 they shot the wrong ones",
+   "5:36 trauma theory fails on timing",
+   "8:08 'not bad elephants, missing elephants'"
+  ],
+  "ending": "Extrapolates the lesson to human neighbourhoods we can never experiment on; final line (transcript cut) says nothing about them changed except their surroundings.",
+  "facts": [
+   "Q: why no adults? A: the cull method (matriarch first; calves the only ones small enough to truck).",
+   "Q: why the killing clusters? A: the musth mechanism and how older bulls cap it."
+  ],
+  "jokes": "~0.5/min, deadpan ('mostly by ignoring each other') and one callback (Tom Thumb). All on story beats.",
+  "template": "[Year]: [victims] found dead. Obvious suspect [X], BUT [clue rules X out]. Clues point to [impossible culprit], BUT [culprit] never does this. SO rewind: how [culprit] got here, a well-meant decision with a dark detail; nobody was a villain. Warning signs -> escalation -> body count. Investigators act on [wrong theory]; it works, BUT it happens again. Surveillance, a named suspect. Two theories: [obvious] vs [precise]; the timing reveals [mechanism], and what normally switches it off is [missing element]. Diagnosis flip: not bad [X], missing [Y]. Fix: put [Y] back, and it stops in a season. Callback to the named suspect. Lesson for humans."
+ },
+ {
+  "channel": "Zenn0009",
+  "id": "W9hRteFVYCc",
+  "title": "The Spotlight Effect",
+  "views": 150000,
+  "minutes": 8.32,
+  "engine": "other: myth-bust self-help (feeling vs data)",
+  "protagonist": "you",
+  "want": "not to be judged",
+  "central_question": "Is everyone really watching you? (answered almost at once: no, 0:10). The working question is why it feels that way. (2:12)",
+  "answered_at": "0:10",
+  "answered_at_pct": 0.02,
+  "stakes": "Every hand you didn't raise and every thing you didn't try.",
+  "obstacle": "Your own brain's ancient software (anchoring, tribe-era fear).",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "You walk in late; everyone sees the stain and the sweat."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "What really happened: two glances, nobody cared."
+   },
+   {
+    "t": "0:28",
+    "link": "SO",
+    "text": "It has a name: the spotlight effect."
+   },
+   {
+    "t": "0:37",
+    "link": "THEREFORE",
+    "text": "The embarrassing-T-shirt study: wearers guess 50% noticed; under 25% did."
+   },
+   {
+    "t": "1:31",
+    "link": "AND",
+    "text": "Variations: flattering shirts, group discussions, same result."
+   },
+   {
+    "t": "2:12",
+    "link": "SO",
+    "text": "Why? Anchoring on your own vivid experience."
+   },
+   {
+    "t": "2:53",
+    "link": "AND",
+    "text": "The elevator example: you're the star, they're scenery."
+   },
+   {
+    "t": "3:33",
+    "link": "SO",
+    "text": "Roots: in a tribe of 150, reputation meant survival."
+   },
+   {
+    "t": "4:04",
+    "link": "BUT",
+    "text": "You live among 8 billion, and your brain hasn't caught up."
+   },
+   {
+    "t": "4:24",
+    "link": "AND",
+    "text": "Its cousin: the illusion of transparency (speeches, bitter drinks)."
+   },
+   {
+    "t": "5:36",
+    "link": "THEREFORE",
+    "text": "Just knowing about it made speakers perform better."
+   },
+   {
+    "t": "6:06",
+    "link": "BUT",
+    "text": "Counterpoint, social media: it still holds."
+   },
+   {
+    "t": "6:36",
+    "link": "SO",
+    "text": "What it cost you: every hand not raised."
+   },
+   {
+    "t": "7:38",
+    "link": "THEREFORE",
+    "text": "You're free: go to the restaurant alone, wear the shirt."
+   },
+   {
+    "t": "8:08",
+    "link": "SO",
+    "text": "Inverted callback: they're worried about who's looking at them."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:10",
+    "closed": "0:10",
+    "q": "What actually happened?"
+   },
+   {
+    "opened": "0:28",
+    "closed": "1:31",
+    "q": "Does it hold up in tests?"
+   },
+   {
+    "opened": "2:12",
+    "closed": "2:22",
+    "q": "Why does your brain do this?"
+   },
+   {
+    "opened": "3:33",
+    "closed": "3:44",
+    "q": "Where does it come from?"
+   },
+   {
+    "opened": "4:24",
+    "closed": "4:35",
+    "q": "What cuts deeper?"
+   },
+   {
+    "opened": "5:36",
+    "closed": "5:56",
+    "q": "Is knowing it useful?"
+   },
+   {
+    "opened": "6:06",
+    "closed": "6:16",
+    "q": "What about social media?"
+   }
+  ],
+  "turns": [
+   "0:10 nobody noticed",
+   "5:46 knowing the effect improves performance"
+  ],
+  "ending": "Empowerment list, then the opening room scene inverted: everyone is busy worrying about themselves.",
+  "facts": [
+   "Q: how visible are you really? A: guessed 50% vs actual under 25% in the T-shirt study.",
+   "Q: can knowing help? A: the follow-up study where informed speakers were rated more composed."
+  ],
+  "jokes": "~0.8/min; small relatable tags. Note it's the lowest-viewed Zenn and the one with the weakest open loop.",
+  "template": "You [embarrassing scene]; everyone saw. BUT what actually happened: [deflation]. It has a name. Classic experiment: [guess vs reality %]. Variations. WHY: [mechanism] + everyday example. Evolutionary root -> mismatch with now. A deeper cousin effect. Payoff: knowing helps. A counterpoint answered. The life cost list. Close: invert the opening scene."
+ },
+ {
+  "channel": "PastTense01",
+  "id": "N2Y4-_dkKe0",
+  "title": "Why Humans Eat 3 Meals a Day",
+  "views": 1270000,
+  "minutes": 8.42,
+  "engine": "other: origin-of-a-habit chronology ('who decided this?')",
+  "protagonist": "you and your daily meals",
+  "want": "to know whether three meals is natural",
+  "central_question": "Nobody decided 3 meals from biology; it's 'a story'. Where did it come from? (0:20; restated 3:23)",
+  "answered_at": "7:39",
+  "answered_at_pct": 0.91,
+  "stakes": "Low/personal: whether your routine is biology or habit (and eating late is worse).",
+  "obstacle": "A wrong belief (it's natural) plus cultural bias and commerce.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "You ate breakfast, lunch, dinner and never questioned it."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "No biology decided it: three meals is a story."
+   },
+   {
+    "t": "0:28",
+    "link": "SO",
+    "text": "23,000 years ago at a lakeside camp: people ate whenever."
+   },
+   {
+    "t": "1:11",
+    "link": "BUT",
+    "text": "Agriculture brings reliable food."
+   },
+   {
+    "t": "1:36",
+    "link": "BUT",
+    "text": "Still no three meals: Egypt ate two."
+   },
+   {
+    "t": "2:01",
+    "link": "AND",
+    "text": "Greeks ate three-ish, loosely."
+   },
+   {
+    "t": "2:12",
+    "link": "BUT",
+    "text": "The super-organized Romans feared more than one meal as gluttony."
+   },
+   {
+    "t": "2:52",
+    "link": "AND",
+    "text": "European settlers called Native fasting 'uncivilized', and that bias later spread three meals."
+   },
+   {
+    "t": "3:23",
+    "link": "SO",
+    "text": "Where exactly from? The Royal Navy's ship routine."
+   },
+   {
+    "t": "3:54",
+    "link": "BUT",
+    "text": "What locked it in: factory clocks; 'not a discovery, a solution'."
+   },
+   {
+    "t": "4:36",
+    "link": "AND",
+    "text": "Breakfast vs mass; dinner migrates to evening with lamps."
+   },
+   {
+    "t": "5:27",
+    "link": "AND",
+    "text": "A cereal entrepreneur sells breakfast as most important: commerce, not science."
+   },
+   {
+    "t": "5:56",
+    "link": "BUT",
+    "text": "Does biology want it? Circadian timing matters more than count."
+   },
+   {
+    "t": "7:09",
+    "link": "BUT",
+    "text": "Biology isn't everything: shared meals bond us."
+   },
+   {
+    "t": "7:39",
+    "link": "SO",
+    "text": "Recap as a 'because...because...' chain."
+   },
+   {
+    "t": "8:10",
+    "link": "THEREFORE",
+    "text": "Tonight you'll sit for dinner, and now you'll know why."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:20",
+    "closed": "7:39",
+    "q": "Where did the 3-meal story come from?"
+   },
+   {
+    "opened": "2:22",
+    "closed": "2:32",
+    "q": "Did organized Rome have a schedule?"
+   },
+   {
+    "opened": "3:23",
+    "closed": "3:33",
+    "q": "Who formalized 3 meals?"
+   },
+   {
+    "opened": "5:27",
+    "closed": "5:37",
+    "q": "Who cemented breakfast?"
+   },
+   {
+    "opened": "5:56",
+    "closed": "6:59",
+    "q": "Does your biology want 3 meals?"
+   }
+  ],
+  "turns": [
+   "0:10 it's not biology, it's a story",
+   "2:22 Rome feared multiple meals",
+   "4:25 a solution, not a discovery",
+   "5:37 commerce, not science"
+  ],
+  "ending": "Callback to the opening ('tonight you'll sit for dinner') with closure: now you know why. Calm, no sting.",
+  "facts": [
+   "Q: did the Romans eat 3 meals? A: a food historian on Roman fear of gluttony and one main meal.",
+   "Q: why does breakfast matter so much today? A: cereal marketing in the 1920s-30s."
+  ],
+  "jokes": "Near zero. Interest comes from 'you might expect X; they did not' reversals.",
+  "template": "You [daily habit] and never questioned it. BUT nobody decided it from [biology]; it's a story. Go back [N] years: [no habit]. [Big change] still didn't create it. Culture A did [variant], culture B [variant], the culture you'd expect to invent it [rejected it]. SO where exactly did it come from? [Institution] -> [industrial force] locked it; 'not a discovery, a solution'. AND [commerce] cemented it. BUT does your body want it? [Science: what actually matters]. BUT [human/social layer]. Recap as a because-chain. Close: next time you [habit], you'll know why."
+ },
+ {
+  "channel": "PastTense01",
+  "id": "KTw7tXzxoNM",
+  "title": "The Rarest Human Possible",
+  "views": 1180000,
+  "minutes": 6.12,
+  "engine": "other: build-a-character multiplier (running odds counter)",
+  "protagonist": "a dream woman (later revealed to be the 'rarest human'), and you the dreamer",
+  "want": "you want to know if she could exist",
+  "central_question": "Does a person like her exist? Then: what would the rarest possible human look like? (0:35-0:38)",
+  "answered_at": "5:28",
+  "answered_at_pct": 0.89,
+  "stakes": "Light: the romance/fantasy, then your own uniqueness.",
+  "obstacle": "Probability itself.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "You meet a striking woman in a park and fall in love."
+   },
+   {
+    "t": "0:20",
+    "link": "BUT",
+    "text": "The alarm rings; it was a dream."
+   },
+   {
+    "t": "0:30",
+    "link": "SO",
+    "text": "Does she exist? Yes; bigger question: what is the rarest possible person?"
+   },
+   {
+    "t": "0:47",
+    "link": "THEREFORE",
+    "text": "Trait 1: a tiny ethnic group gives 1 in 16 million."
+   },
+   {
+    "t": "1:42",
+    "link": "AND",
+    "text": "Albinism: 1 in 320 billion."
+   },
+   {
+    "t": "2:20",
+    "link": "AND",
+    "text": "Complete heterochromia."
+   },
+   {
+    "t": "2:50",
+    "link": "AND",
+    "text": "Left-handed: 1 in 5.33 quadrillion."
+   },
+   {
+    "t": "3:35",
+    "link": "AND",
+    "text": "Tetrachromacy."
+   },
+   {
+    "t": "4:25",
+    "link": "AND",
+    "text": "Hyperthymesia."
+   },
+   {
+    "t": "5:15",
+    "link": "SO",
+    "text": "Recap the build: it's the woman from the dream."
+   },
+   {
+    "t": "5:28",
+    "link": "THEREFORE",
+    "text": "1 in 6.83 septillion, more than the stars in the universe."
+   },
+   {
+    "t": "5:48",
+    "link": "BUT",
+    "text": "And this isn't even the rarest possible."
+   },
+   {
+    "t": "5:56",
+    "link": "SO",
+    "text": "You're unique too."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:35",
+    "closed": "0:37",
+    "q": "Does she exist?"
+   },
+   {
+    "opened": "0:38",
+    "closed": "5:28",
+    "q": "What would the rarest person look like?"
+   },
+   {
+    "opened": "0:47",
+    "closed": "5:28",
+    "q": "How small do the odds get? (counter after every trait)"
+   }
+  ],
+  "turns": [
+   "0:20 it was a dream",
+   "5:20 the built person is the dream woman"
+  ],
+  "ending": "Callback reveal (the stats person = the dream woman) and a compliment to the viewer.",
+  "facts": [
+   "Q: how rare is she? A: each trait is a probability multiplied into a running total.",
+   "Q: how big is that number? A: compared to stars in the universe and grains of sand."
+  ],
+  "jokes": "1-2 light moments (dream fake-out, sign-off pun). The running counter is the hook.",
+  "template": "Second-person fantasy scene with a striking [person]. Fake-out: it was a dream. Question: could they exist? Yes; bigger question: what's the most [extreme] possible? Add trait 1 -> odds. Trait 2 -> new odds ... (update the counter every 40-50 s). Recap: it's the person from the dream. Final number vs a cosmic comparison. 'Not even the max.' Close: so are you."
+ },
+ {
+  "channel": "PastTense01",
+  "id": "svxL5pysqX0",
+  "title": "Did Ancient Humans get Cancer?",
+  "views": 318000,
+  "minutes": 6.33,
+  "engine": "mystery (myth-bust: 'it's a modern disease')",
+  "protagonist": "humanity vs cancer (cancer as antagonist)",
+  "want": "to understand, and beat, an old enemy",
+  "central_question": "Most think cancer is modern; is it? (0:30) Answered at once (0:51). The working question: did they get it less, and why? (3:34)",
+  "answered_at": "0:51",
+  "answered_at_pct": 0.13,
+  "stakes": "Lives; how we fight cancer.",
+  "obstacle": "Cancer itself plus a preservation bias in the evidence.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Cancer is brutal and steals people."
+   },
+   {
+    "t": "0:25",
+    "link": "BUT",
+    "text": "It's been here since the beginning."
+   },
+   {
+    "t": "0:30",
+    "link": "BUT",
+    "text": "Most think it's modern."
+   },
+   {
+    "t": "0:41",
+    "link": "THEREFORE",
+    "text": "A 1.7-million-year-old ancestor's foot bone with bone cancer."
+   },
+   {
+    "t": "1:11",
+    "link": "BUT",
+    "text": "Bones show only a fraction: soft tissue doesn't fossilize."
+   },
+   {
+    "t": "1:42",
+    "link": "SO",
+    "text": "Mummies: CT scans find tumours."
+   },
+   {
+    "t": "2:02",
+    "link": "AND",
+    "text": "Writings: an Egyptian papyrus ('no treatment'); Hippocrates names it 'crab'."
+   },
+   {
+    "t": "2:54",
+    "link": "SO",
+    "text": "Why so ancient? Cancer is a copying error built into life."
+   },
+   {
+    "t": "3:34",
+    "link": "SO",
+    "text": "Did they get it less? Probably, but because they died young."
+   },
+   {
+    "t": "4:05",
+    "link": "AND",
+    "text": "Different risks cut both ways (smoke, parasites, sun)."
+   },
+   {
+    "t": "4:36",
+    "link": "SO",
+    "text": "Why is it everywhere today? Longevity, detection, lifestyle."
+   },
+   {
+    "t": "5:17",
+    "link": "THEREFORE",
+    "text": "Ancient-ness helps science (elephants' extra tumour-suppressor genes)."
+   },
+   {
+    "t": "5:58",
+    "link": "SO",
+    "text": "Rhyming recap image; for the first time we can fight back."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:30",
+    "closed": "0:51",
+    "q": "Is cancer modern?"
+   },
+   {
+    "opened": "1:11",
+    "closed": "1:22",
+    "q": "Why so few fossil cancers?"
+   },
+   {
+    "opened": "3:34",
+    "closed": "3:45",
+    "q": "Did they get it less?"
+   },
+   {
+    "opened": "4:36",
+    "closed": "4:47",
+    "q": "Why does it seem everywhere now?"
+   }
+  ],
+  "turns": [
+   "0:25 it's ancient",
+   "3:45 'yes, but not for the reasons people think'"
+  ],
+  "ending": "A rhythmic recap image (a bone, a tumour, before language, before fire) and a note of hope.",
+  "facts": [
+   "Q: is cancer modern? A: the 1.7-million-year-old tumour.",
+   "Q: why less then? A: average lifespan of 25-35 vs cancer's 50+ window."
+  ],
+  "jokes": "None. The antagonist framing gives it energy.",
+  "template": "[Antagonist] is brutal (personify it). BUT it's ancient. Most think [modern]. Proof: [oldest specimen]. BUT the evidence is biased (why we see so little). Better sources: [mummies], [writings + name origin]. Why so old? [Mechanism]. Did they have it less? Yes, BUT for a surprising reason. Why it seems everywhere today. How the deep past helps now. Close: rhythmic recap image + hope."
+ },
+ {
+  "channel": "PastTense01",
+  "id": "KXv-LNRpWNk",
+  "title": "Does Human Food Taste Good to Animals?",
+  "views": 288000,
+  "minutes": 6.45,
+  "engine": "other: comparative species tour answering one question",
+  "protagonist": "animals (your dog as anchor)",
+  "want": "food",
+  "central_question": "Animals crave our food, but does it actually taste good to them? (0:08)",
+  "answered_at": "5:37",
+  "answered_at_pct": 0.87,
+  "stakes": "Low; curiosity (plus wildlife health effects).",
+  "obstacle": "Evolution has rewired taste differently per species.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Your dog ignores a full bowl to stare at your burger; bears raid bins."
+   },
+   {
+    "t": "0:08",
+    "link": "BUT",
+    "text": "Attraction isn't taste."
+   },
+   {
+    "t": "0:18",
+    "link": "SO",
+    "text": "The taste machinery is shared and ancient."
+   },
+   {
+    "t": "0:40",
+    "link": "AND",
+    "text": "Dogs are close to us, and smell matters most."
+   },
+   {
+    "t": "1:01",
+    "link": "BUT",
+    "text": "Cats can't taste sugar at all (a broken gene)."
+   },
+   {
+    "t": "1:32",
+    "link": "SO",
+    "text": "Taste exists to flag useful chemicals; evolution drops what isn't needed."
+   },
+   {
+    "t": "2:03",
+    "link": "AND",
+    "text": "Pandas lost umami."
+   },
+   {
+    "t": "2:23",
+    "link": "AND",
+    "text": "Hummingbirds rebuilt sweet taste from a savory receptor."
+   },
+   {
+    "t": "2:54",
+    "link": "AND",
+    "text": "Catfish taste with skin; flies with legs."
+   },
+   {
+    "t": "3:14",
+    "link": "AND",
+    "text": "Dolphins barely taste."
+   },
+   {
+    "t": "3:35",
+    "link": "THEREFORE",
+    "text": "Humans enter: dogs evolved starch genes beside us."
+   },
+   {
+    "t": "4:06",
+    "link": "BUT",
+    "text": "Dogs still pick the meat first."
+   },
+   {
+    "t": "4:26",
+    "link": "SO",
+    "text": "Why human food is irresistible: dense, predictable calories."
+   },
+   {
+    "t": "5:17",
+    "link": "THEREFORE",
+    "text": "It changes wildlife: heavier raccoons, rerouted bears."
+   },
+   {
+    "t": "5:37",
+    "link": "SO",
+    "text": "Answer: not universally better tasting."
+   },
+   {
+    "t": "6:07",
+    "link": "THEREFORE",
+    "text": "Callback: your dog isn't judging your cooking."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:08",
+    "closed": "5:37",
+    "q": "Does our food taste good to them?"
+   },
+   {
+    "opened": "4:06",
+    "closed": "4:16",
+    "q": "Did domestication erase dog preferences?"
+   },
+   {
+    "opened": "4:26",
+    "closed": "4:36",
+    "q": "Then why is it irresistible?"
+   }
+  ],
+  "turns": [
+   "1:01 cats can't taste sweet",
+   "2:23 hummingbirds repurposed a receptor"
+  ],
+  "ending": "Callback to the opening dog and burger, with a gentle reframe.",
+  "facts": [
+   "Q: can a cat enjoy ice cream? A: its sweet gene is broken, so it's fat and smell.",
+   "Q: do dogs prefer bread or meat? A: the garbage-container experiment."
+  ],
+  "jokes": "Near zero.",
+  "template": "[Familiar animal] does [funny behaviour] around [our thing]. BUT [behaviour] doesn't prove [assumed reason]. The shared basics. Tour: the closest relative -> the one that breaks the rule -> the reverse case -> the strangest hack -> the extreme. Then humans enter the story. Why it still looks irresistible. Answer. Callback to the opening animal."
+ },
+ {
+  "channel": "PastTense01",
+  "id": "7f_VhPY-2dE",
+  "title": "Rarest Human Traits",
+  "views": 261000,
+  "minutes": 8.06,
+  "engine": "other: head-to-toe listicle ('rare, BUT rarer is...')",
+  "protagonist": "'the most average guy alive', then his inverse",
+  "want": "none stated",
+  "central_question": "What are the rarest traits a person can have? (0:20) Answered piece by piece; no single payoff (transcript cut at 'joints').",
+  "answered_at": null,
+  "answered_at_pct": null,
+  "stakes": "None.",
+  "obstacle": "None; pure catalogue.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "The most average human: hair, eyes, height, blood type."
+   },
+   {
+    "t": "0:20",
+    "link": "BUT",
+    "text": "What about the complete opposite?"
+   },
+   {
+    "t": "0:25",
+    "link": "SO",
+    "text": "Go top to bottom."
+   },
+   {
+    "t": "0:30",
+    "link": "AND",
+    "text": "Hair: red, BUT rarer is uncombable hair, rarer still no hair."
+   },
+   {
+    "t": "1:20",
+    "link": "AND",
+    "text": "Eyes: green -> heterochromia -> red eyes."
+   },
+   {
+    "t": "1:51",
+    "link": "AND",
+    "text": "Ears: elf ears -> no ears."
+   },
+   {
+    "t": "2:11",
+    "link": "AND",
+    "text": "Nose, cheeks, tongue, teeth, lips."
+   },
+   {
+    "t": "3:43",
+    "link": "AND",
+    "text": "Organs: mirrored -> scattered."
+   },
+   {
+    "t": "4:24",
+    "link": "AND",
+    "text": "Blood: AB- -> 'golden blood' (under 50 people)."
+   },
+   {
+    "t": "4:54",
+    "link": "AND",
+    "text": "Skin, arms (extra limb), hands."
+   },
+   {
+    "t": "6:37",
+    "link": "AND",
+    "text": "Handedness: ambidexterity."
+   },
+   {
+    "t": "7:18",
+    "link": "AND",
+    "text": "Nails, joints (cut)."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:20",
+    "closed": null,
+    "q": "What are the rarest traits?"
+   },
+   {
+    "opened": "0:30",
+    "closed": "1:00",
+    "q": "Rarer than red hair?"
+   },
+   {
+    "opened": "1:20",
+    "closed": "1:41",
+    "q": "Rarer than green eyes?"
+   },
+   {
+    "opened": "4:24",
+    "closed": "4:34",
+    "q": "The rarest blood?"
+   }
+  ],
+  "turns": [
+   "0:20 flip from average to extreme"
+  ],
+  "ending": "Not available (transcript cut). The structure gives no climax; the body list just runs out.",
+  "facts": [
+   "Q: rarest blood? A: Rh-null, under 50 known people.",
+   "Q: rarer than polydactyly? A: ectrodactyly, about 1 in 90,000."
+  ],
+  "jokes": "Rare asides ('what if you could look like an elf?').",
+  "template": "Meet the average [X]. Flip: what about the extreme opposite? Walk [a spatial order]; each stop: 'common-rare A, BUT rarer is B' + one number. (Weak: no protagonist, no stakes, no ending.)"
+ },
+ {
+  "channel": "PastTense01",
+  "id": "TZ-FAqCf02A",
+  "title": "What if you have the Rarest Diseases?",
+  "views": 112000,
+  "minutes": 7.83,
+  "engine": "what-if escalation (trade-offer dilemma)",
+  "protagonist": "you",
+  "want": "$1 billion",
+  "central_question": "Would you take $1B in exchange for having the rarest diseases for a year? (0:00, handed back to the viewer at 7:42)",
+  "answered_at": null,
+  "answered_at_pct": null,
+  "stakes": "Your body for a year vs a billion dollars.",
+  "obstacle": "The diseases, and, in the final act, how they combine.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Trade offer: $1B, plus the rarest diseases for a year."
+   },
+   {
+    "t": "0:10",
+    "link": "SO",
+    "text": "Disease 1: allergic to water, including your own sweat and tears."
+   },
+   {
+    "t": "1:12",
+    "link": "AND",
+    "text": "Your body slowly turns to bone (FOP)."
+   },
+   {
+    "t": "2:04",
+    "link": "AND",
+    "text": "Kuru, the 'laughing sickness'."
+   },
+   {
+    "t": "3:05",
+    "link": "AND",
+    "text": "Fatal insomnia."
+   },
+   {
+    "t": "3:56",
+    "link": "AND",
+    "text": "Progeria."
+   },
+   {
+    "t": "4:56",
+    "link": "AND",
+    "text": "Alström syndrome."
+   },
+   {
+    "t": "5:39",
+    "link": "AND",
+    "text": "RPID (maybe one case ever)."
+   },
+   {
+    "t": "6:20",
+    "link": "BUT",
+    "text": "Combined, they interact: sweat triggers the allergy, falls trigger bone growth."
+   },
+   {
+    "t": "7:21",
+    "link": "THEREFORE",
+    "text": "Even treating you is dangerous."
+   },
+   {
+    "t": "7:42",
+    "link": "SO",
+    "text": "Would you still take the deal?"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:00",
+    "closed": null,
+    "q": "Would you take the deal?"
+   }
+  ],
+  "turns": [
+   "6:20 the combination act: diseases compound"
+  ],
+  "ending": "Hands the central question back to the viewer (comment bait).",
+  "facts": [
+   "Q: how can you be allergic to water? A: water isn't a protein, so it's probably something in the skin.",
+   "Q: what does progeria do? A: aging at about 7x the normal rate."
+  ],
+  "jokes": "Dark premise humour only.",
+  "template": "Trade offer: [prize] for [ordeal list]. Item 1..N, each lived through 'you' (a day-in-your-life symptom). BUT the final act: they COMBINE [A worsens B worsens C]. Even rescue is dangerous. Back to you: deal or no deal? (Strong final act; weak AND-chain middle.)"
+ },
+ {
+  "channel": "PastTense01",
+  "id": "tPyERsCN7RU",
+  "title": "Why Humans Prefer Their Food Hot?",
+  "views": 27000,
+  "minutes": 5.06,
+  "engine": "mystery (why-question explainer)",
+  "protagonist": "you and a cold pizza",
+  "want": "the food to taste right",
+  "central_question": "Same calories, yet cold tastes worse; why do we prefer hot food? (0:30)",
+  "answered_at": "4:54",
+  "answered_at_pct": 0.97,
+  "stakes": "Trivial.",
+  "obstacle": "Your senses and expectations.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Pizza arrives late and cold."
+   },
+   {
+    "t": "0:15",
+    "link": "SO",
+    "text": "Microwave it, and the same food tastes better."
+   },
+   {
+    "t": "0:30",
+    "link": "SO",
+    "text": "Why? Your body doesn't need warmth."
+   },
+   {
+    "t": "0:37",
+    "link": "THEREFORE",
+    "text": "Flavour is mostly smell, and heat releases aroma."
+   },
+   {
+    "t": "1:31",
+    "link": "AND",
+    "text": "Temperature nerves (warm cola, cold broth)."
+   },
+   {
+    "t": "1:51",
+    "link": "AND",
+    "text": "Texture: cheese, fat, soggy fries."
+   },
+   {
+    "t": "2:32",
+    "link": "BUT",
+    "text": "That's not why we got attached: fire and cooking made food safe and rich."
+   },
+   {
+    "t": "3:12",
+    "link": "THEREFORE",
+    "text": "Thought experiment: two groups; warmth becomes a signal for safe calories."
+   },
+   {
+    "t": "3:43",
+    "link": "AND",
+    "text": "Culture reinforces it."
+   },
+   {
+    "t": "4:14",
+    "link": "SO",
+    "text": "Back to the pizza: it fails your brain's prediction."
+   },
+   {
+    "t": "4:54",
+    "link": "THEREFORE",
+    "text": "We prefer food in the form we expect."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:30",
+    "closed": "4:54",
+    "q": "Why do we prefer hot?"
+   },
+   {
+    "opened": "2:32",
+    "closed": "2:42",
+    "q": "Why did we get attached in the first place?"
+   }
+  ],
+  "turns": [
+   "2:32 the senses aren't the root cause"
+  ],
+  "ending": "Callback to the pizza with an abstract answer (prediction). No sting.",
+  "facts": [
+   "Q: why does cold food taste flat? A: heat pushes aroma molecules into your nose.",
+   "Q: why would evolution care? A: the cooking-safety thought experiment."
+  ],
+  "jokes": "None.",
+  "template": "Everyday letdown with [object]. Fix it -> better. Why? Proximate causes 1-3. BUT that's not the root: [deep-time cause] (two-group thought experiment). Culture layer. Back to [object]: the real answer is [expectation]. (Low stakes = the lowest-viewed.)"
+ },
+ {
+  "channel": "PastTense01",
+  "id": "OEWQ5wYgbos",
+  "title": "Why are Humans Scared of Spiders",
+  "views": 21000,
+  "minutes": 5.02,
+  "engine": "mystery (why-question explainer)",
+  "protagonist": "you vs a spider",
+  "want": "safety",
+  "central_question": "Why does a harmless creature trigger one of our strongest fears? (0:15)",
+  "answered_at": "2:23",
+  "answered_at_pct": 0.48,
+  "stakes": "Low; the spider's life.",
+  "obstacle": "Your inherited wiring.",
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "A spider skitters; your heart pounds before you think."
+   },
+   {
+    "t": "0:10",
+    "link": "BUT",
+    "text": "It's probably harmless."
+   },
+   {
+    "t": "0:30",
+    "link": "AND",
+    "text": "The numbers: a third of women are afraid; few species are dangerous."
+   },
+   {
+    "t": "1:01",
+    "link": "SO",
+    "text": "The amygdala fires before thought."
+   },
+   {
+    "t": "1:42",
+    "link": "THEREFORE",
+    "text": "On the savanna, venomous spiders made the fear hardwired."
+   },
+   {
+    "t": "2:33",
+    "link": "AND",
+    "text": "Six-month-old babies' pupils dilate at spiders."
+   },
+   {
+    "t": "3:14",
+    "link": "AND",
+    "text": "Adults spot even distorted spiders fastest."
+   },
+   {
+    "t": "3:55",
+    "link": "AND",
+    "text": "Disgust stacks on fear."
+   },
+   {
+    "t": "4:36",
+    "link": "SO",
+    "text": "You're not irrational, but the world changed."
+   },
+   {
+    "t": "4:56",
+    "link": "SO",
+    "text": "Don't squash them."
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:15",
+    "closed": "2:23",
+    "q": "Why the fear?"
+   },
+   {
+    "opened": "1:31",
+    "closed": "1:42",
+    "q": "Why spiders specifically?"
+   }
+  ],
+  "turns": [
+   "0:10 it's harmless"
+  ],
+  "ending": "Reassurance plus a request (don't squash them).",
+  "facts": [
+   "Q: is the fear learned? A: the infant pupil study (about 5x dilation).",
+   "Q: is there a built-in template? A: the visual search test."
+  ],
+  "jokes": "None.",
+  "template": "[Trigger] causes [reaction] before thought. BUT [it's harmless]. Numbers. Mechanism. Evolutionary cause (answered by the midpoint). Then a stack of AND evidence. Close: not irrational, but outdated. (Answer at 48% = the loop is spent early; the lowest-viewed.)"
+ }
+]

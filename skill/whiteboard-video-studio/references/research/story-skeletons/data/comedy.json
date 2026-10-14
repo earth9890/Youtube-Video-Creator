@@ -1,0 +1,1327 @@
+[
+ {
+  "channel": "SamONellaAcademy",
+  "id": "0zMSMJZc9EA",
+  "title": "Historical Misconceptions For You to Bring Up during Family Dinner",
+  "views": 23701246,
+  "minutes": 5.7,
+  "content_minutes": 4.5,
+  "engine": "other:myth-bust countdown (mission-framed)",
+  "protagonist": "narrator, sent by 'the big man upstairs'; the viewer is the culprit spreading myths",
+  "want": "clean up ten myths the viewer still repeats",
+  "central_question": "Which ten things you believe about history are wrong? (0:21)",
+  "answered_at_pct": 76,
+  "beats": [
+   {
+    "t": "0:12",
+    "link": "AND",
+    "text": "Narrator gets orders from above to clear up ten myths the kid is spreading"
+   },
+   {
+    "t": "0:21",
+    "link": "BUT",
+    "text": "#1 nobody was burned at Salem; the real death (a man pressed under stones) is better than the myth"
+   },
+   {
+    "t": "1:03",
+    "link": "AND",
+    "text": "#2-3 the fat Buddha is a different figure, and Buddha was just a man (a shirt gag gets sadder each time) (inner BUT)"
+   },
+   {
+    "t": "1:20",
+    "link": "AND",
+    "text": "#4 the vomitorium was only an exit (inner BUT)"
+   },
+   {
+    "t": "1:28",
+    "link": "AND",
+    "text": "#5 the cherry-tree story is fake, and makes no sense anyway (skit) (inner BUT)"
+   },
+   {
+    "t": "1:54",
+    "link": "AND",
+    "text": "#6 pyramid builders were paid workers who got better perks than space-station crews (inner BUT)"
+   },
+   {
+    "t": "2:20",
+    "link": "AND",
+    "text": "#7 the Great Wall is not visible from space (guitar-pick analogy) (inner BUT)"
+   },
+   {
+    "t": "2:54",
+    "link": "AND",
+    "text": "#8 dictators did not build the roads or fix the trains, so you have nothing left to like about them (inner BUT)"
+   },
+   {
+    "t": "3:30",
+    "link": "AND",
+    "text": "#9 iron maidens were invented by 1800s showmen (skit) (inner BUT)"
+   },
+   {
+    "t": "4:04",
+    "link": "AND",
+    "text": "#10 Einstein never failed maths; the myth comforts slackers (skit) (inner BUT)"
+   },
+   {
+    "t": "4:21",
+    "link": "SO",
+    "text": "We all have a lot to learn, which bridges into the sponsor"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:21",
+    "closed": "4:21",
+    "q": "what are the ten myths"
+   },
+   {
+    "opened": "0:29",
+    "closed": "0:54",
+    "q": "who was 'squished to death' and how"
+   },
+   {
+    "opened": "0:54",
+    "closed": null,
+    "q": "was he a witch? (left open on purpose)"
+   },
+   {
+    "opened": "1:03",
+    "closed": "1:20",
+    "q": "how sad can the Buddha shirt get (runner)"
+   },
+   {
+    "opened": "2:20",
+    "closed": "2:37",
+    "q": "how small is the wall from space"
+   },
+   {
+    "opened": "2:54",
+    "closed": "3:03",
+    "q": "was the dictator at least efficient"
+   },
+   {
+    "opened": "3:30",
+    "closed": "3:38",
+    "q": "where did iron maidens come from"
+   },
+   {
+    "opened": "4:04",
+    "closed": "4:13",
+    "q": "why does the Einstein myth exist"
+   }
+  ],
+  "turns": [
+   "0:29 the real Salem death beats the myth",
+   "1:54 slaves were really respected workers",
+   "3:03 the dictator credit gets taken away"
+  ],
+  "ending": "Moral: everyone has more to learn, which leads into the sponsor. No callback to the 'big man upstairs' frame."
+ },
+ {
+  "channel": "SamONellaAcademy",
+  "id": "nYHDj2sB-rc",
+  "title": "Tarrare, the Hungriest Man in History",
+  "views": 20574113,
+  "minutes": 7.8,
+  "content_minutes": 6.6,
+  "engine": "real-person discovery (rise-and-fall biography)",
+  "protagonist": "Tarrare, a real 18th-century French man",
+  "want": "to satisfy an endless hunger, and later to be cured of it",
+  "central_question": "What happens to someone whose body forces him to eat like a competitive eater for life? (0:15)",
+  "answered_at_pct": 78,
+  "beats": [
+   {
+    "t": "0:24",
+    "link": "AND",
+    "text": "Born poor; eats a quarter of a cow a day as a teen"
+   },
+   {
+    "t": "0:41",
+    "link": "BUT",
+    "text": "You'd expect him obese, but he weighs about 100 lb, with a giant mouth, a skin flap and a stench"
+   },
+   {
+    "t": "1:15",
+    "link": "THEREFORE",
+    "text": "His family throws him out"
+   },
+   {
+    "t": "1:32",
+    "link": "THEREFORE",
+    "text": "He begs and steals, then becomes a street performer who eats anything for crowds"
+   },
+   {
+    "t": "1:57",
+    "link": "BUT",
+    "text": "A blockage lands him in hospital on laxatives (the narrator refuses to draw what happens next)"
+   },
+   {
+    "t": "2:18",
+    "link": "THEREFORE",
+    "text": "He joins the army looking for purpose, but quadruple rations still aren't enough"
+   },
+   {
+    "t": "2:35",
+    "link": "THEREFORE",
+    "text": "Exhausted, he goes to a military hospital, where doctors test him: a feast for 15, a live eel, a cat"
+   },
+   {
+    "t": "3:34",
+    "link": "SO",
+    "text": "Scientific verdict: a demon"
+   },
+   {
+    "t": "3:42",
+    "link": "THEREFORE",
+    "text": "The army turns the curse into a weapon: he swallows a box and passes it, so he becomes a spy"
+   },
+   {
+    "t": "4:08",
+    "link": "BUT",
+    "text": "He speaks no German and eats garbage in public, so he is caught"
+   },
+   {
+    "t": "4:31",
+    "link": "BUT",
+    "text": "After a beating he confesses and is chained to a latrine for 30 hours, but the note was worthless"
+   },
+   {
+    "t": "4:50",
+    "link": "THEREFORE",
+    "text": "Back at the hospital he begs for a cure, but nothing works, and he escalates to stray dogs, blood and corpses"
+   },
+   {
+    "t": "5:24",
+    "link": "BUT",
+    "text": "A toddler goes missing and he is expelled"
+   },
+   {
+    "t": "5:59",
+    "link": "THEREFORE",
+    "text": "He returns years later with TB and dies; the autopsy shows a body built around food"
+   },
+   {
+    "t": "6:24",
+    "link": "SO",
+    "text": "Anti-moral: some stories have no point"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:15",
+    "closed": "6:07",
+    "q": "what becomes of a man cursed with endless hunger"
+   },
+   {
+    "opened": "0:41",
+    "closed": "0:41",
+    "q": "is he obese? (no)"
+   },
+   {
+    "opened": "1:57",
+    "closed": null,
+    "q": "what happened after the laxatives (refused on purpose)"
+   },
+   {
+    "opened": "2:27",
+    "closed": "2:27",
+    "q": "was the emptiness a lack of purpose? (no)"
+   },
+   {
+    "opened": "2:43",
+    "closed": "3:26",
+    "q": "what experiments will the doctors run"
+   },
+   {
+    "opened": "3:51",
+    "closed": "3:59",
+    "q": "can he swallow and deliver a box"
+   },
+   {
+    "opened": "4:08",
+    "closed": "4:25",
+    "q": "will the spy mission work"
+   },
+   {
+    "opened": "4:34",
+    "closed": "4:42",
+    "q": "what was the secret document"
+   },
+   {
+    "opened": "4:50",
+    "closed": "6:07",
+    "q": "can he be cured"
+   },
+   {
+    "opened": "5:41",
+    "closed": "5:50",
+    "q": "where did the missing child go"
+   },
+   {
+    "opened": "6:07",
+    "closed": "6:24",
+    "q": "what was inside him"
+   }
+  ],
+  "turns": [
+   "0:41 thin, not fat",
+   "2:27 the search for purpose fails at once",
+   "3:42 the curse becomes a military asset",
+   "4:42 the smuggled note was worthless",
+   "5:41 the missing baby"
+  ],
+  "ending": "Death and an autopsy picture (a pie chart: 90% food). Then an anti-moral: no lesson here, just sad and gross."
+ },
+ {
+  "channel": "SamONellaAcademy",
+  "id": "ORmUUhh6O-8",
+  "title": "Why It Sucked to Be a Pirate",
+  "views": 19925433,
+  "minutes": 5.0,
+  "content_minutes": 4.6,
+  "engine": "other:dream-vs-reality (a fantasy dismantled)",
+  "protagonist": "little Jimmy, then 'you' as a would-be pirate",
+  "want": "the swashbuckling life from the movies",
+  "central_question": "Would it be fun to be a pirate? (0:08; the thesis 'no' comes at 0:14, and the question becomes 'how bad, and is any part good?')",
+  "answered_at_pct": 84,
+  "beats": [
+   {
+    "t": "0:08",
+    "link": "AND",
+    "text": "Jimmy likes the pirate movies and thinks piracy would be fun"
+   },
+   {
+    "t": "0:14",
+    "link": "BUT",
+    "text": "You could not be more wrong"
+   },
+   {
+    "t": "0:25",
+    "link": "SO",
+    "text": "First the food: salted meat as tough as shoe leather"
+   },
+   {
+    "t": "0:59",
+    "link": "AND",
+    "text": "Hardtack full of weevils; the crew ate it in the dark (vegan-pirate skit)"
+   },
+   {
+    "t": "1:42",
+    "link": "AND",
+    "text": "Crowding: a second-person night below deck in the dark, wet and smelly"
+   },
+   {
+    "t": "2:32",
+    "link": "THEREFORE",
+    "text": "Bad food and cramped bunks breed disease: scurvy stage by stage"
+   },
+   {
+    "t": "3:06",
+    "link": "BUT",
+    "text": "One upside: everyone's an alcoholic (a fake relief)"
+   },
+   {
+    "t": "3:15",
+    "link": "SO",
+    "text": "After all that misery, surely the battles are thrilling?"
+   },
+   {
+    "t": "3:23",
+    "link": "BUT",
+    "text": "Most ships surrendered, and real fights were gory, not duels"
+   },
+   {
+    "t": "4:13",
+    "link": "THEREFORE",
+    "text": "Jack Sparrow wouldn't last a second (prison skit)"
+   },
+   {
+    "t": "4:33",
+    "link": "SO",
+    "text": "Don't become a pirate"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:14",
+    "closed": "4:33",
+    "q": "why exactly would it suck"
+   },
+   {
+    "opened": "0:59",
+    "closed": "1:42",
+    "q": "how do you eat bug-filled bread"
+   },
+   {
+    "opened": "2:07",
+    "closed": "2:24",
+    "q": "what is that wet / furry thing in the dark"
+   },
+   {
+    "opened": "2:24",
+    "closed": "2:32",
+    "q": "is the moaning guy dying"
+   },
+   {
+    "opened": "2:41",
+    "closed": "2:58",
+    "q": "how does scurvy progress"
+   },
+   {
+    "opened": "3:15",
+    "closed": "3:31",
+    "q": "at least the battles are fun, right?"
+   },
+   {
+    "opened": "4:13",
+    "closed": "4:30",
+    "q": "would the movie hero survive"
+   }
+  ],
+  "turns": [
+   "0:14 the dream is flatly denied",
+   "3:23 the last hope (combat) is worse than the rest",
+   "4:13 the movie hero from the hook would die"
+  ],
+  "ending": "A callback to the opening's movie fantasy (Jack Sparrow dies in a skit), then one line of advice. Closes the loop the hook opened."
+ },
+ {
+  "channel": "SamONellaAcademy",
+  "id": "MGVraepNj04",
+  "title": "The Presidential Assassination Nobody Talks About",
+  "views": 19450681,
+  "minutes": 12.0,
+  "content_minutes": 10.8,
+  "engine": "real-person discovery (rise-and-fall, a failed quest for recognition)",
+  "protagonist": "Charles Guiteau",
+  "want": "approval and a prestigious appointment he believes he is owed (fame)",
+  "central_question": "How does a 'pretty silly guy' end up killing a president that nobody remembers? (0:10-0:36)",
+  "answered_at_pct": 76,
+  "beats": [
+   {
+    "t": "0:36",
+    "link": "SO",
+    "text": "Childhood: his mother dies and his father is harsh and religious, so he craves approval and can't take criticism"
+   },
+   {
+    "t": "1:02",
+    "link": "BUT",
+    "text": "He fails the university entrance exam"
+   },
+   {
+    "t": "1:10",
+    "link": "THEREFORE",
+    "text": "He joins a utopian commune (long digression on its strange rules)"
+   },
+   {
+    "t": "3:08",
+    "link": "BUT",
+    "text": "Everyone there hates him, he gets none of the free love, and they nickname him 'get out'"
+   },
+   {
+    "t": "3:42",
+    "link": "THEREFORE",
+    "text": "He leaves; his newspaper and his lawsuit both fail"
+   },
+   {
+    "t": "4:03",
+    "link": "THEREFORE",
+    "text": "He becomes a lawyer, really a debt collector, and then a con man"
+   },
+   {
+    "t": "4:41",
+    "link": "BUT",
+    "text": "His clients send a debt collector after him, so he flees"
+   },
+   {
+    "t": "4:49",
+    "link": "THEREFORE",
+    "text": "He goes into politics, giving a speech he thinks will earn him a ministry"
+   },
+   {
+    "t": "5:07",
+    "link": "BUT",
+    "text": "Nobody hears it and the candidate loses in a landslide"
+   },
+   {
+    "t": "5:23",
+    "link": "AND",
+    "text": "Divorce scheme, a plagiarised holy book, moving at night to dodge debts"
+   },
+   {
+    "t": "7:06",
+    "link": "BUT",
+    "text": "His candidate loses the nomination to Garfield, so he swaps the names in his speech"
+   },
+   {
+    "t": "7:23",
+    "link": "THEREFORE",
+    "text": "Garfield wins and he believes he is owed a consulship"
+   },
+   {
+    "t": "7:40",
+    "link": "BUT",
+    "text": "Nothing comes; he writes letters, stalks, and is finally screamed at to go away"
+   },
+   {
+    "t": "8:39",
+    "link": "THEREFORE",
+    "text": "He decides God wants Garfield removed, picks the gun that will look good in a museum, and shoots him"
+   },
+   {
+    "t": "9:14",
+    "link": "BUT",
+    "text": "Garfield lingers 11 weeks; his doctors probably killed him"
+   },
+   {
+    "t": "9:22",
+    "link": "BUT",
+    "text": "The murder charge is exactly what Guiteau wanted: national fame at last"
+   },
+   {
+    "t": "9:39",
+    "link": "THEREFORE",
+    "text": "He turns his trial into a show and is hanged reciting a poem"
+   },
+   {
+    "t": "10:30",
+    "link": "SO",
+    "text": "Mock moral: you can't get what you want, unless it's being hated (bridges into the sponsor)"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:18",
+    "closed": null,
+    "q": "who is the second forgotten assassin (dropped, a series tease)"
+   },
+   {
+    "opened": "0:27",
+    "closed": "9:05",
+    "q": "how does a silly guy become an assassin"
+   },
+   {
+    "opened": "1:27",
+    "closed": "3:08",
+    "q": "what made this commune special"
+   },
+   {
+    "opened": "2:26",
+    "closed": "2:35",
+    "q": "how can selective breeding coexist with free love"
+   },
+   {
+    "opened": "3:16",
+    "closed": "3:33",
+    "q": "will he get any free love"
+   },
+   {
+    "opened": "4:58",
+    "closed": "5:15",
+    "q": "will the speech win him a ministry"
+   },
+   {
+    "opened": "5:23",
+    "closed": "5:32",
+    "q": "how do you divorce without grounds"
+   },
+   {
+    "opened": "7:32",
+    "closed": "8:13",
+    "q": "will he get his consulship"
+   },
+   {
+    "opened": "8:56",
+    "closed": "9:31",
+    "q": "why the fancy gun (he wants fame), paid off at the trial"
+   },
+   {
+    "opened": "9:14",
+    "closed": "9:22",
+    "q": "could Garfield have survived"
+   }
+  ],
+  "turns": [
+   "3:08 the paradise rejects him",
+   "7:06 his candidate loses, so he just swaps the name",
+   "9:14 the doctors, not the bullet",
+   "9:22 punishment = the fame he always wanted"
+  ],
+  "ending": "The hanging, a crowd skit ('I want my money back'), and a mock moral that pays off his want (approval comes only as hatred), which bridges into the sponsor. Note: 6:06-7:06 is missing from the captions."
+ },
+ {
+  "channel": "SamONellaAcademy",
+  "id": "K_NRBkJtNAI",
+  "title": "Obscure Obsolete Inventions",
+  "views": 19282058,
+  "minutes": 6.9,
+  "content_minutes": 5.6,
+  "engine": "other:catalogue (show-and-tell list)",
+  "protagonist": "none fixed; each item gets a hypothetical buyer with a problem ('you')",
+  "want": "per item: solve a silly problem (stinky baby, shooting round corners, a locomotive you can't afford)",
+  "central_question": "Which 'good ideas' ended up remembered as foolish, and why? (0:20)",
+  "answered_at_pct": 79,
+  "beats": [
+   {
+    "t": "0:20",
+    "link": "AND",
+    "text": "Premise: a good idea now is often a foolish memory later"
+   },
+   {
+    "t": "0:29",
+    "link": "AND",
+    "text": "Moonlight towers: one giant light, but dim and full of UV (inner BUT)"
+   },
+   {
+    "t": "1:28",
+    "link": "AND",
+    "text": "Baby cages for stinky babies, until society decided babies mattered more (inner BUT)"
+   },
+   {
+    "t": "2:18",
+    "link": "AND",
+    "text": "Acoustic mirrors heard planes across the Channel, but radar made them useless (inner BUT)"
+   },
+   {
+    "t": "2:53",
+    "link": "AND",
+    "text": "Looks like a torture device, but it's a beauty micrometer; women refused it (inner BUT)"
+   },
+   {
+    "t": "3:44",
+    "link": "AND",
+    "text": "A curved gun barrel (cartoon logic), but it broke and shattered bullets (inner BUT)"
+   },
+   {
+    "t": "4:18",
+    "link": "AND",
+    "text": "A revolver mousetrap"
+   },
+   {
+    "t": "4:44",
+    "link": "AND",
+    "text": "A horse-on-a-treadmill locomotive, 2-4 horsepower (inner BUT)"
+   },
+   {
+    "t": "5:27",
+    "link": "AND",
+    "text": "Smoking novelties, which bridges into the sponsor"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:20",
+    "closed": "5:52",
+    "q": "which inventions, and why did they flop"
+   },
+   {
+    "opened": "0:29",
+    "closed": "1:19",
+    "q": "one big light instead of many? does it work"
+   },
+   {
+    "opened": "1:28",
+    "closed": "1:53",
+    "q": "how do you air out a stinky baby"
+   },
+   {
+    "opened": "2:18",
+    "closed": "2:53",
+    "q": "how do you hear planes coming"
+   },
+   {
+    "opened": "2:53",
+    "closed": "3:36",
+    "q": "is this a torture device"
+   },
+   {
+    "opened": "3:44",
+    "closed": "4:10",
+    "q": "can you shoot around corners"
+   },
+   {
+    "opened": "4:18",
+    "closed": "4:44",
+    "q": "a mousetrap with more property damage?"
+   },
+   {
+    "opened": "4:44",
+    "closed": "5:27",
+    "q": "cheap locomotive?"
+   }
+  ],
+  "turns": [
+   "3:01 'just kidding', not torture but makeup",
+   "2:44 it worked, then radar killed it"
+  ],
+  "ending": "No resolution or callback; the last item turns straight into the ad."
+ },
+ {
+  "channel": "SamONellaAcademy",
+  "id": "rZizVUKe4sQ",
+  "title": "Why Produce Used to Suck",
+  "views": 17694969,
+  "minutes": 7.6,
+  "content_minutes": 6.0,
+  "engine": "mystery (origin reveal: what was it before?)",
+  "protagonist": "humanity as a breeder; secondary: the stranded castaways in the hook (dropped)",
+  "want": "to turn useless wild plants into delicious food",
+  "central_question": "Why is the 'perfect' island banana a lie, and what did our food used to be? (0:24)",
+  "answered_at_pct": 77,
+  "beats": [
+   {
+    "t": "0:07",
+    "link": "AND",
+    "text": "Movie trope: castaways find a perfect banana tree"
+   },
+   {
+    "t": "0:24",
+    "link": "BUT",
+    "text": "The narrator stops them: those bananas are lies"
+   },
+   {
+    "t": "0:54",
+    "link": "SO",
+    "text": "Fruit exists to bribe animals into carrying seeds"
+   },
+   {
+    "t": "1:02",
+    "link": "BUT",
+    "text": "Humans bred them for thousands of years into deformed treats"
+   },
+   {
+    "t": "1:19",
+    "link": "SO",
+    "text": "Bananas: wild ones are seed-packed, modern ones are sterile"
+   },
+   {
+    "t": "2:27",
+    "link": "AND",
+    "text": "Watermelon: a bitter tennis ball 5,000 years ago; a painting shows the change"
+   },
+   {
+    "t": "3:10",
+    "link": "AND",
+    "text": "You hate cabbage but like broccoli? They're the same species (inner BUT)"
+   },
+   {
+    "t": "3:52",
+    "link": "AND",
+    "text": "Eggplant: once a green berry"
+   },
+   {
+    "t": "4:25",
+    "link": "AND",
+    "text": "Digression: Grimace used to be evil"
+   },
+   {
+    "t": "4:51",
+    "link": "AND",
+    "text": "Corn's ancestor isn't baby corn, it's garbage with 5-12 rock-hard kernels (inner BUT)"
+   },
+   {
+    "t": "5:50",
+    "link": "SO",
+    "text": "Human effort transforms things, which bridges into the sponsor"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:24",
+    "closed": "1:02",
+    "q": "why are the bananas 'made of lies'"
+   },
+   {
+    "opened": "0:33",
+    "closed": "0:54",
+    "q": "why does fruit exist at all"
+   },
+   {
+    "opened": "1:19",
+    "closed": "1:36",
+    "q": "what did bananas used to look like"
+   },
+   {
+    "opened": "1:53",
+    "closed": "2:10",
+    "q": "what if you plant a modern banana"
+   },
+   {
+    "opened": "2:27",
+    "closed": "2:52",
+    "q": "how old and how different is watermelon"
+   },
+   {
+    "opened": "3:10",
+    "closed": "3:35",
+    "q": "which of these vegetables do you like"
+   },
+   {
+    "opened": "3:52",
+    "closed": "4:17",
+    "q": "why is it called an eggplant"
+   },
+   {
+    "opened": "4:51",
+    "closed": "5:24",
+    "q": "what did old corn look like"
+   },
+   {
+    "opened": "0:16",
+    "closed": null,
+    "q": "will the castaways survive (frame dropped)"
+   }
+  ],
+  "turns": [
+   "0:24 the rescue fruit is a lie",
+   "3:18 six vegetables are one plant",
+   "5:08 expected baby corn, got garbage"
+  ],
+  "ending": "A generic 'humans can do amazing things' line into the sponsor. The desert-island frame is never called back."
+ },
+ {
+  "channel": "casuallyexplained",
+  "id": "uan3Aj0bHKc",
+  "title": "Casually Explained: Being Healthy",
+  "views": 11264839,
+  "minutes": 7.7,
+  "content_minutes": 7.7,
+  "engine": "other:myth-bust list, then a toolkit applied",
+  "protagonist": "'you' (and the narrator), against internet nutrition advice",
+  "want": "to know what actually makes you healthy",
+  "central_question": "Nobody explains WHY foods are healthy, so what actually works? (0:00; core answer at 2:24)",
+  "answered_at_pct": 31,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Premise: we're told what's healthy but never why"
+   },
+   {
+    "t": "0:16",
+    "link": "BUT",
+    "text": "'Superfood' just means 'grows in nature', and half our advice is Pinterest"
+   },
+   {
+    "t": "0:33",
+    "link": "SO",
+    "text": "Myth: detox foods are really just laxatives"
+   },
+   {
+    "t": "0:58",
+    "link": "AND",
+    "text": "Myth: more antioxidants are always better (the motor-oil analogy) (inner BUT)"
+   },
+   {
+    "t": "1:31",
+    "link": "AND",
+    "text": "Myth: never skip breakfast (intermittent-fasting joke) (inner BUT)"
+   },
+   {
+    "t": "1:57",
+    "link": "AND",
+    "text": "Diet tribes and their smugness"
+   },
+   {
+    "t": "2:24",
+    "link": "SO",
+    "text": "The real rule: calories in vs calories out"
+   },
+   {
+    "t": "3:15",
+    "link": "AND",
+    "text": "The three macronutrients, plus alcohol as a bonus"
+   },
+   {
+    "t": "4:23",
+    "link": "THEREFORE",
+    "text": "With those basics, judge every popular diet: each has pros and cons"
+   },
+   {
+    "t": "6:09",
+    "link": "AND",
+    "text": "Gym myths: 'toning' and 'getting too big' (inner BUT)"
+   },
+   {
+    "t": "6:57",
+    "link": "SO",
+    "text": "Strength plus cardio; walking covers the basics; the gym as a lifestyle punchline"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:00",
+    "closed": "2:24",
+    "q": "why is anything healthy"
+   },
+   {
+    "opened": "0:33",
+    "closed": "0:41",
+    "q": "do detox foods work"
+   },
+   {
+    "opened": "0:58",
+    "closed": "1:14",
+    "q": "are more antioxidants better"
+   },
+   {
+    "opened": "1:31",
+    "closed": "1:39",
+    "q": "must you eat breakfast"
+   },
+   {
+    "opened": "1:57",
+    "closed": "6:00",
+    "q": "which diet is right"
+   },
+   {
+    "opened": "2:41",
+    "closed": "2:50",
+    "q": "why do some people say calorie counting is false"
+   },
+   {
+    "opened": "6:22",
+    "closed": "6:31",
+    "q": "can you 'tone'"
+   },
+   {
+    "opened": "6:39",
+    "closed": "6:49",
+    "q": "will lifting make you too big"
+   }
+  ],
+  "turns": [
+   "0:16 'superfood' just means 'grows in nature'",
+   "0:41 detox = laxative",
+   "4:32 no diet makes you enlightened"
+  ],
+  "ending": "Practical summary with a joke on the gym lifestyle. No callback."
+ },
+ {
+  "channel": "casuallyexplained",
+  "id": "9_RxaeN0FGw",
+  "title": "Casually Explained: The English Language",
+  "views": 10837870,
+  "minutes": 5.3,
+  "content_minutes": 4.8,
+  "engine": "versus/conflict (English speakers vs everyone learning English)",
+  "protagonist": "the narrator as a smug native English speaker",
+  "want": "to feel good about his language (the 'hardest language' claim)",
+  "central_question": "Is English really one of the hardest languages? (0:25)",
+  "answered_at_pct": 13,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "The world learns English; English speakers don't bother learning anything"
+   },
+   {
+    "t": "0:17",
+    "link": "SO",
+    "text": "Map: Nordics speak 2.5 languages, the UK 1.6, America is stuck on kilometres"
+   },
+   {
+    "t": "0:25",
+    "link": "BUT",
+    "text": "The comforting claim 'English is hardest' is false; difficulty depends on your mother tongue"
+   },
+   {
+    "t": "1:08",
+    "link": "BUT",
+    "text": "English still has quirks both ways: no gendered nouns (easy)"
+   },
+   {
+    "t": "1:35",
+    "link": "BUT",
+    "text": "But 'the' and the th sound torture learners (a revenge skit for his French failures)"
+   },
+   {
+    "t": "2:27",
+    "link": "AND",
+    "text": "Hard words for everyone; the viewers say them together"
+   },
+   {
+    "t": "2:55",
+    "link": "AND",
+    "text": "Spelling and sound don't match (though / tough / cough)"
+   },
+   {
+    "t": "3:20",
+    "link": "AND",
+    "text": "Dialects: the American, British and Australian versions of one sentence"
+   },
+   {
+    "t": "4:11",
+    "link": "SO",
+    "text": "Every accent has pros and cons; his bland accent can't rap but can trigger voice assistants"
+   },
+   {
+    "t": "4:46",
+    "link": "SO",
+    "text": "Sting: he uses it to subscribe your phone"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:25",
+    "closed": "0:42",
+    "q": "is English hardest"
+   },
+   {
+    "opened": "1:08",
+    "closed": "1:17",
+    "q": "does English have quirks that make it easier or harder"
+   },
+   {
+    "opened": "1:35",
+    "closed": "1:52",
+    "q": "how does he get revenge for French"
+   },
+   {
+    "opened": "2:27",
+    "closed": "2:46",
+    "q": "which words are hard even for natives"
+   },
+   {
+    "opened": "3:20",
+    "closed": "4:11",
+    "q": "how do the dialects differ"
+   },
+   {
+    "opened": "4:20",
+    "closed": "4:46",
+    "q": "what is his accent good for"
+   }
+  ],
+  "turns": [
+   "0:34 the comforting claim is false",
+   "1:52 the learner gets humbled back",
+   "4:37 his useless accent has one use"
+  ],
+  "ending": "An interactive sting (a voice-assistant 'subscribe' prank) that pays off the 'every accent has an advantage' line."
+ },
+ {
+  "channel": "casuallyexplained",
+  "id": "Uy9V_v-XV8Q",
+  "title": "Casually Explained: Reddit",
+  "views": 8679601,
+  "minutes": 7.1,
+  "content_minutes": 7.1,
+  "engine": "other:identity ladder (newcomer guide that ends in assimilation)",
+  "protagonist": "'you', a Reddit newcomer",
+  "want": "to fit in and earn karma",
+  "central_question": "How does Reddit work and how do you fit in? (0:08), which turns into 'what do I get for all my karma?' (5:38)",
+  "answered_at_pct": 81,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "Narrator's credentials: ten years, no self-control"
+   },
+   {
+    "t": "0:08",
+    "link": "SO",
+    "text": "A guide for confused newcomers"
+   },
+   {
+    "t": "0:17",
+    "link": "AND",
+    "text": "Navigation: the search bar is decoration"
+   },
+   {
+    "t": "0:41",
+    "link": "AND",
+    "text": "Subreddits as filters"
+   },
+   {
+    "t": "0:58",
+    "link": "BUT",
+    "text": "Lurking teaches you wrong facts, so posting earns karma: the goal is set"
+   },
+   {
+    "t": "1:15",
+    "link": "SO",
+    "text": "Karma route 1, comments: the formula of every thread"
+   },
+   {
+    "t": "2:49",
+    "link": "SO",
+    "text": "Karma route 2, posts: know your audience, a long subreddit catalogue"
+   },
+   {
+    "t": "5:38",
+    "link": "SO",
+    "text": "After years of this, what can you do with your karma?"
+   },
+   {
+    "t": "5:47",
+    "link": "BUT",
+    "text": "Nothing; and you can't leave: muscle memory reopens the app"
+   },
+   {
+    "t": "6:12",
+    "link": "THEREFORE",
+    "text": "You've been assimilated: a checklist of the stereotype you've become"
+   },
+   {
+    "t": "6:46",
+    "link": "SO",
+    "text": "Last image: world disaster, you whisper the site's infamous slogan"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:08",
+    "closed": "6:12",
+    "q": "how do you fit in"
+   },
+   {
+    "opened": "0:17",
+    "closed": "0:25",
+    "q": "how do you navigate"
+   },
+   {
+    "opened": "1:07",
+    "closed": "1:15",
+    "q": "what is karma"
+   },
+   {
+    "opened": "1:15",
+    "closed": "2:40",
+    "q": "how to get karma from comments"
+   },
+   {
+    "opened": "2:49",
+    "closed": "5:30",
+    "q": "how to get karma from posts"
+   },
+   {
+    "opened": "5:38",
+    "closed": "5:47",
+    "q": "what is karma for"
+   },
+   {
+    "opened": "5:55",
+    "closed": "6:04",
+    "q": "how do you leave"
+   }
+  ],
+  "turns": [
+   "0:25 search is decorative",
+   "5:47 the prize is worthless and the exit is locked",
+   "6:12 you've become the stereotype"
+  ],
+  "ending": "The protagonist has become the joke: an identity checklist, then the slogan as the final line."
+ },
+ {
+  "channel": "casuallyexplained",
+  "id": "vP3rYUNmrgU",
+  "title": "Casually Explained: Cooking",
+  "views": 8044838,
+  "minutes": 5.0,
+  "content_minutes": 4.0,
+  "engine": "other:identity ladder (the life cycle of a hobby)",
+  "protagonist": "'you', a would-be home cook",
+  "want": "to impress someone, then to get good, then maybe to go pro",
+  "central_question": "How do you cook, and how far does it go? It becomes 'should I go pro?' (3:15)",
+  "answered_at_pct": 79,
+  "beats": [
+   {
+    "t": "0:05",
+    "link": "AND",
+    "text": "Motives: impress a date, or your mom is out"
+   },
+   {
+    "t": "0:13",
+    "link": "BUT",
+    "text": "Step one is always watching a celebrity chef and picking a recipe far beyond you"
+   },
+   {
+    "t": "0:21",
+    "link": "THEREFORE",
+    "text": "Lesson learned, so pick something manageable; the hard part is 'serves two'"
+   },
+   {
+    "t": "0:34",
+    "link": "SO",
+    "text": "Prep: buy and lay out the ingredients, cross out the ones you lack"
+   },
+   {
+    "t": "0:50",
+    "link": "AND",
+    "text": "Sharpen the knife for the sound, not the result"
+   },
+   {
+    "t": "1:16",
+    "link": "AND",
+    "text": "Instagram the prep, wrap the smoke detector, wine as a 'coping mechanism'"
+   },
+   {
+    "t": "1:41",
+    "link": "AND",
+    "text": "Plating, amateur vs pro"
+   },
+   {
+    "t": "1:57",
+    "link": "SO",
+    "text": "Reflect on everything that went wrong, then leave the recipe one star"
+   },
+   {
+    "t": "2:14",
+    "link": "THEREFORE",
+    "text": "Next level: onion technique, a pricey knife, a cast-iron obsession, a gadget used once, then broke, then tattoos for life"
+   },
+   {
+    "t": "3:15",
+    "link": "SO",
+    "text": "Should I go pro?"
+   },
+   {
+    "t": "3:23",
+    "link": "BUT",
+    "text": "The customers, and you'll eat frozen pizza at home"
+   },
+   {
+    "t": "3:40",
+    "link": "SO",
+    "text": "Other pros dream of gold medals; a chef dreams of a tyre company's approval"
+   },
+   {
+    "t": "4:02",
+    "link": "SO",
+    "text": "Sponsor opened with a 'five stars' callback"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:05",
+    "closed": "0:13",
+    "q": "why start cooking"
+   },
+   {
+    "opened": "0:13",
+    "closed": "0:21",
+    "q": "what's the first step"
+   },
+   {
+    "opened": "1:57",
+    "closed": "2:14",
+    "q": "what went wrong"
+   },
+   {
+    "opened": "2:14",
+    "closed": "3:15",
+    "q": "how do you level up"
+   },
+   {
+    "opened": "3:15",
+    "closed": "3:57",
+    "q": "should you go pro"
+   },
+   {
+    "opened": "3:48",
+    "closed": "3:57",
+    "q": "what does a pro chef dream of"
+   }
+  ],
+  "turns": [
+   "0:13 the first attempt is doomed by ambition",
+   "3:05 the hobby costs you your marriage and your money",
+   "3:57 the top honour comes from a tyre company"
+  ],
+  "ending": "A twist on the definition of success (the Michelin tyre company), then a callback inside the sponsor read."
+ },
+ {
+  "channel": "casuallyexplained",
+  "id": "KccWUhip8Lo",
+  "title": "Casually Explained: The Food of the World",
+  "views": 6385993,
+  "minutes": 8.0,
+  "content_minutes": 8.0,
+  "engine": "other:catalogue (a roll call of countries)",
+  "protagonist": "the narrator ('been eating food my whole life'); antagonist: offended commenters",
+  "want": "to cover every cuisine (and survive the comments)",
+  "central_question": "Will your country make the list? (0:01, 'don't feel bad if yours isn't mentioned')",
+  "answered_at_pct": 90,
+  "beats": [
+   {
+    "t": "0:00",
+    "link": "AND",
+    "text": "The narrator's 'credentials' and a warning to countries left out"
+   },
+   {
+    "t": "0:09",
+    "link": "AND",
+    "text": "French, Japanese, Mexican, Italian, Spanish"
+   },
+   {
+    "t": "1:42",
+    "link": "AND",
+    "text": "Greek, and a commenter objects that baklava is Turkish (runner starts) (inner BUT)"
+   },
+   {
+    "t": "2:00",
+    "link": "AND",
+    "text": "American, Canadian, British, German, Chinese, Indian"
+   },
+   {
+    "t": "3:52",
+    "link": "AND",
+    "text": "Middle Eastern, and the tzatziki ownership fight ('no one gets any') (inner BUT)"
+   },
+   {
+    "t": "4:17",
+    "link": "AND",
+    "text": "Nordic: he can't find what it is; a UN lunch skit (inner BUT)"
+   },
+   {
+    "t": "5:28",
+    "link": "AND",
+    "text": "Eastern European, Australian, Vietnamese, Latin American, African, Korean"
+   },
+   {
+    "t": "7:12",
+    "link": "SO",
+    "text": "The viewer's voice: 30 seconds left and my country hasn't come up"
+   },
+   {
+    "t": "7:38",
+    "link": "SO",
+    "text": "Callback 'quit bickering', then he forgot countries; a Native American sting"
+   }
+  ],
+  "loops": [
+   {
+    "opened": "0:01",
+    "closed": "7:12",
+    "q": "will your country be mentioned"
+   },
+   {
+    "opened": "1:50",
+    "closed": "7:38",
+    "q": "ownership-fight runner (baklava, then tzatziki, then the callback)"
+   },
+   {
+    "opened": "4:25",
+    "closed": "4:51",
+    "q": "what IS Scandinavian food"
+   },
+   {
+    "opened": "5:00",
+    "closed": "5:16",
+    "q": "what would each country bring to a UN lunch"
+   },
+   {
+    "opened": "6:20",
+    "closed": "6:28",
+    "q": "how is pho really pronounced"
+   }
+  ],
+  "turns": [
+   "1:50 the 'well actually' commenter interrupts",
+   "7:12 the narrator voices the angry viewer",
+   "7:58 the last forgotten country turns the joke on his own side"
+  ],
+  "ending": "A meta-ending: he answers the commenters, calls back 'no one gets tzatziki', then a self-indicting sting."
+ }
+]

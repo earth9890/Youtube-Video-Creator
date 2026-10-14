@@ -1,0 +1,10 @@
+built /Users/harish/videos/black-hole-life/episodes/17-not-lazy/index.html  total=66.9s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   95.7 MB · 1m 6.9s video · rendered in 5m 5.8s
+h264,3840,2160,66.900000
+aac,66.900000

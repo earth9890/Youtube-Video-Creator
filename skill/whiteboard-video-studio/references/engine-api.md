@@ -8,6 +8,7 @@ Canvas **1920×1080**. Ground line **`GY = 860`**. Captions occupy **y > 980** �
 | *(none)* | v2 white paper, Patrick Hand, Caveat captions, crossfade + push camera |
 | `// theme: dark` | v2 chalkboard |
 | `// look: v3` | colour scenery, white-filled heads, ~9 px lines, Mali SemiBold, outlined white captions, blink/breathe, pop-in text, 0.3 s crossfade |
+| `// look: still` | **illustrated stills (default for new videos)**: crisp vector, no draw-on, elements fade in on their word (progressive build), 0.6 s crossfade, slow camera. Loads `kit.js` (`DS.*` tokens and helpers: `DS.room`, `DS.outdoor`, `DS.figure`, `DS.shape`, `DS.card`, `DS.shadow`, `DS.frame`, `DS.rug`, `DS.plant`, `DS.vignette`). Rules: `style-guide.md`; lint: `scene_lint.py` |
 | `// look: story` | v3 drawing for long-form explainers: **hard cuts** (no fade), camera `none` by default, **no captions**, text pops in 0.22 s. Cut on the breath: `sceneWindows(CUES, 0.08)`, one window per phrase (median ~2.5 s, max 6 s). Draw durations ≤ 0.3 s so the picture reads at once |
 
 v3 / story extras:
