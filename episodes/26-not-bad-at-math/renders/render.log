@@ -1,0 +1,10 @@
+built /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/index.html  total=69.69s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   114.4 MB · 1m 9.7s video · rendered in 6m 31.4s
+h264,3840,2160,69.700000
+aac,69.700000

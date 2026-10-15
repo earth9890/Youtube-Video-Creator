@@ -104,6 +104,7 @@ Plus a **foreground plane** where it fits: a large, dark, edge-cropped object (`
    - [ ] One focal point, obvious at thumbnail size
    - [ ] ≥ 3 depth cues, plus grounding shadows
    - [ ] No label over a face; nothing behind a head that fights it
+   - [ ] No glow, spotlight or translucent fill over a face. It changes the skin tone: a light fill makes dark skin read lighter, which is the wrong message. Highlight a person with a ring outline instead.
    - [ ] One accent colour
    - [ ] Text ≥ 4.5 : 1 (check passed)
    - [ ] Nothing in the caption band (y > 980) except the floor and foreground

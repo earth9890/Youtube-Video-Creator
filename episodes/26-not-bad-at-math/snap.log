@@ -1,0 +1,13 @@
+◆  Capturing 2 frames at [46.7s, 47.2s] from 26-not-bad-at-math
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+   Fonts: 1 loaded, 1 unused
+   Note: added an end-of-timeline frame at 67.60s. Short beats between your --at times may still be skipped — pass them explicitly.
+   Revision: none (inputs-changed)
+   State: /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/.hyperframes/video-state.json
+
+◇  3 snapshots saved to /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/.hyperframes/artifacts/snapshots/9d0d7078-bd82-4acf-97d7-1565eaaf1c28
+   .hyperframes/artifacts/snapshots/9d0d7078-bd82-4acf-97d7-1565eaaf1c28/frame-00-at-46.7s.png
+   .hyperframes/artifacts/snapshots/9d0d7078-bd82-4acf-97d7-1565eaaf1c28/frame-01-at-47.2s.png
+   .hyperframes/artifacts/snapshots/9d0d7078-bd82-4acf-97d7-1565eaaf1c28/frame-02-at-67.599s.png
+   /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/.hyperframes/artifacts/snapshots/9d0d7078-bd82-4acf-97d7-1565eaaf1c28/contact-sheet.jpg (grid view for AI review)

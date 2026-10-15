@@ -1,0 +1,29 @@
+◆  Checking 26-not-bad-at-math
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+Lint
+  ⚠ composition_file_too_large: This HTML composition file has 1346 lines. Smaller sub-compositions are easier to read, iterate on, and diff.
+    /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/index.html [data-composition-id] t=0s
+    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.
+  0 error(s), 1 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ⚠ t=3.872, 11.615, 19.358, 27.102, 34.845, 42.588, 50.332, 58.075, 65.818s container_overflow #board inside #stage overflowed left 272px, right 313.6px, top 260.8px, bottom 264px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  0 error(s), 1 warning(s), 0 info(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 36/36 text checks pass WCAG AA
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed
+Report: /Users/harish/videos/black-hole-life/episodes/26-not-bad-at-math/.hyperframes/artifacts/checks/fa5d1e7e-2c20-45ee-b172-5f427a1ee4da.json
+Revision: none (inputs-changed)
