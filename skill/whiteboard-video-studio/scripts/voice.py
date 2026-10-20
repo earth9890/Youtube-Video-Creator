@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Per-sentence male voiceover with natural pauses, a silent animation lead-in, and clip timings.
 
-usage: ~/.venvs/pocket/bin/python voice.py script.json OUT_DIR [--engine pocket|kokoro] [--voice jean] [--speed 1.0]
+usage: ~/.venvs/pocket/bin/python voice.py script.json OUT_DIR [--engine pocket|kokoro|voicestudio] [--voice jean] [--speed 1.0]
                                                                [--lead 2.6] [--tail 3.5] [--seed 1]
 script.json: [["Sentence one?", 0.8], ["Next sentence.", 1.0], ...]   (text, pause-after seconds; last pause 0)
 writes OUT_DIR/voice.wav and OUT_DIR/clipt.json  ({"clips":[[start,end],...], "total":sec})
@@ -10,6 +10,9 @@ Engines:
   pocket (default) — Kyutai Pocket TTS, voice "jean" (user's pick 2026-10-11), ~190 wpm at speed 1.0, CPU, CC-BY-4.0
                      (credit "Voice: Kyutai Pocket TTS" in the description). --speed < 1 slows it with atempo.
   kokoro           — old voice: Kokoro am_michael at --speed 0.78 plus the DEEP filter.
+  voicestudio      — the VoiceStudio app (must be running, http://127.0.0.1:3900), voice = a profile id
+                     (default 902498e2 = archetype "The Storyteller", owner's pick 2026-10-19) or 'default' + --instruct 'male, middle-aged, low pitch'. No local venv:
+                     uv run --with numpy --with soundfile python voice.py ... --engine voicestudio
 Why per sentence: cutting one long take at guessed word boundaries leaves a word's tail after the cut
 (heard as a repeated word). Separate clips can never do that.
 Clips are cached by a hash of (engine, voice, speed, seed, text), so editing or inserting a sentence only redoes that one.
@@ -60,8 +63,10 @@ else:
     script = json.load(open(a[0]))
 opt = lambda k, d: a[a.index(k) + 1] if k in a else d
 engine = opt('--engine', 'pocket')
-voice = opt('--voice', 'jean' if engine == 'pocket' else 'am_michael')
-speed = opt('--speed', '1.0' if engine == 'pocket' else '0.78')
+voice = opt('--voice', {'pocket': 'jean', 'voicestudio': '902498e2'}.get(engine, 'am_michael'))
+speed = opt('--speed', '0.78' if engine == 'kokoro' else '1.0')
+instruct = opt('--instruct', None)
+steps = opt('--steps', None)  # voicestudio diffusion steps: 8 draft, 16 app default, 32 quality; cost ~ steps x (7 s reference + clip)
 seed, LEAD, TAIL = int(opt('--seed', '1')), float(opt('--lead', '2.6')), float(opt('--tail', '3.5'))
 DEEP = "asetrate=24000*0.95,aresample=44100,atempo=1.0526,bass=g=8:f=110,equalizer=f=220:t=q:w=1:g=3,acompressor=threshold=-18dB:ratio=3"
 CLEAN = "aresample=44100" + (f",atempo={speed}" if float(speed) != 1.0 else "") + ",acompressor=threshold=-20dB:ratio=2.5"
@@ -73,16 +78,25 @@ def pocket(text, path):
         _pocket['m'] = TTSModel.load_model(); _pocket['v'] = _pocket['m'].get_state_for_audio_prompt(voice)
     import torch; torch.manual_seed(seed)                                  # same text + seed -> same take
     m = _pocket['m']; sf.write(path, m.generate_audio(_pocket['v'], text).numpy().reshape(-1), m.sample_rate)
+def voicestudio(text, path):
+    import urllib.request
+    # a saved profile carries its own seed + reference sample; sending another seed/instruct re-designs the voice per clip
+    body = {'model': 'omnivoice', 'input': text, 'voice': voice, 'response_format': 'wav'}
+    body.update({k: v for k, v in (('seed', seed if '--seed' in a else None), ('instruct', instruct), ('num_step', int(steps) if steps else None)) if v is not None})
+    req = urllib.request.Request('http://127.0.0.1:3900/v1/audio/speech', json.dumps(body).encode(), {'Content-Type': 'application/json'})
+    open(path, 'wb').write(urllib.request.urlopen(req, timeout=600).read())
 def load(text, spd=1.0, st=0.0):
-    key = hashlib.sha1(f'{engine}|{voice}|{speed}|{seed}|{text}'.encode()).hexdigest()[:10]
+    key = hashlib.sha1(f'{engine}|{voice}|{speed}|{seed}|{text}{"|" + instruct if instruct else ""}{"|s" + steps if steps else ""}'.encode()).hexdigest()[:10]  # old cache keys unchanged
     raw, done = clips / f'r-{key}.wav', clips / f'v-{key}.wav'
     if not done.exists():
         if engine == 'pocket':
             pocket(text, raw)
+        elif engine == 'voicestudio':
+            voicestudio(text, raw)
         else:
             env = dict(os.environ, HYPERFRAMES_PYTHON=os.path.expanduser('~/.venvs/tts/bin/python3'))
             subprocess.run(['npx', 'hyperframes', 'tts', text, '-v', voice, '-s', speed, '-o', str(raw)], check=True, env=env, stdin=subprocess.DEVNULL)
-        subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(raw), '-ac', '1', '-af', CLEAN if engine == 'pocket' else DEEP, str(done)], check=True, stdin=subprocess.DEVNULL)
+        subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(raw), '-ac', '1', '-af', DEEP if engine == 'kokoro' else CLEAN, str(done)], check=True, stdin=subprocess.DEVNULL)
     if spd != 1.0 or st:  # per-clip delivery: atempo keeps pitch; asetrate shifts pitch (keep |st| <= 1 for narration, ~2 for characters)
         r = 2 ** (st / 12); src = done
         done = clips / f'd-{key}-{spd}-{st}.wav'

@@ -1,0 +1,59 @@
+# Package: 33-why-humans-kiss
+
+## Title options
+1. Why Do Humans Kiss?  ← **pick** (19 chars; the question the video says aloud at 0:26; Zenn's "Why Humans [universal act]" shape; pairs with thumbnail A "80 MILLION?")
+2. Why Do Humans Actually Kiss?
+3. Who Invented Kissing?
+4. Did Ancient Humans Kiss?
+5. Half the World Never Kissed
+
+Thumbnail: `thumbnails/a.png` ("80 MILLION?" + big uneasy Dave holding out a stiff handshake at a giant pair of red cartoon lips with green bacteria hopping off them, sky over a brown doorstep band). Test & Compare partner: `thumbnails/b.png` (one Earth on near-black, the left half covered in red lipstick marks, the right half bare, no words).
+
+## Description
+Pressing your face against somebody else's face is a strange thing to do. So why do humans kiss? Is it built into us, or did somebody, somewhere, just make it up?
+
+Dave has a first date on Friday and a very safe handshake planned for the doorstep. To find out whether he "has to" kiss, we go from a chimp fight at a Dutch zoo in 1975 and a family tree that puts the first kiss 21 to 17 million years ago, to baby food, grooming, Mesopotamian clay tablets from about 2500 BC, a 10-second kissing experiment at Amsterdam's zoo (about 80 million bacteria), and couples at airports who turn their heads to the right. Then the number everyone repeated, "more than 90 % of cultures", meets a study of 168 cultures that found the romantic kiss in only 46 %.
+
+⏱ Chapters
+0:00 The doorstep plan
+0:45 The apes did it first
+2:01 Was the first kiss lunch?
+3:01 The oldest written kiss
+4:14 The taste test
+5:38 Left or right?
+6:20 Only forty-six percent
+7:54 The other half was fine
+
+Sources:
+- de Waal (2000), "The First Kiss: Foundations of Conflict Resolution Research in Animals", in Aureli & de Waal (eds), Natural Conflict Resolution, University of California Press (the reconciliation kiss at Burgers Zoo, Arnhem, November 1975)
+- Brindle, Talbot & West (2025), Evolution and Human Behavior, "A comparative approach to the evolution of kissing" (first kiss in an ancestor of the great apes, about 21.5 to 16.9 million years ago)
+- Darwin (1872), The Expression of the Emotions in Man and Animals, chapter 8, pp. 213-214
+- Pelto, Zhang & Habicht (2010), Maternal & Child Nutrition, "Premastication: the second arm of infant and young child feeding" (38 of 119 cultures; 63 % of students asked at a Beijing university)
+- Lameira (2024), Evolutionary Anthropology, "The evolutionary origin of human kissing"; Robin Dunbar quoted in The Guardian (30 Nov 2024)
+- Arbøll & Rasmussen (2023), Science 380, "The ancient history of kissing"; Arbøll (2025), Evolution and Human Behavior, "Ancient kiss-tory"; ETCSL, Gilgamesh and Huwawa (version A)
+- Wlodarski & Dunbar (2013), Archives of Sexual Behavior, "Examining the possible functions of kissing in romantic relationships" (902 adults)
+- Hughes, Harrison & Gallup (2007), Evolutionary Psychology, "Sex differences in romantic kissing among college students" (59 % of men, 66 % of women)
+- Kort et al. (2014), Microbiome, "Shaping the oral microbiota through intimate kissing" (21 couples at Artis Royal Zoo; about 80 million bacteria per 10-second kiss)
+- Mela & Whitworth (2014), American Journal of Infection Control, "The fist bump: a more hygienic alternative to the handshake"
+- Güntürkün (2003), Nature 421, "Adult persistence of head-turning asymmetry" (80 of 124 couples turned right)
+- Jankowiak, Volsche & Garcia (2015), American Anthropologist, "Is the Romantic-Sexual Kiss a Near Human Universal?" (46 % of 168 cultures)
+- Junod (1927), The Life of a South African Tribe, via HRAF (17 Jul 2015); Jankowiak, Garcia & Volsche, SAPIENS (10 Feb 2016)
+- Jankowiak & Fischer (1992), Ethnology 31(2), "A cross-cultural perspective on romantic love" (147 of 166 cultures)
+- Te Ara, the Encyclopedia of New Zealand, "Māori manners and social behaviour" (the hongi)
+
+Half the cultures on Earth stopped at the handshake, and everyone was fine.
+
+New videos every week: the strange science behind the things you worry about.
+
+#kissing #anthropology #science #history
+
+## Tags
+why do humans kiss, history of kissing, who invented kissing, first kiss in history, do all cultures kiss, kissing in other cultures, chimpanzees kissing, frans de waal, mesopotamia kiss, oldest kiss, gilgamesh, kissing bacteria, 80 million bacteria, fist bump vs handshake, head turn kiss, gunturkun, jankowiak kissing study, maori hongi, anthropology explained, stick figure animation, black hole life
+
+## Pinned comment
+Where you live, how do people say hello: a handshake, a hug, a cheek kiss, a fist bump, or something else? And be honest: which way do you turn your head?
+
+## Published
+https://youtu.be/E6ZxhWGbdno (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p)
+
+thumbnail C: HANDSHAKE?

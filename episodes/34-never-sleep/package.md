@@ -1,0 +1,60 @@
+# Package: 34-never-sleep
+
+## Title options
+1. What Happens If You Never Sleep?  ← **pick** (32 chars; the question the video says aloud at 0:24 and answers at 7:54; pairs with thumbnail A "11 DAYS?")
+2. How Long Can a Human Stay Awake?
+3. The Boy Who Stayed Awake for 11 Days
+4. Why Guinness Stopped Counting This Record
+5. What If You Stopped Sleeping Tonight?
+
+Thumbnail: `thumbnails/a.png` ("11 DAYS?" + big wide-eyed Dave with a sweat drop, side-eyeing his scoreboard: an open eye over a red 264, a tangerine in hand, on a night-navy wall; 3 words). Test & Compare partner: `thumbnails/b.png` (one brain on near-black, the left half pale and awake with one wide-open eye, the right half deep blue and asleep with a shut eye and a single "z", no words).
+
+## Description
+Tonight, Dave is not going to sleep. Not tonight, not tomorrow, not for eleven days. So what happens if you never sleep?
+
+Dave wants Randy Gardner's record: 264 hours awake, set by a 17-year-old for a San Diego science fair over the New Year of 1964. On the way we meet a radio host in a glass booth in Times Square, a teenager who beat sleep scientist William Dement at pinball on day ten, rats whose brain cells switch off while they are wide awake, a brain that cleans up at night like a dishwasher (or maybe not), dolphins and ducks that sleep with half a brain, and frigatebirds that nap in ten-second bursts over the ocean. Then a 2003 sleep-lab study shows how the record gets broken quietly, two hours at a time, by people who feel totally fine.
+
+⏱ Chapters
+0:00 The record attempt
+0:41 Hour seventeen
+1:19 The science fair
+3:08 The invisible naps
+4:37 The night shift
+5:21 Half a brain
+6:44 The slow version
+8:04 The bedtime alarm
+
+Sources:
+- Williamson & Feyer (2000), Occupational and Environmental Medicine 57(10):649-655, "Moderate sleep deprivation produces impairments in cognitive and motor performance equivalent to legally prescribed levels of alcohol intoxication" (39 transport workers and soldiers; after 17-19 hours awake, some test scores matched 0.05 % blood alcohol or worse; longer, 0.1 %)
+- Austroads, Assessing Fitness to Drive, Appendix 4, "Drivers' legal BAC limits" (0.05 for full-licence drivers in Australia)
+- NPR Hidden Brain (Shankar Vedantam, 2017), interview with Randy Gardner (tangerines, the 3 a.m. jail visit, the recovery sleep, his later insomnia, "the big three")
+- NPR (28 Jan 2024), "Lessons from sleeplessness: The 60th anniversary of Randy Gardner's world record"
+- Guinness World Records (17 Jan 2023), Sanj Atwal, "What's the limit to how long a human can stay awake? And why we don't monitor the record" (stopped monitoring in 1997; Dave Hunter 225 h, Peter Tripp 201 h; Dement accepted microsleeps; Robert McDonald, 453 h 40 min, 1986, a rocking-chair marathon)
+- Coren (1998), Psychiatric Times 15(3), "Sleep Deprivation, Psychosis and Mental Efficiency" (John Ross's day-by-day notes; Ross (1965), Archives of Neurology 12:399-403)
+- SKYbrary, "Micro-sleep" (from ICAO Doc 9966, Manual for the Oversight of Fatigue Management Approaches)
+- Vyazovskiy et al. (2011), Nature 472:443-447, "Local sleep in awake rats"
+- Xie et al. (2013), Science 342:373-377, "Sleep drives metabolite clearance from the adult brain" (Nedergaard lab, University of Rochester; about 60 % more space between brain cells in sleep)
+- Miao et al. (2024), Nature Neuroscience, "Brain clearance is reduced during sleep and anesthesia"; Imperial College London news, 13 May 2024
+- Lyamin et al. (2008), Neuroscience & Biobehavioral Reviews 32(8):1451-1484, "Cetacean sleep: an unusual form of mammalian sleep"
+- Rattenborg, Lima & Amlaner (1999), Nature 397:397-398, "Half-awake to the risk of predation"
+- Rattenborg et al. (2016), Nature Communications 7:12468, "Evidence that birds sleep in mid-flight"; Max Planck Society release, 3 Aug 2016
+- Everson, Bergmann & Rechtschaffen (1989), Sleep 12(1):13-21, "Sleep deprivation in the rat: III. Total sleep deprivation"
+- Vaccaro et al. (2020), Cell 181(6):1307-1328, "Sleep loss can cause death through accumulation of reactive oxygen species in the gut"; Harvard Gazette, June 2020
+- Van Dongen, Maislin, Mullington & Dinges (2003), Sleep 26(2):117-126, "The cumulative cost of additional wakefulness" (48 healthy adults; 4, 6 or 8 hours in bed for 14 days; "only slightly sleepy")
+
+Your feeling of fine is not a measurement, but a clock is. Set an alarm for when you go to bed, not just for when you get up.
+
+New videos every week: the strange science behind the things you worry about.
+
+#sleep #science #psychology #randygardner
+
+## Tags
+what happens if you never sleep, how long can you stay awake, randy gardner, 264 hours awake, longest time without sleep, sleep deprivation, guinness world record sleep, microsleep, local sleep, glymphatic system, dolphins sleep half brain, unihemispheric sleep, frigatebird sleep, ducks sleep one eye open, van dongen sleep study, sleep debt, william dement, peter tripp, sleep science explained, stick figure animation, black hole life
+
+## Pinned comment
+Be honest: how many hours did you sleep last night, and how many do you think you needed? (Dave says six. Dave also says he feels totally fine.)
+
+## Published
+https://youtu.be/uN5ypWRpy_I (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p, pinned comment)
+
+thumbnail C: HALF ASLEEP?

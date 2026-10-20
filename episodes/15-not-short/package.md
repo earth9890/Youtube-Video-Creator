@@ -38,3 +38,5 @@ you are not short, short men confidence, does height matter, height and success,
 
 ## Pinned comment
 Who's the shortest person you've ever looked up to?
+
+thumbnail C: TALLER?

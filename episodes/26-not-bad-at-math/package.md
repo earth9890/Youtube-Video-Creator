@@ -37,3 +37,5 @@ you are not bad at math, math anxiety, why do i go blank in math, im not a math 
 
 ## Pinned comment
 Where does your brain go blank: splitting a bill, a test, or someone watching you count?
+
+thumbnail C: 90 ÷ 3? (thumbnails/c.png, clickbait scene: terrified Dave with the $90 bill, three darts in the bull behind him)

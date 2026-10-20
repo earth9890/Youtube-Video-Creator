@@ -37,3 +37,4 @@ Which account did you unfollow first, and how long had it been making you feel s
 ## Thumbnails
 - thumbnails/a.png (dark, "EVERYONE'S / AHEAD." in red — sad hero s1.3 at the foot of tall stairs, glowing heart-phone in hand, trophy-holder at the top) → pairs with title #5 (pain moment: everyone's ahead; title: the 3-step fix). Also works with #1.
 - thumbnails/b.png (dark, "30 / MINUTES." with 30 in green — happy hero s1.6 putting the phone face-down on a table, padlock on it) → pairs with title #5 or #3 (hook: the number; title: the promise). Do not pair with #3 for thumb A (repeats "ahead").
+thumbnail C: BEHIND?

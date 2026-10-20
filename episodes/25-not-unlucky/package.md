@@ -41,3 +41,5 @@ you are not unlucky, how to be lucky, richard wiseman luck factor, luck psycholo
 
 ## Pinned comment
 Which routine will you change tomorrow: your route, your seat, or who you talk to?
+
+thumbnail C: CURSED? (thumbnails/c.png, clickbait scene: sweating Dave counting photos beside a half-page STOP COUNTING)

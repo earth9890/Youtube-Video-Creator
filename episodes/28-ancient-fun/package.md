@@ -1,0 +1,66 @@
+# Package: 28-ancient-fun
+
+## Title options
+1. What Did Ancient Humans Do for Fun?  ← **pick** (35 chars; the "What Did Ancient Humans ___?" formula; pairs with thumbnail A "LOST TO CLAY?")
+2. Were Ancient Humans Ever Bored?
+3. The World's Oldest Rulebook
+4. What Did Humans Do Before Screens?
+5. Why Ancient Humans Never Stopped Playing
+
+Thumbnail: `thumbnails/a.png` ("LOST TO CLAY?" + big uneasy Dave with a sweat drop, beside the Royal Game of Ur board and the clay rulebook propped up as his opponent, wearing a gold crown). Test & Compare partner: `thumbnails/b.png` ("BORED?" over the 30-ton palace bull on navy, cropped by the frame, with the guards' scratched game board on its plinth circled in red).
+
+## Description
+Before screens, were humans just bored out of their minds?
+
+Dave's phone dies at seven, with no charger and four hours until bed, so he tries to get through the evening on ancient fun alone. He loses the Royal Game of Ur to a 2,200-year-old clay rulebook, throws the worst roll in Roman knucklebones three times in a row, and meets a flute made from a vulture's wing bone at least 35,000 years ago, the world's oldest recorded joke, and a Pompeii wall poem complaining about wall writing. Then the twist: ancient people were often bored, and bored guards scratched a game board into a 30-ton stone bull.
+
+⏱ Chapters
+0:00 Dave's phone dies
+0:44 The lost rulebook
+2:32 Blame the dice
+4:08 Older than farming
+4:59 The oldest joke
+6:10 Were they ever bored?
+7:41 Older than us
+
+Sources:
+- Hublin et al. (2017), Nature 546, and Richter et al. (2017), Nature 546: Homo sapiens fossils from Jebel Irhoud, about 300,000 years old
+- Guinness World Records, "First board game with surviving rules": the Royal Game of Ur, played from around 2600 BCE
+- British Museum, game board 120834: one of five boards Leonard Woolley found in the Royal Cemetery at Ur (excavated 1922-1934), about 2600-2400 BC
+- Finkel, I. L. (2007), "On the Rules for the Royal Game of Ur", in Ancient Board Games in Perspective (British Museum Press): tablet BM 33333B, written in Babylon in 177-176 BC; catalogued in 1886 as "omens from the flight of birds"; pieces with bird names; square fortunes "You will find a friend", "You will be powerful like a lion", "You will draw fine beer"
+- Wikipedia, Senet (citing Crist 2019, Journal of Egyptian Archaeology 105): in Book of the Dead chapter 17 the deceased plays senet against an invisible opponent
+- TIME (2008), "Big Game Hunter": Cochin Jews played a version of the game with cowrie shells as dice until the 1950s
+- Swiss National Museum (2018), "Playing with bones", and Suetonius, Augustus 71: knucklebones (astragali), the Venus throw and the dog
+- Lewis & Short, A Latin Dictionary, "nux": nuces relinquere, leaving the nuts behind, meaning growing up
+- Suetonius, Claudius 33 (his book on dice, and the board fitted to his carriage); Apocolocyntosis 15, probably by Seneca (dice shaken forever in a box with no bottom)
+- Madden, R. J. (2026), American Antiquity, "Probability in the Pleistocene: Origins and antiquity of Native American dice, games of chance and gambling": 565 dice plus 94 probable dice from 57 sites; the oldest, from Wyoming, Colorado and New Mexico, about 12,800-12,200 years old; Science News (2026); CNN (8 April 2026), with Jelmer Eerkens: "I agree these COULD be dice, but I'm not convinced they necessarily were"
+- Smith, B. D. (1997), Science 276: squash domesticated in the Americas about 10,000 years ago
+- Conard, Malina & Münzel (2009), Nature 460: the Hohle Fels flute, made from a griffon vulture's wing bone, more than 35,000 years old; National Geographic (24 June 2009)
+- Wu et al. (2012), Science 336, "Early pottery at 20,000 years ago in Xianrendong Cave, China"
+- Children and Youth in History (RRCHNM), "Indus Valley Wheeled Ram Toy": Mohenjo-daro (2600-1900 BCE), toy carts and small animals with movable heads
+- Guinness World Records, "Oldest joke": a Sumerian saying from at least 1900 BC, from the 2008 University of Wolverhampton study led by Paul McDonald and commissioned by the UK channel Dave
+- The Philogelos (4th or 5th century AD), the chatty barber joke, via Mary Beard (The Guardian) and William Grimes (New York Times Book Review, 2008)
+- Mau, A. (1899), Pompeii: Its Life and Art: the wall couplet CIL IV 1904, found at Pompeii and at Rome
+- Collon, D. (2011), BBC History, "Assyrian guardian figure", and British Museum 118809: the 30-ton, five-legged human-headed bull from Sargon II's gate at Dur Sharrukin; "Bored guards have scratched a gaming board on the plinth"
+- Lucretius, De Rerum Natura 3.1053-1076 (trans. W. E. Leonard, 1916)
+- Wilson, T. D. et al. (2014), Science 345, "Just think: The challenges of the disengaged mind": alone for 15 minutes, 67 % of men (12 of 18) and 25 % of women (6 of 24) gave themselves a shock they had said they would pay to avoid
+- Westgate, E. C. & Wilson, T. D. (2018), Psychological Review 125: boredom as a signal that attention is not engaging with valued goals
+- Panksepp, J. & Burgdorf, J. (2000), Behavioural Brain Research 115: 50-kHz "chirping" in tickled young rats
+- Reinhold, A. S., Sanguinetti-Scheck, J. I., Hartmann, K. & Brecht, M. (2019), Science 365: rats taught to play hide and seek, rewarded with tickling
+- Huizinga, J. (1938), Homo Ludens: "animals have not waited for man to teach them their playing"
+
+Try it tonight: put the phone face down and play one game. Any game. Even against a rulebook.
+
+New videos every week: the strange science behind the things you worry about.
+
+#ancienthistory #history #boardgames #boredom #archaeology
+
+## Tags
+what did ancient humans do for fun, ancient games, royal game of ur, game of ur rules, irving finkel, oldest board game, knucklebones, oldest dice, hohle fels flute, oldest musical instrument, oldest joke in the world, sumerian joke, philogelos, pompeii graffiti, lamassu, were ancient humans bored, history of boredom, history explained, stick figure animation, black hole life
+
+## Pinned comment
+Your phone dies at 7 pm and there's no charger. What's the first thing you'd do with the next four hours? Be honest: how long before you'd start scratching a game into the furniture?
+
+## Published
+https://youtu.be/2ntf-K8jXKo (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p, pinned comment)
+- 2026-10-20: thumbnail swapped to `thumbnails/c.png` (owner request: Zenn-style campfire, cave people laughing, "NO WIFI?").

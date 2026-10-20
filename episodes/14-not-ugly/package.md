@@ -37,3 +37,5 @@ you are not ugly, why do i look ugly in photos, selfie distortion, mirror vs cam
 
 ## Pinned comment
 Which one do you trust more: your mirror or your camera?
+
+thumbnail C: REAL YOU?

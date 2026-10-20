@@ -1,0 +1,65 @@
+# Package: 36-ancient-stars
+
+## Title options
+1. What Did Ancient Humans Think the Stars Were?  ← **pick** (45 chars; the "What Did Ancient Humans…" formula on a primal-curiosity topic, the question spoken at 0:24 and answered at 7:53; pairs with thumbnail A "SKY EMU?")
+2. Why Can't You See the Milky Way Anymore?
+3. The Guest Star That Died Before Writing
+4. What Ancient Humans Saw in the Night Sky
+5. How Did Ancient Humans Read the Stars?
+
+Thumbnail: `thumbnails/a.png` ("SKY EMU?" + big uneasy Dave side-eyeing a giant emu made of the Milky Way's dark dust lanes, rim-lit in amber, on space black). Test & Compare partner: `thumbnails/b.png` (pure black, one blazing four-point star with a red crack through its core, no words: the guest star that had already died).
+
+## Description
+Dave can see three stars from his city roof, and one of them is a plane. For almost all of human history, a clear night showed a few thousand stars and a Milky Way bright enough to cast your shadow. So what did ancient humans think those lights were?
+
+Dave drives out of the city one level of darkness at a time, down the Bortle scale from nine to one, and at every darker stop a different answer is tested: the Babylonian "writing of heaven" (a 7,000-omen manual and 600 years of diaries that also tracked the price of barley), Egypt's star clock and the star that turned up before the Nile flood, the Emu in the Sky that Aboriginal astronomers drew with the darkness between the stars, the star compass that guided Hōkūleʻa from Hawaii to Tahiti, Ptolemy's 1,022 stars fixed to one cosy sphere, and Giordano Bruno's other suns. Then a guest star in the year 1006 turns out to be stranger than all of them.
+
+⏱ Chapters
+0:00 Three stars and a plane
+0:57 The writing of heaven
+2:09 The star that brings the flood
+3:05 The emu made of darkness
+4:17 A map made of stars
+5:21 A ceiling with holes
+6:32 The guest star
+8:09 Back on the roof
+
+Sources:
+- Falchi et al. (2016), Science Advances 2(6), "The new world atlas of artificial night sky brightness": the Milky Way is hidden from more than one-third of humanity, including nearly 80% of North Americans
+- Bortle, J.E. (2001), Sky & Telescope, "Introducing the Bortle Dark-Sky Scale"; how many stars a dark sky shows: Sky & Telescope, EarthSky, NBC News
+- MUL.APIN (compiled around 1000 BCE): 66 stars and constellations; Enūma Anu Enlil: 68 or 70 tablets, about 6,500 to 7,000 omens
+- Rochberg, F. (2004), The Heavenly Writing: Divination, Horoscopy, and Astronomy in Mesopotamian Culture (Cambridge University Press)
+- The Babylonian Astronomical Diaries (about 652 to 61 BCE): Moon, planets, weather and the prices of barley and other goods (Livius; Wikipedia)
+- Bibbu / UDU.IDIM, "wild sheep", the Akkadian word for the planets; the 12 equal zodiac signs (end of the 5th century BCE); Aries as the Hired Man (MUL LÚ.ḪUN.GÁ)
+- de Jong, T., "The Heliacal Rising of Sirius": Sirius unseen for about 70 days at Memphis
+- Symons, S., Scientific American, "Decoding the Star Charts of Ancient Egypt": diagonal star tables inside coffin lids, mostly from about 2100 BCE
+- Lombardi, M.A. (NIST), Scientific American (2007), on twelve night hours and the roots of the 24-hour day
+- The Pyramid Texts and the imperishable stars (World History Encyclopedia; Egyptian astronomy)
+- Fuller, Anderson, Norris & Trudgett (2014), Journal of Astronomical History and Heritage 17(2), "The Emu Sky Knowledge of the Kamilaroi and Euahlayi Peoples"
+- Nunn, P.D. & Reid, N.J. (2016, online 2015), Australian Geographer 47(1), "Aboriginal Memories of Inundation of the Australian Coast Dating from More than 7000 Years Ago"; Science News on the critics (oral traditions rarely past about 800 years)
+- Sharp, A. (1956), Ancient Voyagers in the Pacific; Polynesian Voyaging Society, "The Founding of the PVS" and "Hawaiian Star Compass"; Hōkūleʻa, Hawaii to Tahiti, 1976; Mau Piailug (Satawal, Micronesia); Hawaii Tribune-Herald (4 May 2026) on the 17,000 people who met the canoe
+- Ptolemy's Almagest (around 150): 1,022 stars; the sphere of fixed stars at about 20,000 Earth radii (Høg, "Astrometry lost and regained", arXiv:1105.0634)
+- Stanford Encyclopedia of Philosophy, "Giordano Bruno"; Martínez, A. (2018), Burned Alive, on the debate over the charges
+- Bessel (1838) and 61 Cygni, the first distance to a star; NASA's confirmed exoplanet count passing 6,000 (September 2025)
+- Winkler, Gupta & Long (2003), ApJ 585, "The SN 1006 Remnant": about 7,200 light-years; Ali ibn Ridwan's account; guest stars in Chinese records (NOIRLab; Wikipedia, SN 1006)
+- Plait, P., "Are the stars you see in the sky already dead?"; BBC Sky at Night (Alastair Gunn)
+- al-Sufi, Book of Fixed Stars (964): the "small cloud" of Andromeda; Hublin et al. (2017), Nature, on the oldest Homo sapiens fossils
+- Kyba, Altıntaş, Walker & Newhouse (2023), Science 379, "Citizen scientists report global rapid reductions in the visibility of stars from 2011 to 2022": 51,351 Globe at Night reports, skies brightening 9.6% a year
+- DarkSky International: light pollution is reversible
+
+Tonight, switch off one outside light and count again.
+
+New videos every week: the strange science behind the things you worry about.
+
+#astronomy #history #nightsky #milkyway #emuinthesky
+
+## Tags
+what did ancient humans think the stars were, ancient astronomy, history of astronomy, night sky, milky way, light pollution, bortle scale, emu in the sky, aboriginal astronomy, babylonian astronomy, mul apin, ancient egypt stars, sirius nile flood, decans, polynesian navigation, hokulea, mau piailug, star compass, ptolemy, giordano bruno, sn 1006, guest star, andromeda galaxy, black hole life
+
+## Pinned comment
+How many stars can you see from where you live tonight? Go outside, count them, and tell us your number and your rough location (city, suburb or countryside).
+
+## Published
+https://youtu.be/LiTuGDyn8DM (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p, pinned comment)
+
+thumbnail C: GIANT EMU? (thumbnails/c.png, clickbait scene: shocked Dave + stargazer under a giant running emu made of dust)

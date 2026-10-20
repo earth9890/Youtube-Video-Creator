@@ -40,3 +40,5 @@ What's the one thing you keep waiting to "feel like" doing? Name it below — th
 ## Thumbnails
 - thumbnails/a.png (dark, "I DON'T / FEEL LIKE IT." — hero slumped on the couch with a glowing phone, flame dying on the floor) → pairs with title #1 "Motivation Never Lasts. Here's What Does." (problem ↔ promise, no shared words; not #2/#5 which repeat "feel like it", not #4 which repeats "don't").
 - thumbnails/b.png (dark, "66 DAYS." — hero marking the next tick on a 2/3-filled calendar) → pairs with title #2 (the pick) or #5 (not #3, which repeats "66-Day").
+
+thumbnail C: COME BACK!

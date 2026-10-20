@@ -40,3 +40,4 @@ you are not lazy, procrastination, why do i procrastinate, how to stop procrasti
 
 ## Pinned comment
 What's the "oven" you clean when you're avoiding something?
+thumbnail C: MAGIC CANDLE?

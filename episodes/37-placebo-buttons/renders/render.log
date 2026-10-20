@@ -1,0 +1,10 @@
+built /Users/harish/videos/black-hole-life/episodes/37-placebo-buttons/index.html  total=511.87s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 3 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   315.8 MB · 8m 31.9s video · rendered in 18m 4.0s
+h264,1920,1080,511.900000
+aac,511.900000

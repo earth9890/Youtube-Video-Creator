@@ -38,3 +38,4 @@ What's the one small thing you've been too shy to do — and will you do it toda
 ## Thumbnails
 - `thumbnails/a.png` (dark) "EVERYONE IS STARING." — the felt problem; pairs with title #3 (promise: you feel judged and aren't). Also works with #1 or #5.
 - `thumbnails/b.png` (dark) "ONLY 23% NOTICED." — the stark fact; pairs with title #4 or #5. Not #1 (repeats "23%").
+thumbnail C: NOBODY?

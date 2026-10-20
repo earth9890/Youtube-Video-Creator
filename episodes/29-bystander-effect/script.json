@@ -1,0 +1,812 @@
+[
+[
+"This is Dave. Dave is on a busy street, counting the people around him.",
+0.2,
+1.0,
+0.0
+],
+[
+"Thirty-six, thirty-seven, thirty-eight. Dave stops. That's the number he's afraid of.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave once read that thirty-eight people heard a woman cry for help,",
+0.2,
+1.0,
+0.0
+],
+[
+"and not one of them did anything.",
+0.2,
+1.0,
+0.0
+],
+[
+"So Dave has a plan. If he ever collapses, he'll do it in front of exactly one person, ideally a nurse.",
+0.7,
+1.0,
+0.0
+],
+[
+"Psychologists have a name for what Dave is afraid of: the bystander effect.",
+0.2,
+1.0,
+0.0
+],
+[
+"So, if you fell down right here, in front of thirty-eight strangers, would anyone help you?",
+0.7,
+1.0,
+0.0
+],
+[
+"To find out, we'll need a fake seizure, a room full of smoke,",
+0.2,
+1.0,
+0.0
+],
+[
+"and two hundred and nineteen real fights and arguments, caught on camera.",
+0.2,
+1.0,
+0.0
+],
+[
+"Plus that number, thirty-eight, which isn't quite what it seems.",
+0.7,
+1.0,
+0.0
+],
+[
+"In nineteen sixty-four, a young woman named Kitty Genovese was killed by a stranger, near her home in Queens, New York.",
+0.2,
+1.0,
+0.0
+],
+[
+"Two weeks later, the New York Times reported that thirty-eight neighbors had watched the attack,",
+0.2,
+1.0,
+0.0
+],
+[
+"and that nobody called the police until it was too late.",
+0.2,
+1.0,
+0.0
+],
+[
+"The story went around the world, as proof that big cities had made people cold.",
+0.2,
+1.0,
+0.0
+],
+[
+"Two young psychologists in New York, John Darley and Bibb Latan\u00e9, weren't convinced.",
+0.2,
+1.0,
+0.0
+],
+[
+"Over dinner, they landed on a strange idea.",
+0.2,
+1.0,
+0.0
+],
+[
+"What if the problem wasn't the people? What if it was the number?",
+0.7,
+1.0,
+0.0
+],
+[
+"So they built a fake emergency, and we're putting Dave in it.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave sits alone in a small room at New York University, in a headset.",
+0.2,
+1.0,
+0.0
+],
+[
+"He's told he's in a group discussion over an intercom, one microphone at a time.",
+0.2,
+1.0,
+0.0
+],
+[
+"Then another student, who'd mentioned he gets seizures, starts to stammer and asks for help.",
+0.2,
+1.0,
+0.0
+],
+[
+"One participant, overheard on her microphone, said to herself,",
+0.2,
+1.0,
+0.0
+],
+[
+"It's just my kind of luck, something has to happen to me.",
+0.7,
+0.95,
+2.0
+],
+[
+"The scientists timed how long it took to get up and tell someone.",
+0.2,
+1.0,
+0.0
+],
+[
+"Some believed they were the only listener.",
+0.2,
+1.0,
+0.0
+],
+[
+"Others, that four more students could hear it too.",
+0.2,
+1.0,
+0.0
+],
+[
+"Alone? Eighty-five percent went for help before the seizure ended.",
+0.2,
+1.0,
+0.0
+],
+[
+"With four others listening? Only thirty-one percent.",
+0.7,
+1.0,
+0.0
+],
+[
+"Here's the strange part: the other four students were tape recordings.",
+0.7,
+1.0,
+0.0
+],
+[
+"So every crowd of five had exactly one real person in it.",
+0.2,
+1.0,
+0.0
+],
+[
+"And that person waited for the tapes.",
+0.7,
+1.0,
+0.0
+],
+[
+"But the ones who stayed weren't cold. Their hands shook, and their palms sweated.",
+0.2,
+1.0,
+0.0
+],
+[
+"When the researcher came in, many asked:",
+0.2,
+1.0,
+0.0
+],
+[
+"Is he being taken care of?",
+0.7,
+0.95,
+2.0
+],
+[
+"They hadn't decided not to help.",
+0.2,
+1.0,
+0.0
+],
+[
+"They were waiting for somebody else to go first.",
+0.2,
+1.0,
+0.0
+],
+[
+"Darley and Latan\u00e9 called it diffusion of responsibility.",
+0.2,
+1.0,
+0.0
+],
+[
+"One job, split five ways, feels like a fifth of a job.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave approves. His nurse plan now has a scientific paper behind it.",
+0.7,
+1.0,
+0.0
+],
+[
+"But nobody in that study could see anybody.",
+0.2,
+1.0,
+0.0
+],
+[
+"So their second test, at Columbia University, had faces.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave is filling in a questionnaire when white smoke starts puffing out of a wall vent.",
+0.2,
+1.0,
+0.0
+],
+[
+"Alone, Dave is sensible. He sniffs it, waves at it, and goes to report it.",
+0.2,
+1.0,
+0.0
+],
+[
+"Three out of four lone students did the same.",
+0.2,
+1.0,
+0.0
+],
+[
+"Now sit Dave with two other students.",
+0.2,
+1.0,
+0.0
+],
+[
+"They're actors, told to look at the smoke, shrug, and keep writing.",
+0.2,
+1.0,
+0.0
+],
+[
+"If Dave asks what it is, they say, I dunno,",
+0.2,
+1.0,
+0.0
+],
+[
+"and go back to their questionnaires.",
+0.7,
+1.0,
+0.0
+],
+[
+"Of ten students tested like this, one reported the smoke.",
+0.2,
+1.0,
+0.0
+],
+[
+"The other nine stayed, coughing, rubbing their eyes, waving the smoke away, and opening a window.",
+0.7,
+1.0,
+0.0
+],
+[
+"They did not open the door.",
+0.7,
+1.0,
+0.0
+],
+[
+"Afterwards, they explained. It was steam, or air-conditioning,",
+0.2,
+1.0,
+0.0
+],
+[
+"or smog pumped in to make it feel like a city.",
+0.2,
+1.0,
+0.0
+],
+[
+"And two students decided it was truth gas, to make them answer the questionnaire honestly.",
+0.7,
+1.0,
+0.0
+],
+[
+"The researchers noted that this did not seem to bother them.",
+0.7,
+1.0,
+0.0
+],
+[
+"Then three ordinary students together, no actors.",
+0.2,
+1.0,
+0.0
+],
+[
+"By the odds, nearly every group should have reported it. Only three out of eight did.",
+0.2,
+1.0,
+0.0
+],
+[
+"Three heads, it turns out, are worse than one.",
+0.7,
+1.0,
+0.0
+],
+[
+"Each student checked the others' faces.",
+0.2,
+1.0,
+0.0
+],
+[
+"Everyone looked calm, so everyone decided it was fine.",
+0.2,
+1.0,
+0.0
+],
+[
+"Psychologists call this pluralistic ignorance, and Darley later called it an anti-panic mob.",
+0.7,
+1.0,
+0.0
+],
+[
+"Afterwards, almost all of them claimed they'd ignored the others completely.",
+0.7,
+1.0,
+0.0
+],
+[
+"So now Dave has two experiments on his side.",
+0.2,
+1.0,
+0.0
+],
+[
+"He does his grocery shopping at four in the morning.",
+0.7,
+1.0,
+0.0
+],
+[
+"So is that it? Are crowds just thirty-eight people, waiting for each other?",
+0.7,
+1.0,
+0.0
+],
+[
+"Not quite. The number thirty-eight had problems from day one.",
+0.2,
+1.0,
+0.0
+],
+[
+"The Times headline said thirty-seven, and its first sentence said thirty-eight.",
+0.2,
+1.0,
+0.0
+],
+[
+"In two thousand seven, psychologists Rachel Manning, Mark Levine and Alan Collins went back to the trial records.",
+0.2,
+1.0,
+0.0
+],
+[
+"They found no evidence of thirty-eight witnesses,",
+0.2,
+1.0,
+0.0
+],
+[
+"no evidence that witnesses watched the murder,",
+0.2,
+1.0,
+0.0
+],
+[
+"and no evidence that they all did nothing.",
+0.2,
+1.0,
+0.0
+],
+[
+"In two thousand sixteen, the Times itself wrote that its story had grossly exaggerated",
+0.2,
+1.0,
+0.0
+],
+[
+"how many people saw, and how much.",
+0.2,
+1.0,
+0.0
+],
+[
+"Nobody saw the whole attack. Many thought they'd heard drunks, or a couple, arguing.",
+0.2,
+1.0,
+0.0
+],
+[
+"There were two attacks, not three, and two people did call the police.",
+0.2,
+1.0,
+0.0
+],
+[
+"And Kitty's friend and neighbor, Sophia Farrar,",
+0.2,
+1.0,
+0.0
+],
+[
+"ran out without knowing if the attacker was still there.",
+0.2,
+1.0,
+0.0
+],
+[
+"She held Kitty in her arms and whispered that help was coming.",
+0.2,
+1.0,
+0.0
+],
+[
+"Kitty died on the way to the hospital.",
+0.2,
+1.0,
+0.0
+],
+[
+"The famous article never mentioned her.",
+0.2,
+1.0,
+0.0
+],
+[
+"Kitty's younger brother Bill was sixteen.",
+0.2,
+1.0,
+0.0
+],
+[
+"The story of thirty-eight people who did nothing never left him.",
+0.2,
+1.0,
+0.0
+],
+[
+"He joined the Marines partly to prove he'd never be one of them,",
+0.2,
+1.0,
+0.0
+],
+[
+"and he lost both legs in Vietnam.",
+0.2,
+1.0,
+0.0
+],
+[
+"Decades later, he spent eleven years finding the people who were there, for the documentary The Witness.",
+0.2,
+1.0,
+0.0
+],
+[
+"What he found mattered more than any number.",
+0.2,
+0.9,
+0.0
+],
+[
+"His sister was not alone at the end. She was in the arms of a friend.",
+0.7,
+0.9,
+0.0
+],
+[
+"So, was the bystander effect a myth too?",
+0.2,
+1.0,
+0.0
+],
+[
+"Here's the slightly awkward answer: no.",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty eleven, a review pooled a hundred and five results from over seven thousand seven hundred people.",
+0.2,
+1.0,
+0.0
+],
+[
+"It held up: alone, people help more.",
+0.2,
+1.0,
+0.0
+],
+[
+"But it got weaker when the danger was obvious, with an attacker right there.",
+0.2,
+1.0,
+0.0
+],
+[
+"And real life rarely happens alone in a quiet room.",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty nineteen, Mark Levine, one of the three who took the thirty-eight apart,",
+0.2,
+1.0,
+0.0
+],
+[
+"tried something new with Richard Philpot and colleagues.",
+0.2,
+1.0,
+0.0
+],
+[
+"They watched two hundred and nineteen real arguments and fights,",
+0.2,
+1.0,
+0.0
+],
+[
+"filmed by city cameras in Lancaster, Amsterdam and Cape Town.",
+0.2,
+1.0,
+0.0
+],
+[
+"No actors, no smoke, no tape recorders. Just people having a very bad night out.",
+0.7,
+1.0,
+0.0
+],
+[
+"The cameras had no sound, so only actions counted:",
+0.2,
+1.0,
+0.0
+],
+[
+"a calming hand, stepping in between, pulling someone back.",
+0.2,
+1.0,
+0.0
+],
+[
+"In nine out of ten of them, somebody stepped in,",
+0.2,
+1.0,
+0.0
+],
+[
+"usually several people, almost four on average.",
+0.7,
+1.0,
+0.0
+],
+[
+"The average one had about sixteen bystanders,",
+0.2,
+1.0,
+0.0
+],
+[
+"and the more there were, the more likely someone helped.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave looks at his counter. For the first time, he wants a bigger number.",
+0.7,
+1.0,
+0.0
+],
+[
+"Each extra bystander raised the odds of help by about ten percent.",
+0.2,
+1.0,
+0.0
+],
+[
+"So which is it? Do crowds freeze, or do crowds help?",
+0.7,
+1.0,
+0.0
+],
+[
+"Strangely, both. Each person in a crowd is a little less likely to act.",
+0.2,
+1.0,
+0.0
+],
+[
+"But a crowd has a lot of persons.",
+0.7,
+1.0,
+0.0
+],
+[
+"Darley and Latan\u00e9 even did this maths in nineteen sixty-eight.",
+0.2,
+1.0,
+0.0
+],
+[
+"After the first minute, the victim on the tape was likely to get help in every group.",
+0.2,
+1.0,
+0.0
+],
+[
+"In that study, the crowd mostly didn't stop help. It slowed it down.",
+0.7,
+1.0,
+0.0
+],
+[
+"So, would a crowd help you?",
+0.2,
+1.0,
+0.0
+],
+[
+"Probably. Nine times out of ten, somebody did.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave's plan was to need help near one person, ideally a nurse.",
+0.2,
+1.0,
+0.0
+],
+[
+"The cameras would like him near sixteen.",
+0.7,
+1.0,
+0.0
+],
+[
+"But nine out of ten is not ten.",
+0.2,
+1.0,
+0.0
+],
+[
+"The bystander effect lives in the pause, when everyone waits for someone else.",
+0.2,
+1.0,
+0.0
+],
+[
+"So shorten the pause. Don't shout at the crowd.",
+0.2,
+1.0,
+0.0
+],
+[
+"Point at one person, and give them one job.",
+0.2,
+1.0,
+0.0
+],
+[
+"Psychologist Robert Cialdini put it like this.",
+0.2,
+1.0,
+0.0
+],
+[
+"You, sir, in the blue jacket, I need help. Call an ambulance.",
+0.7,
+0.95,
+2.0
+],
+[
+"That one sentence tells him it's an emergency, it's his job, and what to do.",
+0.2,
+1.0,
+0.0
+],
+[
+"First aid trainers say the same: pick someone specific to make the call.",
+0.2,
+1.0,
+0.0
+],
+[
+"What if nobody's wearing a blue jacket?",
+0.2,
+0.95,
+2.0
+],
+[
+"Then, Dave, pick a different colour.",
+0.7,
+1.0,
+0.0
+],
+[
+"A week later, Dave is back on the busy street. Thirty-eight people. He counts out of habit.",
+0.2,
+1.0,
+0.0
+],
+[
+"A man in front of him trips, falls, and doesn't get up.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave doesn't freeze. He points at a woman in a green coat.",
+0.2,
+1.0,
+0.0
+],
+[
+"You, in the green coat. Call an ambulance.",
+0.2,
+0.95,
+2.0
+],
+[
+"She isn't a nurse, and she doesn't need to be.",
+0.2,
+1.0,
+0.0
+],
+[
+"She's already dialling, and two other people are kneeling beside the man.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave was right about one thing.",
+0.2,
+0.9,
+0.0
+],
+[
+"In a crowd, everybody waits for somebody else.",
+0.2,
+0.9,
+0.0
+],
+[
+"So tell them who.",
+0,
+0.9,
+0.0
+]
+]

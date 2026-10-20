@@ -1,0 +1,896 @@
+[
+[
+"Right now, you're standing on a planet",
+0.2,
+1.0,
+0.0
+],
+[
+"that moves about thirty kilometres every second.",
+0.7,
+1.0,
+0.0
+],
+[
+"You have never seen it. You have seen a floor.",
+0.7,
+1.0,
+0.0
+],
+[
+"Fewer than eight hundred people have gone high enough to look back at it.",
+0.2,
+1.0,
+0.0
+],
+[
+"And something keeps happening to them.",
+0.2,
+1.0,
+0.0
+],
+[
+"They come home different.",
+0.7,
+1.0,
+0.0
+],
+[
+"It even has a name. The Overview Effect.",
+0.2,
+1.0,
+0.0
+],
+[
+"So what do they see up there that changes people?",
+0.7,
+1.0,
+0.0
+],
+[
+"This is Dave, and Dave would like to come home different.",
+0.2,
+1.0,
+0.0
+],
+[
+"He has started saving.",
+0.7,
+1.05,
+-1.0
+],
+[
+"A seat on a suborbital spaceplane has sold for four hundred and fifty thousand dollars.",
+0.2,
+1.0,
+0.0
+],
+[
+"And the company's sales pitch promises",
+0.2,
+1.0,
+0.0
+],
+[
+"the perspective that can only come from seeing our beautiful planet from space.",
+0.7,
+0.95,
+2.0
+],
+[
+"Dave saves two hundred dollars a month.",
+0.2,
+1.0,
+0.0
+],
+[
+"At that rate, he lifts off in about a hundred and eighty-seven years.",
+0.7,
+1.0,
+0.0
+],
+[
+"So does Dave really need the ticket?",
+0.7,
+1.0,
+0.0
+],
+[
+"To find out, we'll climb a ladder, from a plane window to six billion kilometres away.",
+0.2,
+1.0,
+0.0
+],
+[
+"On the way: a photo nobody scheduled, a camera pointed almost at the Sun,",
+0.2,
+1.0,
+0.0
+],
+[
+"and a ninety-year-old who found grief up there.",
+0.7,
+1.0,
+0.0
+],
+[
+"Let's start with the man who named it, and where he was sitting.",
+0.7,
+1.0,
+0.0
+],
+[
+"Years before his book, the writer Frank White was flying across America, looking out the window.",
+0.2,
+1.0,
+0.0
+],
+[
+"He pictured living in a space colony between the Earth and the Moon, and thought:",
+0.2,
+1.0,
+0.0
+],
+[
+"I would always have an overview of the Earth.",
+0.7,
+0.95,
+2.0
+],
+[
+"The most famous feeling in space",
+0.2,
+1.0,
+0.0
+],
+[
+"was first imagined from a plane seat.",
+0.7,
+1.0,
+0.0
+],
+[
+"In nineteen eighty-seven he published The Overview Effect, built on interviews with astronauts.",
+0.2,
+1.0,
+0.0
+],
+[
+"Again and again, they described a fragile planet with no borders.",
+0.7,
+1.0,
+0.0
+],
+[
+"Edgar Mitchell, who walked on the Moon, put it like this:",
+0.2,
+1.0,
+0.0
+],
+[
+"From out there on the moon, international politics looks so petty.",
+0.7,
+0.95,
+2.0
+],
+[
+"The rest involves dragging a politician a quarter of a million miles by the scruff of the neck,",
+0.2,
+1.0,
+0.0
+],
+[
+"plus a phrase we won't repeat.",
+0.7,
+1.0,
+0.0
+],
+[
+"So how high do you have to go before it starts?",
+0.7,
+1.0,
+0.0
+],
+[
+"Next rung up. Yuri Gagarin, the first human in orbit, nineteen sixty-one.",
+0.2,
+1.0,
+0.0
+],
+[
+"He saw a blue halo around the planet, fading through violet into black.",
+0.7,
+1.0,
+0.0
+],
+[
+"Afterwards, a state commission asked whether he could have taken pictures.",
+0.2,
+1.0,
+0.0
+],
+[
+"His answer: yes, if he'd had colour film.",
+0.7,
+1.0,
+0.0
+],
+[
+"I haven't been able to see those colors on Earth.",
+0.7,
+0.95,
+2.0
+],
+[
+"Hold on to the colour film. It matters seven years later.",
+0.7,
+1.0,
+0.0
+],
+[
+"Christmas Eve, nineteen sixty-eight. Apollo eight is the first crew to circle the Moon.",
+0.2,
+1.0,
+0.0
+],
+[
+"Their job is photographing the Moon, by the flight plan.",
+0.7,
+1.0,
+0.0
+],
+[
+"On the fourth orbit, as the ship rolls, Bill Anders looks out of his window.",
+0.2,
+1.0,
+0.0
+],
+[
+"Oh my God, look at that picture over there!",
+0.7,
+0.95,
+2.0
+],
+[
+"The Earth had already risen three times.",
+0.2,
+1.0,
+0.0
+],
+[
+"Nobody had seen it.",
+0.7,
+1.05,
+-1.0
+],
+[
+"His commander, Frank Borman, makes a joke:",
+0.2,
+1.0,
+0.0
+],
+[
+"Hey, don't take that, it's not scheduled.",
+0.7,
+0.95,
+-2.0
+],
+[
+"Anders grabs one shot in black and white, then turns to Jim Lovell.",
+0.2,
+1.0,
+0.0
+],
+[
+"Hand me a roll of color, quick, would you?",
+0.7,
+0.95,
+2.0
+],
+[
+"After a frantic hunt for the film, Anders says,",
+0.2,
+1.0,
+0.0
+],
+[
+"Well, I think we missed it.",
+0.2,
+0.95,
+2.0
+],
+[
+"Then Lovell spots the Earth in another window.",
+0.7,
+1.0,
+0.0
+],
+[
+"The colour shot became Earthrise. It's one of the most famous photographs of the century.",
+0.7,
+1.0,
+0.0
+],
+[
+"Gagarin never got his colour film.",
+0.2,
+1.0,
+0.0
+],
+[
+"Anders got his, just in time.",
+0.7,
+1.0,
+0.0
+],
+[
+"Years later, Anders put it simply:",
+0.2,
+1.0,
+0.0
+],
+[
+"the most important thing is that we discovered the Earth.",
+0.7,
+0.95,
+2.0
+],
+[
+"Four years after that, Apollo seventeen photographed the whole Earth, fully lit,",
+0.2,
+1.0,
+0.0
+],
+[
+"from about twenty-nine thousand kilometres away.",
+0.7,
+1.0,
+0.0
+],
+[
+"They called it the Blue Marble, probably one of the most shared photos ever taken.",
+0.2,
+1.0,
+0.0
+],
+[
+"It was taken upside down, with Antarctica at the top.",
+0.7,
+1.0,
+0.0
+],
+[
+"NASA rotated it before release, to match our maps.",
+0.2,
+1.0,
+0.0
+],
+[
+"Space doesn't have a top. Maps do.",
+0.7,
+1.0,
+0.0
+],
+[
+"In nineteen eighty-one, Carl Sagan asked for something stranger.",
+0.2,
+1.0,
+0.0
+],
+[
+"Turn Voyager around, and photograph the Earth from beyond the planets.",
+0.7,
+1.0,
+0.0
+],
+[
+"The team said no, for eight years and six requests.",
+0.2,
+1.0,
+0.0
+],
+[
+"Pointing the camera that close to the Sun could damage it.",
+0.7,
+1.0,
+0.0
+],
+[
+"On Valentine's Day, nineteen ninety, Voyager one looked back from six billion kilometres away.",
+0.7,
+1.0,
+0.0
+],
+[
+"The Earth came out as zero point one two of a pixel.",
+0.2,
+1.0,
+0.0
+],
+[
+"Home doesn't fill one dot.",
+0.7,
+1.0,
+0.0
+],
+[
+"The famous sunbeam it sits in",
+0.2,
+1.0,
+0.0
+],
+[
+"is just sunlight bouncing around inside the camera.",
+0.7,
+1.0,
+0.0
+],
+[
+"Thirty-four minutes later, Voyager switched off its cameras forever.",
+0.2,
+1.0,
+0.0
+],
+[
+"One of the last things it ever saw was us.",
+0.7,
+1.0,
+0.0
+],
+[
+"Carl Sagan looked at that dot and wrote:",
+0.2,
+1.0,
+0.0
+],
+[
+"That's here. That's home. That's us.",
+0.7,
+0.95,
+2.0
+],
+[
+"At the Jet Propulsion Laboratory, visitors kept touching the printed dot,",
+0.2,
+1.0,
+0.0
+],
+[
+"until they wore it away, more than once.",
+0.7,
+1.0,
+0.0
+],
+[
+"So why does a dot do that to people?",
+0.7,
+1.0,
+0.0
+],
+[
+"In twenty sixteen, psychologist David Yaden's team went through astronauts' accounts of seeing the Earth.",
+0.2,
+1.0,
+0.0
+],
+[
+"The same things kept coming up: beauty, overwhelming emotion,",
+0.2,
+1.0,
+0.0
+],
+[
+"and feeling connected to everyone down there.",
+0.7,
+1.0,
+0.0
+],
+[
+"They called it a state of awe,",
+0.2,
+1.0,
+0.0
+],
+[
+"caused by a particularly striking visual stimulus.",
+0.2,
+1.0,
+0.0
+],
+[
+"That stimulus is the planet you live on.",
+0.7,
+1.0,
+0.0
+],
+[
+"In two thousand three, Dacher Keltner and Jonathan Haidt gave awe two ingredients.",
+0.2,
+1.0,
+0.0
+],
+[
+"Something vast. And a mind that has to stretch to take it in.",
+0.7,
+1.0,
+0.0
+],
+[
+"From orbit, you get both at once.",
+0.2,
+1.0,
+0.0
+],
+[
+"Astronaut Ron Garan saw how thin our air is:",
+0.2,
+1.0,
+0.0
+],
+[
+"that paper-thin layer keeps every living thing on our planet alive.",
+0.7,
+0.95,
+2.0
+],
+[
+"And awe changes how people act, even on the ground.",
+0.7,
+1.0,
+0.0
+],
+[
+"In twenty fifteen, Paul Piff and Dacher Keltner's team took students to a grove of eucalyptus trees over sixty metres tall.",
+0.2,
+1.0,
+0.0
+],
+[
+"One minute looking up. Then a researcher staged an accident with a box of pens.",
+0.7,
+1.0,
+0.0
+],
+[
+"The tree group picked up more pens",
+0.2,
+1.0,
+0.0
+],
+[
+"than students who'd stared at a tall building.",
+0.2,
+1.0,
+0.0
+],
+[
+"They also felt they deserved to be paid about two dollars less.",
+0.7,
+1.0,
+0.0
+],
+[
+"One minute of trees.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave is keeping his jar away from trees.",
+0.7,
+1.0,
+0.0
+],
+[
+"Psychologists call it the small self. You feel smaller. And you get kinder.",
+0.7,
+1.0,
+0.0
+],
+[
+"So the plan is clear. Go up, look down, come home kinder.",
+0.7,
+1.0,
+0.0
+],
+[
+"Now, back down the ladder, to the rung Dave is saving for.",
+0.7,
+1.0,
+0.0
+],
+[
+"In October twenty twenty-one, William Shatner, aged ninety,",
+0.2,
+1.0,
+0.0
+],
+[
+"flew to space on a Blue Origin rocket.",
+0.7,
+1.0,
+0.0
+],
+[
+"He had played a starship captain for decades,",
+0.2,
+1.0,
+0.0
+],
+[
+"and he flew as a guest.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave writes this down.",
+0.7,
+1.05,
+-1.0
+],
+[
+"The flight lasted about ten minutes.",
+0.2,
+1.0,
+0.0
+],
+[
+"He climbed out in tears and said,",
+0.2,
+1.0,
+0.0
+],
+[
+"I hope I never recover from this.",
+0.7,
+0.95,
+2.0
+],
+[
+"A year later, he wrote about it. It wasn't the celebration he'd expected.",
+0.2,
+1.0,
+0.0
+],
+[
+"It was among the strongest feelings of grief I have ever encountered.",
+0.7,
+0.95,
+2.0
+],
+[
+"Above him, a cold black emptiness.",
+0.2,
+1.0,
+0.0
+],
+[
+"Below him, the thin blue blanket that everything lives under.",
+0.7,
+1.0,
+0.0
+],
+[
+"He later learned it had a name, the Overview Effect.",
+0.2,
+1.0,
+0.0
+],
+[
+"For him, it came as grief first, and hope later.",
+0.7,
+1.0,
+0.0
+],
+[
+"It isn't new, either. In nineteen fifty-seven, researchers asked a hundred and thirty-seven Navy and Marine pilots about flying high.",
+0.2,
+1.0,
+0.0
+],
+[
+"About a third had felt strangely cut off from the Earth. They called it break-off.",
+0.7,
+1.0,
+0.0
+],
+[
+"Historian Jordan Bimm adds a catch. People now go up expecting it.",
+0.2,
+1.0,
+0.0
+],
+[
+"Astronaut Loren Acton told Frank White,",
+0.2,
+1.0,
+0.0
+],
+[
+"I went up expecting that experience, and I had it.",
+0.7,
+0.95,
+2.0
+],
+[
+"So the ticket might not even deliver.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave stares at his jar.",
+0.7,
+1.0,
+0.0
+],
+[
+"But here's what isn't in the sales pitch.",
+0.7,
+1.0,
+0.0
+],
+[
+"In twenty twenty, Virginia Sturm and Dacher Keltner's team asked sixty older adults to take a fifteen-minute walk, once a week, for eight weeks.",
+0.7,
+1.0,
+0.0
+],
+[
+"Half were told to look for awe. Somewhere vast. Somewhere new. With a sense of wonder.",
+0.2,
+1.0,
+0.0
+],
+[
+"And on every walk, everyone took a selfie.",
+0.7,
+1.0,
+0.0
+],
+[
+"Over the weeks, the awe walkers took up less and less of their own selfies.",
+0.2,
+1.0,
+0.0
+],
+[
+"And their smiles got bigger.",
+0.7,
+1.0,
+0.0
+],
+[
+"Their everyday distress fell more than the other walkers'.",
+0.2,
+1.0,
+0.0
+],
+[
+"It's one small study. But nobody needed a rocket.",
+0.7,
+1.0,
+0.0
+],
+[
+"Remember Frank White in his plane seat?",
+0.2,
+1.0,
+0.0
+],
+[
+"He called what he felt a mild overview effect.",
+0.7,
+1.0,
+0.0
+],
+[
+"Even Ron Garan, who has been up there, says",
+0.2,
+1.0,
+0.0
+],
+[
+"you don't have to be in orbit to have the orbital perspective.",
+0.7,
+0.95,
+2.0
+],
+[
+"So the sales pitch was right about the view.",
+0.2,
+1.0,
+0.0
+],
+[
+"It was just wrong about the word only.",
+0.7,
+1.0,
+0.0
+],
+[
+"So tonight, Dave takes a little money out of the space fund.",
+0.2,
+1.0,
+0.0
+],
+[
+"Bus fare. And a flask of tea.",
+0.7,
+1.0,
+0.0
+],
+[
+"He rides to the edge of town,",
+0.2,
+1.0,
+0.0
+],
+[
+"and climbs the hill nobody bothers with.",
+0.7,
+1.0,
+0.0
+],
+[
+"Below him, the town is a scatter of orange lights.",
+0.2,
+1.0,
+0.0
+],
+[
+"Above him, more stars than he's seen in years.",
+0.7,
+1.0,
+0.0
+],
+[
+"Out there, Voyager one is still flying, about a light-day from home.",
+0.2,
+1.0,
+0.0
+],
+[
+"And the dot in its photo is the hill under Dave's feet.",
+0.7,
+1.0,
+0.0
+],
+[
+"New bottom rung on the ladder: one hill, two hundred metres high.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave takes a selfie. He's tiny in it, and smiling.",
+0.7,
+1.0,
+0.0
+],
+[
+"Right now, you're standing on a planet",
+0.2,
+0.9,
+0.0
+],
+[
+"that moves about thirty kilometres every second.",
+0.7,
+0.9,
+0.0
+],
+[
+"You've seen the floor.",
+0.2,
+0.9,
+0.0
+],
+[
+"Tonight, go and look at the planet.",
+0,
+0.9,
+0.0
+]
+]

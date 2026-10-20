@@ -42,3 +42,5 @@ Honest answer: how many times did you check your phone while watching this? (Min
 ## Thumbnails
 - `thumbnails/a.png` (dark) — "CAN'T FOCUS." (FOCUS red) + tired hero at a desk over a book, phone buzzing with 4 red dots → pair with title #1 (the pick) or #4 (no word overlap; avoid #2/#5 which say "focus").
 - `thumbnails/b.png` (dark) — "47 SECONDS." (47 red) + shocked hero holding a phone, red 0:47 timer → pair with title #2, #3 or #4 (not #1, which repeats "47 seconds").
+
+thumbnail C: TRAINED?

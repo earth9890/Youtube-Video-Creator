@@ -1,0 +1,10 @@
+built /Users/harish/videos/black-hole-life/episodes/28-ancient-fun/index.html  total=516.63s theme=light audio=assets/mix.wav
+  0 error(s), 2 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 2 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   298.6 MB · 8m 36.6s video · rendered in 27m 15.3s
+h264,1920,1080,516.633333
+aac,516.633000

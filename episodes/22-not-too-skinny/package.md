@@ -38,3 +38,4 @@ you are not too skinny, too skinny, hardgainer, skinny arms, body image, spotlig
 
 ## Pinned comment
 Who or what was your "yardstick" growing up: a toy, a movie star, an older brother?
+thumbnail C: TOYS GREW?

@@ -41,3 +41,5 @@ you are not weak, willpower, self control, how to stop snacking at night, ego de
 
 ## Pinned comment
 What's your biscuit tin? The one thing you keep "fighting" every night, and where could you move it tonight?
+
+thumbnail C: LOST AGAIN? (thumbnails/c.png, clickbait scene: terrified Dave in boxing gloves vs the smug champion biscuit tin at 10 pm)

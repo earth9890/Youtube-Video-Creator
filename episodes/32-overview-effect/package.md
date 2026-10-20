@@ -1,0 +1,62 @@
+# Package: 32-overview-effect
+
+## Title options
+1. The Overview Effect  ← **pick** (19 chars; the named-effect format, unexplained; pairs with thumbnail A "ONLY FROM SPACE?")
+2. Why Astronauts Come Back Different
+3. What Seeing Earth From Space Does to You
+4. Why Seeing Earth From Space Changes People
+5. Do You Need Space to Feel the Overview Effect?
+
+Thumbnail: `thumbnails/a.png` ("ONLY FROM SPACE?" + big uneasy Dave holding his SPACE FUND jar, side-eyeing a glowing Earth that wears a red $450,000 price tag, on space black). Test & Compare partner: `thumbnails/b.png` (pure black, one huge stick-figure eye whose pupil is the Earth, crossed by a faint sunbeam, no words).
+
+## Description
+Fewer than 800 people have ever looked back at the Earth from space, and something keeps happening to them: they come home different.
+
+Dave wants that feeling. A seat on a suborbital spaceplane has sold for $450,000, the sales pitch says the view can "only" come from space, and at $200 a month Dave lifts off in about 187 years. So we climb a ladder: from Frank White's plane window to Gagarin's blue halo, the Earthrise photo nobody scheduled, the Blue Marble that was taken upside down and Voyager's pale blue dot six billion kilometres away. Then we find out what awe actually does to people, why William Shatner found grief up there, and what sixty older adults found on a fifteen-minute walk.
+
+⏱ Chapters
+0:00 You have never seen your planet
+1:07 The man in the window seat
+1:55 The photo nobody scheduled
+3:40 Six billion kilometres
+4:34 Why a dot changes people
+5:54 The part nobody talks about
+7:09 The cheap seat
+7:59 The hill
+
+Sources:
+- NASA NSSDC, Earth Fact Sheet: mean orbital speed 29.78 km/s
+- Jonathan McDowell's space traveller list (via SpaceOdysseyHub, Oct 2026): 787 people above 80 km, 746 above 100 km; Wikipedia, "Astronaut"
+- Virgin Galactic press release (15 Feb 2022): reservations at $450,000, "the perspective that can only come from seeing our beautiful planet from space"
+- NASA, Houston We Have a Podcast ep. 107, "The Overview Effect" (30 Aug 2019), with Frank White; White, The Overview Effect: Space Exploration and Human Evolution (Houghton Mifflin, 1987)
+- People (8 Apr 1974), "Edgar Mitchell's Strange Voyage"
+- Wilson Center Digital Archive: Yuri Gagarin's report and his answers to the State Commission (13 Apr 1961); FAI, history of manned spaceflight
+- NASA Scientific Visualization Studio, "Earthrise: The 45th Anniversary" (Andrew Chaikin, onboard tape transcript); Chaikin, Smithsonian Magazine (2018); NASA Science, "Remembering Bill Anders"
+- NASA Science, "The Blue Marble" (AS17-148-22727, about 29,400 km); Wikimedia Commons, original south-up orientation
+- NASA Science (12 Feb 2020), "10 Things You Might Not Know About Voyager's Famous 'Pale Blue Dot' Photo"; NASA, "Voyager 1's Pale Blue Dot"; NASA SVS, "Revisiting the Pale Blue Dot at 30" (0.12 pixels); Carl Sagan, Pale Blue Dot (1994)
+- William Poundstone, "'Pale Blue Dot' - Carl Sagan (1994)", Library of Congress National Recording Registry essay (the JPL print worn away by visitors)
+- Yaden, Iwry, Slack et al. (2016), Psychology of Consciousness 3(1), "The overview effect: Awe and self-transcendent experience in space flight"
+- Keltner & Haidt (2003), Cognition and Emotion 17(2), "Approaching awe, a moral, spiritual, and aesthetic emotion"
+- Ron Garan (2022), Big Think, "I went to space and discovered an enormous lie"
+- Piff, Dietze, Feinberg, Stancato & Keltner (2015), Journal of Personality and Social Psychology 108(6), "Awe, the small self, and prosocial behavior" (Study 5: 7.70 vs 7.02 pens picked up; $3.57 vs $5.74 deserved pay)
+- SpaceNews and CBS News (13 Oct 2021) on Blue Origin's NS-18 flight; William Shatner, Boldly Go (2022), excerpt in Variety (6 Oct 2022)
+- Jordan Bimm (2014), Quest 21(1), "Rethinking the Overview Effect" (Clark & Graybiel 1957: 48 of 137 Navy and Marine pilots reported break-off; Loren Acton's words to Frank White)
+- Sturm, Datta, Roy et al. (2022, online 2020), Emotion 22(5), "Big Smile, Small Self: Awe Walks Promote Prosocial Positive Emotions in Older Adults"
+- NASA Science (20 Aug 2026), "Voyager 1: What Is a Light-Day"
+
+Tonight, go and look at the planet.
+
+New videos every week: the strange science behind the things you worry about.
+
+#overvieweffect #space #psychology #science
+
+## Tags
+overview effect, what is the overview effect, frank white, seeing earth from space, why astronauts come back different, earthrise, apollo 8, blue marble, pale blue dot, carl sagan, voyager 1, yuri gagarin, william shatner space, space tourism, psychology of awe, awe walks, small self, edgar mitchell, ron garan, space science, psychology explained, stick figure animation, black hole life
+
+## Pinned comment
+What's the best view you've ever had without leaving the ground? A hill, a rooftop, a plane window? Tell us where, so someone else can go and look.
+
+## Published
+https://youtu.be/C1vv8SBSMoU (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p, pinned comment)
+
+thumbnail C: GRIEF?

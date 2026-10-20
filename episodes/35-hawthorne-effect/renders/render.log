@@ -1,0 +1,10 @@
+built /Users/harish/videos/black-hole-life/episodes/35-hawthorne-effect/index.html  total=499.4s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 4 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   311.0 MB · 8m 19.4s video · rendered in 25m 12.0s
+h264,1920,1080,499.400000
+aac,499.400000

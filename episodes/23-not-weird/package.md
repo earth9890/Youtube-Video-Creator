@@ -39,3 +39,5 @@ you are not weird, am i weird, nobody is normal, pluralistic ignorance, flaw of 
 
 ## Pinned comment
 What's one thing you were sure only you found weird, until someone else admitted it too?
+
+thumbnail C: JUST ME? (thumbnails/c.png, clickbait scene: nervous Dave at a party; laughing Kevin secretly panicking in a thought bubble)

@@ -8,6 +8,25 @@
 - Every thumbnail was measured (OCR text, colours, clutter), and 192 were labelled by hand (12 top, 6 bottom and 6 latest per channel).
 - Full reports, recipes and data live in `research/thumbnails/` (see the end of this file).
 
+## ★ Owner default from 2026-10-20: clickbait scene mode
+The owner asked for clickbait thumbnails on every Black Hole Life video, modelled on Zenn's "2 SLEEPS?" (8M views) and our
+episode 28 "NO WIFI?" (`episodes/28-ancient-fun/thumbnails/thumb-c.js`, the reference build). Make thumbnail **A in this mode**:
+- **A full scene, not a sticker on a flat field.** Warm mid-tone setting from the video (cave, bedroom at night, street,
+  lab, space), a strong light source (fire, lamp, screen, moon) with a soft glow, and ground. Black ink lines must read on it:
+  never put ink figures on near-black; use mid-tones (e.g. cave `#7a644d`) and keep night as a window/cave-mouth/sky patch.
+- **One huge, extreme emotion in front:** a big-head figure (head ≈ 35–45 % of frame height, s ≈ 4.2 at gy ≈ 1900) laughing,
+  shocked or terrified, eyes on the viewer or wide sideways. Dave for our stories; period people (tunics, helmets) for history.
+- **Action:** something flying, glowing, breaking or about to happen (knucklebones mid-air, sparks, a falling object, a timer).
+- **1–2 small figures behind** doing the odd thing (max 3 people total), plus **the one wrongness** from §1, big.
+- **Text: 1–3 words, a question or stakes, ≤ 10 characters if possible,** top centre, size 190–220, yellow `#FEFE06` with a
+  black halo (`haloW: 0.09`): "NO WIFI?", "2 SLEEPS?", "NOBODY?", "11 DAYS?". Never a sentence, never the title.
+- **Clickbait ≠ lying.** The hook must be something the video really shows or says (§1: "the video's hook made visible").
+  Never: sexual or romantic content involving relatives or minors, nudity, gore, fake celebrity likenesses, fake YouTube UI,
+  or a claim the video doesn't make. YouTube penalises misleading and sexualised thumbnails (age-restriction, limited ads,
+  strikes); one strike hurts the whole channel. Romantic topics: a cartoon cheek kiss or hearts at most.
+- Keep the old "big uneasy Dave + object" tile as **B** for Test & Compare.
+- Swap on a published video: Studio → video → Details → Thumbnail (`input#file-loader`) → Save. Keep the old a.png.
+
 Tools:
 - `scripts/thumb_check.py`: lint plus a feed grid.
 - `scripts/research/fetch_thumbs.sh`: redo the study or add a channel.

@@ -40,3 +40,4 @@ you are not dumb, how to study, why do i forget what i study, active recall, tes
 
 ## Pinned comment
 What's one thing you thought you were "dumb" at, until you practised it?
+thumbnail C: BRAINS GROW?

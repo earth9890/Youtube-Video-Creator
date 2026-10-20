@@ -37,3 +37,4 @@ What's the one thing you've been putting off this week — and what's the 2-minu
 ## Thumbnails
 - `thumbnails/a.png` (dark) — "I'LL START / TOMORROW" (TOMORROW red), hero hunched over the desk at 11:58, tired face, laptop. Pairs with title #3 (thumbnail = the excuse you tell yourself tonight; title = why it happens + the 2-minute fix).
 - `thumbnails/b.png` (dark) — "STILL NOT STARTED." (STILL red), hero flat on the floor among scattered pages, phone glowing by the hand. Pairs with title #4 "You Don't Need to Feel Ready to Start" (thumbnail = the stuck moment; title = the permission to begin anyway).
+thumbnail C: NOT LAZY?

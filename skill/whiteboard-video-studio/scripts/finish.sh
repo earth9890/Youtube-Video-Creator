@@ -1,5 +1,5 @@
 #!/bin/sh
-# Finish one episode: mix music under the voice (or voice only), rebuild, check, render 4K.
+# Finish one episode: mix music under the voice (or voice only), rebuild, check, render 4K (RES=1080 for 1080p).
 # usage: finish.sh EPISODE_DIR BED.wav|none [OUT_NAME]     none = voice only at -15 LUFS (story explainers)
 # Renders are sequential on purpose (Chrome + encoder are CPU-heavy); run this per episode from a queue.
 set -e
@@ -15,5 +15,7 @@ fi
 python3 "$S/build.py" .
 npx hyperframes check 2>&1 | grep -E "error\(s\)|passed|failed" | head -6
 # HF_CAPTURE_PARALLEL_STREAM: stream frames to the encoder (multi-worker disk capture of an 8-min 4K video needs ~60 GB)
-HF_CAPTURE_PARALLEL_STREAM=true npx hyperframes render --quality delivery --resolution 4k --output "$OUT" 2>&1 | grep -E "Render complete|MB ·|rror" | head -4
+# RES=1080 renders at the composition size (1920x1080, ~3x faster: long 8-10 min videos); default 4k
+RESFLAG="--resolution 4k"; [ "${RES:-4k}" = 1080 ] && RESFLAG=""
+HF_CAPTURE_PARALLEL_STREAM=true npx hyperframes render --quality delivery $RESFLAG --output "$OUT" 2>&1 | grep -E "Render complete|MB ·|rror" | head -4
 ffprobe -v error -show_entries stream=codec_name,width,height,duration -of csv=p=0 "$OUT"

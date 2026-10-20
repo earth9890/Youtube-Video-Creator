@@ -44,3 +44,4 @@ you are not alone, loneliness, why does everyone have a better social life, feel
 
 ## Pinned comment
 Who's one person you could text tonight, just to ask "what are you up to?"
+thumbnail C: ONLY ME?

@@ -41,3 +41,4 @@ What time does the screen usually win for you? Be honest — no judgment here.
 ## Thumbnails
 - `thumbnails/a.png` (dark) — "2:00 AM. / AGAIN." + hero s1.7 lying in a big bed, phone glowing over his tired face, tiny moon. Pairs with title #1 (no shared words; #3/#4/#5 repeat "2 AM", #2 repeats "again").
 - `thumbnails/b.png` (dark) — "CAN'T / STOP." (STOP red) + hero s1.6 hunched and crying, chained by the wrist to a glowing phone. Pairs with title #1 or #5 (#3 and #4 repeat "stop").
+thumbnail C: 2 AM AGAIN?

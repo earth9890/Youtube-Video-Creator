@@ -40,3 +40,4 @@ you are not too dark, skin colour, dark skin photos, shirley card, kodak film hi
 
 ## Pinned comment
 Have you ever avoided a photo because of how the camera made you look? Try tapping your own face before the shot next time, and tell us what changed.
+thumbnail C: WHO'S SHIRLEY?

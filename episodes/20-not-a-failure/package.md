@@ -38,3 +38,4 @@ you are not a failure, rejection, how to deal with rejection, fear of failure, n
 
 ## Pinned comment
 What's one "no" you got that you now think was a near miss?
+thumbnail C: LOSERS WIN?

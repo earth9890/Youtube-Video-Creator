@@ -12,3 +12,9 @@ assets/*.log
 **/assets/mix.wav
 **/assets/voice.wav
 **/thumbnails/*_grid.jpg
+
+# long-form batch: pre-slowdown voice copies and VoiceStudio clip caches are regenerable
+**/assets/voice-1x.wav
+**/assets/*.wav
+**/thumbnails/*_glance.png
+**/thumbnails/*.html

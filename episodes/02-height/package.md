@@ -41,3 +41,4 @@ Where do you stand in group photos — front, middle, or always at the back?
 ## Thumbnails
 - `thumbnails/a.png` (dark) — "TOO SHORT?" (SHORT in red; hero in tears between two towering grey figures, their eye-line over his head = the pain moment) → pairs with title #4 "You Can't Change Your Height. Change This Instead." (promise)
 - `thumbnails/b.png` (dark) — "5 CM TALLER." (5 CM in green; the same man twice, STUDENT flat vs PROFESSOR grown and happy, ruler between = the stark fact) → pairs with title #2 "If You Feel Small in Rooms, Watch This (1968 Study)" (promise)
+thumbnail C: GREW 5 CM?

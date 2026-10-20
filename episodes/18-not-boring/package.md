@@ -40,3 +40,4 @@ you are not boring, liking gap, am i boring, overthinking conversations, people 
 
 ## Pinned comment
 Be honest: how many times did you replay your last conversation?
+thumbnail C: THE PRINTER?
