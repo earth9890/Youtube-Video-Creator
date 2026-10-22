@@ -1,20 +1,21 @@
-# Long-form build brief (episodes 28–37)
+# Long-form build brief (Black Hole Life long-form episodes)
 
 You build the visuals for one 8–10 min Black Hole Life episode. The script is final and already voiced
 (`script.md`, `script.json` = one entry per clip, `assets/voice.wav`, `assets/clipt.json` = clip start/end times).
 Never edit script.md/script.json/assets/voice.wav, never run voice.py. Do NOT render 4K or final (the orchestrator runs
 finish.sh), do NOT upload, do NOT git add/commit/push. Use `trash`, never `rm`.
 
-## Read first
-Invoke the Skill tool `whiteboard-video-studio`. Read engine-api, craft-playbook §C/§E/§G, style-guide (the still look:
-kit.js, scene_lint), the gallery scenes.js, `references/story-explainer.md` §1 and §3+ (long-form visuals and
-packaging), `references/thumbnail-designer.md`, `references/youtube-package.md`. Study finished episodes for look and
-quality: `episodes/24-not-too-old`, `episodes/27-not-behind` (scenes.js, thumbnails/*.js, package.md) and the 8-min example
-`examples/toothache-story/`. Scaffold hyperframes.json, meta.json, package.json by copying from 27-not-behind and editing
-ids/names.
+## Read first (lean: keep your context for the scenes)
+Invoke the Skill tool `whiteboard-video-studio`, then read only: `references/asset-library.md` (how to find and place
+assets), `references/engine-api.md` (scene/timing API), `references/style-guide.md` §1–§4 (still-look tokens), the ★
+clickbait section at the top of `references/thumbnail-designer.md`, and `references/youtube-package.md`. For helper style,
+read the first ~80 lines of `episodes/38-full-brain/scenes.js` and its `package.md`. **Do not read** `library/*.js`,
+`scripts/engine2.js`, `scripts/kit.js`, gallery or example scenes, or any other episode's whole `scenes.js` (each is
+100+ KB): use `lib.py find/show` for anything you need. Scaffold hyperframes.json, meta.json, package.json by copying
+from `episodes/38-full-brain` and editing ids/names.
 
 ## Visual rules
-- v3 look with **0.6 s crossfades, no hard cuts** (owner rejected flicker). Scenes 4–8 s; keep motion alive inside a scene
+- Still look (`// look: still` + `// @library auto`) with **0.6 s crossfades, no hard cuts** (owner rejected flicker). Scenes 4–8 s; keep motion alive inside a scene
   (props pop in on the spoken word with `W(clip, word)`, camera drift, count-ups) so a 9-min video has ~70–110 scenes.
 - One image per clause: whatever the narrator names appears when it is said. Numbers on screen exactly as sources.md.
 - Dave is the recurring stick-figure everyman (same look as earlier episodes). Real people: no likenesses; a labelled
@@ -41,3 +42,10 @@ Python tools that need packages: `~/.local/bin/uv run --offline --with numpy --w
 
 When done, create an empty file `READY` in the episode folder. Final reply: scene count, check/lint results, the contact
 sheets you reviewed, thumbnail pick, title pick, and anything the owner should look at.
+
+## Asset library lookup (added 2026-10-22)
+Before drawing anything new, search the library (1,500+ assets: people duos/dancing/kiss, vehicles with drivers, activities and jobs,
+props, rooms, the ep38/ep40 cast and sets): `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` then `show <name>`.
+Never read `library/*.js`. Put `// @library auto` as the 2nd line of scenes.js, call `L.put(S, name, x, y, {s, t: W(c,w)})`, and run
+`lib.py check scenes.js` before building. Something reusable you had to draw yourself goes into `library/episode-kit.js`-style files
+via `L.reg` (contract: `library/AGENTS.md`), not into one episode.

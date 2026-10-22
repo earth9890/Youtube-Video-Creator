@@ -1,0 +1,48 @@
+◆  Checking 39-protein-300g
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+Lint
+  ⚠ composition_file_too_large: This HTML composition file has 2580 lines. Smaller sub-compositions are easier to read, iterate on, and diff.
+    /Users/harish/videos/black-hole-life/episodes/39-protein-300g/index.html [data-composition-id] t=0s
+    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.
+  0 error(s), 1 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ⚠ t=27.574, 82.722, 137.869, 193.017, 248.165, 303.313, 358.461, 413.608, 468.756s container_overflow #board inside #stage overflowed left 1047px, right 629px, top 546.5px, bottom 667.5px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=41.592s content_overlap #board > g:nth-of-type(11) > g:nth-of-type(1) > g:nth-of-type(3) > g:nth-of-type(3) > text:nth-of-type(1) inside #board > g:nth-of-type(12) > g:nth-of-type(1) > g:nth-of-type(3) > g:nth-of-type(1) > text:nth-of-type(1) "of 300 g" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.
+  ℹ t=80.411s content_overlap #board > g:nth-of-type(19) > g:nth-of-type(1) > g:nth-of-type(4) > g:nth-of-type(2) > text:nth-of-type(1) inside #board > g:nth-of-type(20) > g:nth-of-type(1) > g:nth-of-type(5) > text:nth-of-type(1) "2" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.
+  0 error(s), 1 warning(s), 2 info(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 26/26 text checks pass WCAG AA
+
+Craft
+  ⚠ line_unread: "dozen" (1 word) is on screen 0.36 s (±0.03 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.
+    index.html #caps > div:nth-of-type(3) > span:nth-of-type(4) t=3.988s
+  ⚠ line_unread: "going" (1 word) is on screen 0.31 s (±0.03 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.
+    index.html #caps > div:nth-of-type(5) > span:nth-of-type(4) t=7.457s
+  ⚠ line_unread: "grams" (1 word) is on screen 0.31 s (±0.03 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.
+    index.html #caps > div:nth-of-type(6) > span:nth-of-type(4) t=9.115s
+  ⚠ line_unread: "he" (1 word) is on screen 0.36 s (±0.03 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.
+    index.html #caps > div:nth-of-type(7) > span:nth-of-type(4) t=10.772s
+  ⚠ line_unread: "protein," (1 word) is on screen 0.21 s (±0.03 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.
+    index.html #caps > div:nth-of-type(9) > span:nth-of-type(5) t=14.863s
+  ⚠ line_unread: "EGG NUMBER 9" (3 words) is on screen 0.83 s (±0.41 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.
+    index.html #board > g:nth-of-type(16) > g:nth-of-type(1) > g:nth-of-type(5) > g:nth-of-type(1) > text:nth-of-type(1) t=67.116s
+  0 error(s), 6 warning(s), 0 info(s)
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed
+Report: /Users/harish/videos/black-hole-life/episodes/39-protein-300g/.hyperframes/artifacts/checks/06df192b-f6ce-4c3c-bfa4-ee46716fe0f1.json
+Revision: none (unversioned)

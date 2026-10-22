@@ -53,6 +53,24 @@ else:
 
 # `// @include path/to/cast.js` (relative to the scenes file) pastes a shared file in, e.g. a channel's recurring characters
 scenes = re.sub(r'^// @include (\S+)\s*$', lambda m: (src_dir / m[1]).read_text(), scenes, flags=re.M)
+# `// @library` pastes the asset library (library/*.js, see references/asset-library.md); `// @library props-home,sky` = core + people + stylelab + those
+# `// @library auto` = only the files this scene's asset names need (scripts/lib.py + library/catalog.json); `auto,sky` also forces sky
+LIB = SKILL / 'library'
+def _lib(m):
+    rest = [p.stem for p in sorted(LIB.glob('*.js')) if p.stem not in ('core', 'people', 'stylelab', 'build-catalog', 'manifest')]
+    names = ['core', 'people', 'stylelab'] + ([n.strip() for n in m[1].split(',')] if m[1] else rest)
+    if 'auto' in names:
+        sys.path.insert(0, str(HERE))
+        import lib
+        forced = [n for n in names[3:] if n != 'auto']
+        names, unknown = lib.bundle(lib.load(), scenes, forced)
+        if unknown:
+            sys.exit(f'@library auto: no library file {", ".join(unknown)}')
+        full = sum((LIB / f'{n}.js').stat().st_size for n in ['core', 'people', 'stylelab'] + rest)
+        used = sum((LIB / f'{n}.js').stat().st_size for n in names)
+        print(f'@library auto: {" ".join(names)} = {used // 1024} KB (saved {(full - used) // 1024} KB of {full // 1024} KB)')
+    return '\n'.join((LIB / f'{n}.js').read_text() for n in dict.fromkeys(names))
+scenes = re.sub(r'^// @library(?: (\S+))?\s*$', _lib, scenes, flags=re.M)
 total = timing['total']
 dark = scenes.lstrip().startswith('// theme: dark')
 story = '// look: story' in scenes[:300]  # long-form explainer: v3 drawing + hard cuts, no captions

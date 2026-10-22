@@ -17,5 +17,7 @@ npx hyperframes check 2>&1 | grep -E "error\(s\)|passed|failed" | head -6
 # HF_CAPTURE_PARALLEL_STREAM: stream frames to the encoder (multi-worker disk capture of an 8-min 4K video needs ~60 GB)
 # RES=1080 renders at the composition size (1920x1080, ~3x faster: long 8-10 min videos); default 4k
 RESFLAG="--resolution 4k"; [ "${RES:-4k}" = 1080 ] && RESFLAG=""
-HF_CAPTURE_PARALLEL_STREAM=true npx hyperframes render --quality delivery $RESFLAG --output "$OUT" 2>&1 | grep -E "Render complete|MB ·|rror" | head -4
+# fast capture (drawElementImage, macOS default) dropped the whole picture on some frames under load (eps 38/39/42, 2026-10-22): use screenshot capture
+HF_CAPTURE_PARALLEL_STREAM=true PRODUCER_EXPERIMENTAL_FAST_CAPTURE=false npx hyperframes render --quality delivery --experimental-fast-capture=false $RESFLAG --output "$OUT" 2>&1 | grep -E "Render complete|MB ·|rror" | head -4
 ffprobe -v error -show_entries stream=codec_name,width,height,duration -of csv=p=0 "$OUT"
+python3 "$S/blank_scan.py" "$OUT" || echo "WARNING: blank frames (renderer dropped the picture, usually under heavy load): re-render this episode"

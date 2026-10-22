@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asset Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Fredoka:wght@600&family=Baloo+2:wght@600&family=Comic+Neue:wght@700&family=Gaegu:wght@700&family=Patrick+Hand&family=Chewy&family=Nunito:wght@700&display=swap" rel="stylesheet">
+<style>
+  @font-face { font-family: "Mali SemiBold"; src: url("../brand/Mali-SemiBold.ttf") format("truetype"); }
+  @font-face { font-family: "PatrickHand"; src: url("../brand/PatrickHand.ttf") format("truetype"); }
+  :root { --bg: #f6f3ec; --card: #ffffff; --ink: #1d1b1f; --muted: #6b6670; --line: #e4ded2; --accent: #2f6fd6; --tile: #fbf8f1; }
+  :root[data-bg="dark"] { --bg: #17161a; --card: #222126; --ink: #f1eee8; --muted: #a29da8; --line: #34323a; --accent: #7fa8f0; --tile: #2a2930; }
+  :root[data-bg="night"] { --bg: #0f1730; --card: #18223f; --ink: #eef2ff; --muted: #9aa6c8; --line: #27335a; --accent: #ffcf33; --tile: #1c2a52; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 "Nunito", system-ui, sans-serif; }
+  header { position: sticky; top: 0; z-index: 5; background: var(--card); border-bottom: 1px solid var(--line); padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+  header h1 { font: 700 22px "Fredoka", "Nunito", sans-serif; margin: 0; }
+  header .count { color: var(--muted); }
+  header label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+  input[type=search] { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); min-width: 220px; }
+  select, button { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); cursor: pointer; }
+  button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .wrap { display: flex; }
+  nav { width: 230px; flex: none; position: sticky; top: 64px; height: calc(100vh - 64px); overflow: auto; padding: 16px; border-right: 1px solid var(--line); }
+  nav a { display: flex; justify-content: space-between; color: var(--ink); text-decoration: none; padding: 4px 8px; border-radius: 6px; }
+  nav a:hover { background: var(--tile); }
+  nav a span { color: var(--muted); }
+  main { flex: 1; padding: 16px 24px 80px; min-width: 0; }
+  h2 { font: 700 26px "Fredoka", "Nunito", sans-serif; margin: 34px 0 6px; scroll-margin-top: 80px; }
+  h3 { font: 700 17px "Nunito", sans-serif; margin: 22px 0 8px; color: var(--muted); }
+  p.note { color: var(--muted); margin: 0 0 12px; max-width: 900px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--size, 190px), 1fr)); gap: 12px; align-items: start; }
+  .grid.wide { grid-template-columns: repeat(auto-fill, minmax(calc(var(--size, 190px) * 2.2), 1fr)); }
+  figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  figure svg { display: block; width: 100%; height: auto; background: var(--tile); }
+  figcaption { padding: 8px 10px; font-size: 13px; }
+  figcaption b { display: block; }
+  figcaption code { display: block; color: var(--muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row5 { display: grid; grid-template-columns: repeat(5, 1fr); }
+  .hide { display: none !important; }
+  @media (max-width: 760px) { nav { display: none; } main { padding: 12px 16px 60px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Asset Library</h1>
+  <span class="count" id="count"></span>
+  <input type="search" id="q" placeholder="Search names and tags…">
+  <label>Size <input type="range" id="size" min="120" max="360" value="190"></label>
+  <label>Look <select id="look"></select></label>
+  <span><button data-bg="light" class="on">Light</button> <button data-bg="dark">Dark</button> <button data-bg="night">Night</button></span>
+</header>
+<div class="wrap"><nav id="nav"></nav><main id="main"></main></div>
+<script src="core.js"></script>
+<script src="people.js"></script>
+<script src="stylelab.js"></script>
+<!-- category files (each registers assets with L.reg); a missing file is skipped. manifest.js (written by
+     `node build-catalog.js`) lists every library/*.js, so new files appear without editing this page; the list below
+     keeps the section order and covers a missing manifest. -->
+<script src="manifest.js"></script>
+<script>
+(function () {
+  var known = ["wardrobe", "sky", "scenery", "interiors", "props-home", "props-world", "animals", "body", "text", "effects", "motion",
+    "ride", "duo", "activity", "episode-kit", "props-more"];
+  var all = known.concat((window.LIB_FILES || []).filter(function (f) { return known.indexOf(f) < 0; }));
+  all.forEach(function (f) { document.write('<script src="' + f + '.js"><\/script>'); });
+})();
+</script>
+<script>
+(function () {
+  const $ = (s) => document.querySelector(s), main = $("#main"), nav = $("#nav");
+  const svg = (box, inner) => `<svg viewBox="${box.join(" ")}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+  const tile = (box, inner, name, sub, tags = "") => `<figure data-k="${(name + " " + tags + " " + (sub || "")).toLowerCase().replace(/"/g, "")}">${svg(box, inner)}<figcaption><b>${name}</b>${sub ? `<code title="${sub.replace(/"/g, "&quot;")}">${sub.replace(/</g, "&lt;")}</code>` : ""}</figcaption></figure>`;
+  const sec = (id, title, note, body, wide) => `<h2 id="${id}">${title}</h2>${note ? `<p class="note">${note}</p>` : ""}<div class="grid${wide ? " wide" : ""}">${body}</div>`;
+  const POSE5 = [["stand", "smile"], ["wave", "happy"], ["point", "smile"], ["think", "thinking"], ["shocked", "shocked"]];
+  let navItems = [];
+  function render() {
+    navItems = []; const html = []; const only = new URLSearchParams(location.search).get("only"); // ?only=<category> renders just that category (fast previews)
+    const scene = (tok, time, o) => L.useLook(tok, () => L.svg(() => L.testScene(time, o)));
+    if (!only) {
+    // 1. style lab
+    let looks = "";
+    Object.values(L.LOOKS).forEach((t) => { looks += tile([0, 0, 2560, 720], `<svg width="1280" height="720" viewBox="0 0 1280 720">${scene(t, "day")}</svg><svg x="1280" width="1280" height="720" viewBox="0 0 1280 720">${scene(t, "night")}</svg>`, t.label, `L.look("${t.name}")`, "look style"); });
+    html.push(sec("lab-looks", "Style lab · complete looks", "The same scene drawn in 10 complete looks (day and night). Pick one by name, e.g. “Look D”. Look A is what videos use today.", looks, true));
+    L.LAB.forEach((grp, gi) => {
+      let b = ""; grp.items.forEach(([name, over]) => { b += tile([0, 0, 1280, 720], scene(L.with(over), "day"), name, JSON.stringify(over) === "{}" ? "same as Look A" : "L.with(" + JSON.stringify(over) + ")", "style " + grp.group); });
+      html.push(sec("lab-" + gi, "Style lab · " + grp.group, gi === 0 ? "Each sheet changes one setting from Look A. You can mix single settings too, e.g. “Line 04 + Ink 03 + Palette 04”." : "", b));
+    });
+    navItems.push(["lab-looks", "Style lab", 10 + L.LAB.reduce((a, g) => a + g.items.length, 0)]);
+    // 2. cast pick sheet (current look)
+    const castRow = (k) => { const inner = POSE5.map(([p, f], i) => `<g transform="translate(${170 + i * 340} 410)">${L.svg(k, { pose: p, face: f })}</g>`).join(""); return tile([0, -20, 1700, 450], inner, L.CAST[k].label, `L.put(S, "${k}", x, gy, { pose, face, s, t })`, "cast " + k); };
+    html.push(sec("cast-men", "Pick the main cast · men", "Ten stickman styles, each in the same five poses (stand, wave, point, think, shocked). Tell me “Man NN”.", Object.keys(L.CAST).filter((k) => k.startsWith("man")).map(castRow).join(""), true));
+    html.push(sec("cast-girls", "Pick the main cast · girls", "Ten stick-girl styles, same five poses. Tell me “Girl NN”.", Object.keys(L.CAST).filter((k) => k.startsWith("girl")).map(castRow).join(""), true));
+    navItems.push(["cast-men", "Cast · men", 10], ["cast-girls", "Cast · girls", 10]);
+    }
+    // 3. every registered category
+    const groups = {};
+    L.ITEMS.filter((i) => i.cat !== "cast" && (!only || i.cat === only)).forEach((i) => (groups[i.cat] = groups[i.cat] || []).push(i));
+    Object.entries(groups).forEach(([cat, items], ci) => {
+      const sub = {};
+      items.forEach((i) => (sub[i.group || ""] = sub[i.group || ""] || []).push(i));
+      let body = "";
+      Object.entries(sub).forEach(([g, its]) => { if (g) body += `</div><h3>${g}</h3><div class="grid${its[0].wide ? " wide" : ""}">`; body += its.map((i) => tile(i.box, L.svg(i.name, i.demo || {}), i.label || i.name, i.call, (i.tags || []).join(" ") + " " + cat + " " + g)).join(""); });
+      html.push(sec("cat-" + ci, cat[0].toUpperCase() + cat.slice(1), "", body, items[0].wide));
+      navItems.push(["cat-" + ci, cat[0].toUpperCase() + cat.slice(1), items.length]);
+    });
+    main.innerHTML = html.join("");
+    const n = document.querySelectorAll("main figure").length + POSE5.length * 20 - 20;
+    $("#count").textContent = `${document.querySelectorAll("main figure").length} tiles · ${L.ITEMS.length} assets · ${Object.keys(L.LOOKS).length} looks`;
+    nav.innerHTML = navItems.map(([id, t, c]) => `<a href="#${id}">${t}<span>${c}</span></a>`).join("");
+    filter();
+  }
+  function filter() { const q = $("#q").value.trim().toLowerCase(); document.querySelectorAll("main figure").forEach((f) => f.classList.toggle("hide", !!q && !f.dataset.k.includes(q))); }
+  $("#q").addEventListener("input", filter);
+  $("#size").addEventListener("input", (e) => document.documentElement.style.setProperty("--size", e.target.value + "px"));
+  document.querySelectorAll("header button[data-bg]").forEach((b) => b.addEventListener("click", () => { document.documentElement.dataset.bg = b.dataset.bg; document.querySelectorAll("header button[data-bg]").forEach((x) => x.classList.toggle("on", x === b)); }));
+  const sel = $("#look"); sel.innerHTML = Object.values(L.LOOKS).map((t) => `<option value="${t.name}">${t.label}</option>`).join("");
+  sel.addEventListener("change", () => { L.look(sel.value); render(); });
+  L.look("A"); render();
+  if (document.fonts) document.fonts.ready.then(() => {}); // text re-flows by itself once web fonts arrive
+})();
+</script>
+</body>
+</html>

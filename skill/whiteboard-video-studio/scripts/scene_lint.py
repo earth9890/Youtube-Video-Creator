@@ -46,6 +46,11 @@ if os.path.exists(sj):  # every W(clip, word) must exist, or the page throws at 
         c, i = int(m.group(1)), int(m.group(2))
         if not (1 <= c <= len(clips) and i < len(clips[c - 1])):
             out("FAIL", f"line {line_of(m.start())}: W({c}, {i}) - clip {c} has {len(clips[c - 1]) if 1 <= c <= len(clips) else 0} words (0-based)")
+if re.search(r"\bL\.(?:put|svg|inline)\(", code):  # asset-library names (library/catalog.json via scripts/lib.py), or the asset is silently missing
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import lib
+    for ln, msg in lib.check_text(lib.load(), code):
+        out("FAIL", f"line {ln}: {msg}")
 out("INFO", f"{len(scenes)} scenes checked")
 
 for lvl, msg in sorted(res, key=lambda r: ["FAIL", "WARN", "INFO"].index(r[0])):

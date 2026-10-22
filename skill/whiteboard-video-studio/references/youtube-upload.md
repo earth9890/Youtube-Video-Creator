@@ -91,3 +91,10 @@ Links (`https://youtu.be/<ID>`), what's live vs unlisted, which thumbnails are m
 - After "Show more", the tag input's `getBoundingClientRect` was stale; take a screenshot to find where it really is.
 - The details page has an **"AI use"** question (`VIDEO_HAS_ALTERED_CONTENT_YES/NO`). Answer Yes when AI made realistic voices or the music that is the main focus of the video (the kids' songs).
 - If saving as Public says **"We're still checking your content"**, click Go back and wait for `Checks complete` (1–10 min) instead of "Publish anyway". Poll `.progress-label`, then click `#done-button`.
+
+## Learned 2026-10-22 (7-video batch)
+- The local file server needs Chrome's **Local Network Access** permission for studio.youtube.com (`navigator.permissions.query({name:'local-network-access'})` must be `granted`). The prompt only appears with the owner at the window: ask them to click Allow; never work around it.
+- Open the upload dialog directly: `https://studio.youtube.com/channel/<id>/videos/upload?d=ud`.
+- Descriptions over 5,000 characters are rejected: `prep-upload.py` asserts it; shorten the sources list, the full list stays in sources.md.
+- After posting the creator comment, check `#pinned-comment-badge` first: YouTube sometimes pins it on its own. Pin through real clicks (find → click "Action menu" → "Pin" → confirm "Pin"); a scripted `.click()` on the menu item does not pin.
+- Run `scripts/blank_scan.py` on every render before uploading.

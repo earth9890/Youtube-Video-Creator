@@ -18,3 +18,7 @@ assets/*.log
 **/assets/*.wav
 **/thumbnails/*_glance.png
 **/thumbnails/*.html
+.heavy.lock
+.voice.lock
+**/.gaps.html
+**/.p*.html

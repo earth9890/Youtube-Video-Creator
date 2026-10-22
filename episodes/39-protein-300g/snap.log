@@ -1,0 +1,23 @@
+◆  Capturing 11 frames at [67.01s, 70.46s, 100.12s, 121.75s, 182.57s, 250.24s, 290.07s, 313.7s, 380.93s, 470.09s, 492.29s] from 39-protein-300g
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+   Fonts: 1 loaded, 1 unused
+   Note: added an end-of-timeline frame at 481.44s. Short beats between your --at times may still be skipped — pass them explicitly.
+   Revision: none (inputs-changed)
+   State: /Users/harish/videos/black-hole-life/episodes/39-protein-300g/.hyperframes/video-state.json
+
+◇  12 snapshots saved to /Users/harish/videos/black-hole-life/episodes/39-protein-300g/.hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-00-at-67.01s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-01-at-70.46s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-02-at-100.12s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-03-at-121.75s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-04-at-182.57s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-05-at-250.24s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-06-at-290.07s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-07-at-313.7s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-08-at-380.93s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-09-at-470.09s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-10-at-492.29s.png
+   .hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/frame-11-at-481.44s.png
+   /Users/harish/videos/black-hole-life/episodes/39-protein-300g/.hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/contact-sheet-1.jpg (grid view for AI review)
+   /Users/harish/videos/black-hole-life/episodes/39-protein-300g/.hyperframes/artifacts/snapshots/596d933b-121f-41db-8b1b-85b613d471a7/contact-sheet-2.jpg (grid view for AI review)

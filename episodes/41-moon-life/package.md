@@ -1,0 +1,61 @@
+# Package: 41-moon-life
+
+## Title options
+1. What If You Tried to Live on the Moon?  ← **pick** (38 chars; the "What If…?" shape, "live, not visit" is the hook, and the question is asked at about 0:10 and answered in the last chapter)
+2. Could You Actually Live on the Moon?
+3. What If You Moved to the Moon With One Suitcase?
+4. Why Nobody Has Stayed on the Moon Longer Than 3 Days
+5. The Best Home on the Moon Is a Hole
+
+Thumbnail: `thumbnails/a.png` ("MOVE IN?": huge terrified Dave in a bubble helmet mid-sneeze with a dust puff at his nose, his suitcase burst open and a striped jumper, sunscreen, earplugs and a seed packet floating up in low gravity, Earth glowing in the black sky, warm low sunrise light on the ground). Test & Compare partner: `thumbnails/b.png` ("-130°C?": big uneasy Dave on the left with eyes sideways, frost on his helmet and a striped jumper pulled over his suit, holding his suitcase, Earth small in the black sky top right).
+
+## Description
+Dave packs one suitcase (earplugs, sunscreen, a warm jumper, one bottle of water and a packet of seeds) and moves to the Moon. Twelve people have walked there and nobody has stayed longer than about three days. So what if you tried to live on the Moon, not visit, live there?
+
+Hour one is silent, because there is almost no air for sound to travel through. Day one lasts a month, with cosmic rays instead of sunburn. Day four brings the dust: sharp as broken glass and statically charged. Week two is minus 130 degrees. Then come air from rock, ice from polar craters, a stressed salad of thale cress, and the twist: the best home on the Moon might not be on it, but in it.
+
+⏱ Chapters
+0:00 One suitcase
+0:41 Hour one
+1:33 Day one
+2:35 Day four: the dust
+3:48 Week two: the night
+4:42 Month one: air and salad
+5:50 Under the Moon
+7:05 Unpacking
+
+Sources:
+- NASA, "Moon Facts" and "Top Moon Questions" (science.nasa.gov/moon): one-sixth gravity, the thin exosphere, "you'd be able to jump about six times as high"
+- NASA Glenn Research Center, "Beginner's Guide to Aeronautics: The Moon": the sky is always black; Earth stays in the same place for anyone on the near side
+- NASA, "Weather on the Moon": 121 °C by day near the equator, minus 133 °C at night; one cubic centimetre of Earth's air holds a hundred trillion times more molecules than the same space near the Moon
+- NASA History, Apollo Lunar Surface Journal, "Lunar Gaits": no two-footed kangaroo hop on level ground, "except in play"
+- World Book / NASA, "Moon": 29 1/2 days from one sunrise to the next; UCLA Diviner (Paige et al., Space Science Reviews 150, 2010; Williams et al., Icarus, 2017) lunar temperatures
+- Zhang, Wimmer-Schweingruber et al. (2020), Science Advances 6(39):eaaz1334, "First measurements of the radiation dose on the lunar surface"; Kiel University press release (25 September 2020): 1369 microsieverts a day against 731 on the Space Station, and the tip to cover a habitat with a thick layer of lunar soil
+- Gaier, J. R. (2005), "The Effects of Lunar Dust on EVA Systems During the Apollo Missions", NASA/TM-2005-213610; Soboslay (2007), NASA Technical Memorandum on lunar dust: surface stays of 21 to 75 hours, worn suits, scratched visors
+- NASA NESC (2020), "Lunar Dust and Its Impact on Human Exploration" (Apollo 17 technical debrief: "we can overcome other physiological or physical or mechanical problems except dust")
+- ESA, "The toxic side of the Moon" and "To explore space means defying dust": jagged, statically charged dust, "lunar hay fever", burnt-gunpowder smell, all twelve moonwalkers affected
+- Li et al. (2018), PNAS 115(36):8907; NASA JPL, "Ice Confirmed at the Moon's Poles" (20 August 2018): ice in permanently shadowed craters, never warmer than minus 250 °F
+- NASA, "Moon Water and Ices" (LCROSS, 2009) and NASA NSSDC, "Ice on the Moon"
+- NASA, "NASA's SOFIA Discovers Water on Sunlit Surface of Moon" (26 October 2020); Honniball et al. (2021), Nature Astronomy 5:121: 100 to 412 parts per million, about a 12-ounce bottle per cubic metre, the Sahara has 100 times more
+- ESA, "Oxygen and metal from lunar regolith" (October 2019) and "ESA opens oxygen plant" (January 2020): 40 to 45 percent oxygen by weight; University of Glasgow (Lomax) molten-salt extraction, 96 percent of the oxygen in 50 hours
+- Paul, Elardo & Ferl (2022), Communications Biology 5:382; University of Florida and NASA releases (12 May 2022): thale cress grown in 12 grams of Apollo soil
+- NASA Human Research Program, "Risk of Spaceflight-Induced Bone Changes" (2024): 1 to 1.5 percent bone density lost a month in orbit; the effect of partial gravity is not known
+- NASA Science, "New Evidence Adds to Findings Hinting at Network of Caves on Moon" (18 July 2024); Carrer et al. (2024), Nature Astronomy 8:1119: radar evidence of a cave conduit below the Mare Tranquillitatis pit
+- NASA, "NASA's LRO Finds Lunar Pits Harbor Comfortable Temperatures" (26 July 2022); Horvath, Hayne & Paige (2022), Geophysical Research Letters 49:e2022GL099710; UCLA Newsroom (26 July 2022), "sweater weather" and "Humans evolved living in caves, and to caves we might return when we live on the Moon"
+
+Dave, his suitcase, the TV anchor and Mission Control are story devices; "one bottle is worth about a cubic metre of Moon" and "the Moon already did it" are our own comparisons.
+
+Would you live in the hole? Let us know below.
+
+New videos every week: the strange science behind the things you wonder about.
+
+#moon #space #science #lunarbase #whatif
+
+## Tags
+what if you tried to live on the moon, living on the moon, could you live on the moon, moon base, moon dust, lunar dust, lunar hay fever, moon radiation, moon temperature, lunar night, water on the moon, oxygen from moon soil, growing plants in moon soil, lunar pits, lava tubes, moon caves, moon cave 17 degrees, sweater weather moon, apollo 17, what if, space, black hole life
+
+## Pinned comment
+If you moved to the Moon with one suitcase, what is the one thing you would pack? Dave's jumper turned out to be the only thing that worked.
+
+## Published
+https://youtu.be/QPeTnG9YhpY, Public, 2026-10-22 10:08

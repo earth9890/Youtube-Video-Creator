@@ -1,0 +1,12 @@
+◆  Capturing 1 frames at [232.01s] from 42-billion-day
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+   Fonts: 1 loaded, 1 unused
+   Note: added an end-of-timeline frame at 482.79s. Short beats between your --at times may still be skipped — pass them explicitly.
+   Revision: none (inputs-changed)
+   State: /Users/harish/videos/black-hole-life/episodes/42-billion-day/.hyperframes/video-state.json
+
+◇  2 snapshots saved to /Users/harish/videos/black-hole-life/episodes/42-billion-day/.hyperframes/artifacts/snapshots/1c10e968-7e8e-4f21-98f8-691f8865d37e
+   .hyperframes/artifacts/snapshots/1c10e968-7e8e-4f21-98f8-691f8865d37e/frame-00-at-232.01s.png
+   .hyperframes/artifacts/snapshots/1c10e968-7e8e-4f21-98f8-691f8865d37e/frame-01-at-482.788s.png
+   /Users/harish/videos/black-hole-life/episodes/42-billion-day/.hyperframes/artifacts/snapshots/1c10e968-7e8e-4f21-98f8-691f8865d37e/contact-sheet.jpg (grid view for AI review)

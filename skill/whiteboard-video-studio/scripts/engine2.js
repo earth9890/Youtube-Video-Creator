@@ -139,6 +139,7 @@ let CLIPN = 0;
 function scene(start, end, o = {}) {
   const g0 = el("g", {}, board), g = el("g", {}, g0); // g0: fade + default camera; g: content + S.zoom/S.pan (separate layers never fight)
   const S = { g, start, end, len: end - start };
+  (window.__SCENES = window.__SCENES || []).push([start, end, g0]); // scene_gaps.py checks the timeline has no uncovered (blank) stretch
   if (STORY) { // hard cut on the breath (references: 100 % hard cuts)
     if (start > 0.001) tl.fromTo(g0, { opacity: 0 }, { opacity: 1, duration: 0.001, ease: "none" }, start);
     if (end < TOTAL - 0.05) tl.set(g0, { opacity: 0 }, end);

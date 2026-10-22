@@ -27,7 +27,7 @@ for l in lines:
     if m: card.setdefault(m.group(1).lower(), []).append(m.group(2).strip())
 
 def spoken(l):
-    return re.sub(r"\[J[^\]]*\]|\((fast|slow)\)|//|/", " ", l)
+    return re.sub(r"\[J[^\]]*\]|\((fast|slow|low|@\w+)\)|//|/", " ", l)
 
 res = []  # (level, msg)
 def out(level, msg): res.append((level, msg))

@@ -1,0 +1,11 @@
+built /Users/harish/videos/black-hole-life/episodes/41-moon-life/index.html  total=470.82s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  1 error(s), 0 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   293.1 MB · 7m 50.8s video · rendered in 15m 14.8s
+h264,1920,1080,470.833333
+aac,470.833000
+blank_scan: 942 frames checked, 0 near-blank

@@ -25,7 +25,8 @@ GAP, LONG_GAP = 0.2, 0.7  # measured: pros' normal gap 0.1-0.3 s; long beats are
 def parse_md(path):
     """script.md markup (references/script-writer.md §7) -> [[text, gap, speed, semitones], ...] one item per clip.
     `/` beat (0.2 s) and `//` long beat (0.7 s) split clips; (fast) 1.08x / (slow) 0.9x for the rest of the line;
-    "quoted" text = character voice (+2 st, 0.95x; (low) on the line = -2 st for a second character); a <=4-word last chunk of a [J] line = deadpan short punch (-1 st, 1.05x)."""
+    "quoted" text = character voice (+2 st, 0.95x; (low) on the line = -2 st for a second character); a <=4-word last chunk of a [J] line = deadpan short punch (-1 st, 1.05x).
+    (@name) on the line = its quotes use that cast member's own voice (--cast name=profile,...), no pitch shift."""
     items, quote = [], False
     for line in open(path):
         line = line.strip()
@@ -33,6 +34,7 @@ def parse_md(path):
             continue
         joke = '[J' in line
         line = re.sub(r'\[J[^\]]*\]', '', line).strip()
+        who = re.search(r'\(@(\w+)\)', line); who = who and who.group(1); line = re.sub(r'\(@\w+\)', '', line).strip()
         parts = re.split(r'\s*(//|/)\s*', line)
         chunks = [(parts[i], parts[i + 1] if i + 1 < len(parts) else '') for i in range(0, len(parts), 2)]
         chunks = [(t, m) for t, m in chunks if t.strip() or m]
@@ -48,6 +50,8 @@ def parse_md(path):
                 continue
             q0 = quote or t.startswith('"'); quote = q0 and not (t.endswith('"') and len(t) > 1)
             s, st = spd, 0.0
+            if q0 and who:
+                items.append([t.replace('"', ''), LONG_GAP if mark == '//' else GAP, 1.0, 0.0, who]); continue
             if q0:
                 s, st = 0.95, cst
             elif joke and k == len(chunks) - 1 and len(t.split()) <= 4:
@@ -66,6 +70,7 @@ engine = opt('--engine', 'pocket')
 voice = opt('--voice', {'pocket': 'jean', 'voicestudio': '902498e2'}.get(engine, 'am_michael'))
 speed = opt('--speed', '0.78' if engine == 'kokoro' else '1.0')
 instruct = opt('--instruct', None)
+cast = dict(kv.split('=') for kv in opt('--cast', '').split(',') if kv)  # (@name) lines -> profile ids
 steps = opt('--steps', None)  # voicestudio diffusion steps: 8 draft, 16 app default, 32 quality; cost ~ steps x (7 s reference + clip)
 seed, LEAD, TAIL = int(opt('--seed', '1')), float(opt('--lead', '2.6')), float(opt('--tail', '3.5'))
 DEEP = "asetrate=24000*0.95,aresample=44100,atempo=1.0526,bass=g=8:f=110,equalizer=f=220:t=q:w=1:g=3,acompressor=threshold=-18dB:ratio=3"
@@ -78,21 +83,22 @@ def pocket(text, path):
         _pocket['m'] = TTSModel.load_model(); _pocket['v'] = _pocket['m'].get_state_for_audio_prompt(voice)
     import torch; torch.manual_seed(seed)                                  # same text + seed -> same take
     m = _pocket['m']; sf.write(path, m.generate_audio(_pocket['v'], text).numpy().reshape(-1), m.sample_rate)
-def voicestudio(text, path):
+def voicestudio(text, path, voice=voice):
     import urllib.request
     # a saved profile carries its own seed + reference sample; sending another seed/instruct re-designs the voice per clip
     body = {'model': 'omnivoice', 'input': text, 'voice': voice, 'response_format': 'wav'}
     body.update({k: v for k, v in (('seed', seed if '--seed' in a else None), ('instruct', instruct), ('num_step', int(steps) if steps else None)) if v is not None})
     req = urllib.request.Request('http://127.0.0.1:3900/v1/audio/speech', json.dumps(body).encode(), {'Content-Type': 'application/json'})
     open(path, 'wb').write(urllib.request.urlopen(req, timeout=600).read())
-def load(text, spd=1.0, st=0.0):
-    key = hashlib.sha1(f'{engine}|{voice}|{speed}|{seed}|{text}{"|" + instruct if instruct else ""}{"|s" + steps if steps else ""}'.encode()).hexdigest()[:10]  # old cache keys unchanged
+def load(text, spd=1.0, st=0.0, who=None):
+    v = cast[who] if who else voice
+    key = hashlib.sha1(f'{engine}|{v}|{speed}|{seed}|{text}{"|" + instruct if instruct else ""}{"|s" + steps if steps else ""}'.encode()).hexdigest()[:10]  # old cache keys unchanged
     raw, done = clips / f'r-{key}.wav', clips / f'v-{key}.wav'
     if not done.exists():
         if engine == 'pocket':
             pocket(text, raw)
         elif engine == 'voicestudio':
-            voicestudio(text, raw)
+            voicestudio(text, raw, v)
         else:
             env = dict(os.environ, HYPERFRAMES_PYTHON=os.path.expanduser('~/.venvs/tts/bin/python3'))
             subprocess.run(['npx', 'hyperframes', 'tts', text, '-v', voice, '-s', speed, '-o', str(raw)], check=True, env=env, stdin=subprocess.DEVNULL)

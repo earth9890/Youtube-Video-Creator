@@ -1,0 +1,11 @@
+built /Users/harish/videos/black-hole-life/episodes/40-energy-drinks/index.html  total=479.2s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  1 error(s), 0 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   277.9 MB · 7m 59.2s video · rendered in 14m 3.4s
+h264,1920,1080,479.200000
+aac,479.200000
+blank_scan: 958 frames checked, 0 near-blank

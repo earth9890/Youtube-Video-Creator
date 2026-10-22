@@ -11,6 +11,15 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 
 **Kids' songs and nursery rhymes (Tiny Tune Town) use the `tiny-tune-town` skill**, which reuses this skill's still-look engine.
 
+### Current long-form pipeline (Black Hole Life, 2026-10-22) — the fast path
+1. Script `script.md` (+ `sources.md`, `title.md`), `script_lint.py --long` PASS. Cast voices: `# cast: dave=22393bee,brain=7f7a5b5c,…` header + `(@dave)` on quoted lines.
+2. Voice: `~/videos/black-hole-life/voice-ep.sh EP` (VoiceStudio Storyteller, 12 steps, clip_check) → `slow-ep.sh EP 0.9`.
+3. Visuals: `scenes.js` = `// look: still` + `// @library auto`; **find assets with `scripts/lib.py find <words>` / `show <name>`, place with `L.put(S, name, x, y, { s, t: W(c, w) })`**; draw only what the library lacks (then add it to `library/` with `L.reg`). `lib.py check scenes.js`, `scene_lint.py`, `build.py`, snapshots read.
+4. Render: `RES=1080 lockf … scripts/finish.sh EP none renders/EP-1080p.mp4` (screenshot capture; ends with `blank_scan.py` — re-render if it flags frames).
+5. Package + upload: `prep-upload.py EP` → Studio (`…/videos/upload?d=ud`), pinned comment. Details: `references/youtube-upload.md`.
+
+**Context budget (agents):** never read `library/*.js`, `scripts/engine2.js`, `scripts/kit.js` or another episode's whole `scenes.js` (100+ KB each). Use `lib.py` (a few lines per lookup), `references/engine-api.md`, and at most the first ~80 lines of one recent `scenes.js` for helper style.
+
 ### Reference map (read what the step needs)
 | Need | File |
 |---|---|
@@ -23,6 +32,7 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 | Hooks, psychology, staging, sound, colour (motivational shorts) | `references/craft-playbook.md` |
 | Engine API (v2 paper, v3 colour look, story look, props, camera) | `references/engine-api.md` |
 | **Illustrated stills (default look from 2026-10-13):** design system (palette with light/dark tones, stroke/radius/type/spacing tokens, depth planes, light, composition), progressive scenes, QA checklist; `scripts/kit.js` + `scripts/scene_lint.py` | `references/style-guide.md` |
+| **Asset library (use before drawing anything new):** 1,000+ code-drawn assets (cast, faces, poses, clothes, skies, places, rooms, props, vehicles, animals, text, effects) + 10 Looks. **Never read library/*.js:** `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` → `show <name>` → paste the call (`L.put(S, name, x, y, o)`); `// @library auto` in scenes.js; `lib.py check scenes.js`; gallery `library/index.html` | `references/asset-library.md` |
 | "User says X → do Y" edits | `references/edit-playbook.md` |
 | **Making any explainer thumbnail** (6 laws, background by topic, archetypes with real perf, engine build specs, `thumb_check.py` + feed-grid test, score card) | `references/thumbnail-designer.md` |
 | Evidence behind it: 1,260-thumbnail study of the same 8 channels, 192 hand labels, recipes, tools to redo it | `references/research/thumbnails/` |
@@ -71,14 +81,10 @@ Choose camera-height/scale per emotion (small + empty = vulnerable, large + low 
 ```bash
 ~/.local/bin/uv run --offline --with numpy --with soundfile python scripts/voice.py script.md assets --engine voicestudio --lead 0.4 --tail 1.5   # voice 902498e2 = "The Storyteller" (owner's pick)
 curl -s -X POST http://127.0.0.1:3900/v1/audio/transcriptions -F file=@assets/voice.wav -F model=whisper-1   # words check (replaces whisper-cli)
-# old engines (not installed now):
-python3 -m venv ~/.venvs/pocket && ~/.venvs/pocket/bin/pip install pocket-tts soundfile   # once (~940 MB, CPU)
-~/.venvs/pocket/bin/python scripts/voice.py script.md assets --lead 0.4 --tail 1.5 --speed 1.0   # explainers: marked script.md
-~/.venvs/pocket/bin/python scripts/voice.py script.json assets --lead 2.6 --tail 3.5 --speed 0.85  # slow motivational: plain script.json
 ffmpeg -i assets/voice.wav -af loudnorm=I=-15:TP=-1.5 -b:a 192k voice.mp3   # send the owner audio-only first
 ```
 `script.md` → voice.py writes `script.json` with **one entry per clip** (`[text, gap, speed, semitones]`). Scene cues `W(clip, word)` count those clips. Verify every voice with whisper (`whisper-cli -m ~/.cache/hyperframes/whisper/models/ggml-small.en.bin -f 16k.wav -nt`): the transcript must match the script, and the median gap (`silencedetect=n=-45dB:d=0.12`) should be about 0.24 s.
-Default voice = **Kyutai Pocket TTS `jean`** (user's pick; ~190 wpm at speed 1.0 — right for story explainers; add `--speed 0.85` for slow motivational shorts). Licence CC-BY-4.0: put "Voice: Kyutai Pocket TTS" in the description. Old voice: `--engine kokoro` (am_michael 0.78 + DEEP filter). **Write numbers as words in script.json** ("ninety-nine point nine percent") — TTS drops decimals/symbols. Writes `assets/voice.wav` + `assets/clipt.json`; clips are cached by a hash of the text, so an edited sentence is the only one redone. Run episodes sequentially.
+Default voice = **VoiceStudio "The Storyteller" `902498e2`** (~195 wpm → slow the finished voice 0.9× with `slow-ep.sh`; 2.8 spoken words/s after that, so 1,350–1,400 words ≈ 8 min). Character lines: `--cast name=profileId` (or a `# cast:` header line, read by `voice-ep.sh`) and `(@name)` on the line; fewer, longer clips (12–30 words) voice faster. Never credit or name the voice tool in YouTube text (owner rule). Old engines: Pocket `jean`, `--engine kokoro`. **Write numbers as words in script.json** ("ninety-nine point nine percent") — TTS drops decimals/symbols. Writes `assets/voice.wav` + `assets/clipt.json`; clips are cached by a hash of the text, so an edited sentence is the only one redone. Run episodes sequentially.
 
 ## 5. Build (engine v2 — `references/engine-api.md`)
 Project = `script.json` + `assets/clipt.json` + `scenes.js` (first line `// theme: dark` for the chalkboard look).
@@ -88,19 +94,15 @@ npx hyperframes check                           # 0 errors; container_overflow w
 rm -rf snapshots && npx hyperframes snapshot --at <each scene end − 0.45, mid-points>   # READ contact-sheet-*.jpg
 python3 scripts/build.py EP_DIR --thumb thumb-a.js thumbnails/a.png   # static-frame thumbnail, 1280×720
 ```
-Visual defaults for explainers: `// look: v3`, `S.bg()` scenery (`space`, `night`, `room`, `dusk`, `white`, `danger`, `blueprint`…), labels at the top (y 120–260, never in the caption band), figures on black backgrounds `c: "#ffffff"`. Space and comedy helpers to copy: `examples/blackhole-home/rejected-v2-relatable-gags/scenes.js`; history props: `examples/toothache-story/parts/00-base.js`.
+**Current default: `// look: still` + `// @library auto`, assets from the library via `lib.py` (see the fast path above).** Older v3 defaults: `// look: v3`, `S.bg()` scenery (`space`, `night`, `room`, `dusk`, `white`, `danger`, `blueprint`…), labels at the top (y 120–260, never in the caption band), figures on black backgrounds `c: "#ffffff"`. Space and comedy helpers to copy: `examples/blackhole-home/rejected-v2-relatable-gags/scenes.js`; history props: `examples/toothache-story/parts/00-base.js`.
 `scenes.js` uses `sceneWindows(CUES)` + `W(clip, word)` so every stroke lands on its spoken word; ~50 props (`S.phone`, `S.calendar`, `S.spotlight`, …), the stick-figure rig (`S.fig` with poses/faces/walk/lie/rise/grow), handwritten `S.text`. Verify a new prop in `gallery/scenes.js` before using it in an episode.
 **Scale = emotion** (§E): 0.65–0.8 vulnerable, 1.0 neutral, 1.3–1.45 power. One accent colour per scene. Content y < 940.
 
 ### Parallel production (several videos)
-Orchestrator: research facts → write all `script.json` → run `voice.py` sequentially → launch **one general-purpose agent per episode** with: the read list (engine-api, craft-playbook §C/§E/§G, gallery/scenes.js), the pipeline, the hard rules, and a **scene board** (clip ranges → visual + accent). Agents build/check/snapshot/iterate, make 2 thumbnails and `package.md`, never render. Orchestrator then runs `scripts/finish.sh EP music/bed-*.wav` per episode (mix → build → check → 4K render), sequentially.
+Orchestrator: research facts → write all scripts → voice sequentially (`voice-ep.sh`, one VoiceStudio job at a time) → launch **one build agent per episode** (model sonnet) with the brief `~/videos/black-hole-life/LONGFORM-BUILD.md` (lean read list + `lib.py` asset lookup), the hard rules, and the script's beat sheet. Builds can start before the voice is done (scenes use clip numbers; build/snapshot only after the voice is final). Agents build/check/snapshot/iterate, make 2 thumbnails and `package.md`, never render. Orchestrator then runs `scripts/finish.sh EP music/bed-*.wav` per episode (mix → build → check → 4K render), sequentially.
 
 ### Music
-```bash
-~/.venvs/musicgen/bin/python scripts/music_gen.py "warm hopeful solo piano, slow, gentle, no drums" music/bed-hope.wav --seconds 30   # MusicGen, local
-~/.venvs/musicgen/bin/python scripts/mix.py EP_DIR music/bed-hope.wav      # loop + duck −9 dB under speech, bed −17 dB, dropout before the last line
-```
-`build.py` prefers `assets/mix.wav` when present. Beds: `bed-hope` (warm), `bed-tense` (minor), `bed-rise` (building).
+Long-form explainers are voice-only (`finish.sh EP none`). Music beds (`scripts/music_gen.py`, `mix.py`) need the MusicGen venv, which was removed on 2026-10-19; reinstall only if the owner asks.
 
 ## 6. Review loop (per episode)
 `npx hyperframes snapshot --at <times>` → read `snapshots/contact-sheet-*.jpg`. Take frames at **each scene's end −0.45 s** (completed state) and mid-scene. Fix, re-snapshot. Then render a 4K cut and tell the user what changed. Edit requests → `references/edit-playbook.md` (table of "user says X → do Y").
@@ -108,7 +110,8 @@ Orchestrator: research facts → write all `script.json` → run `voice.py` sequ
 ## 7. Render
 ```bash
 scripts/finish.sh EP_DIR none|BED.wav [OUT.mp4]   # mix (voice-only at -15 LUFS with "none") -> build -> check -> 4K render
-HF_CAPTURE_PARALLEL_STREAM=true npx hyperframes render --quality delivery --resolution 4k --output <slug>-4k-vN.mp4   # streaming capture (disk capture of long 4K needs ~60 GB)
+HF_CAPTURE_PARALLEL_STREAM=true npx hyperframes render --quality delivery --experimental-fast-capture=false --resolution 4k --output <slug>-4k-vN.mp4   # fast capture dropped whole frames under load (2026-10-22)
+python3 scripts/blank_scan.py <file>   # exit 1 = blank (bare-paper) frames: re-render before uploading
 ffprobe -v error -show_entries stream=codec_name,width,height,duration -of csv=p=0 <file>
 ```
 Authored 1920×1080 + `--resolution 4k` supersamples to 3840×2160. Keep old versions (`-v2`, `-v3`) — the user compares them. If socket's `npx` wrapper eats a flag ("Unknown flag"), check the real flag name in `hyperframes-cli/references/preview-render.md`.
