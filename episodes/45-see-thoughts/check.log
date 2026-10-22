@@ -1,0 +1,34 @@
+◆  Checking 45-see-thoughts
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+Lint
+  ⚠ composition_file_too_large: This HTML composition file has 10393 lines. Smaller sub-compositions are easier to read, iterate on, and diff.
+    /Users/harish/videos/black-hole-life/episodes/45-see-thoughts/index.html [data-composition-id] t=0s
+    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.
+  0 error(s), 1 warning(s), 0 info(s)
+
+  ⚠ Browser session never ran — layout, motion, and contrast below are empty placeholders, not a clean pass.
+
+Runtime
+  ✗ check_runtime_failure: Check did not finish within its deadline.
+    index.html [data-composition-id] t=0s
+  1 error(s), 0 warning(s), 0 info(s)
+
+Layout
+  ◇ 0 issues across 0 sample(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 0/0 text checks pass WCAG AA
+
+Craft
+  ◇ skipped
+
+Snapshots
+  ◇ disabled
+
+◇  Check failed
+Report: /Users/harish/videos/black-hole-life/episodes/45-see-thoughts/.hyperframes/artifacts/checks/1ec90a69-6c25-464b-9691-b7f36ca173d1.json
+Revision: none (inputs-changed)

@@ -38,4 +38,4 @@ armsUp shrug think hips wave cross head reach reachL hold push (an invalid pose 
 Description: never mention AI, TTS, VoiceStudio or any voice tool. Sources from sources.md.
 Final reply (phase 2): scene count, lint/check results, contact sheets reviewed, thumbnails, title, anything to look at.
 
-Library: search `lib.py find <words>` (see LONGFORM-BUILD.md "Asset library lookup") before drawing a prop, room or duo scene yourself.
+Library (optional shortcut): `lib.py find <words>` (see LONGFORM-BUILD.md "Asset library lookup") can save time; draw new scenes and props freely when they fit better.

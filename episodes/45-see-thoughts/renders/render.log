@@ -1,0 +1,13 @@
+@library auto: core people stylelab activity animals effects episode-kit interiors motion props-home props-more props-world ride scenery sky story text thoughts wardrobe = 1000 KB (saved 265 KB of 1266 KB)
+built /Users/harish/videos/black-hole-life/episodes/45-see-thoughts/index.html  total=486.68s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  1 error(s), 0 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   430.7 MB · 8m 6.7s video · rendered in 16m 60.0s
+h264,1920,1080,486.700000
+aac,486.700000
+blank_scan: 973 frames checked, 4 near-blank at [83.0, 409.0, 409.5, 417.5] s
+WARNING: blank frames (renderer dropped the picture, usually under heavy load): re-render this episode

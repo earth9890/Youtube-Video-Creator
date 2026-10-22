@@ -39,6 +39,9 @@ rooms, vague words ("MOVE IN?"). The redo (`THUMB-REDO.md`, picks = `c2.png`/`d.
   "ONLY 1%?", 44 giant ant face "5 MM?"). A contradiction with the title ("ONLY 1%?" on a 100 % video) pulls clicks.
 - **Words:** 1–3, concrete (a number, unit or deadline), letters ≥ 22 % of the frame height, never the title.
 - Make both (scene C + symbol D), compare at 320 px next to the channel's current tiles, keep the other as the A/B partner.
+- **Ep45 lesson (owner rejected c2/d):** a vague stat ("6,000 A DAY?") over blank scribble bubbles says nothing. The winner
+  (`45-see-thoughts/thumbnails/e.png`) uses the script's single most absurd concrete line as the words, inside the image
+  (a calm man's bubble: "LICK THE POLE?", Dave terrified beside him). Bubbles must hold readable words, never squiggles.
 - Thumbnail scripts share the engine + `helpers.js` scope: redeclaring a top-level name (`INK`, `CW`) renders a blank image
   with no error. `// @library auto` works in `--thumb` mode.
 

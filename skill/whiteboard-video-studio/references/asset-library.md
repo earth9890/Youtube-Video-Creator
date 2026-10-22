@@ -1,6 +1,6 @@
 # Asset library (`library/`)
 
-1,000+ ready-made, code-drawn assets (live count: `lib.py cats`) (people, faces, poses, clothes, skies, places, rooms, props, vehicles, animals, body
+2,300+ ready-made, code-drawn assets (live count: `lib.py cats`) (people, faces, poses, clothes, skies, places, rooms, props, vehicles, animals, body
 diagrams, text, effects) plus a style lab of 10 complete Looks. Gallery: open `library/index.html` (double-click; names,
 search, size slider, light/dark/night, Look switcher). `library/BRIEF.md` = what the owner asked for; `library/AGENTS.md`
 = the contract for adding assets.
@@ -34,7 +34,8 @@ plus `lamp-post-night` and `sky-night` for a custom build. Day and sunset varian
 A typo such as `L.put(S, "car-red", …)` makes `check` print `unknown asset "car-red" -> did you mean: veh-car, …` and exit 1.
 
 ## Rule for build agents
-**Use library assets before drawing new ones.** If you draw something reusable that the library lacks, add it to the
+**The library is for speed, not a constraint.** Use an asset when it fits the beat; draw new frames, props, characters and
+scenes whenever that makes a better picture, and never bend a scene to fit an existing asset. If you draw something reusable that the library lacks, add it to the
 right `library/<category>.js` with `L.reg` (contract in `AGENTS.md`) instead of keeping it inside one episode.
 
 ## In a video (`scenes.js`)

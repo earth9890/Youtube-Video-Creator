@@ -1,0 +1,58 @@
+# Package: 45-see-thoughts
+
+## Title options
+1. What If You Could See Everyone's Thoughts?  ← **pick** (42 chars; the owner's pick; the title question is spoken at about 0:19 and answered in the last chapter; mind reading is an evergreen search; pairs with thumbnail H "I WANNA F***")
+2. What If You Could Read Minds for a Week?
+3. What If Everyone's Thoughts Were Visible?
+4. Why You'd Hate Reading Minds
+5. What If You Heard Every Thought on the Train?
+
+Thumbnail (pick): `h.png` (owner's choice: a woman, cast girl05, winks under a thought bubble reading "I WANNA F***"; a man, cast man05, reads it, shocked and sweating; hot-red field). Test & Compare partner: `e.png` (rush-hour train: a calm man in a suit, his bubble "LICK THE POLE?", Dave terrified beside him; teal field with a yellow pole).
+
+## Description
+What if you could read minds? What if you woke up tomorrow and could see everyone's thoughts, floating above their heads?
+What would really happen if you could hear what everyone is thinking: your friends, your date, the strangers on the train?
+
+Dave wakes up with exactly that power. For about an hour it's brilliant: perfect birthday presents, the right answer in a job interview. Then the bubbles start talking about him. They never stay still, every white lie comes with subtitles, a rush-hour train turns into a flood of other people's heads, and by day four Dave is wearing a woolly hat in case anyone can see his. Along the way: where the "sixty thousand thoughts a day" number comes from (nobody knows), what scientists actually found when they beeped people at random, why almost everybody has intrusive thoughts, why you feel more see-through than you are, what real brain decoders can and can't do, and the twist hiding underneath everyone's noise.
+
+⏱ Chapters
+0:00 The first bubble
+0:44 Hour one: a superpower
+2:00 Hour six: six thousand thoughts
+3:26 Day two: the train
+4:44 Day four: his own bubble
+5:32 Can anyone really read minds?
+6:21 The twist
+7:33 The oven
+
+Sources:
+- Heavey, C. L. & Hurlburt, R. T. (2008), Consciousness and Cognition 17(3):798-810, "The phenomena of inner experience": inner speech in about 26 % of sampled moments, inner seeing 34 %, unsymbolized thinking 22 %; 5 of 30 participants had no inner speech
+- Stinson, L. & Ickes, W. (1992), Journal of Personality and Social Psychology 62(5):787-797, "Empathic accuracy in the interactions of male friends versus male strangers": friends about 30, strangers about 20 on a 0-100 accuracy scale
+- Neuroskeptic (2012), Discover, "The 70,000 Thoughts Per Day Myth?"; J. Schwabish (2024), PolicyViz, "Fact-Checking 60,000 Thoughts": no traceable source for the figure
+- Tseng, J. & Poppenk, J. (2020), Nature Communications 11:3480, "Brain meta-state transitions demarcate thoughts across task contexts exposing the mental noise of trait neuroticism": 184 people, about 6.5 transitions a minute, a tentative estimate of over six thousand thoughts a day
+- DePaulo, B. M. et al. (1996), Journal of Personality and Social Psychology 70(5):979-995, "Lying in everyday life": college students about 2 lies a day, community members about 1; about one lie in four told to benefit someone else
+- Rachman, S. & de Silva, P. (1978), Behaviour Research and Therapy 16(4):233-248, "Abnormal and normal obsessions": 99 of 124 people with no diagnosis reported unwanted intrusive thoughts
+- Radomsky, A. S. et al. (2014), Journal of Obsessive-Compulsive and Related Disorders 3(3):269-279, "Part 1—You can run but you can't hide: Intrusive thoughts on six continents": 777 students, 13 countries, 93.6 % had at least one in three months
+- Gilovich, T., Savitsky, K. & Medvec, V. H. (1998), Journal of Personality and Social Psychology 75(2):332-346, "The illusion of transparency": liars expected 48.8 % to catch them; 25.6 % did
+- Tang, J., LeBel, A., Jain, S. & Huth, A. G. (2023), Nature Neuroscience 26(5):858-866, "Semantic reconstruction of continuous language from non-invasive brain recordings"; University of Texas at Austin news release (1 May 2023)
+- Boothby, E. J., Cooney, G., Sandstrom, G. M. & Clark, M. S. (2018), Psychological Science 29(11):1742-1756, "The liking gap in conversations: Do people like us more than we think?"
+- Eyal, T., Steffel, M. & Epley, N. (2018), Journal of Personality and Social Psychology 114(4):547-571, "Perspective mistaking: Accurately understanding the mind of another requires getting perspective, not taking perspective"
+
+Next time you're sure you know what someone is thinking, try the superpower that actually works: ask them.
+
+New videos every week: the strange science behind the things you worry about.
+
+#psychology #mindreading #intrusivethoughts #whatif #brain
+
+## Tags (15)
+what if you could read minds, what if you could see everyone's thoughts, what if you could hear everyone's thoughts, mind reading, can you read minds, how many thoughts a day, 60000 thoughts a day myth, intrusive thoughts, illusion of transparency, liking gap, brain decoder, what if, psychology facts, black hole life, dave
+
+## Pinned comment
+If you could see everyone's thoughts for one hour, whose head would you look inside first? And would you keep the power for a second day?
+
+## Thumbnails
+- `h.png` (thumb-h.js): **pick** (owner's choice), "I WANNA F***"
+- `e.png` (thumb-e.js): A/B partner, "LICK THE POLE?" (script line 76)
+
+## Published
+https://youtu.be/cfOcu3uolrs, Public, 2026-10-22 16:02. Thumbnail h.png (owner's choice); e.png kept for Test & Compare. Pinned comment posted and pinned.

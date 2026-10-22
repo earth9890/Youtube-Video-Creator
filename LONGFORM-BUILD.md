@@ -44,7 +44,7 @@ When done, create an empty file `READY` in the episode folder. Final reply: scen
 sheets you reviewed, thumbnail pick, title pick, and anything the owner should look at.
 
 ## Asset library lookup (added 2026-10-22)
-Before drawing anything new, search the library (1,500+ assets: people duos/dancing/kiss, vehicles with drivers, activities and jobs,
+Optional shortcut (draw your own whenever it fits the scene better): the library has 2,300+ assets (charts, anatomy, nature, food, cosmos, creatures, psychology metaphors, full world backgrounds, people duos/dancing/kiss, vehicles with drivers, activities and jobs,
 props, rooms, the ep38/ep40 cast and sets): `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` then `show <name>`.
 Never read `library/*.js`. Put `// @library auto` as the 2nd line of scenes.js, call `L.put(S, name, x, y, {s, t: W(c,w)})`, and run
 `lib.py check scenes.js` before building. Something reusable you had to draw yourself goes into `library/episode-kit.js`-style files

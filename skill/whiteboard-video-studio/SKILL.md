@@ -14,7 +14,7 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 ### Current long-form pipeline (Black Hole Life, 2026-10-22) — the fast path
 1. Script `script.md` (+ `sources.md`, `title.md`), `script_lint.py --long` PASS. Cast voices: `# cast: dave=22393bee,brain=7f7a5b5c,…` header + `(@dave)` on quoted lines.
 2. Voice: `~/videos/black-hole-life/voice-ep.sh EP` (VoiceStudio Storyteller, 12 steps, clip_check) → `slow-ep.sh EP 0.9`.
-3. Visuals: `scenes.js` = `// look: still` + `// @library auto`; **find assets with `scripts/lib.py find <words>` / `show <name>`, place with `L.put(S, name, x, y, { s, t: W(c, w) })`**; draw only what the library lacks (then add it to `library/` with `L.reg`). `lib.py check scenes.js`, `scene_lint.py`, `build.py`, snapshots read.
+3. Visuals: `scenes.js` = `// look: still` + `// @library auto`; **find assets with `scripts/lib.py find <words>` / `show <name>`, place with `L.put(S, name, x, y, { s, t: W(c, w) })`**; the library is a shortcut, not a rule: draw new frames, props and scenes whenever they fit the beat better (reusable ones go into `library/` with `L.reg`). `lib.py check scenes.js`, `scene_lint.py`, `build.py`, snapshots read.
 4. Render: `RES=1080 lockf … scripts/finish.sh EP none renders/EP-1080p.mp4` (screenshot capture; ends with `blank_scan.py` — re-render if it flags frames).
 5. Package + upload: `prep-upload.py EP` → Studio (`…/videos/upload?d=ud`), pinned comment. Details: `references/youtube-upload.md`.
 
@@ -32,7 +32,7 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 | Hooks, psychology, staging, sound, colour (motivational shorts) | `references/craft-playbook.md` |
 | Engine API (v2 paper, v3 colour look, story look, props, camera) | `references/engine-api.md` |
 | **Illustrated stills (default look from 2026-10-13):** design system (palette with light/dark tones, stroke/radius/type/spacing tokens, depth planes, light, composition), progressive scenes, QA checklist; `scripts/kit.js` + `scripts/scene_lint.py` | `references/style-guide.md` |
-| **Asset library (use before drawing anything new):** 1,000+ code-drawn assets (cast, faces, poses, clothes, skies, places, rooms, props, vehicles, animals, text, effects) + 10 Looks. **Never read library/*.js:** `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` → `show <name>` → paste the call (`L.put(S, name, x, y, o)`); `// @library auto` in scenes.js; `lib.py check scenes.js`; gallery `library/index.html` | `references/asset-library.md` |
+| **Asset library (optional shortcut; draw new whenever it fits better):** 2,300+ code-drawn assets (cast, faces, poses, clothes, infographics, anatomy, nature, food, cosmos, creatures, mind, world backgrounds, skies, places, rooms, props, vehicles, animals, text, effects) + 10 Looks. **Never read library/*.js:** `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` → `show <name>` → paste the call (`L.put(S, name, x, y, o)`); `// @library auto` in scenes.js; `lib.py check scenes.js`; gallery `library/index.html` | `references/asset-library.md` |
 | "User says X → do Y" edits | `references/edit-playbook.md` |
 | **Making any explainer thumbnail** (6 laws, background by topic, archetypes with real perf, engine build specs, `thumb_check.py` + feed-grid test, score card) | `references/thumbnail-designer.md` |
 | Evidence behind it: 1,260-thumbnail study of the same 8 channels, 192 hand labels, recipes, tools to redo it | `references/research/thumbnails/` |

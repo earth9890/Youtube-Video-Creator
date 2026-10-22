@@ -94,6 +94,7 @@ html = f'''<!doctype html>
     <style>
       @font-face {{ font-family: "Caveat"; src: url("{font_base}Caveat.ttf") format("truetype"); font-weight: 400 700; }}
       @font-face {{ font-family: "PH"; {ph_font} }}
+      @font-face {{ font-family: "Mali"; src: url("{font_base}Mali-SemiBold.ttf") format("truetype"); }}
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
       html, body {{ margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: {paper}; }}
       #root {{ position: relative; width: 100%; height: 100%; background: {paper}; }}
