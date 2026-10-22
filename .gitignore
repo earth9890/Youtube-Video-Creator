@@ -22,3 +22,7 @@ assets/*.log
 .voice.lock
 **/.gaps.html
 **/.p*.html
+
+# SEO pass: yt-dlp metadata snapshots are regenerable
+seo/live/
+seo/live-err.txt

@@ -19,9 +19,10 @@ Rules: ≤ 4 words, huge hand-drawn caps, 1 accent color, 1 doodle, lots of empt
 
 ## Description template
 ```
-<Hook sentence that restates the video's promise.>
+<Search line: what the video answers, in the words people type (check YouTube autocomplete:
+ ~/videos/black-hole-life/seo/suggest.py "seed"). It is the only line above "...more" and the search snippet.>
 
-<2–3 line summary with the keyword once.>
+<The Dave story hook, then the 2–3 line summary.>
 
 ⏱ Chapters
 0:00 Intro
@@ -31,7 +32,8 @@ Rules: ≤ 4 words, huge hand-drawn caps, 1 accent color, 1 doodle, lots of empt
 
 #motivation #discipline #nevergiveup #selfimprovement
 ```
-Tags: 8–12, mix broad (motivation, self improvement) and specific (never give up, consistency, show up every day). Pinned comment: one question that invites a personal answer ("What's one thing you showed up for today?").
+Query test (SEO pass 2026-10-22): write the 3 searches the video should win; their words must be in the title + first line. Only numbers from sources.md.
+Tags: ≤ 15, the searches people type plus names/terms for disambiguation, only what the video covers (no "overdose" tag on a video that gives no dose); end with "black hole life". Pinned comment: one question that invites a personal answer ("What's one thing you showed up for today?").
 Also supply: Shorts cut (first 55 s, 9:16 re-layout) if asked; end-screen text.
 
 ## Channel art (brand/gen.py → logos/, banners/)

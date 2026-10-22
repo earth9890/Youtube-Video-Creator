@@ -1,0 +1,31 @@
+The bystander effect explained: why a crowd can make help less likely, what really happened in the Kitty Genovese case, and how to get help in an emergency.
+
+If you collapsed in front of thirty-eight strangers, would anyone help you?
+
+Dave counts crowds, and his plan is to only ever need help near exactly one person, ideally a nurse. He got the number from the most famous story in psychology: in 1964 a New York Times front page said 38 neighbours watched and nobody called. Then two experiments, a fake seizure over an intercom and a room slowly filling with smoke, seemed to prove that every extra person makes you less likely to act. But the 38 turned out to be mostly wrong, and when researchers watched 219 real arguments and fights on city cameras, somebody stepped in nine times out of ten.
+
+⏱ Chapters
+0:00 Dave counts the crowd
+1:03 The voice on the intercom
+2:33 The room filling with smoke
+4:10 The thirty-eight who weren't
+5:28 219 fights on camera
+7:13 How to get help in a crowd
+
+Sources:
+- Gansberg (27 March 1964), The New York Times, "37 Who Saw Murder Didn't Call the Police" (headline 37, first sentence "thirty-eight")
+- Darley & Latané (1968), Journal of Personality and Social Psychology 8(4), "Bystander intervention in emergencies: Diffusion of responsibility": 72 NYU students on an intercom; 85 % of those who thought they were the only listener reported the seizure before it ended, 31 % of those who thought four others could hear; mean times 52 s vs 166 s
+- Latané & Darley (1968), Journal of Personality and Social Psychology 10(3), "Group inhibition of bystander intervention in emergencies": smoke from a wall vent; 75 % of lone students reported it, 1 of 10 with two passive actors, 3 of 8 groups of three (over 98 % expected); Latané & Darley (1969), American Scientist, "Bystander 'Apathy'"
+- Manning, Levine & Collins (2007), American Psychologist 62(6), "The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses": no evidence for 38 witnesses, that witnesses watched the murder, or that they all did nothing
+- McFadden (4 April 2016), The New York Times, Winston Moseley obituary: the 1964 article "grossly exaggerated the number of witnesses and what they had perceived"; two attacks, not three; two people did call the police
+- The New York Times (2 September 2020), "Sophia Farrar Dies at 92"; The Witness (2015), dir. James Solomon, with Bill Genovese; PBS Independent Lens
+- Fischer et al. (2011), Psychological Bulletin 137(4), "The bystander-effect: a meta-analytic review": 105 effect sizes, over 7,700 participants; weaker when the danger is obvious
+- Philpot, Liebst, Levine, Bernasco & Lindegaard (2020), American Psychologist 75(1), "Would I be helped? Cross-national CCTV footage shows that intervention is the norm in public conflicts": 219 conflicts in Lancaster, Amsterdam and Cape Town; at least one bystander intervened in 90.9 %, 3.76 interveners on average, 16.29 bystanders on average, odds of help x1.1 per extra bystander
+- Cialdini, Influence: The Psychology of Persuasion (1984; rev. 2006), ch. 4, "Devictimizing Yourself": "You, sir, in the blue jacket, I need help. Call an ambulance."
+- UT Southwestern Medical Center (2021), CPR and AED advice: choose someone specific and tell them to call
+
+If you ever need help in a crowd: point at one person, and give them one job.
+
+New videos every week: the strange science behind the things you worry about.
+
+#bystandereffect #psychology #socialpsychology #science
