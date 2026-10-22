@@ -59,3 +59,5 @@ If you moved to the Moon with one suitcase, what is the one thing you would pack
 
 ## Published
 https://youtu.be/QPeTnG9YhpY, Public, 2026-10-22 10:08
+
+Thumbnail swapped 2026-10-22 12:27 to c2.png (-130°C frozen in ice); a/b/c kept for switching back.

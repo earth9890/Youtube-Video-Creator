@@ -66,3 +66,5 @@ You get the billion and it's 6:41 pm: what's the first thing you'd pay for? (And
 
 ## Published
 https://youtu.be/ELhubiuGdBc, Public, 2026-10-22 10:10
+
+Thumbnail swapped 2026-10-22 12:27 to c2.png (BY 6:45? buried in cash); a/b/c kept for switching back.

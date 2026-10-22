@@ -59,3 +59,6 @@ Which job on the Moon's list surprised you most: the night-light, the tides, the
 https://youtu.be/mSWrWWG0ByE (2026-10-20, Public, Not made for kids, AI use Yes, thumbnail A, 1080p, pinned comment)
 
 thumbnail C: NO MOON?
+
+Re-uploaded 2026-10-22 11:56 (fixed 3 s blank at 0:33; screenshot-capture render): https://youtu.be/DJS4fF1068k, Public, thumbnail C. Old video https://youtu.be/mSWrWWG0ByE still up.
+Old video https://youtu.be/mSWrWWG0ByE set to Unlisted 2026-10-22 12:55 (replaced by https://youtu.be/DJS4fF1068k).

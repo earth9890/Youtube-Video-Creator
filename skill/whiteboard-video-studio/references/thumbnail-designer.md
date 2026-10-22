@@ -27,6 +27,21 @@ episode 28 "NO WIFI?" (`episodes/28-ancient-fun/thumbnails/thumb-c.js`, the refe
 - Keep the old "big uneasy Dave + object" tile as **B** for Test & Compare.
 - Swap on a published video: Studio → video → Details → Thumbnail (`input#file-loader`) → Save. Keep the old a.png.
 
+### Update 2026-10-22: the owner found eps 38–44 "not clickable at all". What fixed it (live picks in those folders)
+The failing set all used one template: Dave's head bottom-left with the same round "o" mouth, many small props, beige
+rooms, vague words ("MOVE IN?"). The redo (`THUMB-REDO.md`, picks = `c2.png`/`d.png`) follows these rules instead:
+- **Show the consequence at its extreme, as ONE big image (≥ 50 % of the frame) with Dave inside it:** frozen in an ice
+  block (41 "-130°C"), buried in eggs (39 "1 DAY?") or cash (42 "BY 6:45?"), swollen like a water balloon (40 "25 LITRES?"),
+  stretched into a noodle into the ring (43 "SPAGHETTI?").
+- **A specific face, varied per video:** clenched-teeth panic, queasy green, eyes rolled up, side-eye. Never the default "o".
+- **One strong flat colour** (deep blue, hot orange, bold green, black). No beige rooms.
+- **Or the minimal symbol:** one iconic object huge on a solid field with a tiny Dave for scale (38 brain on black
+  "ONLY 1%?", 44 giant ant face "5 MM?"). A contradiction with the title ("ONLY 1%?" on a 100 % video) pulls clicks.
+- **Words:** 1–3, concrete (a number, unit or deadline), letters ≥ 22 % of the frame height, never the title.
+- Make both (scene C + symbol D), compare at 320 px next to the channel's current tiles, keep the other as the A/B partner.
+- Thumbnail scripts share the engine + `helpers.js` scope: redeclaring a top-level name (`INK`, `CW`) renders a blank image
+  with no error. `// @library auto` works in `--thumb` mode.
+
 Tools:
 - `scripts/thumb_check.py`: lint plus a feed grid.
 - `scripts/research/fetch_thumbs.sh`: redo the study or add a channel.

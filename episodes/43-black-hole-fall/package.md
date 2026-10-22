@@ -54,3 +54,5 @@ Would you pick the small black hole or the giant one? Dave nearly swapped, and t
 
 ## Published
 https://youtu.be/Tc7_v11_gL0, Public, 2026-10-22 10:12
+
+Thumbnail swapped 2026-10-22 12:27 to c2.png (SPAGHETTI? noodle into the ring); a/b/c kept for switching back.

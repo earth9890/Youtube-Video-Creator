@@ -61,3 +61,5 @@ Which brain myth did you believe the longest: the ten percent, left-brain versus
 
 ## Published
 https://youtu.be/WPJy9bXi5RY, Public, 2026-10-22 10:02
+
+Thumbnail swapped 2026-10-22 12:27 to d.png (ONLY 1%? brain on black); a/b/c kept for switching back.

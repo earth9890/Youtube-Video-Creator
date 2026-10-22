@@ -1,0 +1,11 @@
+built /Users/harish/videos/black-hole-life/episodes/31-moon-disappeared/index.html  total=495.13s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  1 error(s), 0 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   318.7 MB · 8m 15.1s video · rendered in 26m 0.5s
+h264,1920,1080,495.133333
+aac,495.133000
+blank_scan: 990 frames checked, 0 near-blank

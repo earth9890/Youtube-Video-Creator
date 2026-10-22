@@ -55,3 +55,5 @@ If the shrink ray were real, which of Dave's four problems would get you first: 
 
 ## Published
 https://youtu.be/MRLSPaxzfvQ, Public, 2026-10-22 10:14
+
+Thumbnail swapped 2026-10-22 12:27 to d.png (5 MM? giant ant face); a/b/c kept for switching back.

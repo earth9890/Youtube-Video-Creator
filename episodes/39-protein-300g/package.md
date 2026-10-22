@@ -67,3 +67,5 @@ Be honest: do you count your protein, your workouts, or neither? And what's the 
 
 ## Published
 https://youtu.be/slysCLVFYgA, Public, 2026-10-22 10:04
+
+Thumbnail swapped 2026-10-22 12:27 to c2.png (1 DAY? buried in eggs); a/b/c kept for switching back.

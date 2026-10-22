@@ -60,3 +60,6 @@ Which can would stop you first: the caffeine, the sugar, the sleepless night, or
 
 ## Published
 https://youtu.be/MZOm3s9ob1E, Public, 2026-10-22 10:06
+Thumbnail swapped to C (100 CANS? huge gulping Dave + can pyramid) on 2026-10-22 11:46.
+
+Thumbnail swapped 2026-10-22 12:27 to c2.png (25 LITRES? water-balloon Dave); a/b/c kept for switching back.
