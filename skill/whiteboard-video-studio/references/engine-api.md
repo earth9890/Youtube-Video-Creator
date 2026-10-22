@@ -9,6 +9,7 @@ Canvas **1920×1080**. Ground line **`GY = 860`**. Captions occupy **y > 980** �
 | `// theme: dark` | v2 chalkboard |
 | `// look: v3` | colour scenery, white-filled heads, ~9 px lines, Mali SemiBold, outlined white captions, blink/breathe, pop-in text, 0.3 s crossfade |
 | `// look: still` | **illustrated stills (default for new videos)**: crisp vector, no draw-on, elements fade in on their word (progressive build), 0.6 s crossfade, slow camera. Loads `kit.js` (`DS.*` tokens and helpers: `DS.room`, `DS.outdoor`, `DS.figure`, `DS.shape`, `DS.card`, `DS.shadow`, `DS.frame`, `DS.rug`, `DS.plant`, `DS.vignette`). Rules: `style-guide.md`; lint: `scene_lint.py` |
+| `// captions: off` | (any v3/still look) no burned-in captions; on-screen chips carry the keywords (Stack Doodle) |
 | `// look: story` | v3 drawing for long-form explainers: **hard cuts** (no fade), camera `none` by default, **no captions**, text pops in 0.22 s. Cut on the breath: `sceneWindows(CUES, 0.08)`, one window per phrase (median ~2.5 s, max 6 s). Draw durations ≤ 0.3 s so the picture reads at once |
 
 v3 / story extras:
@@ -52,7 +53,7 @@ S.len, S.at(f) /*start+f*len*/, S.d(f) /*f*len*/
 S.draw(pathD, t, dur, { c, w, fill, fo, parent, ease, op })   // stroke-on reveal; fill fades in near the end
 S.fill(pathD, t, dur, color, opacity, parent)                 // no outline, fade in
 S.seq([[d, weight, opts], ...], t, dur, parent)               // strokes one after another inside [t, t+dur]
-S.text(str, x, y, { size: 64, t, dur, anchor: "middle"|"start"|"end", font: "ph"|"caveat", c, parent, weight, spacing, bold })  // bold = heavy stroke (default in thumbnails)
+S.text(str, x, y, { size: 64, t, dur, anchor: "middle"|"start"|"end", font: "ph"|"caveat"|"mono" (JetBrains Mono, for code; library assets use L.text(…, { font: "Mono" })), c, parent, weight, spacing, bold })  // bold = heavy stroke (default in thumbnails)
                                                              // handwritten, revealed left→right. "ph" = Patrick Hand (caps read best), "caveat" = script
 S.fadeIn(el, t, dur) S.fadeOut(el, t, dur) S.show(el, t) S.hide(el, t)
 S.move(el, t, dur, { x, y, rotation, scale, svgOrigin: "x y" }, ease)   // GSAP tween on any element/group
@@ -146,3 +147,6 @@ npx hyperframes check                       # 0 errors required (container_overf
 npx hyperframes snapshot --at <sceneEnd-0.45,...>   # then READ snapshots/contact-sheet-*.jpg and fix
 ```
 Checklist per frame: drawing complete, nothing overlapping (text over figures, props over captions), scale matches emotion, one accent colour, key object largest. Do not render — the orchestrator renders.
+
+## Fast entrances (library assets)
+`L.put(S, name, x, y, { t, pop: true })` = back-out scale-in (0.3 s); `{ t, slide: "up"|"down"|"left"|"right" }` = slide 120–160 px + fade (0.3 s). Default (neither) = the calm 0.35 s fade. `S.popIn(el, t)` / `S.slideIn(el, t, dx, dy)` work on any inner `<g>` without its own transform.

@@ -165,6 +165,10 @@ L.OUTFITS = {
 
 // ---------- the figure ----------
 L.person = (o = {}) => {
+  // Look token stick: every person in every asset becomes the pure stick figure (man02 / girl02): no clothes, white circle head
+  // (Black Hole Life default since 2026-10-22, Look K). Girls keep their hair so they still read as girls; accessories stay.
+  if (L.T.stick) { const girl = /^girl/.test(o.style || "") || /^(bun|ponytail|long|bob|curlyLong|braids|pixie|hijab)/.test(o.hair || "");
+    o = Object.assign({}, o, { style: girl ? "girl02" : "man02", outfit: "none", hair: girl ? (o.hair || (L.CAST[o.style] || {}).hair || "ponytail") : "tick", skin: undefined }); }
   const st = L.CAST[o.style || "man01"] || L.CAST.man01, body = L.BODIES[o.body || st.body || "regular"] || {}, T = L.T;
   const s = (o.s || 1) * (body.scale || 1), leg = body.leg || 1, torso = body.torso || 1, W = body.width || 1;
   const R = 50 * s * (st.head.ratio || 1) * (T.head.ratio || 1) * (body.headK || 1);

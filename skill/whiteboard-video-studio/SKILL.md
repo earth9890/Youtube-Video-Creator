@@ -10,11 +10,12 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 **Approval gates (owner rule):** new formats and topics start as a **~1-min trial**. Get the owner's OK on the script **text**, then on a **voice-only mp3**, then build the visuals. Long videos come only after a short one is approved.
 
 **Kids' songs and nursery rhymes (Tiny Tune Town) use the `tiny-tune-town` skill**, which reuses this skill's still-look engine.
+**Tech news / dev explainers (Stack Doodle) use the `stack-doodle` skill**, same engine (+ `// captions: off`, `L.put … { pop | slide }` entrances, the Mono code font, the `dev` asset group).
 
 ### Current long-form pipeline (Black Hole Life, 2026-10-22) — the fast path
 1. Script `script.md` (+ `sources.md`, `title.md`), `script_lint.py --long` PASS. Cast voices: `# cast: dave=22393bee,brain=7f7a5b5c,…` header + `(@dave)` on quoted lines.
 2. Voice: `~/videos/black-hole-life/voice-ep.sh EP` (VoiceStudio Storyteller, 12 steps, clip_check) → `slow-ep.sh EP 0.9`.
-3. Visuals: `scenes.js` = `// look: still` + `// @library auto`; **find assets with `scripts/lib.py find <words>` / `show <name>`, place with `L.put(S, name, x, y, { s, t: W(c, w) })`**; the library is a shortcut, not a rule: draw new frames, props and scenes whenever they fit the beat better (reusable ones go into `library/` with `L.reg`). `lib.py check scenes.js`, `scene_lint.py`, `build.py`, snapshots read.
+3. Visuals: `scenes.js` = `// look: still` + `// @library auto` (Black Hole Life builds get **Look K = pure stick figures** automatically: every person in every asset, Dave included, is drawn as the Man 02 / Girl 02 stick figure with thin lines; owner default 2026-10-22; a scene's own `L.look(...)` overrides); **find assets with `scripts/lib.py find <words>` / `show <name>`, place with `L.put(S, name, x, y, { s, t: W(c, w) })`**; the library is a shortcut, not a rule: draw new frames, props and scenes whenever they fit the beat better (reusable ones go into `library/` with `L.reg`). `lib.py check scenes.js`, `scene_lint.py`, `build.py`, snapshots read.
 4. Render: `RES=1080 lockf … scripts/finish.sh EP none renders/EP-1080p.mp4` (screenshot capture; ends with `blank_scan.py` — re-render if it flags frames).
 5. Package + upload: `prep-upload.py EP` → Studio (`…/videos/upload?d=ud`), pinned comment. Details: `references/youtube-upload.md`.
 
@@ -32,8 +33,9 @@ Builds on `/hyperframes` (read `hyperframes-core` before writing composition HTM
 | Hooks, psychology, staging, sound, colour (motivational shorts) | `references/craft-playbook.md` |
 | Engine API (v2 paper, v3 colour look, story look, props, camera) | `references/engine-api.md` |
 | **Illustrated stills (default look from 2026-10-13):** design system (palette with light/dark tones, stroke/radius/type/spacing tokens, depth planes, light, composition), progressive scenes, QA checklist; `scripts/kit.js` + `scripts/scene_lint.py` | `references/style-guide.md` |
-| **Asset library (optional shortcut; draw new whenever it fits better):** 2,300+ code-drawn assets (cast, faces, poses, clothes, infographics, anatomy, nature, food, cosmos, creatures, mind, world backgrounds, skies, places, rooms, props, vehicles, animals, text, effects) + 10 Looks. **Never read library/*.js:** `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` → `show <name>` → paste the call (`L.put(S, name, x, y, o)`); `// @library auto` in scenes.js; `lib.py check scenes.js`; gallery `library/index.html` | `references/asset-library.md` |
+| **Asset library (optional shortcut; draw new whenever it fits better):** 2,400+ code-drawn assets (cast, dev/tech UI (code, terminal, browser, servers, AI), faces, poses, clothes, infographics, anatomy, nature, food, cosmos, creatures, mind, world backgrounds, skies, places, rooms, props, vehicles, animals, text, effects) + 10 Looks. **Never read library/*.js:** `python3 ~/.claude/skills/whiteboard-video-studio/scripts/lib.py find <words>` → `show <name>` → paste the call (`L.put(S, name, x, y, o)`); `// @library auto` in scenes.js; `lib.py check scenes.js`; gallery `library/index.html` | `references/asset-library.md` |
 | "User says X → do Y" edits | `references/edit-playbook.md` |
+| **Every thumbnail, every channel: the pro pass** (psychology, 3 concepts × 2 critique rounds, `thumb_hires.py` 2× pixel-perfect render) | `references/thumbnail-pro.md` |
 | **Making any explainer thumbnail** (6 laws, background by topic, archetypes with real perf, engine build specs, `thumb_check.py` + feed-grid test, score card) | `references/thumbnail-designer.md` |
 | Evidence behind it: 1,260-thumbnail study of the same 8 channels, 192 hand labels, recipes, tools to redo it | `references/research/thumbnails/` |
 | Motivational-short thumbnails, title, description, upload | `references/thumbnail-doctrine.md`, `youtube-package.md`, `youtube-upload.md` |

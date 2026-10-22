@@ -14,6 +14,7 @@ L.LOOKS = {
   H: L.with({ name: "H", label: "Look H · thick comic", line: { char: 13, prop: 10, scene: 6, detail: 5 }, shade: "flat", palette: "contrast", radius: 0.4, join: "miter", font: "ComicNeue" }),
   I: L.with({ name: "I", label: "Look I · rubber-hose retro", limb: { style: "hose" }, palette: "storybook", shade: "cel", head: { ratio: 1.15 }, font: "Chewy" }),
   J: L.with({ name: "J", label: "Look J · minimal line", line: { char: 4, prop: 3, scene: 2, detail: 2 }, shade: "flat", shadow: false, head: { ratio: 0.9 }, font: "Gaegu" }),
+  K: L.with({ name: "K", label: "Look K · pure stick (Black Hole Life default, owner 2026-10-22)", stick: true, line: { char: 4, prop: 3, scene: 2, detail: 2, hair: 1.5 } }),
 };
 
 // ---------- the test scene: sky, sun/moon, hills, tree, house, Dave + a girl, a mug on a table, a label card ----------

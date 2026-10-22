@@ -204,11 +204,11 @@ function scene(start, end, o = {}) {
     const size = op.size || 64, t = op.t === undefined ? start : op.t, dur = op.dur === undefined ? Math.min(1.2, 0.05 * str.length + 0.25) : op.dur;
     const anchor = op.anchor || "middle", id = "tclip" + ++CLIPN;
     const cp = el("clipPath", { id }, defs);
-    const wEst = str.length * size * (op.font === "caveat" ? 0.48 : V3 ? 0.64 : 0.56) + size; // v3 "PH" = Mali SemiBold (wider)
+    const wEst = str.length * size * (op.font === "caveat" ? 0.48 : op.font === "mono" ? 0.6 : V3 ? 0.64 : 0.56) + size; // v3 "PH" = Mali SemiBold (wider)
     const x0 = anchor === "middle" ? x - wEst / 2 : anchor === "end" ? x - wEst : x - size * 0.2;
     const r = el("rect", { x: x0, y: y - size * 1.15, width: 0, height: size * 1.6 }, cp);
     const wg = V3 && !op.write ? el("g", {}, op.parent || g) : null;
-    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : "PH", "font-size": size, fill: op.c || INK }, wg || op.parent || g);
+    const te = el("text", { x, y, "text-anchor": anchor, "font-family": op.font === "caveat" ? "Caveat" : op.font === "mono" ? "Mono" : "PH", "font-size": size, fill: op.c || INK }, wg || op.parent || g);
     if (!wg) te.setAttribute("clip-path", `url(#${id})`); // pop-in text needs no clip (width estimates cut wide caps)
     if (op.weight) te.setAttribute("font-weight", op.weight);
     if (op.spacing) te.setAttribute("letter-spacing", op.spacing);
@@ -227,6 +227,9 @@ function scene(start, end, o = {}) {
   S.show = (e, t) => tl.set(e, { opacity: 1 }, t);
   S.hide = (e, t) => tl.set(e, { opacity: 0 }, t);
   S.move = (e, t, dur, props, ease = "power2.inOut") => tl.to(e, Object.assign({ duration: dur, ease }, props), t);
+  // fast-channel entrances (L.put { pop } / { slide }); e must be an inner <g> with no transform of its own
+  S.popIn = (e, t, dur = 0.3) => tl.fromTo(e, { opacity: 0, attr: { transform: "scale(0.6)" } }, { opacity: 1, attr: { transform: "scale(1)" }, duration: dur, ease: "back.out(1.8)" }, t);
+  S.slideIn = (e, t, dx, dy, dur = 0.3) => tl.fromTo(e, { opacity: 0, attr: { transform: `translate(${dx} ${dy})` } }, { opacity: 1, attr: { transform: "translate(0 0)" }, duration: dur, ease: "power3.out" }, t);
   S.pop = (e, t, cx, cy, dur = 0.35) => V3 ? popAt(e, t, cx, cy, dur) : tl.fromTo(e, { scale: 0.001 }, { scale: 1, svgOrigin: `${cx} ${cy}`, duration: dur, ease: "back.out(2)" }, t);
   S.tilt = (deg, t, dur = 0.3) => tl.to(g0, { rotation: deg, svgOrigin: "960 540", duration: dur, ease: "power2.out" }, t);
   S.fig = (...a) => fig(S, ...a);

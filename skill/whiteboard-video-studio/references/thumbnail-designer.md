@@ -1,5 +1,7 @@
 # Thumbnail designer: how to make a thumbnail people click (from 1,260 real thumbnails)
 
+> **First read `thumbnail-pro.md`** (owner 2026-10-22: pro-designer quality, 3 concepts × 2 critique rounds, final render with `scripts/thumb_hires.py`). This file is the Black Hole Life specifics.
+
 **Read this before every thumbnail.** It replaces `thumbnail-doctrine.md` §0 for explainers. The motivational-video sections of that file still apply to motivational videos.
 
 **Evidence:**

@@ -49,7 +49,8 @@ L.DEFAULT = {
   font: "Mali",          // see L.FONTS
 };
 L.FONTS = { Mali: "'Mali', 'Mali SemiBold'", Fredoka: "'Fredoka'", Baloo: "'Baloo 2'", ComicNeue: "'Comic Neue'", Gaegu: "'Gaegu'",
-  PatrickHand: "'PatrickHand', 'Patrick Hand'", Chewy: "'Chewy'", Nunito: "'Nunito'" };
+  PatrickHand: "'PatrickHand', 'Patrick Hand'", Chewy: "'Chewy'", Nunito: "'Nunito'",
+  Mono: "'Mono', 'JetBrains Mono', monospace" };  // Mono = code/terminal text only (brand/JetBrainsMono.ttf)
 const deep = (a, b) => { const o = Object.assign({}, a); for (const k in b) o[k] = b[k] && typeof b[k] === "object" && !Array.isArray(b[k]) ? Object.assign({}, a[k], b[k]) : b[k]; return o; };
 L.LOOKS = {}; // filled by stylelab.js (A … J); A = L.DEFAULT
 L.T = L.DEFAULT;
@@ -155,9 +156,13 @@ L.put = (S, name, x, y, o = {}) => {
   const ao = Object.assign({}, o); if (!it.selfScale) delete ao.s; // selfScale assets (people) use o.s for √s line weights; others scale by transform
   const mk = () => L.svg(name, ao);
   g.innerHTML = o.look ? L.useLook(typeof o.look === "string" ? L.LOOKS[o.look] : L.with(o.look), mk) : mk();
+  const fx = (o.pop || o.slide) && S.popIn && o.t !== undefined && o.t > S.start + 0.05; // pop: back-out scale-in; slide: "up"|"down"|"left"|"right"
+  if (fx) g.innerHTML = `<g>${g.innerHTML}</g>`;
   const k = it.selfScale ? 1 : o.s || 1;
   g.setAttribute("transform", `translate(${f1(x)} ${f1(y)})${o.rot ? ` rotate(${o.rot})` : ""} scale(${(o.flip ? -1 : 1) * k} ${k})`);
-  if (o.t !== undefined && o.t > S.start + 0.05) S.fadeIn(g, o.t, 0.35);
+  if (fx) { const d = { up: [0, 120], down: [0, -120], left: [160, 0], right: [-160, 0] }[o.slide] || [0, 120];
+    o.pop ? S.popIn(g.firstElementChild, o.t) : S.slideIn(g.firstElementChild, o.t, d[0] / k, d[1] / k); }
+  else if (o.t !== undefined && o.t > S.start + 0.05) S.fadeIn(g, o.t, 0.35);
   return g;
 };
 })();

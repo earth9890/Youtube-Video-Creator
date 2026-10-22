@@ -64,7 +64,7 @@ scales by transform. Mix with engine/DS calls freely (`S.text`, `DS.card`, `S.mo
 - anchors without drawing: `L.anchors(opts)` → `{ hd, R, sh, hip, hands: [L, R], … }` (place props in hands)
 
 ## Looks (style tokens)
-`L.look("A"…"J")` or `L.look({ line: { char: 9 }, ink: "shade", palette: "storybook", font: "Fredoka" })`. Tokens: outline
+`L.look("A"…"K")` (K = pure stick: token `stick: true` turns every person into man02/girl02 stick figures + thin lines; the Black Hole Life default, injected by build.py for projects under ~/videos/black-hole-life) or `L.look({ line: { char: 9 }, ink: "shade", palette: "storybook", font: "Fredoka" })`. Tokens: outline
 widths, outline colour (ink/navy/shade/none), caps and corner radius, limb style, head ratio/shape/fill, shading
 (grad/flat/cel), ground shadow, palette, font. Every asset reads them, so one call restyles the whole library.
 Fonts other than Mali, Patrick Hand and Caveat are Google Fonts: copy the chosen font's TTF into `brand/` and the

@@ -28,7 +28,7 @@ thumb = '--thumb' in args
 
 # --- fonts ---
 (A / 'fonts').mkdir(exist_ok=True)
-for f in ('PatrickHand.ttf', 'Caveat.ttf', 'Mali-SemiBold.ttf'):
+for f in ('PatrickHand.ttf', 'Caveat.ttf', 'Mali-SemiBold.ttf', 'JetBrainsMono.ttf', 'Fredoka.ttf'):
     if not (A / 'fonts' / f).exists():
         shutil.copy(SKILL / 'brand' / f, A / 'fonts' / f)
 
@@ -69,7 +69,11 @@ def _lib(m):
         full = sum((LIB / f'{n}.js').stat().st_size for n in ['core', 'people', 'stylelab'] + rest)
         used = sum((LIB / f'{n}.js').stat().st_size for n in names)
         print(f'@library auto: {" ".join(names)} = {used // 1024} KB (saved {(full - used) // 1024} KB of {full // 1024} KB)')
-    return '\n'.join((LIB / f'{n}.js').read_text() for n in dict.fromkeys(names))
+    code = '\n'.join((LIB / f'{n}.js').read_text() for n in dict.fromkeys(names))
+    # Black Hole Life default (owner 2026-10-22): Look K = pure stick figures for every person + thin lines; a scene that calls L.look(...) itself wins
+    if '/black-hole-life/' in str(proj) and 'L.look(' not in scenes:
+        code += '\nL.look("K");'
+    return code
 scenes = re.sub(r'^// @library(?: (\S+))?\s*$', _lib, scenes, flags=re.M)
 total = timing['total']
 dark = scenes.lstrip().startswith('// theme: dark')
@@ -95,6 +99,8 @@ html = f'''<!doctype html>
       @font-face {{ font-family: "Caveat"; src: url("{font_base}Caveat.ttf") format("truetype"); font-weight: 400 700; }}
       @font-face {{ font-family: "PH"; {ph_font} }}
       @font-face {{ font-family: "Mali"; src: url("{font_base}Mali-SemiBold.ttf") format("truetype"); }}
+      @font-face {{ font-family: "Mono"; src: url("{font_base}JetBrainsMono.ttf") format("truetype"); font-weight: 100 800; }}
+      @font-face {{ font-family: "Fredoka"; src: url("{font_base}Fredoka.ttf") format("truetype"); font-weight: 300 700; font-stretch: 75% 125%; }}
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
       html, body {{ margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: {paper}; }}
       #root {{ position: relative; width: 100%; height: 100%; background: {paper}; }}
@@ -128,7 +134,7 @@ html = f'''<!doctype html>
 // ===================== scenes =====================
 {scenes}
 // ==================================================
-      {'' if story else 'captions(TIMING.chunks);'}
+      {'' if story or '// captions: off' in scenes[:300] else 'captions(TIMING.chunks);'}
       window.__timelines["main"] = tl;
       {end_js}
     </script>
