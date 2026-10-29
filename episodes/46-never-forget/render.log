@@ -1,0 +1,14 @@
+@library auto: core people stylelab activity animals dev effects ep46-never-forget episode-kit food infographic interiors mind motion props-home props-more props-world ride scenery sky text thoughts wardrobe = 1324 KB (saved 900 KB of 2224 KB)
+built /Users/harish/videos/black-hole-life/episodes/46-never-forget/index.html  total=475.04s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 1 warning(s), 2 info(s)
+  0 error(s), 11 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   279.0 MB · 7m 55.0s video · rendered in 10m 24.3s
+h264,1920,1080,475.066667
+aac,475.066000
+blank_scan: 950 frames checked, 1 near-blank at [168.5] s
+WARNING: blank frames (renderer dropped the picture, usually under heavy load): re-render this episode

@@ -19,7 +19,7 @@ const timeLook = (time) => {
 };
 const withTime = (fn) => (o = {}) => { const tok = timeLook(tm(o)); return tok === L.T ? fn(o) : L.useLook(tok, () => fn(o)); };
 let GID = 0;
-const gid = (p) => p + ++GID;
+const gid = (p) => "w" + p + ++GID;  // "w" prefix: scenery.js has its own counter; same ids made url(#id) hit the wrong defs (ep48 dark reef)
 
 const blob = (cx, cy, rx, ry, lobes = 7, jit = 0.12, ph = 0, per = 4) => {
   const n = lobes * per, pts = [];
@@ -268,7 +268,7 @@ reg("world-train-station", "Train station platform", PL, (q) => {
   r += q.sh(P([[-20, 780], [1940, 780], [1940, 1100], [-20, 1100]], true), "gray", { w: "scene", tone: 0, dir: "v" }) + L.flat(L.rect(-20, 780, 1960, 18), "yellow", 0.9) + q.line(`M0 870 H1920 M0 980 H1920 M240 798 V1100 M720 798 V1100 M1200 798 V1100 M1680 798 V1100`, "ink", 0.2, "detail");
   const bench = (x, y) => q.shd(x, y, 260) + q.sh(R(x - 110, y - 70, 220, 22, 8), "wood", { w: "detail", flat: true }) + q.sh(R(x - 110, y - 30, 220, 18, 8), "wood", { w: "detail", flat: true, tone: 1 }) + q.sh(L.rect(x - 90, y - 12, 12, 24) + L.rect(x + 78, y - 12, 12, 24), "ink", { w: "hair", flat: true, tone: 1 });
   r += bench(220, 940) + bench(1700, 940);
-  [[100, 780], [1840, 780]].forEach(([x, y]) => r += q.sh(R(x - 6, y - 280, 12, 280), "ink", { w: "hair", flat: true, tone: 1 }) + q.sh(R(x - 34, y - 330, 68, 60, 14), "white", { w: "detail", tone: 0 }) + q.glow(x, y - 300, 120, "yellow", 0.4, 1));
+  [[100, 780], [1840, 780]].forEach(([x, y]) => r += q.sh(L.rect(x - 6, y - 280, 12, 280), "ink", { w: "hair", flat: true, tone: 1 }) + q.sh(R(x - 34, y - 330, 68, 60, 14), "white", { w: "detail", tone: 0 }) + q.glow(x, y - 300, 120, "yellow", 0.4, 1));
   return r;
 }, ["train", "station", "platform", "railway", "travel", "commute", "tracks", "transport"]);
 
@@ -1289,7 +1289,7 @@ reg("world-laboratory", "Bright science laboratory", PL, (q) => {
     [["red", 30], ["blue", 100], ["green", 170], ["yellow", 240], ["purple", 310]].forEach(([c, dx], i) => { o += glass(kinds[i], x + dx, 250, 0.85, c, 0.35) + bottle(x + dx, 430, 0.95, ["orange", "teal", "pink", "blue", "green"][(i + (x > 1000 ? 2 : 0)) % 5]); }); return o; };
   r += shelf(100, ["erlen", "beaker", "round", "erlen", "tube"]) + shelf(1460, ["round", "erlen", "beaker", "tube", "erlen"]);
   // poster + periodic-like grid
-  r += q.sh(R(450, 150, 200, 260, 10), "paper", { w: "detail", flat: true }) + L.stroke((() => { let t = ""; for (let i = 0; i < 5; i++) t += `M470 ${190 + i * 38} H630`; for (let i = 0; i < 6; i++) t += `M${470 + i * 32} 180 V380`; return t; })(), { c: "ink", w: "hair", op: 0.5 }) + q.raw(() => L.flat(R(470, 190, 32, 38) + R(534, 266, 32, 38) + R(598, 342, 32, 38), "orange", 0.8));
+  r += q.sh(R(450, 150, 200, 260, 10), "paper", { w: "detail", flat: true }) + L.stroke((() => { let t = ""; for (let i = 0; i < 5; i++) t += `M470 ${190 + i * 38} H630`; for (let i = 0; i < 6; i++) t += `M${470 + i * 32} 180 V380`; return t; })(), { c: "ink", w: "hair", op: 0.5 }) + q.raw(() => L.flat(L.rect(470, 190, 32, 38) + L.rect(534, 266, 32, 38) + L.rect(598, 342, 32, 38), "orange", 0.8));
   r += q.sh(R(1270, 150, 160, 220, 10), "paper", { w: "detail", flat: true }) + q.line(`M1290 330 q30 -80 60 0 t60 -40 M1290 190 h110 M1290 220 h80`, "ink", 0.6, "detail");
   // bench with equipment
   r += q.sh(R(60, 760, 560, 60, 8), "gray", { w: "detail", tone: 0 }) + q.sh(L.rect(80, 820, 520, 280), "wood", { w: "detail", tone: 1 }) + q.line(`M340 820 V1100 M80 940 H600`, "ink", 0.4, "detail");

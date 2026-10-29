@@ -1,0 +1,13 @@
+@library auto: core people stylelab activity cosmos dev effects ep48-no-internet episode-kit food history infographic interiors motion props-home props-more props-world ride scenery sky story text wardrobe worlds = 1490 KB (saved 734 KB of 2224 KB)
+built /Users/harish/videos/black-hole-life/episodes/48-no-internet/index.html  total=508.56s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  0 error(s), 0 warning(s), 3 info(s)
+  0 error(s), 12 warning(s), 0 info(s)
+◇  Check passed
+  Lint: 0 error(s), 1 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   504.4 MB · 8m 28.6s video · rendered in 19m 8.6s
+h264,1920,1080,508.566667
+aac,508.566000
+blank_scan: 1017 frames checked, 0 near-blank

@@ -29,3 +29,15 @@ renders in order. Account: Black Hole Life (harishsugandhi.work) is now selected
 **06:45:** renders under heavy load dropped the picture on some frames (blank paper + captions): 38 (460–463 s), 39 (5 spots). 44 clean. Added scripts/blank_scan.py (runs at the end of finish.sh). Re-rendering 38, 39; check every render with blank_scan before upload.
 **07:00:** cause = hyperframes "experimental fast capture" (macOS default). finish.sh now renders with --experimental-fast-capture=false. Re-render queue: 38, 39, 42 (v1 files kept as *-v1.mp4).
 **07:10:** published eps scanned (renders in Trash): only ep31 "What If the Moon Disappeared?" has a blank 0:33–0:36 on YouTube (3 s). Owner to decide: leave or re-render + re-upload. 32/36 earlier flags were dark night skies (detector fixed: pale + uniform only).
+
+# Batch 46–49 (2026-10-28, owner: "start working on it… next 4 videos")
+Brief: BUILD-46-49.md (Look K pure stick, pro thumbnails). script.json written from script.md (46=71, 47=75, 48=82, 49=85 clips).
+Voice chain (bg): voice-ep.sh → slow-ep.sh 0.9 → assets/VOICE-DONE, 46→49 in order. Build agents bhl-46..49 (sonnet), phase 1 started.
+Upload: NOT approved yet (ask owner when renders pass blank_scan). Git: not approved.
+- 49 phase 1 done (131 shots, thumbs A 'IT SEES ME?'). Before publish: re-verify clip 80 'nobody has claimed the grand prize' (Coller Dolittle).
+- 49 RENDERED renders/49-talk-to-animals-1080p.mp4 (8:20, blank_scan 1 flag @5.5 s = crossfade, OK). 46 render had 4 empty shot starts (213/309/335.5/439 s) -> bhl-46 fixing, re-render.
+- 49 RE-RENDERED after shot-start fixes (03:06): check passed, blank_scan only the 5.5 s crossfade. v1 trashed.
+- 46 RE-RENDERED 04:48 (7:55): blank_scan 1 flag @168.5 = crossfade; 4 old empty moments now drawn. v1 trashed.
+- 47 RE-RENDERED 05:57 (8:31): blank_scan 3 flags = sparse/crossfade, OK; old empties now drawn. v1 trashed.
+- 48 RENDERED 06:42 (8:29): blank_scan 0, reef bright. ALL 4 RENDERED; upload awaits owner OK.
+- ALL 4 PUBLISHED Public + pinned 2026-10-29 (46 8BIPhnBh0iU, 47 YXvg2z08IuU, 48 zrPhhnK_N4c, 49 gY9SOnwejEc).

@@ -24,6 +24,7 @@ from `episodes/38-full-brain` and editing ids/names.
 - One recurring diagram/object that evolves across sections (see the script's beat sheet).
 - `scene_lint` must pass; `python3 S/scripts/build.py .` then `npx hyperframes check` 0 errors. Snapshot contact sheets,
   READ them yourself, fix what looks wrong (overlaps, text off-screen, empty frames, unreadable labels).
+- **Empty shot starts (2026-10-29, eps 46/47/49):** a shot whose background/subject pops in on a later W() cue opens on bare paper. Every shot shows its background + main subject from its first frame; only labels/cards pop on words. QA: snapshot every shot at start +0.35 s (scene_gaps.py can't see this; it only checks coverage). Render blank_scan flags the long ones.
 - Heavy Chrome builds/snapshots: wrap in `lockf -t 3000 ~/videos/black-hole-life/.heavy.lock <cmd>`.
 
 ## Package (`package.md`, same format as 27-not-behind)

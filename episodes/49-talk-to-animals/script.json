@@ -1,0 +1,519 @@
+[
+[
+"This is Dave. Dave woke up this morning able to understand every animal on Earth. Dave wants secrets.",
+0.7,
+1.0,
+0.0
+],
+[
+"Right. Tell me everything. I have a notebook.",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"So what would happen if you could talk to animals?",
+0.2,
+1.0,
+0.0
+],
+[
+"Would you learn their secrets, or hear a lot of very short sentences?",
+0.7,
+1.0,
+0.0
+],
+[
+"The first thing Dave hears is a prairie dog, standing up on a mound, shouting about him.",
+0.7,
+1.0,
+0.0
+],
+[
+"Tall human. Yellow shirt. Coming this way.",
+0.7,
+1.0,
+0.0,
+"kid"
+],
+[
+"Here is the plan. We'll climb from the smallest animal message to the biggest one nobody can read yet.",
+0.2,
+1.0,
+0.0
+],
+[
+"And we'll find out whether any of them have anything to say to Dave.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave wrote the first line in his notebook. It says: they can see my shirt.",
+0.7,
+1.0,
+0.0
+],
+[
+"Is that real? Partly. In two thousand four, the biologist Con Slobodchikoff and two colleagues tested it in a colony of Gunnison's prairie dogs in Arizona.",
+0.7,
+1.0,
+0.0
+],
+[
+"Three women of similar height walked through the colony ninety-nine times in total.",
+0.2,
+1.0,
+0.0
+],
+[
+"All three wore blue jeans and sunglasses. The only thing that changed was the colour of the shirt: blue, green or yellow.",
+0.2,
+1.0,
+0.0
+],
+[
+"It is the most consistent outfit in science.",
+0.7,
+1.0,
+0.0
+],
+[
+"They recorded eighty-two alarm calls from forty-eight marked animals. Then a computer measured the sound of each call.",
+0.7,
+1.0,
+0.0
+],
+[
+"The calls for blue and for yellow were different, and so were the calls for blue and for green. But the calls for green and for yellow were not.",
+0.7,
+1.0,
+0.0
+],
+[
+"The authors said that fits how prairie dogs see. They suggested the animals build labels for a predator's features into their calls.",
+0.7,
+1.0,
+0.0
+],
+[
+"It was not perfect. The computer guessed the shirt from the call about fifty-five percent of the time. Chance would be thirty-three.",
+0.7,
+1.0,
+0.0
+],
+[
+"In a later study, the calls also differed for cut-out shapes of different sizes, like a circle, a square and a triangle.",
+0.7,
+1.0,
+0.0
+],
+[
+"This isn't new. Prairie dogs already have different calls for a hawk, a human, a coyote and a domestic dog.",
+0.2,
+1.0,
+0.0
+],
+[
+"And in nineteen eighty, researchers showed vervet monkeys have different calls for a leopard, an eagle and a python.",
+0.7,
+1.0,
+0.0
+],
+[
+"So a prairie dog has four ways of saying something is going to eat me, and one of them is human.",
+0.7,
+1.0,
+0.0
+],
+[
+"Researchers use a careful term for this: functional reference.",
+0.2,
+1.0,
+0.0
+],
+[
+"The call works as if it refers to the predator, but proving what the animal means is hard. The prairie dog is not available for comment.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave looks at the notebook. They can tell blue from yellow. It is not a secret. It is a shirt.",
+0.7,
+1.0,
+0.0
+],
+[
+"Next, the bees. Karl von Frisch decoded their dance using glass-walled hives. It won him a share of the Nobel Prize in nineteen seventy-three.",
+0.7,
+1.0,
+0.0
+],
+[
+"A bee that finds food flies back and dances.",
+0.2,
+1.0,
+0.0
+],
+[
+"In the dark hive, gravity stands in for the Sun. The angle of its waggle run, measured from straight up,",
+0.2,
+1.0,
+0.0
+],
+[
+"shows where the food is compared with the Sun.",
+0.7,
+1.0,
+0.0
+],
+[
+"The length of the run shows the distance. A run lasting two and a half seconds means roughly two thousand six hundred metres.",
+0.7,
+1.0,
+0.0
+],
+[
+"If the flowers are within about fifty metres, the bee dances in a circle. That says close to the hive, but gives no direction.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave asks a bee what the meaning of life is.",
+0.7,
+1.0,
+0.0
+],
+[
+"Two and a half seconds, that way, near the Sun. Please move.",
+0.7,
+1.0,
+0.0,
+"kid"
+],
+[
+"It is one of the most precise animal messages we have decoded. And it is a set of directions to some flowers.",
+0.7,
+1.0,
+0.0
+],
+[
+"When a swarm needs a new home, hundreds of scouts dance for different sites.",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty eleven, researchers found a signal nobody had noticed: a very short buzz, delivered while head-butting a dancer.",
+0.2,
+1.0,
+0.0
+],
+[
+"It shortens and ends the dance.",
+0.7,
+1.0,
+0.0
+],
+[
+"Bees settle a disagreement with a buzz and a head-butt. No further questions.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave writes in the notebook: bees give better directions than I do.",
+0.7,
+1.0,
+0.0
+],
+[
+"But do animals ever say who is who?",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty thirteen, researchers at the University of St Andrews played computer copies of signature whistles to wild bottlenose dolphins off the coast of Scotland.",
+0.7,
+1.0,
+0.0
+],
+[
+"Each dolphin reacted only when it heard the copy of its own whistle. One of the authors called it the first case of naming in mammals.",
+0.2,
+1.0,
+0.0
+],
+[
+"We had assumed names were ours. Nobody had asked the dolphins.",
+0.7,
+1.0,
+0.0
+],
+[
+"In twenty twenty-four, a team recorded wild elephants in Kenya.",
+0.2,
+1.0,
+0.0
+],
+[
+"A computer model trained on four hundred and thirty-seven calls from ninety-nine callers could name the recipient of about a quarter of calls it had never heard.",
+0.2,
+1.0,
+0.0
+],
+[
+"Not a translator yet. A decent guesser.",
+0.7,
+1.0,
+0.0
+],
+[
+"Then they played calls to seventeen elephants. An elephant approached the speaker, on average, a hundred and twenty-eight seconds sooner when the call had been addressed to it.",
+0.7,
+1.0,
+0.0
+],
+[
+"The same year, a team in Israel showed that marmoset monkeys use special calls to label each other, and answer more accurately when called.",
+0.2,
+1.0,
+0.0
+],
+[
+"Families seem to share a similar style, like a dialect.",
+0.7,
+1.0,
+0.0
+],
+[
+"The elephant team was careful. The model might have picked up each caller's voice, and they are not sure where the name sits inside a call.",
+0.7,
+1.0,
+0.0
+],
+[
+"So at least four species seem to label each other: humans, dolphins, elephants and marmosets.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave, do I have a name?",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"Not that anyone has found, Dave. Nobody has found animals naming humans.",
+0.7,
+1.0,
+0.0
+],
+[
+"Talking goes both ways. So what about animals understanding us?",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty eleven, researchers at Wofford College reported that a border collie named Chaser had learned the names of one thousand and twenty-two objects over three years of training.",
+0.7,
+1.0,
+0.0
+],
+[
+"She could even learn a new name by elimination. Given one unfamiliar toy among familiar ones, she picked it when she heard an unfamiliar word.",
+0.7,
+1.0,
+0.0
+],
+[
+"The authors said this kind of understanding is normally credited to children.",
+0.7,
+1.0,
+0.0
+],
+[
+"She understood a thousand and twenty-two words. She said none of them back.",
+0.7,
+1.0,
+0.0
+],
+[
+"Now the hard one. Sperm whales make patterns of short bursts of clicks called codas.",
+0.2,
+1.0,
+0.0
+],
+[
+"In twenty twenty-four, a team led from the Massachusetts Institute of Technology analysed nearly nine thousand codas from whales off the island of Dominica.",
+0.7,
+1.0,
+0.0
+],
+[
+"They found that codas combine four features: rhythm, tempo, and two finer features they named rubato and ornamentation.",
+0.2,
+1.0,
+0.0
+],
+[
+"These can be mixed freely into a large set of distinct codas.",
+0.7,
+1.0,
+0.0
+],
+[
+"Some compared it to a phonetic alphabet. But the project's leaders were careful. One said the meaning of many codas remains unknown.",
+0.7,
+1.0,
+0.0
+],
+[
+"So the whales have an alphabet with no dictionary.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave asks a whale what a coda means. It replies with a little rubato.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave looks at the notebook. It still says: they can see my shirt.",
+0.7,
+1.0,
+0.0
+],
+[
+"Here is the twist. Look at what has been decoded so far. Where the food is. Which shirt is coming. Who is calling whom.",
+0.7,
+1.0,
+0.0
+],
+[
+"Mickey Pardo, one of the elephant researchers, says names are probably only one small part of those calls.",
+0.2,
+1.0,
+0.0
+],
+[
+"And the animals in these studies were not answering our questions. They were running their own lives.",
+0.7,
+1.0,
+0.0
+],
+[
+"What would animals say to Dave? Our guess is four things. Where. What. Who. Danger.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave writes four words at the top of the secrets page.",
+0.7,
+1.0,
+0.0
+],
+[
+"Where. What. Who. Danger. Dave, is that all there is?",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"Dave, that is most of life.",
+0.7,
+1.0,
+0.0,
+"doc"
+],
+[
+"The animals are not hiding secrets. They are telling each other where things are, and who is who.",
+0.7,
+1.0,
+0.0
+],
+[
+"So could machines find more, or even talk back?",
+0.2,
+1.0,
+0.0
+],
+[
+"In May twenty twenty-four, a foundation and Tel Aviv University launched a challenge worth up to ten million dollars for talking with another species.",
+0.7,
+1.0,
+0.0
+],
+[
+"The grand prize needs a kind of Turing test: the animal has to communicate independently, without recognising that it is communicating with humans.",
+0.2,
+1.0,
+0.0
+],
+[
+"A prairie dog would never pass. It announces the human before the human arrives.",
+0.7,
+1.0,
+0.0
+],
+[
+"There is also a hundred thousand dollar prize every year for the best progress.",
+0.2,
+1.0,
+0.0
+],
+[
+"Four finalists in twenty twenty-five, from the United States, Germany, France and Israel, were working with dolphins, nightingales, cuttlefish and monkeys.",
+0.7,
+1.0,
+0.0
+],
+[
+"So far, nobody has claimed the grand prize.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave decides to enter. He has a notebook.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave looks down at his yellow shirt, takes it off and puts on a green one.",
+0.7,
+1.0,
+0.0
+],
+[
+"The prairie dog on the mound looks at him for a long moment.",
+0.7,
+1.0,
+0.0
+],
+[
+"Tall human. Same as before. Coming this way.",
+0.7,
+1.0,
+0.0,
+"kid"
+],
+[
+"Dave closes his notebook. To a prairie dog, it is the same Dave.",
+0,
+1.0,
+0.0
+]
+]

@@ -1,0 +1,500 @@
+[
+[
+"This is Dave. Dave has unplugged his router and feels free. His router is not the internet.",
+0.7,
+1.0,
+0.0
+],
+[
+"Tonight, the whole internet goes away. Everywhere. For one week.",
+0.7,
+1.0,
+0.0
+],
+[
+"Good. I wasn't using it for anything important.",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"So what would happen if the internet disappeared for a week?",
+0.2,
+1.0,
+0.0
+],
+[
+"Would the world carry on without it, or would everything quietly stop?",
+0.7,
+1.0,
+0.0
+],
+[
+"Here is the plan. Each day, Dave will lose something, and we'll look at a real case where it already happened.",
+0.2,
+1.0,
+0.0
+],
+[
+"By the end, we will meet the one realistic way this could really happen.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave sticks a checklist on his fridge. It is titled: things that still work. The first line reads: everything.",
+0.7,
+1.0,
+0.0
+],
+[
+"This just in. The internet has disappeared. We can't tell you more, because that is where we would look.",
+0.7,
+1.0,
+0.0,
+"news"
+],
+[
+"First, where does the internet live? Not in the cloud. On the sea floor.",
+0.7,
+1.0,
+0.0
+],
+[
+"The figure that gets repeated is that ninety-nine percent of intercontinental data travels in undersea cables. It is quoted everywhere, usually with no source.",
+0.2,
+1.0,
+0.0
+],
+[
+"A mapping company checked it. It is true, with a footnote about satellites.",
+0.7,
+1.0,
+0.0
+],
+[
+"The cloud is mostly a very long wet wire.",
+0.7,
+1.0,
+0.0
+],
+[
+"That means it can be cut. In January twenty twenty-two, a volcanic eruption and tsunami severed the main cable to Tonga.",
+0.2,
+1.0,
+0.0
+],
+[
+"The country's internet came back more than five weeks later, with a satellite service helping some people in the meantime.",
+0.7,
+1.0,
+0.0
+],
+[
+"Fifty-six miles of cable, replaced. And nobody had enough spare, so we borrowed some.",
+0.7,
+1.0,
+0.0,
+"old"
+],
+[
+"Nobody keeps a spare ocean. Tonga was one island, and Dave's week is the whole planet.",
+0.7,
+1.0,
+0.0
+],
+[
+"Hour one. Dave goes to buy a loaf of bread.",
+0.2,
+1.0,
+0.0
+],
+[
+"A real case: in June twenty eighteen, one data centre in Europe had a partial hardware failure, and five million card payments failed.",
+0.7,
+1.0,
+0.0
+],
+[
+"One switch. One building. Five million payments.",
+0.7,
+1.0,
+0.0
+],
+[
+"Sweden posts every household a booklet that says: be ready to survive for a week without help. The list includes food, water, heating and money.",
+0.2,
+1.0,
+0.0
+],
+[
+"The booklet arrives by post, which does not need the internet.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave has two coins. He has not read the booklet.",
+0.7,
+1.0,
+0.0
+],
+[
+"He crosses out the first item on the checklist. Cards.",
+0.7,
+1.0,
+0.0
+],
+[
+"Day two. In January twenty eleven, Egypt switched off internet and mobile services for five days.",
+0.2,
+1.0,
+0.0
+],
+[
+"The OECD estimated the loss at about eighteen million dollars a day.",
+0.7,
+1.0,
+0.0
+],
+[
+"It warned that the long-term impact could be greater, because the shutdown would make it much more difficult to attract foreign companies in future.",
+0.7,
+1.0,
+0.0
+],
+[
+"So switching off the internet turns out to be a very bad advertisement for a country.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave looks in his wallet. Eighteen million dollars a day is not in there.",
+0.7,
+1.0,
+0.0
+],
+[
+"He crosses out the second item. The bank.",
+0.7,
+1.0,
+0.0
+],
+[
+"Day three. A real case: in May twenty seventeen, a malicious program swept through the English health service.",
+0.2,
+1.0,
+0.0
+],
+[
+"It wasn't an outage, but it shows what happens when hospital computers go dark.",
+0.7,
+1.0,
+0.0
+],
+[
+"The National Audit Office counted at least eighty-one of two hundred and thirty-six hospital trusts affected.",
+0.2,
+1.0,
+0.0
+],
+[
+"Thirty-seven were locked out of their devices.",
+0.2,
+1.0,
+0.0
+],
+[
+"Another six hundred and three organisations were infected, including five hundred and ninety-five family doctors' practices.",
+0.7,
+1.0,
+0.0
+],
+[
+"About sixty-nine hundred appointments were recorded as cancelled, and the real number was probably over nineteen thousand. Five emergency departments had to divert patients.",
+0.7,
+1.0,
+0.0
+],
+[
+"Nobody paid the ransom. The audit concluded that the attack could have been stopped with basic security.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave crosses out the third item. The hospital. He decides to be very careful on the stairs.",
+0.7,
+1.0,
+0.0
+],
+[
+"But one item on the list survives. GPS.",
+0.7,
+1.0,
+0.0
+],
+[
+"The satellites in the sky do not need the internet. They broadcast their signal, and receivers decode it.",
+0.7,
+1.0,
+0.0
+],
+[
+"A lot of the world borrows that clock. Major financial institutions use GPS to set the clocks that time-stamp transactions.",
+0.2,
+1.0,
+0.0
+],
+[
+"Mobile networks use it to keep their base stations in step. Power plants and substations use it too. So a bank's idea of the time arrives from space.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave's phone can still tell him exactly where he is. It just can't tell him what is nearby.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave leaves the item on the list, and eats the last of the flour.",
+0.7,
+1.0,
+0.0
+],
+[
+"Day five. In twenty seventeen, a shipping giant with seventy-six ports and about nine hundred ships had its network wiped by a malicious program,",
+0.2,
+1.0,
+0.0
+],
+[
+"and about twelve hundred business applications went dark.",
+0.7,
+1.0,
+0.0
+],
+[
+"To rebuild, it reinstalled four thousand servers, forty-five thousand computers and twenty-five hundred applications.",
+0.2,
+1.0,
+0.0
+],
+[
+"The chairman called it a heroic effort over ten days, and said volumes fell by only about twenty percent.",
+0.7,
+1.0,
+0.0
+],
+[
+"What saved the company was a blackout. A power cut in Lagos had knocked the local office offline, so it held the one clean copy of the network's directory.",
+0.7,
+1.0,
+0.0
+],
+[
+"Someone had to physically carry it to where the network was rebuilt. The cost was hundreds of millions of dollars.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave's parcel is somewhere in a port. The port doesn't know either.",
+0.7,
+1.0,
+0.0
+],
+[
+"He crosses out the fourth item. Ships.",
+0.7,
+1.0,
+0.0
+],
+[
+"So how could the whole internet really go away? Realistically, there is one way. The Sun.",
+0.7,
+1.0,
+0.0
+],
+[
+"In September eighteen fifty-nine, a giant storm from the Sun hit Earth. Telegraph lines across North America failed.",
+0.2,
+1.0,
+0.0
+],
+[
+"In Pittsburgh, a manager reported streams of fire from the circuits. In Washington, an operator was badly shocked, and paper caught fire.",
+0.7,
+1.0,
+0.0
+],
+[
+"In Boston, operators unplugged their batteries and still sent messages to Portland, Maine. They used only the current from the northern lights. The sky was the power supply.",
+0.7,
+1.0,
+0.0
+],
+[
+"The lights were seen as far south as Cuba.",
+0.7,
+1.0,
+0.0
+],
+[
+"In July twenty twelve, a storm just as strong erupted from the Sun and missed Earth.",
+0.2,
+1.0,
+0.0
+],
+[
+"The space physicist Daniel Baker said it was at least as strong as the one in eighteen fifty-nine. The only difference, he said, is that it missed.",
+0.7,
+1.0,
+0.0
+],
+[
+"A study by the National Academy of Sciences put the total cost of such a storm at more than two trillion dollars.",
+0.2,
+1.0,
+0.0
+],
+[
+"And power would be the bigger problem: NASA notes that multi-ton transformers damaged by a storm like that might take years to repair.",
+0.7,
+1.0,
+0.0
+],
+[
+"Scientists estimate the chance of one hitting Earth is between one point six and twelve percent per decade. That is a single estimate, not a forecast.",
+0.7,
+1.0,
+0.0
+],
+[
+"Here is the twist. In twenty twenty-one, the computer scientist Sangeetha Abdu Jyothi asked what such a storm would do to the internet.",
+0.7,
+1.0,
+0.0
+],
+[
+"The fibre itself is immune. But long cables have repeaters every fifty to a hundred and fifty kilometres to boost the signal, powered along a wire.",
+0.2,
+1.0,
+0.0
+],
+[
+"Those repeaters are vulnerable to induced currents.",
+0.7,
+1.0,
+0.0
+],
+[
+"GPS and communication satellites are directly exposed to a storm too, and could lose connectivity during it.",
+0.7,
+1.0,
+0.0
+],
+[
+"Her paper warns of outages that could cover the entire globe and last several months.",
+0.2,
+1.0,
+0.0
+],
+[
+"Submarine cables are at greater risk than land cables, and the United States is at higher risk of disconnection than Asia.",
+0.7,
+1.0,
+0.0
+],
+[
+"So a week is the gentle version. Tonga needed five weeks to fix one cable.",
+0.2,
+1.0,
+0.0
+],
+[
+"Dave crosses out the fifth item on his list. The sea cables.",
+0.7,
+1.0,
+0.0
+],
+[
+"There is one more catch. The Sun was quiet for about three decades, exactly while the internet was being built. So nobody knows how it would hold up.",
+0.7,
+1.0,
+0.0
+],
+[
+"So the week I picked was the gentle one?",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"It was, Dave. Very gentle, compared with what the Sun could do.",
+0.7,
+1.0,
+0.0
+],
+[
+"Engineers who build the internet had mostly planned for broken cables, not for the Sun. The paper says the networking community has largely overlooked the risk.",
+0.7,
+1.0,
+0.0
+],
+[
+"That sounds grim. But the point of the paper is to plan ahead, and it lays out steps to make the internet more resilient.",
+0.7,
+1.0,
+0.0
+],
+[
+"Day seven. At midnight, in Dave's version, the internet comes back. His phone finds one bar, then four thousand notifications.",
+0.7,
+1.0,
+0.0
+],
+[
+"This just in. We are told the internet has returned. We can't confirm, because we'd have to look it up.",
+0.7,
+1.0,
+0.0,
+"news"
+],
+[
+"Dave looks at the fridge. Cards, the bank, the hospital, the ships, the sea cables. All crossed out.",
+0.2,
+1.0,
+0.0
+],
+[
+"Then he takes the pencil and writes one last item at the bottom of the list. Next door.",
+0.7,
+1.0,
+0.0
+],
+[
+"He plugs the router back in, and turns the phone face down anyway. A router, as we said, was never the internet.",
+0.7,
+1.0,
+0.0
+],
+[
+"He knocks. The neighbour opens the door, holding a very old paper map.",
+0.7,
+1.0,
+0.0
+],
+[
+"Hello. I'm Dave. I live next door.",
+0,
+1.0,
+0.0,
+"dave"
+]
+]
