@@ -93,7 +93,7 @@ A small child stops in front of you, looking at the tin. Not at you. At the tin.
 You do not answer. You look at the tin for a long time. You are a man with a billion tonnes, and a mint. //
 
 # chapter: 4:58 pm
-You reach the desk. The clerk has a stamp in her hand and a look of great calm. /
+You reach the desk. The clerk has a stamp in his hand and a look of great calm. /
 "Good afternoon. What item are we handing in today, please?" (@old) /
 "A black hole. A small one. Please do not ask me to put it on the counter." (@dave) /
 "I am afraid we need it on the counter. It is the policy." (@old) //
@@ -103,7 +103,7 @@ You lower the tin. The tin goes through the counter, the floor, the drains and t
 "Pocket. It is called Pocket. It lived in my pocket." (@dave) /
 "And where was the item last seen, for the form?" (@old) /
 "The centre of the Earth. Or it will be, in about forty minutes." (@dave) /
-She stamps the form. Lost property: one black hole. Owner: the planet. // [J]
+He stamps the form. Lost property: one black hole. Owner: the planet. // [J]
 
 # chapter: The last second
 Pocket glows with three hundred and sixty megawatts. The Earth makes forty-seven million megawatts of its own heat. It will be the smallest radiator in the building. //

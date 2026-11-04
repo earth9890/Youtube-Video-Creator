@@ -26,6 +26,7 @@ from `episodes/38-full-brain` and editing ids/names.
   READ them yourself, fix what looks wrong (overlaps, text off-screen, empty frames, unreadable labels).
 - **Empty shot starts (2026-10-29, eps 46/47/49):** a shot whose background/subject pops in on a later W() cue opens on bare paper. Every shot shows its background + main subject from its first frame; only labels/cards pop on words. QA: snapshot every shot at start +0.35 s (scene_gaps.py can't see this; it only checks coverage). Render blank_scan flags the long ones.
 - Heavy Chrome builds/snapshots: wrap in `lockf -t 3000 ~/videos/black-hole-life/.heavy.lock <cmd>`.
+- **Motion v2 + sound (2026-11-04, `research/animated-shorts-gap.md`):** start scenes.js with `// look: still`, `// motion: v2`, `// @library auto`. Punch words get `S.punch(x, y, W(c,w))` (≤ 2/min), real impacts `S.kick(W(c,w))`, physical events `S.sfx(W(c,w), "pop|swish|whoosh|thud|ding|tick|boing|rumble|zap", x)`; `L.put … { pop: true }` pops make their own sound. Don't overuse: ~1 sound per 3-5 s. The orchestrator finishes with `finish.sh EP sound` (owner to confirm the sound pass on `trials/renders/upg49-after-1080.mp4`; until then `none`).
 
 ## Package (`package.md`, same format as 27-not-behind)
 - Title: the pick from `title.md` (you may improve it; ≤ 55 chars).

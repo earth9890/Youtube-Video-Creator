@@ -1,0 +1,390 @@
+[
+[
+"You are standing in the Lost Property office, holding a biscuit tin that weighs a billion tonnes. The floor is making a small noise of regret.",
+0.7,
+1.0,
+0.0
+],
+[
+"Behind the desk, a clerk looks at the clock. It is two minutes to five.",
+0.7,
+1.0,
+0.0
+],
+[
+"Let's go back. Three fifty pm.",
+0.2,
+1.0,
+0.0
+],
+[
+"In the pocket of a jumble-sale coat, you find something small and dark. Not a button. A mint is circling it. So is a coin. So are your keys.",
+0.7,
+1.0,
+0.0
+],
+[
+"Brain, my pocket has a solar system in it. What do I do?",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Please stop holding it, Dave. Or at least stop holding it near me.",
+0.7,
+1.0,
+0.0,
+"brain"
+],
+[
+"Lost Property is on your way home, and it closes at five. First, you ring Doctor Hale.",
+0.7,
+1.0,
+0.0
+],
+[
+"So, what if you found a tiny black hole in your pocket? Could you keep it, like a very dark marble?",
+0.2,
+1.0,
+0.0
+],
+[
+"No. It weighs a mountain, it glows, and it will not stay in any pocket.",
+0.7,
+1.0,
+0.0
+],
+[
+"Here is the rule of this story. The hole sits in a biscuit tin that stops all its radiation, and your arms can carry anything. Nothing stops its gravity.",
+0.7,
+1.0,
+0.0
+],
+[
+"Dave. In nineteen seventy-one, Stephen Hawking showed that tiny black holes could have formed in the first second of the universe. I checked the numbers twice. Whatever you do, do not put it down.",
+0.7,
+1.0,
+0.0,
+"doc"
+],
+[
+"Black holes can be any size. A tiny one, squeezed from the early universe, could weigh a billion tonnes, about a mountain, and still be smaller than an atom, around the size of a proton.",
+0.7,
+1.0,
+0.0
+],
+[
+"So the weight of a mountain sits in your pocket, in a dot you cannot see.",
+0.7,
+1.0,
+0.0
+],
+[
+"Doctor, if I can't put it down, how do I get it to Lost Property? I only have two arms.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Carefully, Dave. And try not to look at anything you are fond of.",
+0.7,
+1.0,
+0.0,
+"doc"
+],
+[
+"There is a second problem. The pocket is warm.",
+0.7,
+1.0,
+0.0
+],
+[
+"In nineteen seventy-four, Hawking showed that black holes glow. And the smaller the hole, the hotter and brighter it glows.",
+0.7,
+1.0,
+0.0
+],
+[
+"Yours is hotter than a hundred billion degrees. It gives off about as much power as a power station. And all of it is gamma rays.",
+0.7,
+1.0,
+0.0
+],
+[
+"Andrew Hamilton, a black hole physicist, puts it simply: you would not want to go near a mini black hole that is evaporating.",
+0.7,
+1.0,
+0.0
+],
+[
+"I am going near it. I am holding it. It is in my pocket.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Then you are my favourite case of the week, Dave.",
+0.2,
+1.0,
+0.0,
+"brain"
+],
+[
+"Dave, the tin is working. That is the only reason I am talking to you.",
+0.2,
+1.0,
+0.0,
+"brain"
+],
+[
+"In the tin, the gamma rays go nowhere. It is a very good tin.",
+0.7,
+1.0,
+0.0
+],
+[
+"Now, the gravity. A hole this heavy, packed into a dot, pulls hard on anything close. Within two and a half metres, it pulls harder than the Earth does.",
+0.7,
+1.0,
+0.0
+],
+[
+"So you must walk round everybody. Through the park. Around the bus queue. Round the dog with the stick. You have to cover a kilometre in a very polite arc.",
+0.7,
+1.0,
+0.0
+],
+[
+"Even so, a man's hat leaves his head and orbits the tin. A pigeon decides to walk. A bench tilts, very slowly, towards your hands.",
+0.7,
+1.0,
+0.0
+],
+[
+"Breaking news. A man is walking down the high street carrying a biscuit tin. Nearby lampposts are leaning.",
+0.7,
+1.0,
+0.0,
+"news"
+],
+[
+"Sir. Sir. There is a hat orbiting your biscuits.",
+0.2,
+1.0,
+0.0,
+"old"
+],
+[
+"I know. I am so sorry. It is a very small black hole.",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"Is it a hat-stealing one, or a general kind?",
+0.2,
+1.0,
+0.0,
+"old"
+],
+[
+"I think it is a general kind. It takes whatever it likes.",
+0.7,
+1.0,
+0.0,
+"dave"
+],
+[
+"Your arms are tired. Your feet are tired. You look for somewhere to put the tin down.",
+0.7,
+1.0,
+0.0
+],
+[
+"Never put it down. Something that small slips between the atoms. Theorists say tiny black holes would zip straight through matter as if it was not there.",
+0.7,
+1.0,
+0.0
+],
+[
+"It would fall through the pavement, the pipes, the rock and the whole planet.",
+0.2,
+1.0,
+0.0
+],
+[
+"Ignoring friction, a swing through the middle of the Earth and back takes about eighty-four minutes. It loses a little energy on every pass, so it ends up settling at the centre.",
+0.7,
+1.0,
+0.0
+],
+[
+"So the safest place for it is the planet? Is that where it lives?",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Dave, I would like to point out that you have been asking me that for forty minutes.",
+0.7,
+1.0,
+0.0,
+"brain"
+],
+[
+"You sit on a bench. The bench leans towards you. You lean back.",
+0.7,
+1.0,
+0.0
+],
+[
+"A small child stops in front of you, looking at the tin. Not at you. At the tin.",
+0.2,
+1.0,
+0.0
+],
+[
+"Excuse me. What is in that tin? Is it biscuits, or something better?",
+0.2,
+1.0,
+0.0,
+"kid"
+],
+[
+"A black hole. A tiny one. If it is real, it is older than the Moon.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Does it have a name? Everything nice should have a name.",
+0.2,
+1.0,
+0.0,
+"kid"
+],
+[
+"No. It was in a coat. Nobody ever gave it a name.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"Then it is probably lonely. Nobody calls it anything at all.",
+0.7,
+1.0,
+0.0,
+"kid"
+],
+[
+"You do not answer. You look at the tin for a long time. You are a man with a billion tonnes, and a mint.",
+0.7,
+1.0,
+0.0
+],
+[
+"You reach the desk. The clerk has a stamp in his hand and a look of great calm.",
+0.2,
+1.0,
+0.0
+],
+[
+"Good afternoon. What item are we handing in today, please?",
+0.2,
+1.0,
+0.0,
+"old"
+],
+[
+"A black hole. A small one. Please do not ask me to put it on the counter.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"I am afraid we need it on the counter. It is the policy.",
+0.7,
+1.0,
+0.0,
+"old"
+],
+[
+"Dave, I should mention. It is not your pocket any more. It is the planet's.",
+0.7,
+1.0,
+0.0,
+"brain"
+],
+[
+"You lower the tin. The tin goes through the counter, the floor, the drains and the rock, as if it was fog. The mint goes with it.",
+0.7,
+1.0,
+0.0
+],
+[
+"I will need a name for the item. It is for the form.",
+0.2,
+1.0,
+0.0,
+"old"
+],
+[
+"Pocket. It is called Pocket. It lived in my pocket.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"And where was the item last seen, for the form?",
+0.2,
+1.0,
+0.0,
+"old"
+],
+[
+"The centre of the Earth. Or it will be, in about forty minutes.",
+0.2,
+1.0,
+0.0,
+"dave"
+],
+[
+"He stamps the form. Lost property: one black hole. Owner: the planet.",
+0.7,
+1.0,
+0.0
+],
+[
+"Pocket glows with three hundred and sixty megawatts. The Earth makes forty-seven million megawatts of its own heat. It will be the smallest radiator in the building.",
+0.7,
+1.0,
+0.0
+],
+[
+"It will glow for about three trillion years, shrinking all the while. And a black hole that shrinks gets hotter, and faster, until the very last second.",
+0.7,
+1.0,
+0.0
+],
+[
+"In that last second, a mini black hole gives off about a thousand tonnes of rest mass energy. Big by human standards, small for the universe.",
+0.7,
+1.0,
+0.0
+],
+[
+"If you want to know what the last second of a black hole looks like, you know the button.",
+0,
+1.0,
+0.0
+]
+]

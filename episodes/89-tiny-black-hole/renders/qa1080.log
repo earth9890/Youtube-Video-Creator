@@ -1,0 +1,27 @@
+# Sound cues: 89-tiny-black-hole
+
+mix.wav 346.460 s, 44100 Hz, 24-bit stereo | integrated -14.0 LUFS (target -14.0), true peak -1.2 dBTP, limiter max -3.2 dB
+voice -16.4 LUFS (gain only) | music: synth, 14.0 LU under the voice, duck -4.0 dB on speech (words.json) | sfx: 104 events
+speech margin (voice over bed, 400 ms on words): median 18.8 LU, p10 12.6 LU -> PASS | music stops: 0
+@library auto: core people stylelab activity animals body cosmos effects ep89-tiny-black-hole episode-kit interiors motion props-home props-world ride scenery science sky text thoughts wardrobe worlds = 1209 KB (saved 1038 KB of 2248 KB)
+built /Users/harish/videos/black-hole-life/episodes/89-tiny-black-hole/index.html  total=346.46s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  2 error(s), 0 warning(s), 12 info(s)
+  0 error(s), 3 warning(s), 0 info(s)
+  0 error(s), 12 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run `hyperframes lint` for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   441.4 MB · 5m 46.5s video · rendered in 6m 31.7s
+h264,1920,1080,346.466667
+aac,346.466000
+blank_scan: 693 frames checked, 0 near-blank
+SPECS 1920x1080 30 fps, 346.467 s; audio: aac 48000 Hz 2ch
+LOUDNESS I -14.0 LUFS | LRA 3.2 LU | true peak -1.0 dBTP -> PASS
+SILENCES >= 1.5 s: none
+FRAMES 10394; black []; blank paper []; unplanned white []
+FROZEN holds >= 60 f: none
+POPS (unplanned frame-diff spikes > 3x local median): none
+WARN JUMPS (big pop/slide entrances, > 3x local median; fine if intended): none
+EXIT 0

@@ -1,5 +1,5 @@
 # Episode 92: "What If You Cloned Yourself?" (long form, mission format, ~7 min). Mission engine (BATCH-76-95 / One Small If formula, our own wording). Narrator: The Storyteller, calm, slightly-too-honest guide, second person ("you" = Dave, who is on screen). Dave's own quotes are (@dave). The clone, once grown, speaks with the same voice (@dave) on purpose: same genes, nearly the same voice, and the narrator always says "he says" first. As a small child he is (@kid).
-# cast: dave=22393bee,brain=7f7a5b5c,doc=a2e5e553,kid=c2c98dae,old=1e82d11e,news=98c553e7
+# cast: dave=22393bee,arlo=9288cfee,brain=7f7a5b5c,doc=a2e5e553,kid=c2c98dae,old=1e82d11e,news=98c553e7
 # Sources: see sources.md (New Scientist 1997 and 2006 on Dolly's 277; NHGRI Cloning Fact Sheet; NAP "Scientific and Medical Aspects of Human Reproductive Cloning"; MedlinePlus Genetics on fingerprints; Shin et al. 2002 Nature (CC the cat); Polderman et al. 2015; Roslin Institute Life of Dolly; Nature obituary 2003; AVMA 2003; Sinclair et al. 2016; Fraga et al. 2005).
 # Solid vs inference, as said in the script: 277 attempts to one lamb, no solid evidence of any human clone, "natural clones are identical twins", different fingerprints, CC the cat's coat, heritability 49 %, Dolly's death at six, her 20 % shorter telomeres, healthy Dolly-line clones at seven to nine, older twins' epigenetic differences are published. "A twin who arrives thirty-two years late" is OUR framing of the NAP passage (a clone born at a different time differs more than a twin). The boat, Gran, Mr Pugh, the baker and the name are story devices. In real life nobody has made a human clone; the rule card says so.
 # Safety: thought experiment about a person growing up; no medical advice; the clone is treated as a full person and a family member, kindly. The Dolly chapter is gentle (an animal that lived six years, with the facts). Nothing scary for its own sake.
@@ -30,7 +30,7 @@
 
 # chapter: Saturday, 8:00 am
 You are standing in a garage with an eighteen-year-old. / He has your nose, your eyebrows and nearly your voice. // [J]
-"I am not finishing your boat, Dave. I'm going to be a baker." (@dave) //
+"I am not finishing your boat, Dave. I'm going to be a baker." (@arlo) //
 "But I made you for the boat. That was the whole point." (@dave) [J]
 The boat has one plank. It has had one plank for fourteen years. Gran's party starts in four hours. // [J]
 Let's go back eighteen years, to a Tuesday at nine in the morning. //
@@ -90,9 +90,9 @@ This is the price of making a person. You came for a builder. You are staying fo
 # chapter: Year thirteen
 At thirteen, he stops answering to Dave Two. He says he is not a number, and picks the name Arlo. //
 "Dave, he is thirteen. Nobody is anybody's copy at thirteen." (@brain) [J]
-"I am not you, Dave. I have never been you. I'm making bread." (@dave) //
+"I am not you, Dave. I have never been you. I'm making bread." (@arlo) //
 "But I taught you everything I know!" (@dave) //
-"You taught me nothing. I watched a video." (@dave) [J]
+"You taught me nothing. I watched a video." (@arlo) [J]
 Your house now smells of yeast, and your garage smells of nothing, because nobody goes in. // [J]
 "Your boy has been kneading dough in my garden for an hour." (@old) [J]
 Here is what one famous twin study found. A pair of three-year-olds switched on almost the same genes. A pair of fifty-year-olds switched on very different ones. Same genes, different lives. //
@@ -100,9 +100,9 @@ He is the same as you were, and a little less every year. //
 
 # chapter: Saturday, noon
 Which brings you back to the garage. //
-"I am not finishing your boat, Dave. But I will hold the other end." (@dave) //
+"I am not finishing your boat, Dave. But I will hold the other end." (@arlo) //
 "I made you to build a boat. I should have asked who you were first." (@dave) //
-"You are asking now. That counts." (@dave) //
+"You are asking now. That counts." (@arlo) //
 It takes four hours. You hammer plank two. He hammers plank three, crooked, on purpose. // [J]
 At noon you launch it. It floats. Mostly. //
 Gran looks at the two of you for a long time. She says she can tell you apart. One of you has flour on him, and he answers to Arlo. // [J]

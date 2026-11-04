@@ -1,0 +1,26 @@
+# Sound cues: 92-clone-yourself
+
+mix.wav 337.030 s, 44100 Hz, 24-bit stereo | integrated -14.0 LUFS (target -14.0), true peak -1.2 dBTP, limiter max -4.2 dB
+voice -17.3 LUFS (gain only) | music: synth, 14.0 LU under the voice, duck -4.0 dB on speech (words.json) | sfx: 86 events
+speech margin (voice over bed, 400 ms on words): median 19.0 LU, p10 12.8 LU -> PASS | music stops: 0
+@library auto: core people stylelab activity animals ep92-clone episode-kit food interiors motion nature props-home props-more props-world scenery text wardrobe worlds = 1122 KB (saved 1125 KB of 2248 KB)
+built /Users/harish/videos/black-hole-life/episodes/92-clone-yourself/index.html  total=337.03s theme=light audio=assets/mix.wav
+  0 error(s), 1 warning(s), 0 info(s)
+  1 error(s), 2 warning(s), 21 info(s)
+  0 error(s), 14 warning(s), 0 info(s)
+◇  Check failed
+  Lint: 0 error(s), 1 warning(s) — run `hyperframes lint` for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+  █████████████████████████  100%  Render complete
+   888.6 MB · 5m 37.0s video · rendered in 27m 37.6s
+h264,3840,2160,337.033333
+aac,337.033000
+blank_scan: 674 frames checked, 0 near-blank
+SPECS 3840x2160 30 fps, 337.033 s; audio: aac 48000 Hz 2ch
+LOUDNESS I -14.3 LUFS | LRA 3.2 LU | true peak -2.5 dBTP -> PASS
+SILENCES >= 1.5 s: none
+FRAMES 10111; black []; blank paper []; unplanned white ['8104(270.13s)', '8105(270.17s)', '8106(270.20s)', '8107(270.23s)', '8108(270.27s)', '8109(270.30s)', '8110(270.33s)', '8111(270.37s)', '8112(270.40s)', '8113(270.43s)', '8114(270.47s)', '8115(270.50s)', '8116(270.53s)', '8117(270.57s)', '8118(270.60s)']
+FROZEN holds >= 60 f: ['5538(184.60s)-5603(186.77s)']
+POPS (unplanned frame-diff spikes > 3x local median): none
+WARN JUMPS (big pop/slide entrances, > 3x local median; fine if intended): none
+EXIT 0

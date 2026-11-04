@@ -26,3 +26,9 @@ assets/*.log
 # SEO pass: yt-dlp metadata snapshots are regenerable
 seo/live/
 seo/live-err.txt
+
+# sound.py stems, voice clip cache, engine trial scratch (regenerable)
+**/assets/stems/
+**/assets/clips/
+trials/
+config.bat
